@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Royal Paleontology Scriveners</name>
+        <update version="0.0.1">
+            <file name="faction-royalpaleontologyscriveners.xml" url="" />
+        </update>
+    </info>
+    <element name="Royal Scrivener Spells" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FACTION_FEATURE_ROYAL_SCRIVENER_SPELLS">
+        <supports>2nd Background Feature</supports>
+        <description>
+            <p><i>Prerequisite: Spellcasting or Pact Magic class feature</i></p>
+            <p>For you, the spells on the Royal Scrivener Spells table are added to the spell list of your spellcasting class. (If you are a multiclass character with multiple spell lists, these spells are added to all of them).</p>
+            <h5>Royal Scrivener Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>Cantrip</td><td>guidance, mending</td></tr>
+                <tr><td>1st</td><td>purify food and drink, heroism</td></tr>
+                <tr><td>2nd</td><td>animal messenger, enhance ability</td></tr>
+                <tr><td>3rd</td><td>speak with dead, water walk</td></tr>
+                <tr><td>4th</td><td>freedom of movement, fabricate</td></tr>
+                <tr><td>5th</td><td>commune with nature, modify memory</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <spellcasting all="true" extend="true">
+            <extend>ID_PHB_SPELL_GUIDANCE</extend>
+            <extend>ID_PHB_SPELL_MENDING</extend>
+            <extend>ID_PHB_SPELL_PURIFY_FOOD_AND_DRINK</extend>
+            <extend>ID_PHB_SPELL_HEROISM</extend>
+            <extend>ID_PHB_SPELL_ANIMAL_MESSENGER</extend>
+            <extend>ID_PHB_SPELL_ENHANCE_ABILITY</extend>
+            <extend>ID_PHB_SPELL_SPEAK_WITH_DEAD</extend>
+            <extend>ID_PHB_SPELL_WATER_WALK</extend>
+            <extend>ID_PHB_SPELL_FREEDOM_OF_MOVEMENT</extend>
+            <extend>ID_PHB_SPELL_FABRICATE</extend>
+            <extend>ID_PHB_SPELL_COMMUNE_WITH_NATURE</extend>
+            <extend>ID_PHB_SPELL_MODIFY_MEMORY</extend>
+        </spellcasting>
+    </element>
+    <element name="Specialty" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FACTION_FEATURE_SPECIALTY">
+        <description>
+            <p>To determine with category of monsters you are most knowledgeable about, roll a d10 or choose from the options in the table below.</p>
+            <table>
+                <thead>
+                    <tr><td>d10</td><td>Monser Category</td></tr>
+                </thead>
+                <tr><td>1</td><td>Amphibians &amp; Carapaceon</td></tr>
+                <tr><td>2</td><td>Lynians &amp; Herbivores</td></tr>
+                <tr><td>3</td><td>Bird Wyverns &amp; Fanged Beasts</td></tr>
+                <tr><td>4</td><td>Leviathans &amp; Piscine Wyverns</td></tr>
+                <tr><td>5</td><td>Flying Wyverns</td></tr>
+                <tr><td>6</td><td>Elder Dragons</td></tr>
+                <tr><td>7</td><td>Snake Wyverns, Temnoceran, &amp; Unknown</td></tr>
+                <tr><td>8</td><td>Neopteron &amp; Theropods</td></tr>
+                <tr><td>9</td><td>Brute Wyverns &amp; Fange Wyverns</td></tr>
+                <tr><td>10</td><td>Reroll</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select name="Specialty" type="List" optional="true">
+                <item id="1">Amphibians &amp; Carapaceon</item>
+                <item id="2">Lynians &amp; Herbivores</item>
+                <item id="3">Bird Wyverns &amp; Fanged Beasts</item>
+                <item id="4">Leviathans &amp; Piscine Wyverns</item>
+                <item id="5">Flying Wyverns</item>
+                <item id="6">Elder Dragons</item>
+                <item id="7">Snake Wyverns, Temnoceran, &amp; Unknown</item>
+                <item id="8">Neopteron &amp; Theropods</item>
+                <item id="9">Brute Wyverns &amp; Fange Wyverns</item>
+                <item id="10">Reroll</item>
+            </select>
+        </rules>
+    </element>
+    <element name="Guild Feature: Scrivener Researcher" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FACTION_FEATURE_SCRIVENER_RESEARCHER">
+        <supports>Background Feature</supports>
+        <description>
+            <p>When you attempt to learn or recall a piece of information about a creature mentioned by someone or that you have encountered, if you do not known that information, you often know where and from whom you can obtain it. Usually, this information comes from the hunter's guild, dragon observation team, wycademy, or a scrivener or other learned person or creature. Your DM might rule that the knowledge you seek if secreted away in an almost inaccesible place, or that it simply cannot be found. Unearthing the deepest secrets of reclusive or unknown monsters of the world can require an adventure or even a whole campaign.</p>
+        </description>
+        <sheet alt="Scrivener Researcher">
+            <description>When you attempt to learn or recall a piece of information about a creature mentioned by someone or that you have encountered, if you do not known that information, you often know where and from whom you can obtain it. Usually, this information comes from the hunter's guild, dragon observation team, wycademy, or a scrivener or other learned person or creature. Your DM might rule that the knowledge you seek if secreted away in an almost inaccesible place, or that it simply cannot be found. Unearthing the deepest secrets of reclusive or unknown monsters of the world can require an adventure or even a whole campaign.</description>
+        </sheet>
+    </element>
+</elements>

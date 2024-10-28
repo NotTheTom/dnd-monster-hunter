@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Wycademy Researcher</name>
+        <update version="0.0.1">
+            <file name="background-wycademyresearcher.xml" url="" />
+        </update>
+    </info>
+    <element name="Wycademy Researcher" type="Background" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_WYCADEMY_RESEARCHER">
+        <description>
+            <p>Having graduated from the wycademy, you chose to continue your studies dedicating your life to becoming an expert in your chosen field. Now you have struck out to increase your knowledge, for good or evil, for everyone or for yourself, that is up to you to decide.</p>
+            <ul class="unstyled">
+                <li><b>Skill Proficiencies:</b> Investigation; Choose one from Animal Handling, Athletics, History, Insight, Nature, Survival</li>
+                <li><b>Tool Proficiencies:</b> One type of artisan tools</li>
+                <li><b>Languages:</b> One of your choice</li>
+                <li><b>Equipment:</b> A bottle of black ink, a quill, a small knife, a partially filled journal filled with notes and questions you have not yet been able to answer, a set of common clothes, and a belt pouch containing 10 gp</li>
+            </ul>
+            <h5>Research Group</h5>
+            <table>
+                <thead>
+                    <tr><td>d8</td><td>Research Type</td></tr>
+                </thead>
+                <tr><td>1</td><td>Endemic Life</td></tr>
+                <tr><td>2</td><td>Lynians</td></tr>
+                <tr><td>3</td><td>Botanical</td></tr>
+                <tr><td>4</td><td>Mineralogical (Ore)</td></tr>
+                <tr><td>5</td><td>Piscine (Fish)</td></tr>
+                <tr><td>6</td><td>Archeologist</td></tr>
+                <tr><td>7</td><td>Ancient Civilization</td></tr>
+                <tr><td>8</td><td>Exotic Monsters from Far Off Lands</td></tr>
+            </table>
+            <div element="ID_ALD_AGMH_BACKGROUND_FEATURE_INVESTIGATION_RESEARCHER" />
+            <br />
+            <p><b><big>As a member of the Wycademy you are granted additional features:</big></b></p>
+            <div element="ID_ALD_AGMH_FACTION_FEATURE_MAGIC_GATHERING" />
+            <div element="ID_ALD_AGMH_FACTION_FEATURE_WYCADEMY_SPELLS" />
+        </description>
+        <setters>
+            <set name="short">Investigation, 1 Animal Handling/Athletics/History/Insight/Nature/Survival, 1 artisan tools, 1 language</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+            <select type="Proficiency" name="Skill Proficiency (Wycademy Researcher)" supports="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <select type="Proficiency" name="Tool Proficiency (Wycademy Researcher)" suppports="Artisan tools" />
+            <select type="Language" name="Language (Wycademy Researcher)" supports="Standard||Exotic" />
+            <grant type="Background Feature" id="ID_ALD_AGMH_BACKGROUND_FEATURE_INVESTIGATION_RESEARCHER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <grant type="Background Feature" id="ID_ALD_AGMH_FACTION_FEATURE_MAGIC_GATHERING" />
+            <grant type="Background Feature" id="ID_ALD_AGMH_FACTION_FEATURE_WYCADEMY_SPELLS" />
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select name="Research Group" type="List" optional="true">
+                <item id="1">Endemic Life</item>
+                <item id="2">Lynians</item>
+                <item id="3">Botanical</item>
+                <item id="4">Mineralogical (Ore)</item>
+                <item id="5">Piscine (Fish)</item>
+                <item id="6">Archeologist</item>
+                <item id="7">Ancient Civilization</item>
+                <item id="8">Exotic Monsters from Far Off Lands</item>
+            </select>
+            <select name="Personality Trait" type="List" number="2">
+                <item id="1">I am quiet and analytical.</item>
+                <item id="2">I am tireless when researching or learning, which I always seem to be doing.</item>
+                <item id="3">I try to travel to all the important places of a region to see them firsthand.</item>
+                <item id="4">I am a voracious reader and spend every spare moment learning about new things or writing.</item>
+                <item id="5">I enjoy an intellectual challenge.</item>
+                <item id="6">I've read every book in the world's greatest libraries- or I like to boast that I have.</item>
+                <item id="7">I have learned that doing your research before a hunt leads to a safer hunt.</item>
+                <item id="8">I'm convinced that people are always trying to steal my secrets.</item>
+            </select>
+            <select name="Ideals" type="List">
+                <item id="1">Improvement. Understanding history gives us a chance to make a better world. (Good)</item>
+                <item id="2">Knowledge. The path to power and self-improvement is through knowledge. (Neutral)</item>
+                <item id="3">Discover. Knowledge can accomplish anything; you cannot hope to master it, only marvel at it.</item>
+                <item id="4">Vanity. I deserve to be treated as a an important person because of what I know. (Evil)</item>
+                <item id="5">Logic. Emotions must not cloud our logical thinking. (Lawful)</item>
+                <item id="6">Self-Improvement. The goal of a life of study is the betterment of oneself. (Any)</item>
+            </select>
+            <select name="Bonds" type="List">
+                <item id="1">I have ancient text that holds terrible secrets that must not fall into the wrong hands.</item>
+                <item id="2">I work to preserve a library, university, scriptorium, or monastery.</item>
+                <item id="3">My life's work is a series of tomes related to a specific field of lore.</item>
+                <item id="4">I investigated a fascinating and beautiful monster; I must see it again.</item>
+                <item id="5">I am determined to cure the disease that killed my family.</item>
+                <item id="6">I need to be known for my contributions, discoveries, and skill.</item>
+            </select>
+            <select name="Flaws" type="List">
+                <item id="1">I am easily distracted by the promise of information.</item>
+                <item id="2">What's the point of secrets? All knowledge should be shared.</item>
+                <item id="3">I feel superior to uneducated folk, but quietly so.</item>
+                <item id="4">Unlocking an ancient mystery is worth the price of a civilization.</item>
+                <item id="5">I will endanger my friends and family if I think it will advance my research.</item>
+                <item id="6">I prove my intellect by pointing out others mistakes.</item>
+            </select>
+        </rules>
+    </element>
+    <element name="Feature: Investigation" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_FEATURE_INVESTIGATION_RESEARCHER">
+        <supports>Background Feature</supports>
+        <description>
+            <p>Expanding the knowledge of your research is an important aspect of your job at the Wycademy. When you discover new information about a creature or resource related to your research, you can bring that information to a Wycademy owned location to receive a stipend. Discuss with your DM what that amount is and if you can make more depending on what you discover or as you level up.</p>
+        </description>
+        <sheet alt="Investigation">
+            <description>Expanding the knowledge of your research is an important aspect of your job at the Wycademy. When you discover new information about a creature or resource related to your research, you can bring that information to a Wycademy owned location to receive a stipend. Discuss with your DM what that amount is and if you can make more depending on what you discover or as you level up.</description>
+        </sheet>
+    </element>
+</elements>

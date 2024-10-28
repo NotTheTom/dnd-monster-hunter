@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Handler Initiate</name>
+        <update version="0.0.1">
+            <file name="background-handlerinitiate.xml" url="" />
+        </update>
+    </info>
+    <element name="Handler Initiate" type="Background" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_HANDLER_INITIATE">
+        <description>
+            <p>You have spent your time in the Hunter's Guild training under the tutelage of the handlers that came before you. Even as an initiate you are the caretaker of your party. You use your knowledge of monsters to prepare your group and ensure that they are taken care of, whether they are in the town or in the field. You also act as the liason between the guild and the hunters, providing detailed reports on the hunts and other events when you return to town.</p>
+            <ul class="unstyled">
+                <li><b>Skill Proficiencies:</b> Histroy, Nature</li>
+                <li><b>Tool Proficiencies:</b> Cartographer's Tools, Cook's Utensils</li>
+                <li><b>Equipment:</b> One set of traveler's clothes, a guild card, empty book, quill and ink, 3 regional maps, and a pouch containing 15 gp</li>
+            </ul>
+            <div element="ID_ALD_AGMH_FACTION_FEATURE_GUILD_MEMBERSHIP" />
+            <br />
+            <p><b><big>As a member of the Hunter's Guild you are granted additional features:</big></b></p>
+            <div element="ID_ALD_AGMH_FACTION_FEATURE_HUNTERS_GUILD_SPELLS" />
+        </description>
+        <setters>
+            <set name="short">History, Nature, Cartographer's Tools, Cook's Utensils</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+            <grant type="Background Feature" id="ID_ALD_AGMH_FACTION_FEATURE_GUILD_MEMBERSHIP" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+            <grant type="Background Feature" id="ID_ALD_AGMH_FACTION_FEATURE_HUNTERS_GUILD_SPELLS" />
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select name="Personality Trait" type="List" number="2">
+                <item id="1">I am passionate and easily excitable.</item>
+                <item id="2">I am observant and ask a lot of questions.</item>
+                <item id="3">I am quiet and analytical.</item>
+                <item id="4">I am comfortable talking about nature, but very awkward interacting socially.</item>
+                <item id="5">I am tireless when researching or learning, which I always seem to be doing.</item>
+                <item id="6">I expect others to listen to me and get very frustrate with those who don't value my opinion.</item>
+                <item id="7">I enjoy being busy and am uneasy when idle.</item>
+                <item id="8">I am hardworking and reliable.</item>
+            </select>
+            <select name="Ideals" type="List">
+                <item id="1">Guild. My guild is all that really matters. (Any)</item>
+                <item id="2">Vanity. I deserve to be treated as an important person because of what I know. (Evil)</item>
+                <item id="3">Balance. The world functions when things are in balance. (Lawful)</item>
+                <item id="4">Exploration. Experiencing history is the only thing better than learning of it. (Chaotic)</item>
+                <item id="5">Objectivity. Opinion must not intrude on analysis; we must stay objective.</item>
+                <item id="6">Driven. I want to know everything I can. (Any)</item>
+            </select>
+            <select name="Bonds" type="List">
+                <item id="1">Everything goes in my journal, which is my legacy.</item>
+                <item id="2">I have heard of a scroll that contains knowledge I seek; I must find it.</item>
+                <item id="3">I study the world to understand why my home village was destroyed.</item>
+                <item id="4">My hunter allies are as friend and family to me as my own flesh and blood, and I will never abadon them.</item>
+                <item id="5">I owe everything to my mentor, but they vanished. I must find them.</item>
+                <item id="6">My clumsy initial studies have brought me to the attention of a powerful being; it watches me.</item>
+            </select>
+            <select name="Flaws" type="List">
+                <item id="1">I tend to shorten pet names I use for my colleagues. Aka someone I'd call partner, is shortened to "Pard".</item>
+                <item id="2">I cannot pass up the chance to learn about the ancient civilization.</item>
+                <item id="3">I'm constantly getting myself into trouble all for the sake of some food.</item>
+                <item id="4">I talk FAR too much.</item>
+                <item id="5">I am overly serious, to the point of disbelief sometimes.</item>
+                <item id="6">I have a tendency to overestimate the capability of my team.</item>
+            </select>
+        </rules>
+    </element>
+</elements>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Apprentice Guild Knight</name>
+        <update version="0.0.1">
+            <file name="background-apprenticeguildknight.xml" url="" />
+        </update>
+    </info>
+    <element name="Apprentice Guild Knight" type="Background" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_APPRENTICE_GUILD_KNIGHT">
+        <description>
+            <p>The Guild Knights are an elite group of hunters whose main job is to hunt down poachers or other illegal hunters, and wanted murderers. Guild Knights also act as leaders during times of crisis, negotiators for settlements, and also collect info on monsters unknown to the public. As an apprentice to the Guild Knights you are expected to enforce the laws of the fuild while following the teachings of your mentor.</p>
+            <ul class="unstyle">
+                <li><b>Skill Proficiencies:</b> Investigation, plus one from among Insight, History, Nature, and Religion, as appropriate for your order</li>
+                <li><b>Tool Proficiencies:</b> Herbalism Kit, and one artisan tool of your choice</li>
+                <li><b>Equipment:</b> One set of traveler's clothes, a signet, a banner or seal representing your place or rank in the order, and a pouch containing 10 gp</li>
+            </ul>
+            <div element="ID_ALD_AGMH_FACTION_FEATURE_GUILD_MEMBERSHIP" />
+            <br />
+            <p><b><big>As a member of the Hunter's Guild you are granted additional features:</big></b></p>
+            <div element="ID_ALD_AGMH_FACTION_FEATURE_HUNTERS_GUILD_SPELLS" />
+        </description>
+        <setters>
+            <set name="short">Investigation, Insight/History/Nature/Religion, Herbalism Kit, 1 artisan tool</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+            <select type="Proficiency" name="Skill Proficiency (Apprentice Guild Knight)" supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+            <select type="Proficiency" name="Tool Proficiency (Apprentice Guild Knight)" supports="Artisan tools" />
+            <grant type="Background Feature" id="ID_ALD_AGMH_FACTION_FEATURE_GUILD_MEMBERSHIP" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+            <grant type="Background Feature" id="ID_ALD_AGMH_FACTION_FEATURE_HUNTERS_GUILD_SPELLS" />
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select name="Personality Trait" type="List" number="2">
+                <item id="1">I never change my mind one it's made up.</item>
+                <item id="2">I hate it when people try to make light of a serious situation.</item>
+                <item id="3">I can stare down a rathalos without flinching.</item>
+                <item id="4">When I give an order, I expect it to be obeyed.</item>
+                <item id="5">I try never to let my judgement become clouded by emotion.</item>
+                <item id="6">No wrongdoing can escape my watchful gaze.</item>
+                <item id="7">I face problems head-on. A simple, direct solution is the best path to success.</item>
+                <item id="8">I'm good at hiding my true thoughts and feelings.</item>
+            </select>
+            <select name="Ideals" type="List">
+                <item id="1">Order. Like a well-pruned tree, society thrives when everything is kept in good order. (Lawful)</item>
+                <item id="2">Punishment. A public display of consequences is an excellent deterrent for other criminals. (Evil)</item>
+                <item id="3">Lawful. The law embodies excellence in its precision and detail. (Lawful)</item>
+                <item id="4">Justice. Achieving justice requires establishing fair, equitable, and compassionate relationships within a community. (Good)</item>
+                <item id="5">Protection. It isn't right for innocents to suffer because of the arrogance of others. (Good)</item>
+                <item id="6">Honor. Poachers must be rooted out wherever they are found. (Lawful)</item>
+            </select>
+            <select name="Bonds" type="List">
+                <item id="1">I am beholden to a Guild Knight who captured the criminal who killed my parents, saving me from the same fate.</item>
+                <item id="2">I've modeled my career after a highly respected Guild Knight, but I fear that I may suffer the same fate as them.</item>
+                <item id="3">I tried and failed to stop a group of poachers, and I have sworn to find and arrest the perpetrators.</item>
+                <item id="4">One of my parents was prominent in the guild, and I resent constantly being compared to that standard.</item>
+                <item id="5">It is to my mentor that I owe all that I am, and for them I continue in this work.</item>
+                <item id="6">I have a rivalry with another apprentice, I will prove my superiority.</item>
+            </select>
+            <select name="Flaws" type="List">
+                <item id="1">The monstrous enemy we faced in battle still leaves me quivering with fear.</item>
+                <item id="2">I obey the law, even if the law causes misery.</item>
+                <item id="3">I have little respect for anyone who is not a proven warrior.</item>
+                <item id="4">I made a terrible mistake during a hunt, that cost many lives- and I would do anything to keep that mistake secret.</item>
+                <item id="5">My hatred of those who break the law is blind and unreasoning.</item>
+                <item id="6">I'm just a little fascinated by the ways of the Talon Society.</item>
+            </select>
+        </rules>
+    </element>
+</elements>

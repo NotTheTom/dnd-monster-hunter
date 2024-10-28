@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Helix Field Agent</name>
+        <update version="0.0.1">
+            <file name="background-helixfieldagent.xml" url="" />
+        </update>
+    </info>
+    <element name="Helix Field Agent" type="Background" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_HELIX_FIELD_AGENT">
+        <description>
+            <p>The Helix Commission has many cogs that must work perfectly together. One such cog is the Field scouts, who are highly skilled and specialized individuals; responsible for gathering and analyzing data on various creatures and species to help determine which ones are suitable for hybridization. Their primary objective would be to develop new hybrid monsters that possess a combination of the most desirable traits and abilities from the original creatures.</p>
+            <p class="indent">The scouts must travel to various locations to study and collect samples from different creatures. They would need to be highly observant and knowledgeable about the behavior, physiology, and ecology of various animals and beasts.</p>
+            <ul class="unstyle">
+                <li><b>Skill Proficiencies:</b> Deception, Investigation</li>
+                <li><b>Tool Proficiencies:</b> Disguise Kit</li>
+                <li><b>Languages:</b> One of your choice</li>
+                <li><b>Equipment:</b> a miner's pick, a hunting trap, a trophy from an animal you killed, a set of traveler's clothes, and a belt pouch containing 10 gp</li>
+            </ul>
+            <div element="ID_ALD_AGMH_BACKGROUND_FEATURE_HYBRID_HUNTER" />
+            <br />
+            <p><b><big>As a member of the Helix Commission you are granted additional features:</big></b></p>
+            <div element="ID_ALD_AGMH_FACTION_FEATURE_EXPERIMENTAL_RESOURCES" />
+            <div element="ID_ALD_AGMH_FACTION_FEATURE_HELIX_COMMISSION_SPELLS" />
+        </description>
+        <setters>
+            <set name="short">Deceptiom, Investigation, Disguise Kit, 1 Language</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+            <select type="Language" name="Language (Helix Field Agent)" supports="Standard||Exotic" />
+            <grant type="Background Feature" id="ID_ALD_AGMH_BACKGROUND_FEATURE_HYBRID_HUNTER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+            <grant type="Background Feature" id="ID_ALD_AGMH_FACTION_FEATURE_EXPERIMENTAL_RESOURCES" />
+            <grant type="Background Feature" id="ID_ALD_AGMH_FACTION_FEATURE_HELIX_COMMISSION_SPELLS" />
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select name="Personality Trait" type="List" number="2">
+                <item id="1">I have a keen eye for detail and can quickly notice changes in my environment.</item>
+                <item id="2">I tend to be cautious and meticulous in my work, always double-checking my data and observations.</item>
+                <item id="3">I have aa strong desire to learn and discover new things, especially when it comes to creatures and their behaviour.</item>
+                <item id="4">I have a natural ability to break down complex information and analyze it to find pattersn and connections.</item>
+                <item id="5">I have a strong will and I am determined to complete my mission, no matter the obstacles.</item>
+                <item id="6">I tend to be introverted and prefer the compnay of animals over people.</item>
+                <item id="7">I have a dry sense of humor that comes out when things get tough in the field.</item>
+                <item id="8">I tend to be cautious and meticulous in my work, always double-checking my data and observations.</item>
+            </select>
+            <select name="Ideal" type="List">
+                <item id="1">Responsibility. I am accountable for the data I collect and the creatures I study, and I take that responsibility seriously. (Good)</item>
+                <item id="2">Discovery. I am driven by the thrill of discovering something new and unexpected. (Any)</item>
+                <item id="3">Freedom. I value the freedom to explore and learn without the constraints of bureaucracy or red tape. (Chaotic)</item>
+                <item id="4">Progress. I believe that hybridization can lead to new and exciting discoveries, and I'm always eager to push the boundaries of what's possible. (Chaotic)</item>
+                <item id="5">Cooperation. I believe that cooperation and collaboration between all members of the Helix Commission is crucial to achieving our collective goals. (Good)</item>
+                <item id="6">Knowledge. I believe that understanding the natural world is key to unlocking its secrets. (Any)</item>
+            </select>
+            <select name="Bond" type="List">
+                <item id="1">I am loyal to the Helix Commission and believe in their mission to create new hybrid monsters for the betterment of humanity.</item>
+                <item id="2">I am fiercly loyal to my fellow field scouts and will do whatever it takes to keep them safe.</item>
+                <item id="3">I am grateful for the opportunity to explore new lands and discover new creatures.</item>
+                <item id="4">I have a soft spot for creatures that are misunderstood or maligned by society.</item>
+                <item id="5">I am motivated by the desire to make a lasting contribution to the field of hybridization.</item>
+                <item id="6">I am haunted by a past mistake that resulted in the unintentional death of a creature I was studying, and I'm determined to never let it happen again.</item>
+            </select>
+            <select name="Flaw" type="List">
+                <item id="1">I become so focused on my research that I neglect other important aspects of my life.</item>
+                <item id="2">I am willing to do whatever it tkaes to achieve my goals, even if it means breaking the law or vioalting ethical standards.</item>
+                <item id="3">I tend to be overly critical of myself and my work, always striving for perfection.</item>
+                <item id="4">I can be so fascinatedd by a creature that I lose sight of my objectivity and become emotionally attached.</item>
+                <item id="5">I sometimes act on impulse rather than carefully considering my actions, which can lead to mistakes or even danger.</item>
+                <item id="6">I tend to undrestimate challenges due to my own confidence.</item>
+            </select>
+        </rules>
+    </element>
+    <element name="Feature: Hybrid Hunter" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_FEATURE_HYBRID_HUNTER">
+        <description>
+            <p>You are experienced and have expertise in tracking and hunting down hybrid creatures that have escaped from the faction's laboratories or breeding facilities. You recognize the signs of a hybrid creature when acting as the trailblazer or scout. Additionally, you can find a place to hide, rest, ir recuperate among other members of the commission, if doing so does not put them in danger.</p>
+        </description>
+        <sheet alt="Hybrid Hunter">
+            <description>You are experienced and have expertise in tracking and hunting down hybrid creatures that have escaped from the faction's laboratories or breeding facilities. You recognize the signs of a hybrid creature when acting as the trailblazer or scout. Additionally, you can find a place to hide, rest, ir recuperate among other members of the commission, if doing so does not put them in danger.</description>
+        </sheet>
+    </element>
+</elements>

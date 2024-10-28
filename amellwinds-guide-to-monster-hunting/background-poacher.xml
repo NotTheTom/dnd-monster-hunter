@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Poacher</name>
+        <update version="0.0.1">
+            <file name="background-poacher.xml" url="" />
+        </update>
+    </info>
+    <element name="Poacher" type="Background" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_POACHER">
+        <description>
+            <p>As a member of the Talon Society, you have honed your skills in the art of poaching and hunting rare and exotic creatres for valuable materials and resources. Whether you were born into this secretive organization or joined its ranks later in life, you have dedicated yourself to the pursuit of dangerous prey and the thrill of the hunt.</p>
+            <ul class="unstyled">
+                <li><b>Skill Proficiencies:</b> Nature, Survival</li>
+                <li><b>Tool Proficiencies:</b> Poisoner's Kit; Choose one from Alchemist's Supplies, Calligrapher's Supplies, Tinker's Tools</li>
+                <li><b>Equipment:</b> Hunting trap, skinning knife, set of common clothes, trophy from an animal you killed, letter of introduction from a black market dealer, pouch with 10 gp</li>
+            </ul>
+            <div element="ID_ALD_AGMH_BACKGROUND_FEATURE_BLACK_MARKET_CONNECTIONS" />
+            <br />
+            <p><b><big>As a member of the Talon Society you are granted additional features:</big></b></p>
+            <div element="ID_ALD_AGMH_FACTION_FEATURE_TALON_NETWORK" />
+            <div element="ID_ALD_AGMH_FACTION_FEATURE_TALON_SOCIETY_SPELLS" />
+        </description>
+        <setters>
+            <set name="short">Nature, Survival, Poisoner's Kit, Alchemist's Supplies/Calligrapher's Supplies/Tinker's Tools</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+            <select type="Proficiency" name="Tool Proficiency (Poacher)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+            <grant type="Background Feature" id="ID_ALD_AGMH_BACKGROUND_FEATURE_BLACK_MARKET_CONNECTIONS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <grant type="Background Feature" id="ID_ALD_AGMH_FACTION_FEATURE_TALON_NETWORK" />
+            <grant type="Background Feature" id="ID_ALD_AGMH_FACTION_FEATURE_TALON_SOCIETY_SPELLS" />
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select name="Personality Trait" type="List" number="2">
+                <item id="1">I am impulsive and act on my whims without thinking about the consequences. (Chaotic)</item>
+                <item id="2">I am always looking for new experiences and adventures. (Neutral)</item>
+                <item id="3">I enjoy seeing others suffer and will do whatever it tkaes to achieve my goals. (Evil)</item>
+                <item id="4">I love to live life on the edge and take risks.</item>
+                <item id="5">I am calm under pressure and can keep a level head in dangerous situations. (Neutral)</item>
+                <item id="6">I have no qualms about taking down any creature if it means putting good on the table. (Neutral)</item>
+                <item id="7">I don't take kindly to those who question my methods. (Neutral)</item>
+                <item id="8">I will betray anyone, even fellow poachers, if it benefits me. (Evil)</item>
+            </select>
+            <select name="Ideals" type="List">
+                <item id="1">Unity. The Talon Society unites us towards a common goal, and that unity is essential for our success. (Neutral)</item>
+                <item id="2">Innovation. We must constantly innovate challenge the status quo to remain ahead of our enemies. (Neutral)</item>
+                <item id="3">Unpredictability. By being unpredictable, we keep our enemies on their toes and gain an advantage. (Chaotic)</item>
+                <item id="4">Anarchy. The Talon Society should be dissolved, and each member should be free to pursue their own interests. (Chaotic)</item>
+                <item id="5">Control. We must control all aspects of the Talon Society and ensure that no one can challenge our authority. (Evil)</item>
+                <item id="6">Dominance. We must assert our power over other factions and make them bow to our will. (Evil)</item>
+            </select>
+            <select name="Bonds" type="List">
+                <item id="1">I am in debt to the Talon Society and will do whatever they ask of me to repay it.</item>
+                <item id="2">I have a deep seated hatred for authority figures and will always work to undermine them.</item>
+                <item id="3">I've been searching my whole life for the answer to a certain question.</item>
+                <item id="4">I am on a personal mission to uncover a conspiracy within the Talon Society.</item>
+                <item id="5">I am fiercly loyal to the Talon Society and will do anything to protect its secrets.</item>
+                <item id="6">I have a close relationship wit a fellow agent, and we work together to complete our missions.</item>
+            </select>
+            <select name="Flaws" type="List">
+                <item id="1">I am distrustful of those outside of the Talon Society.</item>
+                <item id="2">I am prone to overthinking and second-guessing myself, which can lead to mistakes.</item>
+                <item id="3">I am secretive about my methods and information, even to those I work closely with.</item>
+                <item id="4">I can be overly critical and judgemental of others.</item>
+                <item id="5">I can be indecisive and struggle to act when needed.</item>
+                <item id="6">I am easily bored, and often seek out new challenges and afventures regardless of the danger.</item>
+            </select>
+        </rules>
+    </element>
+    <element name="Feature: Black Market Connections" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_FEATURE_BLACK_MARKET_CONNECTIONS">
+        <supports>Background Feature</supports>
+        <description>
+            <p>You have a network of contacts within the criminall underworld who can help you seel your poachedd goods. You can sell animal parts for 50% more than their normal market value, but only if you can find a willing buyer.</p>
+        </description>
+        <sheet alt="Black Market Connections">
+            <description>You have a network of contacts within the criminall underworld who can help you seel your poachedd goods. You can sell animal parts for 50% more than their normal market value, but only if you can find a willing buyer.</description>
+        </sheet>
+    </element>
+</elements>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Hunter Initiate</name>
+        <update version="0.0.1">
+            <file name="background-hunterinitiate.xml" url="" />
+        </update>
+    </info>
+    <element name="Hunter Initiate" type="Background" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_HUNTER_INITIATE">
+        <description>
+            <p>You aspire to greatness like many of the legendary hunters before you. You joined the guild not to find a cozy job within the guild hall's safe walls, but to seek adventure, protect others, or perhaps discover an unknown species.</p>
+            <ul class="unstyled">
+                <li><b>Skill Proficiencies:</b> Survival; Choose one from Animal Handling, Athletics, Stealth</li>
+                <li><b>Tool Proficiencies:</b> Choose one from: Glassblower's Tools, Herbalism Kit, Smith's Tools, Tinker's Tools, Woodcarver's Tools</li>
+                <li><b>Languages:</b> One of your choice</li>
+                <li><b>Equipment:</b> A miner's pick, bug net, herbalist kit, or fishing tackle; A guild card, a hunting trap, a momento from your past that represents why you became a hunter, a set of traveler's clothes, a pouch containing 10 gp</li>
+            </ul>
+            <div element="ID_ALD_AGMH_FACTION_FEATURE_GUILD_MEMBERSHIP" />
+            <br />
+            <p><b><big>As a member of the Hunter's Guild you are granted additional features:</big></b></p>
+            <div element="ID_ALD_AGMH_FACTION_FEATURE_HUNTERS_GUILD_SPELLS" />
+        </description>
+        <setters>
+            <set name="short">Survival, Animal Handling/Athletics/Stealth, Glassblower's Tools/Herbalism Kit/Smith's Tools/Tinker's Tools/Woodcarver's Tools, 1 language</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <select type="Proficiency" name="Skill Proficiency (Hunter Initiate)" supports="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_STEALTH" />
+            <select type="Proficiency" name="Tool Proficiency (Hunter Initiate)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
+            <select type="Language" name="Language (Hunter Intitiate)" supports="Standard||Exotic" />
+            <grant type="Background Feature" id="ID_ALD_AGMH_FACTION_FEATURE_GUILD_MEMBERSHIP" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+            <grant type="Background Feature" id="ID_ALD_AGMH_FACTION_FEATURE_HUNTERS_GUILD_SPELLS" />
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select name="Personality Trait" type="List" number="2">
+                <item id="1">I constantly scan my surroundings and stay alert.</item>
+                <item id="2">I am always rooting around in the brush to see what's growing.</item>
+                <item id="3">I obsess over what tools best bring down my quarry.</item>
+                <item id="4">I am always the hunter, never the hunted.</item>
+                <item id="5">I value the wildlife and natural world and believe the balance must be maintained.</item>
+                <item id="6">I have deep respect for a specific type of animal.</item>
+                <item id="7">I have learned that the most successful hunt is the one that involves skilled allies.</item>
+                <item id="8">I value the wildlife and natural world only insofar as it is valuable to me dealing with the merchant guilds.</item>
+            </select>
+            <select name="Ideals" type="List">
+                <item id="1">Guild. My guild is all that really matters. (Any)</item>
+                <item id="2">Wealth. I will do whatever it takes to become as rish as the hunters of old. (Evil)</item>
+                <item id="3">Order. There is a natural order that must be preserved. (Lawful)</item>
+                <item id="4">Fun. I love my job! Despite the dangerous working conditions, there's nothing I'd Rather do. (Chaotic)</item>
+                <item id="5">Nature. The natural world is more important than the edifices of the of the city and civilization. (Neutral)</item>
+                <item id="6">Life. Preserving life and nature is always a worthwile endeavour. (Good)</item>
+            </select>
+            <select name="Bonds" type="List">
+                <item id="1">My fellow hunters are my family.</item>
+                <item id="2">I would lay down my life for the Hunter's Guild and the Platinum Court.</item>
+                <item id="3">I am determined that one day I will lead my guild.</item>
+                <item id="4">My weapon is made from the first monster I ever hunted.</item>
+                <item id="5">I will do anything to prove myself greater than my siblings or ancestors.</item>
+                <item id="6">I'll never forget the training school where I learned my skills, or the other attendants who learned alongside me.</item>
+            </select>
+            <select name="Flaws" type="List">
+                <item id="1">I act bravely when I'm in a group, but I'm a coward when I'm alone.</item>
+                <item id="2">I nag people about the impact they have on nature.</item>
+                <item id="3">I understand animals better than people. I am not very good at socializing and get nervous in crowds.</item>
+                <item id="4">When bragging about my kills, I tend to lie or exaggerate.</item>
+                <item id="5">My pride leads me to beleive I'm able to bring down beasts beyond my measure.</item>
+                <item id="6">What I earn I tend to spend quickly, leaving me groping for the next job at the cusp of becoming a beggar.</item>
+            </select>
+        </rules>
+    </element>
+</elements>

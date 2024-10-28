@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Wycademy Student</name>
+        <update version="0.0.1">
+            <file name="background-wycademystudent.xml" url="" />
+        </update>
+    </info>
+    <element name="Wycademy Student" type="Background" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_WYCADEMY_STUDENT">
+        <description>
+            <p>As a child you were always curious about the world, whether it was exploring lost ruins near home, collecting bus and plants, or drawing the khelbi that graze in the nearby fields. In your formative years you made your way to the wycademy with a goal in mind, to learn all you can and decide what you are going to do with the rest of your life. Now that your first year is over, it's time to head out into the field and learn firsthand.</p>
+                <ul class="unstyled">
+                <li><b>Skill Proficiencies:</b> History; Choose one from Arcana, Investigation, Nature, Religion</li>
+                <li><b>Tool Proficiencies:</b> Choose one from: Alchemist's Supplies, Calligrapher's Supplies, Herbalism kit</li>
+                <li><b>Languages:</b> One of our choice</li>
+                <li><b>Equipment:</b> Empty book, quill and ink, 3 candles, scroll case with 4 blank pieces of parchment and a few with notes and questions, one set fine robes, traveling clothes, pouch with 10 gp</li>
+            </ul>
+            <div element="ID_ALD_AGMH_BACKGROUND_FEATURE_UNRESTRICTED_ACCESS" />
+            <br />
+            <p><b><big>As a member of the Wycademy you are granted additional features:</big></b></p>
+            <div element="ID_ALD_AGMH_FACTION_FEATURE_MAGIC_GATHERING" />
+            <div element="ID_ALD_AGMH_FACTION_FEATURE_WYCADEMY_SPELLS" />
+        </description>
+        <setters>
+            <set name="short">History, 1 Arcana/Investigation/Nature/Religion, 1 Alchemist's Supplies/Calligrapher's Supplies/Herbalism Kit, 1 Language</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+            <select type="Proficiency" name="Skill Proficiency (Wycademy Student)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION" />
+            <select type="Proficiency" name="Tool Proficiency (Wycademy Student)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+            <select type="Language" name="Language (Wycademy Student)" supports="Standard||Exotic" />
+            <grant type="Background Feature" id="ID_ALD_AGMH_BACKGROUND_FEATURE_UNRESTRICTED_ACCESS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <grant type="Background Feature" id="ID_ALD_AGMH_FACTION_FEATURE_MAGIC_GATHERING" />
+            <grant type="Background Feature" id="ID_ALD_AGMH_FACTION_FEATURE_WYCADEMY_SPELLS" />    
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select name="Personality Trait" type="List" number="2">
+                <item id="1">I am observant and ask a lot of questions.</item>
+                <item id="2">I am easily excitable and passionate.</item>
+                <item id="3">I take myself very seriously and have no sense of humor.</item>
+                <item id="4">I am meticulous and organized.</item>
+                <item id="5">I constantly ask questions about areas and important people when I'm somewhere I've never been.</item>
+                <item id="6">I get excited and speak quickly when discussing topics that interest me.</item>
+                <item id="7">I have learned that doing your research before a hunt leads to a safer hunt.</item>
+                <item id="8">I like to use big words to showcase my intelligence.</item>
+            </select>
+            <select name="Ideals" type="List">
+                <item id="1">Education. Learning and teaching others can benefit everyone. (Good)</item>
+                <item id="2">Knowledge. We better ourselves by learning. (Neutral)</item>
+                <item id="3">Order. Understanding the order of things is essential. (Lawful)</item>
+                <item id="4">Achievement. Learning and knowing are essential. (Any)</item>
+                <item id="5">Self-Improvement. The goal of a life of study is the betterment of oneself. (Any)</item>
+                <item id="6">Power. Knowledge is the path to power and domination. (Evil)</item>
+            </select>
+            <select name="Bonds" type="List">
+                <item id="1">I had a romantic relationship with a fellow student, I still love them.</item>
+                <item id="2">I have a rival; we still compete to this day.</item>
+                <item id="3">I've been searching my whole life for the answer to a certain question.</item>
+                <item id="4">My notebook is made from the last creature my father hunted.</item>
+                <item id="5">I will do anything to prove myself greater than my siblings or ancestors.</item>
+                <item id="6">I idolize a historical scholar and measure my accomplishments against theirs.</item>
+            </select>
+            <select name="Flaws" type="List">
+                <item id="1">I am easily distracted by the promise of information.</item>
+                <item id="2">If my teacher calls me, I'll abandon what I'm doing to go to them.</item>
+                <item id="3">A scandal prevents me from returning to my place of education, I'm trying to stay ahead of the rumors.</item>
+                <item id="4">I speak without really thinkig through my words, invariably insulting others.</item>
+                <item id="5">I prefer a dusty tome to conversation.</item>
+                <item id="6">I feel superior to uneducated folk, but quietly so.</item>
+            </select>
+        </rules>
+    </element>
+    <element name="Feature: Unrestricted Access" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_FEATURE_UNRESTRICTED_ACCESS">
+        <supports>Background Feature</supports>
+        <description>
+            <p>The Wycademy possess and maintain their own restricted system of libraries which often include extremely detailed knowledge of creatures and secrets of the surrounding area. You are allowed access to these restricted areas, as well as most other major libraries as a matter of scholarly courtesy. You are also allowed to lodge in many wycademy owned or sponsored schools or major sites of research as a student and pilgrim.</p>
+        </description>
+        <sheet alt="Unrestricted Access">
+            <description>The Wycademy possess and maintain their own restricted system of libraries which often include extremely detailed knowledge of creatures and secrets of the surrounding area. You are allowed access to these restricted areas, as well as most other major libraries as a matter of scholarly courtesy. You are also allowed to lodge in many wycademy owned or sponsored schools or major sites of research as a student and pilgrim.</description>
+        </sheet>
+    </element>
+</elements>

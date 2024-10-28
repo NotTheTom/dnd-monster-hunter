@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Elder Dragonborn</name>
+		<update version="0.0.1">
+			<file name="race-elderdragonborn.xml" url="" />
+		</update>
+	</info>
+	
+	<element name="Dragonborn (Elder)" type="Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACE_ELDER_DRAGONBORN">
+		<description>
+			<p>The Elder Dragonborn are a dragonborn variant. You can allow a player to choose one of the following dragonborn ancestries. These ancestries replace the normal draconic ancestry a dragonborn can choose in addition to replacing other traits as listed. These ancestries also provide the damage they are resistant to, if the draconic resistance trait is not replaced.</p>
+			<h4>ELDER DRAGONBORN TRAITS</h4>
+			<p>You have the following racial traits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your ability score increase is determined by your Draconic Ancestry.</p>
+            <p class="indent"><b><i>Age.</i></b> Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80.</p>
+			<p class="indent"><b><i>Size.</i></b> Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium.</p>
+			<p class="indent"><b><i>Speed.</i></b> Your walking speed is 30 feet.</p>
+			<p class="indent"><b><i>Draconic Ancestry.</i></b> You have an elder dragon ancestor, granting you a special magical affinity. Choose one kind of elder dragon from the Draconic Ancestry table. This determines your ability score increase, damage resistance, and additional racial traits.</p>
+			<p class="indent"><b><i>Draconic Resistance.</i></b> You have resistance to the damage type associated with your Draconic Ancestry.</p>
+			<p class="indent"><b><i>Languages.</i></b> You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants.</p>
+		</description>
+		<sheet display="false" alt="Elder Dragonborn" />
+		<rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Language" id="ID_LANGUAGE_DRACONIC" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_DRAGONBORN"/>
+		</rules>
+	</element>
+</elements>

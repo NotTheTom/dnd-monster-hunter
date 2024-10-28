@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Infiltrator</name>
+        <update version="0.0.1">
+            <file name="background-infiltrator.xml" url="" />
+        </update>
+    </info>
+    <element name="Infiltrator" type="Background" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_INFILTRATOR">
+        <description>
+            <p>You were trained to infiltrate the Hunter's Guild and gather information on rare and valuable creatures to pass along to the Talon Society. Your goal is to steal knowledge and secrets from the guild by any means necessary, including theft or breaking into sites of ancient technology.</p>
+            <ul class="unstyled">
+                <li><b>Skill Proficiencies:</b> Deception, Stealth</li>
+                <li><b>Languages:</b> Two of your choice</li>
+                <li><b>Equipment:</b> A small knife or blade, vial of poison, crowbar, grappling hook, set of dark common clothes suitable for sneaking and hiding, and a belt pouch containing 10 gp</li>
+            </ul>
+            <div element="ID_ALD_AGMH_BACKGROUND_FEATURE_FALSE_IDENTITY" />
+            <br />
+            <p><b><big>As a member of the Talon Society you are granted additional features:</big></b></p>
+            <div element="ID_ALD_AGMH_FACTION_FEATURE_TALON_NETWORK" />
+            <div element="ID_ALD_AGMH_FACTION_FEATURE_TALON_SOCIETY_SPELLS" />
+        </description>
+        <setters>
+            <set name="short">Deception, Stealth, 2 Languages</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+            <select type="Language" name="Language (Infiltrator)" number="2" supports="Standard||Exotic" />
+            <grant type="Background Feature" id="ID_ALD_AGMH_BACKGROUND_FEATURE_FALSE_IDENTITY" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <grant type="Background Feature" id="ID_ALD_AGMH_FACTION_FEATURE_TALON_NETWORK" />
+            <grant type="Background Feature" id="ID_ALD_AGMH_FACTION_FEATURE_TALON_SOCIETY_SPELLS" />
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select name="Personality Trait" type="List"  number="2">
+                <item id="1">I am always observing and analyzing my surroundings to anticipate potential threats or opportunities.</item>
+                <item id="2">I love a good challenge and will do whatever it takes to overcome it, even if it means breaking the rules.</item>
+                <item id="3">I take pleasure in manipulating others to achieve my goals, and I am not above using deception and trickery to get what I want.</item>
+                <item id="4">I am calm and collected in high-pressure situations, which allows me to take rational decisions.</item>
+                <item id="5">I am always on the lookout for potential allies or informants who can provide useful information.</item>
+                <item id="6">I am patient and willing to wait for the right moment to strike or take action.</item>
+                <item id="7">I enjoy living in the moment and taking risks, even if it means potentially endangering myself or others.</item>
+                <item id="8">I always want more and will never be satisfied with what I have.</item>
+            </select>
+            <select name="Ideals" type="List">
+                <item id="1">Prideful. I am a master of deception and subterfuge, and I take pride in fooling those who trust me. (Neutral)</item>
+                <item id="2">Loyalty. I am fiercely loyal to my superiors in the Talon Society, and I will do whatever it takes to advance their interests. (Evil)</item>
+                <item id="3">Perfectionist. Infiltration is an art form, and I strive to perfect my skills to complete my objectives. (Neutral)</item>
+                <item id="4">Selfish. The best way to achieve my objectives is by disregarding the rules and manipulating others. (Chaotic)</item>
+                <item id="5">Exploitation. I believe that those who are not strong enough to defend themselves deserve to be exploited. (Evil)</item>
+                <item id="6">Pragmatism. I am loyal to the Talon Society, but I also have my own agenda and goals that I am working towards. (Neutral)</item>
+            </select>
+            <select name="Bonds" type="List">
+                <item id="1">I have a burning desire to disrupt the status quo and expose the corrupt and powerful.</item>
+                <item id="2">I have a personal vendetta against a particular organization or individual and will use my skills to get revenge.</item>
+                <item id="3">I am drawn to chaos and disorder and will go to great lengths to create it wherever I can.</item>
+                <item id="4">I live for the thrill of infiltration and deception. There's nothing like the rush of a successful mission.</item>
+                <item id="5">The Talon Society is a means to an end. I'll use it to further my own goals, but I won't forget my obligations to the organization.</item>
+                <item id="6">My loyalty to the Talon Society may be false, but my loyalty to my true allies is unwavering.</item>
+            </select>
+            <select name="Flaws" type="List">
+                <item id="1">I'm willing to take extreme risks to achieve my objectives, even if it puts myself or others in danger.</item>
+                <item id="2">I tend to act impulsively, which can sometimes get me into trouble on a mission.</item>
+                <item id="3">I am not the best at lying when it is far from the truth.</item>
+                <item id="4">I'm extremely competitive and always want to be the best infiltrator in the Talon Society, even if it means stepping on others.</item>
+                <item id="5">I tend to underestimate my opponents and take unnecessary risks, which can put me in danger.</item>
+                <item id="6">I am so deep in my infiltration that I sometimes forget which side I am truly on.</item>
+            </select>
+        </rules>
+    </element>
+    <element name="Feature: False Identity" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_FEATURE_FALSE_IDENTITY">
+        <supports>Background Feature</supports>
+        <description>
+            <p>As a poacher, you have developed skills in hiding your identity and blending in with your surroundings. You have a false identity and the necessary paperwork to back it up, allowing you to move about undetected in certain areas.</p>
+        </description>
+        <sheet alt="False Identity">
+            <description>As a poacher, you have developed skills in hiding your identity and blending in with your surroundings. You have a false identity and the necessary paperwork to back it up, allowing you to move about undetected in certain areas.</description>
+        </sheet>
+    </element>
+</elements>

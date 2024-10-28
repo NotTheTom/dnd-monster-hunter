@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Helix Agent</name>
+        <update version="0.0.1">
+            <file name="background-helixagent.xml" url="" />
+        </update>
+    </info>
+    <element name="Helix Agent" type="Background" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_HELIX_AGENT">
+        <description>
+            <p>You are a member of a secret organization dedicated to understanding and manipulating the natural world for the betterment of humanity. Whether you are a trained hunter, a skilled tracker, or a trusted messenger, you have been selected to work for the Commission because of your unique abilities and your unwavering loyalty to the cause.</p>
+            <ul class="unstyle">
+                <li><b>Skill Proficiencies:</b> Athletics, Survival</li>
+                <li><b>Tool Proficiencies:</b> Smith's Tools or Tinker's Tools</li>
+                <li><b>Languages:</b> One of you choice</li>
+                <li><b>Equipment:</b> A set of artisan's tools (one of your choice), a shovel, an iron pot, a set of common clothes, and a belt pouch containing 10 gp</li>
+            </ul>
+            <div element="ID_ALD_AGMH_BACKGROUND_FEATURE_HELIX_NETWORK" />
+            <br />
+            <p><b><big>As a member of the Helix Commission you are granted additional features:</big></b></p>
+            <div element="ID_ALD_AGMH_FACTION_FEATURE_EXPERIMENTAL_RESOURCES" />
+            <div element="ID_ALD_AGMH_FACTION_FEATURE_HELIX_COMMISSION_SPELLS" />
+        </description>
+        <setters>
+            <set name="short">Athletics, Survival, Smith's Tools/Tinker's Tools, 1 Language</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <select type="Proficiency" name="Tool Proficiency (Helix Agent)"  supports="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+            <select type="Language" name="Language (Helix Agent)" supports="Standard||Exotic" />
+            <grant type="Background Feature" id="ID_ALD_AGMH_BACKGROUND_FEATURE_HELIX_NETWORK" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+            <grant type="Background Feature" id="ID_ALD_AGMH_FACTION_FEATURE_EXPERIMENTAL_RESOURCES" />
+            <grant type="Background Feature" id="ID_ALD_AGMH_FACTION_FEATURE_HELIX_COMMISSION_SPELLS" />
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select name="Personality Trait" type="List" number="2">
+                <item id="1">As a member of the Helix Commission, you have access to advanced experimental equipment and resources not available to the public. You can use this equipment to enhance your weapons and armor, craft unique items, or conduct research on monsters and their behaviors (work with your DM to determine what these might be).</item>
+                <item id="2">I am convinced that any monster can be tamed and trained with the right approach.</item>
+                <item id="3">I am obsessed with perfecting my craft and pushing the boundaries of what is possible.</item>
+                <item id="4">I am always prepared and equipped for any situation.</item>
+                <item id="5">I have a keen eye for detail and can spot even the slightest anomaly.</item>
+                <item id="6">I am always looking for ways to improve my skills and abilities.</item>
+                <item id="7">I am a natural leader and can inspire those around me to action.</item>
+                <item id="8">I am curious and constantly seeking new knowledge and experiences.</item>
+            </select>
+            <select name="Ideal" type="List">
+                <item id="1">Knowledge. The pursuit of knowledge is worth any sacrifice. (Neutral)</item>
+                <item id="2">Control. I seek to control the monster population through study and manipulation. (Lawful)</item>
+                <item id="3">Responsibility. I understand the importance of my role in the Helix Commission and take it very seriously. (Any)</item>
+                <item id="4">Innovation. I believe in pushing the boundaries of science and discovery, even if it means taking risks. (Chaotic)</item>
+                <item id="5">Loyalty. I am devoted to the Helix Commission and will do whatever it takes to protect its secrets and goals. (Neutral)</item>
+                <item id="6">Progress. I believe in constantly improving and advancing, both in my own abilities and in the field of monster research. (Any)</item>
+            </select>
+            <select name="Bond" type="List">
+                <item id="1">I owe a debt of loyalty to the Helix Commission and will do whatever it takes to protect its secrets.</item>
+                <item id="2">I have a close friend or family member who was harmed by a monster, and I seek to prevent that from happening to others.</item>
+                <item id="3">I am indebted to a senior member of the Helix Commission who trained and mentored me.</item>
+                <item id="4">I have a deep respect for my fellow agents and will go to great lengths to protect them.</item>
+                <item id="5">I have a long-standing rivalry with another agent in the Helix Commission, and constantly strive to outdo them and prove myself superior.</item>
+                <item id="6">I have a personal vendetta against a rival organization or individual who opposes the goals of the Helix Commission.</item>
+            </select>
+            <select name="Flaw" type="List">
+                <item id="1">I have infiltrated the helix commission, but I am starting to see the benefits they provide.</item>
+                <item id="2">I am willing to take extreme measures to achieve my goals, even if it means putting innocent lives at risk.</item>
+                <item id="3">I struggle to control my temper when provoked and can become aggressive or violent.</item>
+                <item id="4">I have a weakness for acquiring and experimenting with forbidden technology before I really understand it.</item>
+                <item id="5">I struggle with the ethical implications of my work and often question whether the ends justify the means.</item>
+                <item id="6">I am willing to sacrifice innocent lives for the sake of my research.</item>
+            </select>
+        </rules>
+    </element>
+    <element name="Feature: Helix Network" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_FEATURE_HELIX_NETWORK">
+        <supports>Background Feature</supports>
+        <description>
+            <p>You have connections to the Helix Commission and can call on its resources for assistance. When you arrive in a new town or city, you can contact a member of the Commission to provide you with information about the local monster population, or to request assistance with capturing a specific target. However, be warned that the Commission is not always popular and your association with it may draw unwanted attention or suspicion.</p>
+        </description>
+        <sheet alt="Helix Network">
+            <description>You have connections to the Helix Commission and can call on its resources for assistance. When you arrive in a new town or city, you can contact a member of the Commission to provide you with information about the local monster population, or to request assistance with capturing a specific target. However, be warned that the Commission is not always popular and your association with it may draw unwanted attention or suspicion.</description>
+        </sheet>
+    </element>
+</elements>
