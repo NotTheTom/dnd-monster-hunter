@@ -7,6 +7,23 @@
 		</update>
 	</info>
 	<files>
+		<file name="background-apprenticeguildknight.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-apprenticeguildknight.xml" />
+		<file name="background-handlerinitiate.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-handlerinitiate.xml" />
+		<file name="background-helixagent.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-helixagent.xml" />
+		<file name="background-helixfieldagent.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-helixfieldagent.xml" />
+		<file name="background-hunterinitiate.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-hunterinitiate.xml" />
+		<file name="background-infiltrator.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-infiltrator.xml" />
+		<file name="background-poacher.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-poacher.xml" />
+		<file name="background-srivener.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-scrivener.xml" />
+		<file name="background-wycademyresearcher.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-wycademyresearcher.xml" />
+		<file name="background-wycademystudent.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-wycademystudent.xml" />
+		 
+		<file name="faction-helixcommission.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/faction-helixcommission.xml" />
+		<file name="faction-huntersguild.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/faction-huntersguild.com" />
+		<file name="faction-royalpaleontologysociety.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/faction-royalpaleontologysociety.xml" />
+		<file name="faction-talonsociety.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/faction-talonsociety.xml" />
+		<file name="faction-wycademy.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/faction-wycademy.xml" />
+
 		<file name="source.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/source.xml" />
 	</files>
 </index>
