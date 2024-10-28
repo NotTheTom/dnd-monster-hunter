@@ -42,7 +42,7 @@
             <extend>ID_PHB_SPELL_LEGEND_LORE</extend>
         </spellcasting>
     </element>
-    <element name="Guild Feature: Magic Gathering" type="Background Feature" source="source" id="ID_ALD_AGMH_FACTION_FEATURE_MAGIC_GATHERING">
+    <element name="Guild Feature: Magic Gathering" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FACTION_FEATURE_MAGIC_GATHERING">
         <supports>Background Feature</supports>
         <description>
             <p>When you attempt to gather a resource, you can use the specified cantrip from the table below to automatically succeed on the gather check, but you do not gain the effects from materials that provide additional resources from gathering when you gather resources in this way.</p>
