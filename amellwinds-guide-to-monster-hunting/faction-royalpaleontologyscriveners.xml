@@ -3,7 +3,7 @@
     <info>
         <name>Royal Paleontology Scriveners</name>
         <update version="0.0.1">
-            <file name="faction-royalpaleontologyscriveners.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/faction-royalpaleontologysociety.xml" />
+            <file name="faction-royalpaleontologyscriveners.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/faction-royalpaleontologyscriveners.xml" />
         </update>
     </info>
     <element name="Royal Scrivener Spells" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FACTION_FEATURE_ROYAL_SCRIVENER_SPELLS">
