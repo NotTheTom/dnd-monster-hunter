@@ -3,7 +3,7 @@
     <info>
         <name>Handler Initiate</name>
         <update version="0.0.1">
-            <file name="background-handlerinitiate.xml" url="" />
+            <file name="background-handlerinitiate.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-handlerinitiate.xml" />
         </update>
     </info>
     <element name="Handler Initiate" type="Background" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_HANDLER_INITIATE">

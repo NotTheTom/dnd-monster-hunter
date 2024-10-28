@@ -3,7 +3,7 @@
     <info>
         <name>Talon Society</name>
         <update version="0.0.1">
-            <file name="faction-talonsociety.xml" url="" />
+            <file name="faction-talonsociety.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/faction-talonsociety.xml" />
         </update>
     </info>
     <element name="Talon Society Spells" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FACTION_FEATURE_TALON_SOCIETY_SPELLS">

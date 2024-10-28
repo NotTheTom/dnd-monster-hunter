@@ -3,7 +3,7 @@
     <info>
         <name>Apprentice Guild Knight</name>
         <update version="0.0.1">
-            <file name="background-apprenticeguildknight.xml" url="" />
+            <file name="background-apprenticeguildknight.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-apprenticeguildknight.xml" />
         </update>
     </info>
     <element name="Apprentice Guild Knight" type="Background" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_APPRENTICE_GUILD_KNIGHT">

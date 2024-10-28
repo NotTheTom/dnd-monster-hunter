@@ -3,7 +3,7 @@
     <info>
         <name>Hunter Initiate</name>
         <update version="0.0.1">
-            <file name="background-hunterinitiate.xml" url="" />
+            <file name="background-hunterinitiate.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-hunterinitiate.xml" />
         </update>
     </info>
     <element name="Hunter Initiate" type="Background" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_HUNTER_INITIATE">

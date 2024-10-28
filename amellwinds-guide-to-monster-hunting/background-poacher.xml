@@ -3,7 +3,7 @@
     <info>
         <name>Poacher</name>
         <update version="0.0.1">
-            <file name="background-poacher.xml" url="" />
+            <file name="background-poacher.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-poacher.xml" />
         </update>
     </info>
     <element name="Poacher" type="Background" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_POACHER">

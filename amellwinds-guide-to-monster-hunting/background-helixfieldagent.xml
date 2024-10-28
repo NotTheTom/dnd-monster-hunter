@@ -3,7 +3,7 @@
     <info>
         <name>Helix Field Agent</name>
         <update version="0.0.1">
-            <file name="background-helixfieldagent.xml" url="" />
+            <file name="background-helixfieldagent.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-helixfieldagent.xml" />
         </update>
     </info>
     <element name="Helix Field Agent" type="Background" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_HELIX_FIELD_AGENT">

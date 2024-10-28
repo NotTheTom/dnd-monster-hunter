@@ -3,7 +3,7 @@
     <info>
         <name>Wycademy</name>
         <update version="0.0.1">
-            <file name="faction-wycademy.xml" url="" />
+            <file name="faction-wycademy.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/faction-wycademy.xml" />
         </update>
     </info>
     <element name="Wycademy Spells" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FACTION_FEATURE_WYCADEMY_SPELLS">
