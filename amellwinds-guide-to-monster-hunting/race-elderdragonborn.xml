@@ -3,7 +3,7 @@
 	<info>
 		<name>Elder Dragonborn</name>
 		<update version="0.0.1">
-			<file name="race-elderdragonborn.xml" url="" />
+			<file name="race-elderdragonborn.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/race-elderdragonborn.xml" />
 		</update>
 	</info>
 	
@@ -28,6 +28,286 @@
             <grant type="Language" id="ID_LANGUAGE_DRACONIC" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language"  number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_DRAGONBORN"/>
+			<select type="Sub Race" name="Elder Dragonborn Subrace" supports="Elder Dragonborn" />
 		</rules>
+	</element>
+	
+	<element name="Necrotic Resistance" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_RESISTANCE_NECROTIC">
+		<supports>Draconic Resistance</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have resistance to necrotic damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="draconic resistance:damage type" value="Necrotic" inline="true" />
+		</rules>
+	</element>
+	<element name="Fire Resistance" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_RESISTANCE_FIRE">
+		<supports>Draconic Resistance</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have resistance to fire damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="draconic resistance:damage type" value="Fire" inline="true" />
+		</rules>
+	</element>
+	<element name="Cold Resistance" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_RESISTANCE_COLD">
+		<supports>Draconic Resistance</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have resistance to cold damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="draconic resistance:damage type" value="Cold" inline="true" />
+		</rules>
+	</element>
+
+	<element name="Intelligence" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_CASTING_INTELLIGENCE">
+		<supports>Spellcasting Ability</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability is {{spellcasting ability:stat}} when you use this trait.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="spellcasting ability:stat" value="Intelligence" inline="true" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_CASTING_WISDOM">
+		<supports>Spellcasting Ability</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability is {{spellcasting ability:stat}} when you use this trait.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="spellcasting ability:stat" value="Wisdom" inline="true" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_CASTING_CHARISMA">
+		<supports>Spellcasting Ability</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability is {{spellcasting ability:stat}} when you use this trait.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="spellcasting ability:stat" value="Charisma" inline="true" />
+		</rules>
+	</element>
+
+	<element name="Alatreon" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_Alatreon">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>The alatreon dragonborn personality is matched only by its ability to harness the elements. They more often prefer to live in solitude, but are known to work with others or insert themselves into a situation when it benefits them. Their bodies are covered in reverse scales that they use to control the cold, fire, lightning, or necrotic elements. Atop of the alatreon dragonborn head are two large horns that act as a conduit for their elemental powers.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Strength score increases by 2, and one other ability score of your choice between Intelligence, Wisdom, or Charisma increases by 1.</p>
+			<p class="indent"><b><i>Darkvision</i></b> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey.</p>
+			<p class="indent"><b><i>Draconic Resistance.</i></b> You have resistance to one of the following damage types: cold, fire, or necrotic.</p>
+			<p class="indent"><b><i>Elemental Affinity.</i></b> When you deal cold, fire, lightning or necrotic damage, you can add your Intelligence, Wisdom, or Charisma modifier to the damage. You can use this trait a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><b><i>Menacing.</i></b> You have advantage on saving throws against being frightened, and you gain proficiency in the Intimidation skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Alatreon)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_ALATREON_DRACONIC_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_ELEMENTAL_AFFINITY" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_MENACING" />
+		</rules>
+	</element>
+	<element name="Draconic Resistance" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_ALATREON_DRACONIC_RESISTANCE">
+		<description>
+			<p>You have resistance to one of the following damage types: cold, fire, or necrotic.</p>
+		</description>
+		<sheet display="false">
+			<description>You have resistance to {{draconic resistance:damage type}} damage.</description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Draconic Resistance" supports="Draconic Resistance" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" requirements="ID_ALD_AGMH_RACIAL_TRAIT_RESISTANCE_NECROTIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_ALD_AGMH_RACIAL_TRAIT_RESISTANCE_FIRE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_ALD_AGMH_RACIAL_TRAIT_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Elemental Affinity" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_ELEMENTAL_AFFINITY">
+		<description>
+			<p>When you deal cold, fire, lightning or necrotic damage, you can add your Intelligence, Wisdom, or Charisma modifier to the damage. You can use this trait a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you deal cold, fire, lightning or necrotic damage, you can add your Intelligence, Wisdom, or Charisma modifier to the damage.</description>
+		</sheet>
+	</element>
+	<element name="Menacing" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_MENACING">
+		<description>
+			<p>You have advantage on saving throws against being frightened, and you gain proficiency in the Intimidation skill.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being frightened, and you gain proficiency in the Intimidation skill.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+		</rules>
+	</element>
+
+	<element name="Amatsu" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_AMATSU">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>Amatsumagatsuchi dragonborn's head is adorned with large golden horns. Their scales are largely pale white and fins that stretch across all four limbs and back. Many of them are known to wear long flowing clothing, as a representation of amatsumagatsuchi's webbing, while others use it as a means to hide the fact that their feet never touch the ground.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Wisdom score increases by 2, and your Dexterity score increases by 1.</p>
+			<p class="indent"><b><i>Draconic Resistance.</i></b> You have resistance to radiant damage.</p>
+			<p class="indent"><b><i>Elder Dragon Magic.</i></b> You know the gust cantrip with this trait. Starting at 3rd level, you can cast the thunderwave spell with this trait. When you reach 5th level, you can cast the levitate spell with this trait. Once you cast any of these spells (excluding gust) with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+			<p class="indent"><b><i>Glide.</i></b> You always hover one to two inches off the ground. Moving through nonmagical difficult terrain costs you no extra movement.</p>
+			<p class="indent"><b><i>Wind Barrier.</i></b> Wind Barrier. You can use an action to summon a barrier of wind around you for 1 minute. While the barrier is active, you have half cover against range attacks, resistance to nonmagical ammunition, and disperse any fog like effect in a 5-foot radius around you. Once used, you can't use this trait again until you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_AMATSU_ELDER_DRAGON_MAGIC" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_GLIDE" /> 
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_WIND_BARRIER" />
+		</rules>
+	</element>
+	<element name="Elder Dragon Magic" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_AMATSU_ELDER_DRAGON_MAGIC">
+		<description>
+			<p>You know the gust cantrip with this trait. Starting at 3rd level, you can cast the thunderwave spell with this trait. When you reach 5th level, you can cast the levitate spell with this trait. Once you cast any of these spells (excluding gust) with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You know the gust cantrip. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description level="3">You know the gust cantrip, you can also cast the thunderwave spell. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description level="5">You know the gust cantrip, you can also cast the thunderwave spell and levitate spell. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_GUST" />
+			<grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_LEVITATE" level="5" />
+			<select type="Racial Trait" name="Spellcasting Ability (Elder Dragon Magic)" supports="Spellcasting Ability" />
+		</rules>
+	</element>
+	<element name="Glide" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_GLIDE">
+		<description>
+			<p>You always hover one to two inches off the ground. Moving through nonmagical difficult terrain costs you no extra movement.</p>
+		</description>
+		<sheet>
+			<description>You always hover one to two inches off the ground. Moving through nonmagical difficult terrain costs you no extra movement.</description>
+		</sheet>
+	</element>
+	<element name="Wind Barrier" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_WIND_BARRIER">
+		<description>
+			<p>You can use an action to summon a barrier of wind around you for 1 minute. While the barrier is active, you have half cover against range attacks, resistance to nonmagical ammunition, and disperse any fog like effect in a 5-foot radius around you. Once used, you can't use this trait again until you finish a long rest.</p>
+		</description>
+		<sheet action="1 Action" usage="1/Long Rest">
+			<description>You can summon a barrier of wind around you for 1 minute. While the barrier is active, you have half cover against range attacks, resistance to nonmagical ammunition, and disperse any fog like effect in a 5-foot radius around you.</description>
+		</sheet>
+	</element>
+
+	<element name="Ceadeus" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_CEADEUS">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>Due to the ceadeus resemblance to giant whales, the ceadeus dragonborn's shape is portly. Both male and female prominent beards of fur and two massive horn that must be shaved down or overtake their eyes, leaving them blind. Luminous organs line the ceadeus dragonborn's belly aswell as its apendages, which turn from blue to red when it is angered.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Strength score increases by 2, and your Wisdom increases by 1.</p>
+			<p class="indent"><b><i>Speed.</i></b> You have a swimming speed of 30 feet.</p>
+			<p class="indent"><b><i>Bioluminesence.</i></b> As an action, you can emit dim light from your body in a 5-foot radius. While emitting the light, you can use a bonus action to increase the illumination to bright light in a 5- to 20-foot radius (and dim light for an additional number of feet equal to the chosen radius), or extinguishes the light.</p>
+			<p class="indent"><b><i>Shared Breath.</i></b> You can hold your breath for a number of hours equal to your Constitution modifier. In addition, you are able to share oxygen with creatures that are within 5 feet of you by splitting the time you can hold your breath by the number of creatures in the area around you.</p>
+			<p class="indent"><b><i>Draconic Resistance.</i></b> You have resistance to acid damage.</p>
+			<p class="indent"><b><i>Darkvision.</i></b> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed:swim" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_BIOLUMINESCENCE" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_SHARED_BREATH" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+		</rules>
+	</element>
+	<element name="Bioluminescence" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_BIOLUMINESCENCE">
+		<description>
+			<p>As an action, you can emit dim light from your body in a 5-foot radius. While emitting the light, you can use a bonus action to increase the illumination to bright light in a 5- to 20-foot radius (and dim light for an additional number of feet equal to the chosen radius), or extinguishes the light.</p>
+		</description>
+		<sheet action="1 Action">
+			<description>You can emit dim light from your body in a 5ft radius. While emitting the light, you can use a bonus action to increase the illumination to bright light in a 5 to 20ft radius (and dim light for an equivalent number of feet), or extinguishe the light.</description>
+		</sheet>
+	</element>
+	<element name="Shared Breath" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_SHARED_BREATH">
+		<description>
+			<p>You can hold your breath for a number of hours equal to your Constitution modifier. In addition, you are able to share oxygen with creatures that are within 5 feet of you by splitting the time you can hold your breath by the number of creatures in the area around you.</p>
+		</description>
+		<sheet>
+			<description>You can hold your breath for a number of hours equal to your Constitution modifier. In addition, you are able to share oxygen with creatures that are within 5 feet of you by splitting the time you can hold your breath by the number of creatures in the area around you.</description>
+		</sheet>
+	</element>
+	
+	<element name="Chameleos" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_CHAMELEOS">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>Chameleos dragonborn scales are purple, though their limbs and stomach are bare, showing off-white skin. They have long, elastic tongues, but unlike the Chameleos, the dragonborn's eyes do not resemble a chameleon's in shape. Instead, their iris and pupil simulate the look.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Wisdom score increases by 2, and your Dexterity increases by 1.</p>
+			<p class="indent"><b><i>Draconic Resistance.</i></b> You have resistance to poison damage.</p>
+			<p class="indent"><b><i>Elder Dragon Magic.</i></b> You know the poison spray cantrip with this trait. Starting at 3rd level, you can cast the fog cloud spell with this trait. When you reach 5th level, you can cast the misty step spell with this trait. Once you cast any of these spells (excluding poison spray) with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+			<p class="indent"><b><i>Hidden Step.</i></b> As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't use it again until you finish a short or long rest.</p>
+			<p class="indent"><b><i>Mask of the Wild.</i></b> You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_CHAMELEOS_ELDER_DRAGON_MAGIC" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_HIDDEN_STEP" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_MASK_OF_THE_WILD" />
+		</rules>
+	</element>
+	<element name="Elder Dragon Magic" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_CHAMELEOS_ELDER_DRAGON_MAGIC">
+		<description>
+			<p>You know the poison spray cantrip with this trait. Starting at 3rd level, you can cast the fog cloud spell with this trait. When you reach 5th level, you can cast the misty step spell with this trait. Once you cast any of these spells (excluding poison spray) with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You know the poison spray cantrip. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description level="3">You know the poison spray cantrip, you can also cast the fog cloud spell. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description level="5">You know the poison spray cantrip, you can also cast the fog cloud spell and misty step spell. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_POISON_SPRAY" />
+			<grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" level="5" />
+			<select type="Racial Trait" name="Spellcasting Ability (Elder Dragon Magic)" supports="Spellcasting Ability" />
+		</rules>
+	</element>
+	<element name="Hidden Step" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_HIDDEN_STEP">
+		<description>
+			<p>As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="1 Bonus Action" usage="1/Rest">
+			<description>You can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw.</description>
+		</sheet>
+	</element>
+	<element name="Mask of the Wild" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_MASK_OF_THE_WILD">
+		<description>
+			<p>You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</p>
+		</description>
+		<sheet>
+			<description>You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</description>
+		</sheet>
 	</element>
 </elements>
