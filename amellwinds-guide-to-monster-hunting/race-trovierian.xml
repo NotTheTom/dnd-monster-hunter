@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Trovierian</name>
+        <update version="0.0.1">
+            <file name="race-trovierian.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/race-trovierian.xml" />
+        </update>
+    </info>
+    
+    <element name="Trovierian" type="Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACE_TROVIERIAN">
+        <description>
+            <p>_______</p>
+            <h4>HEADING</h4>
+            <p>_______</p>
+            <p class="indent">_______</p>
+            <h4>HEADING</h4>
+            <p>_______</p>
+            <p class="indent">_______</p>
+            <h4> Traits</h4>
+            <p>As an , you have the following racial traits.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> _______</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> _______</p>
+            <p class="indent"><strong><em>Age.</em></strong> _______</p>
+            <p class="indent"><strong><em>Alignment.</em></strong> _______</p>
+            <p class="indent"><strong><em>Size.</em></strong> _______</p>
+            <p class="indent"><strong><em>Speed.</em></strong> _______</p>
+            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
+            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
+            <p class="indent"><strong><em>Languages.</em></strong> _______</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID____" />
+            <grant type="Racial Trait" id="ID____" />
+        </rules>
+    </element>
+</elements>
