@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Lynian</name>
+        <update version="0.0.1">
+            <file name="race-lynian.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/race-lynian.xml" />
+        </update>
+    </info>
+    
+    
+</elements>
