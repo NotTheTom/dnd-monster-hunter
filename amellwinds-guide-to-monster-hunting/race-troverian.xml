@@ -20,13 +20,65 @@
             <p class="indent"><b><i>Artisan's Cunning.</i></b> Whenever you make an Intelligence (History) check related to the origin of metalwork or you make an Intelligence (Investigation) to identify or locate ores, you are considered proficient in the skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p>
             <p class="indent"><b><i>Darkvision.</i></b>  Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
             <p class="indent"><b><i>Heart of Fire.</i></b> You have resistance to fire damage.</p>
-            <p class="indent"><b><i>Troverian Magic.</i></b>
-            <p class="indent"><b><i>Languages.</i></b> _______</p>
+            <p class="indent"><b><i>Troverian Magic.</i></b> You know the mold earth cantrip with this trait. Starting at 3rd level, you can cast the heat metal spell with this trait. Once you cast heat metal with this trait, you can't cast it again until you finish a long rest. You can also heat metal using any spell slots you have of the appropriate level.</p>
+            <p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+            <p class="indent"><b><i>Troverian Weapon Training.</i></b>You have proficiency with the greataxe, lance, and maul.</p>
+            <p class="indent"><b><i>Tool Proficiency.</i></b> You have proficiency with smith's tools and mason's tools.</p>
+            <p class="indent"><b><i>Workaholic.</i></b> When crafting an item (XGtE p.128) as your downtime activity, you divide the gold piece cost of the item by 200 to determine the amount of workweeks it takes to craft it. You can complete multiple items in a workweek if the items' combined cost is 200 gp or lower.</p>
+            <p class="indent"><b><i>Languages.</i></b> You can speak, read, and write Common, Dwarvish, and Troverian.</p>
         </description>
         <sheet display="false" />
         <rules>
-            <grant type="Racial Trait" id="ID____" />
-            <grant type="Racial Trait" id="ID____" />
+            <stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+            <stat name="innate speed" value="25" bonus="base" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_ARTISANS_CUNNING" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_TROVERIAN_MAGIC" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL" />
+            <select type="Proficiency" name="Tool Proficiency (Troverian)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_WORKAHOLIC" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Language" id="ID_LANGUAGE_DWARVISH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Language" id="ID_ALD_AGMH_LANGUAGE_TROVERIAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <select type="Language" name="Customized Language" supports="Custom Race Language"  number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
         </rules>
+    </element>
+    <element name="Artisans's Cunning" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_ARTISANS_CUNNING">
+        <description>
+            <p>Whenever you make an Intelligence (History) check related to the origin of metalwork or you make an Intelligence (Investigation) to identify or locate ores, you are considered proficient in the skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>Whenever you make an Intelligence (History) check related to the origin of metalwork or you make an Intelligence (Investigation) to identify or locate ores, you are considered proficient in the skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</description>
+        </sheet>
+    </element>
+    <element name="Troverian Magic" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_TROVERIAN_MAGIC">
+        <description>
+            <p>You know the mold earth cantrip with this trait. Starting at 3rd level, you can cast the heat metal spell with this trait. Once you cast heat metal with this trait, you can't cast it again until you finish a long rest. You can also heat metal using any spell slots you have of the appropriate level.</p>
+            <p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+        </description>
+        <sheet>
+            <description>You know the mold earth cantrip. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+            <description level="3">You know the mold earth cantrip. You can also cast the heat metal spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_MOLD_EARTH" />
+			<grant type="Spell" id="ID_PHB_SPELL_HEAT_METAL" level="3" />
+            <select type="Racial Trait" name="Spellcasting Ability (Troverian Magic)" supports="Spellcasting Ability" />
+        </rules>
+    </element>
+    <element name="Workaholic" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_WORKAHOLIC">
+        <description>
+            <p>When crafting an item (XGtE p.128) as your downtime activity, you divide the gold piece cost of the item by 200 to determine the amount of workweeks it takes to craft it. You can complete multiple items in a workweek if the items' combined cost is 200 gp or lower.</p>
+        </description>
+        <sheet>
+            <description>When crafting an item as your downtime activity, you divide the gold piece cost of the item by 200 to determine the amount of workweeks it takes to craft it. You can complete multiple items in a workweek if the items' combined cost is 200 gp or lower.</description>
+        </sheet>
     </element>
 </elements>

@@ -44,23 +44,9 @@
         </sheet>
     </element>
 
-<element name="Tribal Mask" type="Racial Trait" source="Amellwind's Guide to Monster hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_TRIBAL_MASK">
+    <element name="Tribal Mask" type="Racial Trait" source="Amellwind's Guide to Monster hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_TRIBAL_MASK">
         <description requirements="ID_ALD_AGMH_SUBRACE_GAJALAKA">
             <p>You have a red tribal mask that is accented by a color. Choose one color from the Tribal Mask table. Your gaja knife and your gajalaka tolerance is determined by the color of the mask's accents, as shown in the table.</p>
-            <p class="indent">Should this mask be destroyed, you can recreate a new one during a short or long rest, but the accent color cannot change.</p>
-            <h5>Tribal Mask Table</h5>
-            <table>
-                <thead>
-                    <tr><td>Accent Color</td><td>Condition</td><td>Duration</td></tr>
-                </thead>
-                <tr><td>Blue</td><td>Blinded*</td><td>1 minute</td></tr>
-                <tr><td>Yellow</td><td>Stunned</td><td>Until the end of your next turn</td></tr>
-                <tr><td>Purple</td><td>Poisoned</td><td>1 minute</td></tr>
-            </table>
-            <p class="indent">*A creature may repeat its saving throw for this condition at the end of each of its turns</p>
-        </description>
-        <description requirements="ID_ALD_AGMH_SUBRACE_BOABOA">
-            <p>You have a mask that is a crude imitation of a popo's head that has its tusks painted a color. Choose one color from the Tribal Mask table. Your boa javelin and your boaboa tolerance is determined by the color of the mask's accents, as shown in the table.</p>
             <p class="indent">Should this mask be destroyed, you can recreate a new one during a short or long rest, but the accent color cannot change.</p>
             <h5>Tribal Mask Table</h5>
             <table>
@@ -158,11 +144,12 @@
             <description>You know the friends cantrip. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
             <description level="3">You know the friends cantrip. You can also cast the calm emotions spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
             <description level="5">You know the friends cantrip. You can also cast the calm emotions spell and suggestion spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
-        </sheet><rules>
+        </sheet>
+        <rules>
 			<grant type="Spell" id="ID_PHB_SPELL_FRIENDS" />
 			<grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" level="3" />
 			<grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" level="5" />
-			<select type="Racial Trait" name="Spellcasting Ability (Elder Dragon Magic)" supports="Spellcasting Ability" />
+			<select type="Racial Trait" name="Spellcasting Ability (Lynian Magic)" supports="Spellcasting Ability" />
 		</rules>
     </element>
 
