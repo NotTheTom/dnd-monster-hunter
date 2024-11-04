@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Wyverian</name>
+        <update version="0.0.1">
+            <file name="race-wyverian.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/race-wyverian.xml" />
+        </update>
+    </info>
+    
+    
+</elements>
