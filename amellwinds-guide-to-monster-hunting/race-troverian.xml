@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Troverian</name>
+        <update version="0.0.1">
+            <file name="race-troverian.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/race-troverian.xml" />
+        </update>
+    </info>
+    
+    <element name="Troverian" type="Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACE_TROVERIAN">
+        <description>
+            <p>Troverians are an industrious dwarf-like people who coexist with the dwarves in the village of Harth. Troverians are known to prefer living in underground areas, due to them using the many ores and minerals in the areas to produce equipment such as armour and weapons. Some troverian tribes have special ways to polish old equipment found in the field by hunters. This race is said to be "workaholics" due to them working for long periods. It's been said they can continue work day and night to produce such equipment without a need to sleep until their work is finished. Many of the troverian's clothes allow them to continue working without much problem, while also acting as their usual attire.</p>
+            <h4>Trovierian Traits</h4>
+            <p>Troverians resemble short, slightly stockier, and bulkier humans and are commonly mistaken for dwarves. Their skin usually tanned, Troverian males grow massive beards and moustaches, wearing them in odd but traditional shapes. Female Troverians lack facial hair all together, resembling human females with a smaller but sturdier frame.</p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b> Your Strength score increases by 2, and your Constitution score increases by 1.</p>
+            <p class="indent"><b><i>Age.</i></b> Troverians mature at the same rate as humans but live a few years less.</p>
+            <p class="indent"><b><i>Alignment.</i></b> Troverians care most of all about wanting to work. As such, they are usually neutral or chaotic good.</p>
+            <p class="indent"><b><i>Size.</i></b> Troverians stand between 4 and 5 feet tall and average about 150 pounds, similar to dwarves. Your size is Medium.</p>
+            <p class="indent"><b><i>Speed.</i></b> Your base walking speed is 25 feet.</p>
+            <p class="indent"><b><i>Artisan's Cunning.</i></b> Whenever you make an Intelligence (History) check related to the origin of metalwork or you make an Intelligence (Investigation) to identify or locate ores, you are considered proficient in the skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p>
+            <p class="indent"><b><i>Darkvision.</i></b>  Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+            <p class="indent"><b><i>Heart of Fire.</i></b> You have resistance to fire damage.</p>
+            <p class="indent"><b><i>Troverian Magic.</i></b>
+            <p class="indent"><b><i>Languages.</i></b> _______</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID____" />
+            <grant type="Racial Trait" id="ID____" />
+        </rules>
+    </element>
+</elements>
