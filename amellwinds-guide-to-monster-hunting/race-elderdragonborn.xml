@@ -10,7 +10,7 @@
 	<element name="Dragonborn (Elder)" type="Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACE_ELDER_DRAGONBORN">
 		<description>
 			<p>The Elder Dragonborn are a dragonborn variant. You can allow a player to choose one of the following dragonborn ancestries. These ancestries replace the normal draconic ancestry a dragonborn can choose in addition to replacing other traits as listed. These ancestries also provide the damage they are resistant to, if the draconic resistance trait is not replaced.</p>
-			<h4>ELDER DRAGONBORN TRAITS</h4>
+			<h4>Elder Dragonborn Traits</h4>
 			<p>You have the following racial traits.</p>
 			<p class="indent"><b><i>Ability Score Increase.</i></b> Your ability score increase is determined by your Draconic Ancestry.</p>
             <p class="indent"><b><i>Age.</i></b> Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80.</p>
