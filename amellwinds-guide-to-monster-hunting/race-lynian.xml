@@ -7,5 +7,399 @@
         </update>
     </info>
     
-    
+    <element name="Tribal Mask" type="Racial Trait" source="Amellwind's Guide to Monster hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_TRIBAL_MASK">
+        <description requirements="ID_ALD_AGMH_SUBRACE_GAJALAKA">
+            <p>You have a red tribal mask that is accented by a color. Choose one color from the Tribal Mask table. Your gaja knife and your gajalaka tolerance is determined by the color of the mask's accents, as shown in the table.</p>
+            <p class="indent">Should this mask be destroyed, you can recreate a new one during a short or long rest, but the accent color cannot change.</p>
+            <h5>Tribal Mask Table</h5>
+            <table>
+                <thead>
+                    <tr><td>Accent Color</td><td>Condition</td><td>Duration</td></tr>
+                </thead>
+                <tr><td>Blue</td><td>Blinded*</td><td>1 minute</td></tr>
+                <tr><td>Yellow</td><td>Stunned</td><td>Until the end of your next turn</td></tr>
+                <tr><td>Purple</td><td>Poisoned</td><td>1 minute</td></tr>
+            </table>
+            <p class="indent">*A creature may repeat its saving throw for this condition at the end of each of its turns</p>
+        </description>
+        <description requirements="ID_ALD_AGMH_SUBRACE_BOABOA">
+            <p>You have a mask that is a crude imitation of a popo's head that has its tusks painted a color. Choose one color from the Tribal Mask table. Your boa javelin and your boaboa tolerance is determined by the color of the mask's accents, as shown in the table.</p>
+            <p class="indent">Should this mask be destroyed, you can recreate a new one during a short or long rest, but the accent color cannot change.</p>
+            <h5>Tribal Mask Table</h5>
+            <table>
+                <thead>
+                    <tr><td>Accent Color</td><td>Condition</td><td>Duration</td></tr>
+                </thead>
+                <tr><td>Blue</td><td>Blinded*</td><td>1 minute</td></tr>
+                <tr><td>Yellow</td><td>Stunned</td><td>Until the end of your next turn</td></tr>
+                <tr><td>Purple</td><td>Poisoned</td><td>1 minute</td></tr>
+            </table>
+            <p class="indent">*A creature may repeat its saving throw for this condition at the end of each of its turns</p>
+        </description>
+        <sheet>
+            <description>Should your mask be destroyed, you can recreate a new one during a short or long rest, but the accent color cannot change.</description>
+        </sheet>
+        <rules>
+            <select type="Racial Trait" name="Tribal Mask Accent" supports="Mask Accent" />
+        </rules>
+    </element>
+    <element name="Blue" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_MASK_ACCENT_BLUE">
+        <supports>Mask Accent</supports>
+        <compendium display="false" />
+        <description>
+            <p>You can inflict the Blinded condition and gain advantage on saving throws against this condition.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="tribal mask:condition" value="Blinded" inline="true" />
+            <stat name="tribal mask:duration" value="for 1 minute, the creature can repeat this saving throw at the end of its turn" inline="true" />
+        </rules>
+    </element>
+    <element name="Yellow" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_MASK_ACCENT_YELLOW">
+        <supports>Mask Accent</supports>
+        <compendium display="false" />
+        <description>
+            <p>You can inflict the Stunned condition and gain advantage on saving throws against this condition.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="tribal mask:condition" value="Stunned" inline="true" />
+            <stat name="tribal mask:duration" value="until the end of your next turn" inline="true" />
+        </rules>
+    </element>
+    <element name="Purple" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_MASK_ACCENT_PURPLE">
+        <supports>Mask Accent</supports>
+        <compendium display="false" />
+        <description>
+            <p>You can inflict the Poisoned condition and gain advantage on saving throws against this condition.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="tribal mask:condition" value="Poisoned" inline="true" />
+            <stat name="tribal mask:duration" value="for 1 minute" inline="true" />
+        </rules>
+    </element>
+
+    <element name="Lynian" type="Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACE_LYNIAN">
+        <description>
+            <p>Lynians are sapient creatures, that are typically short of stature. There are currently three distinct groups of Lynian: the cat-like Felyne and Melynx, the lynx-like Grimalkyne and Boaboa, and the humanoid Shakalaka and Gajalaka, and the unique Uruki. The feline species are intelligent, have complex societies, and speak their own languages. Whereas the Shakalaka and Gajalaka are more primitive and tribal. The feline species tend to lead peaceful lives and often coexist with human society.</p>
+            <p class="indent">Many lynians are seen working in all sorts of human establishments or settlements. They've been seen being farmers, traders, adventurers, etc. Some lynians are known to assist hunters, and quite a few are independent "Meownster Hunters" in their own right.</p>
+            <h4>Lynian Traits</h4>
+            <p>As a Lynian, you have the following racial traits.</p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b> Your Dexterity score increases by 2.</p>
+            <p class="indent"><b><i>Age.</i></b> It is currently unknown exactly how old the Lynian people live to be, but they seem to have the average lifespan of most feline species.</p>
+            <p class="indent"><b><i>Size.</i></b> Lynians are between 2 and 3 feet tall and average about 35 pounds. Your size is Small.</p>
+            <p class="indent"><b><i>Darkvision.</i></b> You have a cat's keen senses, especially in the dark. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+            <p class="indent"><b><i>Naturally Stealthy.</i></b> You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.</p>
+            <p class="indent"><b><i>Languages.</i></b> You can speak, read, and write Common, Lynian, and one other language of their choice.</p>
+            <p class="indent"><b><i>Subrace.</i></b> Six main subraces of Lynian exist: Boaboa, Felynes, Melynx, Gajalaka, Grimalkyne, and Shakalakas. Choose one of these subraces.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <grant type="Size" id="ID_SIZE_SMALL" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_NATURALLY_STEALTHY" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Language" id="ID_ALD_AGMH_LANGUAGE_LYNIAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <select type="Language" name="Language (Lynian)" supports="Standard||Exotic" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <select type="Sub Race" name="Lynian Subrace" supports="Lynian" />
+        </rules>
+    </element>
+    <element name="Naturally Stealthy" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_NATURALLY_STEALTHY">
+        <description>
+            <p>You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.</p>
+        </description>
+        <sheet>
+            <description>You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.</description>
+        </sheet>
+    </element>
+
+    <element name="Felyne" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_FELYNE">
+        <supports>Lynian</supports>
+        <description>
+            <p>Felynes are recognized by their white fur and have the ability to talk in human language, and can be found both in human villages and in the wild.</p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b> Your Charisma score increases by 1.</p>
+            <p class="indent"><b><i>Alignment.</i></b> Felynes are most often good. Those who tend toward law are found in villages working as adventurers, chefs, farmers, or traders. Those who tend toward chaos are from the wilderness and live off the land as scavengers and hunters. Felyne are good-hearted and even the tricksters among them are more playful than vicious.</p>
+            <p class="indent"><b><i>Speed.</i></b> Your base walking speed is 30 feet.</p>
+            <p class="indent"><b><i>Adaptive Fighter.</i></b> You are proficient with improvised weapons.</p>
+            <p class="indent"><b><i>Felyne Magic.</i></b> You know the friends cantrip. When you reach 3rd level, you can cast the calm emotions spell once per long rest. When you reach 5th level, you can also cast the suggestion spell once per long rest.</p>
+            <p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+            <p class="indent"><b><i>Meowster Chef.</i></b> You have proficiency with cook’s utensils.</p>
+            <p class="indent"><b><i>Cultured.</i></b> You have proficiency in the Persuasion skill.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_ADAPTIVE_FIGHTER" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_FELYNE_MAGIC" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+        </rules>
+    </element>
+    <element name="Adaptive Fighter" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_ADAPTIVE_FIGHTER">
+        <description>
+            <p>You are proficient with improvised weapons.</p>
+        </description>
+        <sheet>
+            <description>You are proficient with improvised weapons.</description>
+        </sheet>
+    </element>
+    <element name="Felyne Magic" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_FELYNE_MAGIC">
+        <description>
+            <p>You know the friends cantrip. When you reach 3rd level, you can cast the calm emotions spell once per long rest. When you reach 5th level, you can also cast the suggestion spell once per long rest.</p>
+            <p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+        </description>
+        <sheet>
+            <description>You know the friends cantrip. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+            <description level="3">You know the friends cantrip. You can also cast the calm emotions spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+            <description level="5">You know the friends cantrip. You can also cast the calm emotions spell and suggestion spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+        </sheet><rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FRIENDS" />
+			<grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" level="5" />
+			<select type="Racial Trait" name="Spellcasting Ability (Elder Dragon Magic)" supports="Spellcasting Ability" />
+		</rules>
+    </element>
+
+    <element name="Melynx" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_MELYNX">
+        <supports>Lynian</supports>
+        <description>
+            <p>Melynx are noted for their black fur and the ability to talk in human language, as well as do human activities like their fellow Lynian subspecies called the Felynes.</p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b> Your Intelligence score increases by 1.</p>
+            <p class="indent"><b><i>Alignment.</i></b> Melynx tend toward chaotic alignments as they let impulse, curiosity, and mischievousness guide their decisions. Melynx that grow up in villages tend towards good, but those mistreated or those who grew up in the wilderness lean towards neutral or evil.</p>
+            <p class="indent"><b><i>Speed.</i></b> Your base walking speed is 30 feet.</p>
+            <p class="indent"><b><i>Cat's Claws.</i></b> Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+            <p class="indent"><b><i>Kleptomaniac.</i></b> You have proficiency in the Sleight of Hand skill. Additionally, you are able to determine the value of an object you have stolen,if you spend at least 1 hour inspecting or studying it without interruption. If the item is magical, you know its rarity, but not what its magical properties are.</p>
+            <p class="indent"><b><i>Meowster Chef.</i></b> You have proficiency with cook’s utensils.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_CATS_CLAWS" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_KLEPTOMANIAC" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+        </rules>
+    </element>
+    <element name="Cat's Claws" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_CATS_CLAWS">
+        <description>
+            <p>Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+        </description>
+        <sheet>
+            <description>You can use your claws to make unarmed strikes. When you hit with them, you deal 1d4 + {{strength:modifier}} slashing damage.</description>
+        </sheet>
+        <rules>
+            <stat name="innate speed:climb" value="20" bonus="base" />
+        </rules>
+    </element>
+    <element name="Kleptomaniac" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_KLEPTOMANIAC">
+        <description>
+            <p>You have proficiency in the Sleight of Hand skill. Additionally, you are able to determine the value of an object you have stolen,if you spend at least 1 hour inspecting or studying it without interruption. If the item is magical, you know its rarity, but not what its magical properties are.</p>
+        </description>
+        <sheet>
+            <description>You are able to determine the value of an object you have stolen,if you spend at least 1 hour inspecting or studying it without interruption. If the item is magical, you know its rarity, but not what its magical properties are.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+        </rules>
+    </element>
+
+    <element name="Shakalaka" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_SHAKALAKA">
+        <supports>Lynian</supports>
+        <description>
+            <p>Shakalaka are small, humanoid creatures with green skin. They wear a mask over their heads at all times, so their true faces are unknown.</p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b> Your Strength score increases by 1.</p>
+            <p class="indent"><b><i>Alignment.</i></b> Shakalaka are typically neutral evil, as they care only for their own needs. A few shakalaka might tend toward good or neutrality, but only rarely.</p>
+            <p class="indent"><b><i>Speed.</i></b> Your base walking speed is 25 feet.</p>
+            <p class="indent"><b><i>Aggressive.</i></b> You pursue foes relentlessly, even at great risk to yourself. As a bonus action, you may move up to your speed towards a hostile creature you can see.</p>
+            <p class="indent"><b><i>Mask of the Wild.</i></b> You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</p>
+            <p class="indent"><b><i>Natural Athlete.</i></b> You have proficiency in the Athletics skill.</p>
+            <p class="indent"><b><i>Shakalaka Weapon Training.</i></b> You have proficiency with the club, greatclub, morningstar, and warhammer.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="innate speed" value="25" bonus="base" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_AGGRESSIVE" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_MASK_OF_THE_WILD" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATCLUB" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MORNINGSTAR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER" />
+        </rules>
+    </element>
+    <element name="Aggressive" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_AGGRESSIVE">
+        <description>
+            <p>You pursue foes relentlessly, even at great risk to yourself. As a bonus action, you may move up to your speed towards a hostile creature you can see.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>You may move up to your speed towards a hostile creature you can see.</description>
+        </sheet>
+    </element>
+
+    <element name="Grimalkyne" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_GRIMALKYNE">
+        <supports>Lynian</supports>
+        <description>
+            <p>Grimalkyne resemble bipedal lynxes. They have tufted ears, and come in a variety of colors depending on the tribe.</p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b> Your Wisdom score increases by 1.</p>
+            <p class="indent"><b><i>Alignment.</i></b> Most grimalkynes are good and rarely choose sides when it comes to law and chaos. Tribal leaders and warriors might be lawful, while explorers and adventurers might tend toward chaotic.</p>
+            <p class="indent"><b><i>Speed.</i></b> Your base walking speed is 30 feet.</p>
+            <p class="indent"><b><i>Keen Hearing.</i></b> You have advantage on Wisdom (Perception) checks that rely on hearing.</p>
+            <p class="indent"><b><i>Tracker.</i></b> You have proficiency in the Nature and Survival skills.</p>
+            <p class="indent"><b><i>Grimalkyne Weapon Training.</i></b> You have proficiency with the glaive, javelin, net, and trident.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_KEEN_HEARING" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
+        </rules>
+    </element>
+    <element name="Keen Hearing" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_KEEN_HEARING">
+        <description>
+            <p>You have advantage on Wisdom (Perception) checks that rely on hearing.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Wisdom (Perception) checks that rely on hearing.</description>
+        </sheet>
+    </element>
+
+    <element name="Gajalaka" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_GAJALAKA">
+        <supports>Lynian</supports>
+        <description>
+            <p>Gajalaka are short humanoids. They resemble Shakalaka more than Felynes or Grimalkynes, lacking any fur and wearing large tribal masks which leave only their bright yellow eyes visible. These red masks have different color accents, ranging from blue to yellow to purple, to represent what status ailment their weapons afflict. The Gajalaka in the Caverns of El Dorado have golden masks.</p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b> Your Constitution score increases by 1.</p>
+            <p class="indent"><b><i>Alignment.</i></b> Gajalaka are proud and barbaric, and are not strongly inclined toward good. They are slow to trust, but once someone gains the trust of a gajalaka, they are considered an ally for life, or until proven otherwise.</p>
+            <p class="indent"><b><i>Speed.</i></b> Your base walking speed is 25 feet.</p>
+            <p class="indent"><b><i>Herbalist.</i></b> You have proficiency in the Nature skill.</p>
+            <p class="indent"><b><i>Tool Proficiency.</i></b> You have proficiency with poisoner's kits.</p>
+            <p class="indent"><b><i>Tribal Mask.</i></b> You have a red tribal mask that is accented by a color. Choose one color from the Tribal Mask table. Your gaja knife and your gajalaka tolerance is determined by the color of the mask's accents, as shown in the table.</p>
+            <p class="indent">Should this mask be destroyed, you can recreate a new one during a short or long rest, but the accent color cannot change.</p>
+            <h5>Tribal Mask Table</h5>
+            <table>
+                <thead>
+                    <tr><td>Accent Color</td><td>Condition</td><td>Duration</td></tr>
+                </thead>
+                <tr><td>Blue</td><td>Blinded*</td><td>1 minute</td></tr>
+                <tr><td>Yellow</td><td>Stunned</td><td>Until the end of your next turn</td></tr>
+                <tr><td>Purple</td><td>Poisoned</td><td>1 minute</td></tr>
+            </table>
+            <p class="indent">*A creature may repeat its saving throw for this condition at the end of each of its turns</p>
+            <p class="indent"><b><i>Gaja Knife.</i></b> Your knife is coated with viscous liquid that is an opaque color, similar to the color of your mask's accents. You're proficient with this knife, and it has the finesse and thrown property, with a normal range of 20 and a long range of 40. When you hit with a weapon attack using it, the target takes 1d4 + your Dexterity modifier as piercing damage and they must make a Constitution saving throw.</p>
+            <p class="indent">The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. On a failed save, the creature is afflicted with the condition based on your mask's accent color and lasts for the duration listed in the Tribal Mask table.</p>
+            <p class="indent">After you hit a creature with this knife, it shatters. During a short or long rest, you can create a new gaja knife, but you can never carry more than one at a time.</p>
+            <p class="indent"><b><i>Gajalaka Tolerance.</i></b> You have advantage on saving throws against the condition associated with your tribal mask.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="innate speed" value="25" bonus="base" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_TRIBAL_MASK" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_GAJA_KNIFE" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_GAJALAKA_TOLERANCE" />
+        </rules>
+    </element>
+    <element name="Gaja Knife" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_GAJA_KNIFE">
+        <description>
+            <p>Your knife is coated with viscous liquid that is an opaque color, similar to the color of your mask's accents. You're proficient with this knife, and it has the finesse and thrown property, with a normal range of 20 and a long range of 40. When you hit with a weapon attack using it, the target takes 1d4 + your Dexterity modifier as piercing damage and they must make a Constitution saving throw.</p>
+            <p class="indent">The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. On a failed save, the creature is afflicted with the condition based on your mask's accent color and lasts for the duration listed in the Tribal Mask table.</p>
+            <p class="indent">After you hit a creature with this knife, it shatters. During a short or long rest, you can create a new gaja knife, but you can never carry more than one at a time.</p>
+        </description>
+        <sheet>
+            <description>You're proficient with this knife, and it has the finesse and thrown property, with a normal range of 20 and a long range of 40. When you hit with a weapon attack using it, the target takes 1d4 + {{dexterity:modifier}} as piercing damage and they must make a Constitution saving throw against a DC {{gaja knife:dc}}. On a failed save the creature is afflicted with the {{tribal mask:condition}} condition and it lasts {{tribal mask:duration}}. After you hit a creature with this knife, it shatters. During a short or long rest, you can create a new gaja knife, but you can never carry more than one at a time.</description>
+        </sheet>
+        <rules>
+            <stat name="gaja knife:dc" value="8" />
+			<stat name="gaja knife:dc" value="constitution:modifier" />
+			<stat name="gaja knife:dc" value="proficiency" />
+        </rules>
+    </element>
+    <element name="Gajalaka Tolerance" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_GAJALAKA_TOLERANCE">
+        <description>
+            <p>You have advantage on saving throws against the condition associated with your tribal mask.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against the {{tribal mask:condition}} condition.</description>
+        </sheet>
+    </element>
+
+    <element name="Boaboa" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_BOABOA">
+        <supports>Lynian</supports>
+        <description>
+            <p>The Boaboa have the basic shape of a Grimalkyne, but exhibit much thicker, white fur and a bulkier frame. They wear crude imitations of Popo heads as masks, with the tusk's tips painted in colours that correspond to the status ailment each individual Boaboa uses in combat.</p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b> Your Constitution score increases by 1.</p>
+            <p class="indent"><b><i>Alignment.</i></b> Boaboa tends toward neutrality, being more focused on survival than concepts of good and evil. A sense of community can drive boaboas toward lawful alignments.</p>
+            <p class="indent"><b><i>Speed.</i></b> Your base walking speed is 25 feet.</p>
+            <p class="indent"><b><i>Frost Resistance.</i></b> You have resistance to cold damage.</p>
+            <p class="indent"><b><i>Ice Walk.</i></b> You can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra movement.</p>
+            <p class="indent"><b><i>Tribal Mask.</i></b> You have a mask that is a crude imitation of a popo's head that has its tusks painted a color. Choose one color from the Tribal Mask table. Your boa javelin and your boaboa tolerance is determined by the color of the mask's accents, as shown in the table.</p>
+            <p class="indent">Should this mask be destroyed, you can recreate a new one during a short or long rest, but the accent color cannot change.</p>
+            <h5>Tribal Mask Table</h5>
+            <table>
+                <thead>
+                    <tr><td>Accent Color</td><td>Condition</td><td>Duration</td></tr>
+                </thead>
+                <tr><td>Blue</td><td>Blinded*</td><td>1 minute</td></tr>
+                <tr><td>Yellow</td><td>Stunned</td><td>Until the end of your next turn</td></tr>
+                <tr><td>Purple</td><td>Poisoned</td><td>1 minute</td></tr>
+            </table>
+            <p class="indent">*A creature may repeat its saving throw for this condition at the end of each of its turns</p>
+            <p class="indent"><b><i>Boa Javelin</i></b> Your javelin’s blade is coated with a viscous liquid that is an opaque color, similar to the color of your mask’s tusks. When you hit a creature with it, they take damage as normal, but they must also make a Constitution saving throw.</p>
+            <p class="indent">The DC for this saving throw equals 8 + your Constitutionmodifier + your proficiency bonus. On a failed save, the creature is afflicted with the condition based on your mask's tusk color and lasts for the duration listed in the Popo Mask table.</p>
+            <p class="indent">After you hit a creature with this javelin, the javelin breaks. During a short or long rest, you can create a new javelin, but you can never carry more than one boa javelin at a time.</p>
+            <p class="indent"><b><i>Boaboa Tolerance</i></b> You have advantage on saving throws against the condition associated with your tribal mask.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="innate speed" value="25" bonus="base" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_ICE_WALK" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_TRIBAL_MASK" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_BOA_JAVELIN" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_BOABOA_TOLERANCE" />
+        </rules>
+    </element>
+    <element name="Boa Javelin" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_BOA_JAVELIN">
+        <description>
+            <p>Your javelin’s blade is coated with a viscous liquid that is an opaque color, similar to the color of your mask’s tusks. When you hit a creature with it, they take damage as normal, but they must also make a Constitution saving throw.</p>
+            <p class="indent">The DC for this saving throw equals 8 + your Constitutionmodifier + your proficiency bonus. On a failed save, the creature is afflicted with the condition based on your mask's tusk color and lasts for the duration listed in the Popo Mask table.</p>
+            <p class="indent">After you hit a creature with this javelin, the javelin breaks. During a short or long rest, you can create a new javelin, but you can never carry more than one boa javelin at a time.</p>
+        </description>
+        <sheet>
+            <description>You're proficient wit this javelin, and it uses the same statistics as found in the Player's Handbook. When you hit a creature with it, they take damage as normal, but they must also make a Constitution saving throw against a DC {{boa javelin:dc}}. On a failed save, the creature is afflicted with the {{tribal mask:condition}} condition and it lasts {{tribal mask:duration}}. After you hit a creature with this javelin, the javelin breaks. During a short or long rest, you can create a new javelin, but you can never carry more than one boa javelin at a time.</description>
+        </sheet>
+        <rules>
+            <stat name="boa javelin:dc" value="8" />
+			<stat name="boa javelin:dc" value="constitution:modifier" />
+			<stat name="boa javelin:dc" value="proficiency" />
+        </rules>
+    </element>
+    <element name="Boaboa Tolerance" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_BOABOA_TOLERANCE">
+        <description>
+            <p>You have advantage on saving throws against the condition associated with your tribal mask.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against the {{tribal mask:condition}} condition.</description>
+        </sheet>
+    </element>
 </elements>

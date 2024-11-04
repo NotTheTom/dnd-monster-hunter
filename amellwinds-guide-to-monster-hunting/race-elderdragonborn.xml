@@ -1345,10 +1345,10 @@
 	</element>
 	<element name="Ice Walk" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_ICE_WALK">
 		<description>
-			<p>You can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost you extra moment.</p>
+			<p>You can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost you extra movement.</p>
 		</description>
 		<sheet>
-			<description>You can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost you extra moment.</description>
+			<description>You can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost you extra movement.</description>
 		</sheet>
 	</element>
 
@@ -1411,7 +1411,7 @@
 		<supports>Elder Dragonborn</supports>
 		<description>
 			<p>Mizufolk have have a long, slender bodies. Dark purple fur covers its chest, underbelly, legs and tail. Their scales are light colored and resemble those of a fish. Their head has a long snout and is beautifully adorned by many fin-like appendages with that are pink with yellow markings.</p>
-			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Dexterity score increases by 2, and your Charimsa score increases by 1.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Dexterity score increases by 2, and your Charisma score increases by 1.</p>
 			<p class="indent"><b><i>Age.</i></b> Mizufolk reach maturity around age 18 and rarely live longer than 75 years.</p>
 			<p class="indent"><b><i>Bubbly.</i></b> Your body secretes a special fluid that creates tiny bubbles when you move. As an action you can magically clean yourself, your outfit, and your armor itself of dirt, grime, sweat, and so forth.</p>
 			<p class="indent"><b><i>Damage Resistance.</i></b> You have resistance to acid damage.</p>
