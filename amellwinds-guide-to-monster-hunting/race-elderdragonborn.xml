@@ -28,7 +28,7 @@
             <grant type="Language" id="ID_LANGUAGE_DRACONIC" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language"  number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_DRAGONBORN"/>
-			<select type="Sub Race" name="Elder Dragonborn Subrace" supports="Elder Dragonborn" />
+			<select type="Sub Race" name="Elder Dragon Ancestry" supports="Elder Dragonborn" />
 		</rules>
 	</element>
 	
