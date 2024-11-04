@@ -6,8 +6,45 @@
             <file name="race-lynian.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/race-lynian.xml" />
         </update>
     </info>
-    
-    <element name="Tribal Mask" type="Racial Trait" source="Amellwind's Guide to Monster hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_TRIBAL_MASK">
+
+    <element name="Lynian" type="Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACE_LYNIAN">
+        <description>
+            <p>Lynians are sapient creatures, that are typically short of stature. There are currently three distinct groups of Lynian: the cat-like Felyne and Melynx, the lynx-like Grimalkyne and Boaboa, and the humanoid Shakalaka and Gajalaka, and the unique Uruki. The feline species are intelligent, have complex societies, and speak their own languages. Whereas the Shakalaka and Gajalaka are more primitive and tribal. The feline species tend to lead peaceful lives and often coexist with human society.</p>
+            <p class="indent">Many lynians are seen working in all sorts of human establishments or settlements. They've been seen being farmers, traders, adventurers, etc. Some lynians are known to assist hunters, and quite a few are independent "Meownster Hunters" in their own right.</p>
+            <h4>Lynian Traits</h4>
+            <p>Your lynian character has a variety of natural abilities, honed during their younger years.</p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b> Your Dexterity score increases by 2.</p>
+            <p class="indent"><b><i>Age.</i></b> It is currently unknown exactly how old the Lynian people live to be, but they seem to have the average lifespan of most feline species.</p>
+            <p class="indent"><b><i>Size.</i></b> Lynians are between 2 and 3 feet tall and average about 35 pounds. Your size is Small.</p>
+            <p class="indent"><b><i>Darkvision.</i></b> You have a cat's keen senses, especially in the dark. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+            <p class="indent"><b><i>Naturally Stealthy.</i></b> You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.</p>
+            <p class="indent"><b><i>Languages.</i></b> You can speak, read, and write Common, Lynian, and one other language of their choice.</p>
+            <p class="indent"><b><i>Subrace.</i></b> Six main subraces of Lynian exist: Boaboa, Felynes, Melynx, Gajalaka, Grimalkyne, and Shakalakas. Choose one of these subraces.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <grant type="Size" id="ID_SIZE_SMALL" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_NATURALLY_STEALTHY" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Language" id="ID_ALD_AGMH_LANGUAGE_LYNIAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <select type="Language" name="Language (Lynian)" supports="Standard||Exotic" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <select type="Sub Race" name="Lynian Subrace" supports="Lynian" />
+        </rules>
+    </element>
+    <element name="Naturally Stealthy" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_NATURALLY_STEALTHY">
+        <description>
+            <p>You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.</p>
+        </description>
+        <sheet>
+            <description>You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.</description>
+        </sheet>
+    </element>
+
+<element name="Tribal Mask" type="Racial Trait" source="Amellwind's Guide to Monster hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_TRIBAL_MASK">
         <description requirements="ID_ALD_AGMH_SUBRACE_GAJALAKA">
             <p>You have a red tribal mask that is accented by a color. Choose one color from the Tribal Mask table. Your gaja knife and your gajalaka tolerance is determined by the color of the mask's accents, as shown in the table.</p>
             <p class="indent">Should this mask be destroyed, you can recreate a new one during a short or long rest, but the accent color cannot change.</p>
@@ -78,43 +115,6 @@
             <stat name="tribal mask:condition" value="Poisoned" inline="true" />
             <stat name="tribal mask:duration" value="for 1 minute" inline="true" />
         </rules>
-    </element>
-
-    <element name="Lynian" type="Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACE_LYNIAN">
-        <description>
-            <p>Lynians are sapient creatures, that are typically short of stature. There are currently three distinct groups of Lynian: the cat-like Felyne and Melynx, the lynx-like Grimalkyne and Boaboa, and the humanoid Shakalaka and Gajalaka, and the unique Uruki. The feline species are intelligent, have complex societies, and speak their own languages. Whereas the Shakalaka and Gajalaka are more primitive and tribal. The feline species tend to lead peaceful lives and often coexist with human society.</p>
-            <p class="indent">Many lynians are seen working in all sorts of human establishments or settlements. They've been seen being farmers, traders, adventurers, etc. Some lynians are known to assist hunters, and quite a few are independent "Meownster Hunters" in their own right.</p>
-            <h4>Lynian Traits</h4>
-            <p>As a Lynian, you have the following racial traits.</p>
-            <p class="indent"><b><i>Ability Score Increase.</i></b> Your Dexterity score increases by 2.</p>
-            <p class="indent"><b><i>Age.</i></b> It is currently unknown exactly how old the Lynian people live to be, but they seem to have the average lifespan of most feline species.</p>
-            <p class="indent"><b><i>Size.</i></b> Lynians are between 2 and 3 feet tall and average about 35 pounds. Your size is Small.</p>
-            <p class="indent"><b><i>Darkvision.</i></b> You have a cat's keen senses, especially in the dark. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
-            <p class="indent"><b><i>Naturally Stealthy.</i></b> You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.</p>
-            <p class="indent"><b><i>Languages.</i></b> You can speak, read, and write Common, Lynian, and one other language of their choice.</p>
-            <p class="indent"><b><i>Subrace.</i></b> Six main subraces of Lynian exist: Boaboa, Felynes, Melynx, Gajalaka, Grimalkyne, and Shakalakas. Choose one of these subraces.</p>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-            <grant type="Size" id="ID_SIZE_SMALL" />
-            <grant type="Vision" id="ID_VISION_DARKVISION" />
-            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_NATURALLY_STEALTHY" />
-            <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
-            <grant type="Language" id="ID_ALD_AGMH_LANGUAGE_LYNIAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
-            <select type="Language" name="Language (Lynian)" supports="Standard||Exotic" />
-			<select type="Language" name="Customized Language" supports="Custom Race Language"  number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
-            <select type="Sub Race" name="Lynian Subrace" supports="Lynian" />
-        </rules>
-    </element>
-    <element name="Naturally Stealthy" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_NATURALLY_STEALTHY">
-        <description>
-            <p>You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.</p>
-        </description>
-        <sheet>
-            <description>You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.</description>
-        </sheet>
     </element>
 
     <element name="Felyne" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_FELYNE">
