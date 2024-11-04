@@ -32,6 +32,8 @@
 		</rules>
 	</element>
 	
+	<element name="Dragonborn Variant" type="Grants" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_GRANTS_ELDER_VARIANT" />
+	
 	<element name="Necrotic Resistance" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_RESISTANCE_NECROTIC">
 		<supports>Draconic Resistance</supports>
 		<compendium display="false" />
@@ -41,6 +43,7 @@
 		<sheet display="false" />
 		<rules>
 			<stat name="draconic resistance:damage type" value="Necrotic" inline="true" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
 		</rules>
 	</element>
 	<element name="Fire Resistance" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_RESISTANCE_FIRE">
@@ -52,6 +55,7 @@
 		<sheet display="false" />
 		<rules>
 			<stat name="draconic resistance:damage type" value="Fire" inline="true" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
 		</rules>
 	</element>
 	<element name="Cold Resistance" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_RESISTANCE_COLD">
@@ -63,6 +67,19 @@
 		<sheet display="false" />
 		<rules>
 			<stat name="draconic resistance:damage type" value="Cold" inline="true" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Lightning Resistance" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_RESISTANCE_LIGHTNING">
+		<supports>Draconic Resistance</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have resistance to lightning damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="draconic resistance:damage type" value="Lightning" inline="true" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
 		</rules>
 	</element>
 
@@ -70,7 +87,7 @@
 		<supports>Spellcasting Ability</supports>
 		<compendium display="false" />
 		<description>
-			<p>Your spellcasting ability is {{spellcasting ability:stat}} when you use this trait.</p>
+			<p>Your spellcasting ability is Intelligence when you use this trait.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -81,7 +98,7 @@
 		<supports>Spellcasting Ability</supports>
 		<compendium display="false" />
 		<description>
-			<p>Your spellcasting ability is {{spellcasting ability:stat}} when you use this trait.</p>
+			<p>Your spellcasting ability is Wisdom when you use this trait.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -92,7 +109,7 @@
 		<supports>Spellcasting Ability</supports>
 		<compendium display="false" />
 		<description>
-			<p>Your spellcasting ability is {{spellcasting ability:stat}} when you use this trait.</p>
+			<p>Your spellcasting ability is Charisma when you use this trait.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -126,14 +143,9 @@
 		<description>
 			<p>You have resistance to one of the following damage types: cold, fire, or necrotic.</p>
 		</description>
-		<sheet display="false">
-			<description>You have resistance to {{draconic resistance:damage type}} damage.</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
-			<select type="Racial Trait" name="Draconic Resistance" supports="Draconic Resistance" />
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" requirements="ID_ALD_AGMH_RACIAL_TRAIT_RESISTANCE_NECROTIC" />
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_ALD_AGMH_RACIAL_TRAIT_RESISTANCE_FIRE" />
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_ALD_AGMH_RACIAL_TRAIT_RESISTANCE_COLD" />
+			<select type="Racial Trait" name="Draconic Resistance" supports="ID_ALD_AGMH_RACIAL_TRAIT_RESISTANCE_COLD|ID_ALD_AGMH_RACIAL_TRAIT_RESISTANCE_FIRE|ID_ALD_AGMH_RACIAL_TRAIT_RESISTANCE_NECROTIC" />
 		</rules>
 	</element>
 	<element name="Elemental Affinity" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_ELEMENTAL_AFFINITY">
@@ -149,7 +161,7 @@
 			<p>You have advantage on saving throws against being frightened, and you gain proficiency in the Intimidation skill.</p>
 		</description>
 		<sheet>
-			<description>You have advantage on saving throws against being frightened, and you gain proficiency in the Intimidation skill.</description>
+			<description>You have advantage on saving throws against being frightened.</description>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
@@ -184,10 +196,10 @@
 			<p>You know the gust cantrip with this trait. Starting at 3rd level, you can cast the thunderwave spell with this trait. When you reach 5th level, you can cast the levitate spell with this trait. Once you cast any of these spells (excluding gust) with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
 			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
 		</description>
-		<sheet usage="1/Long Rest">
+		<sheet>
 			<description>You know the gust cantrip. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
-			<description level="3">You know the gust cantrip, you can also cast the thunderwave spell. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
-			<description level="5">You know the gust cantrip, you can also cast the thunderwave spell and levitate spell. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description level="3">You know the gust cantrip. You can also cast the thunderwave spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description level="5">You know the gust cantrip. You can also cast the thunderwave spell and levitate spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_XGTE_SPELL_GUST" />
@@ -208,7 +220,7 @@
 		<description>
 			<p>You can use an action to summon a barrier of wind around you for 1 minute. While the barrier is active, you have half cover against range attacks, resistance to nonmagical ammunition, and disperse any fog like effect in a 5-foot radius around you. Once used, you can't use this trait again until you finish a long rest.</p>
 		</description>
-		<sheet action="1 Action" usage="1/Long Rest">
+		<sheet action="Action" usage="1/Long Rest">
 			<description>You can summon a barrier of wind around you for 1 minute. While the barrier is active, you have half cover against range attacks, resistance to nonmagical ammunition, and disperse any fog like effect in a 5-foot radius around you.</description>
 		</sheet>
 	</element>
@@ -217,7 +229,7 @@
 		<supports>Elder Dragonborn</supports>
 		<description>
 			<p>Due to the ceadeus resemblance to giant whales, the ceadeus dragonborn's shape is portly. Both male and female prominent beards of fur and two massive horn that must be shaved down or overtake their eyes, leaving them blind. Luminous organs line the ceadeus dragonborn's belly aswell as its apendages, which turn from blue to red when it is angered.</p>
-			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Strength score increases by 2, and your Wisdom increases by 1.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Strength score increases by 2, and your Wisdom score increases by 1.</p>
 			<p class="indent"><b><i>Speed.</i></b> You have a swimming speed of 30 feet.</p>
 			<p class="indent"><b><i>Bioluminesence.</i></b> As an action, you can emit dim light from your body in a 5-foot radius. While emitting the light, you can use a bonus action to increase the illumination to bright light in a 5- to 20-foot radius (and dim light for an additional number of feet equal to the chosen radius), or extinguishes the light.</p>
 			<p class="indent"><b><i>Shared Breath.</i></b> You can hold your breath for a number of hours equal to your Constitution modifier. In addition, you are able to share oxygen with creatures that are within 5 feet of you by splitting the time you can hold your breath by the number of creatures in the area around you.</p>
@@ -241,7 +253,7 @@
 		<description>
 			<p>As an action, you can emit dim light from your body in a 5-foot radius. While emitting the light, you can use a bonus action to increase the illumination to bright light in a 5- to 20-foot radius (and dim light for an additional number of feet equal to the chosen radius), or extinguishes the light.</p>
 		</description>
-		<sheet action="1 Action">
+		<sheet action="Action">
 			<description>You can emit dim light from your body in a 5ft radius. While emitting the light, you can use a bonus action to increase the illumination to bright light in a 5 to 20ft radius (and dim light for an equivalent number of feet), or extinguishe the light.</description>
 		</sheet>
 	</element>
@@ -250,7 +262,7 @@
 			<p>You can hold your breath for a number of hours equal to your Constitution modifier. In addition, you are able to share oxygen with creatures that are within 5 feet of you by splitting the time you can hold your breath by the number of creatures in the area around you.</p>
 		</description>
 		<sheet>
-			<description>You can hold your breath for a number of hours equal to your Constitution modifier. In addition, you are able to share oxygen with creatures that are within 5 feet of you by splitting the time you can hold your breath by the number of creatures in the area around you.</description>
+			<description>You can hold your breath for {{constitution:modifier}} hours. In addition, you are able to share oxygen with creatures that are within 5 feet of you by splitting the time you can hold your breath by the number of creatures in the area around you.</description>
 		</sheet>
 	</element>
 	
@@ -258,7 +270,7 @@
 		<supports>Elder Dragonborn</supports>
 		<description>
 			<p>Chameleos dragonborn scales are purple, though their limbs and stomach are bare, showing off-white skin. They have long, elastic tongues, but unlike the Chameleos, the dragonborn's eyes do not resemble a chameleon's in shape. Instead, their iris and pupil simulate the look.</p>
-			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Wisdom score increases by 2, and your Dexterity increases by 1.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Wisdom score increases by 2, and your Dexterity score increases by 1.</p>
 			<p class="indent"><b><i>Draconic Resistance.</i></b> You have resistance to poison damage.</p>
 			<p class="indent"><b><i>Elder Dragon Magic.</i></b> You know the poison spray cantrip with this trait. Starting at 3rd level, you can cast the fog cloud spell with this trait. When you reach 5th level, you can cast the misty step spell with this trait. Once you cast any of these spells (excluding poison spray) with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
 			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
@@ -282,10 +294,10 @@
 			<p>You know the poison spray cantrip with this trait. Starting at 3rd level, you can cast the fog cloud spell with this trait. When you reach 5th level, you can cast the misty step spell with this trait. Once you cast any of these spells (excluding poison spray) with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
 			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
 		</description>
-		<sheet usage="1/Long Rest">
+		<sheet>
 			<description>You know the poison spray cantrip. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
-			<description level="3">You know the poison spray cantrip, you can also cast the fog cloud spell. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
-			<description level="5">You know the poison spray cantrip, you can also cast the fog cloud spell and misty step spell. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description level="3">You know the poison spray cantrip. You can also cast the fog cloud spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description level="5">You know the poison spray cantrip. You can also cast the fog cloud spell and misty step spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_POISON_SPRAY" />
@@ -298,7 +310,7 @@
 		<description>
 			<p>As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't use it again until you finish a short or long rest.</p>
 		</description>
-		<sheet action="1 Bonus Action" usage="1/Rest">
+		<sheet action="Bonus Action" usage="1/Rest">
 			<description>You can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw.</description>
 		</sheet>
 	</element>
@@ -308,6 +320,1260 @@
 		</description>
 		<sheet>
 			<description>You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</description>
+		</sheet>
+	</element>
+
+	<element name="Dalamadur" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_DALAMADUR">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>Dalamadur dragonborn have a snake-like face, with bright red eyes, numerous fangs. Their body is covered in thick black and gray scales with many hook-like spikes along their body which start out clustered around their head and neck. When angered, their face and chest will glow red.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Strength score increases by 2, and your Charisma score inscreases by 1.</p>
+			<p class="indent"><b><i>Speed.</i></b> You have a climbing speed of 30 feet.</p>
+			<p class="indent"><b><i>Dalamadur Ancestry.</i></b> You have advantage on saving throws against being charmed, and magic can't put you to sleep.</p>
+			<p class="indent"><b><i>Darkvision.</i></b> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><b><i>Elder Dragon Magic.</i></b> You know the fire bolt cantrip with this trait. Starting at 3rd level, you can cast the charm person spell with this trait. When you reach 5th level, you can cast the melf's minute meteors spell with this trait. Once you cast any of these spells (excluding firebolt) with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed:climb" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_DALAMADUR_ANCESTRY" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_DALAMADUR_ELDER_DRAGON_MAGIC" />
+		</rules>
+	</element>
+	<element name="Dalamdur Ancestry" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_DALAMADUR_ANCESTRY">
+		<description>
+			<p>You have advantage on saving throws against being charmed, and magic can't put you to sleep.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being charmed, and magic can't put you to sleep.</description>
+		</sheet>
+	</element>
+	<element name="Elder Dragon Magic" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_DALAMADUR_ELDER_DRAGON_MAGIC">
+		<description>
+			<p>You know the fire bolt cantrip with this trait. Starting at 3rd level, you can cast the charm person spell with this trait. When you reach 5th level, you can cast the melf's minute meteors spell with this trait. Once you cast any of these spells (excluding firebolt) with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet>
+			<description>You know the fire bolt cantrip. Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description level="3">You know the fire bolt cantrip. You can also cast the charm person spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description level="5">You know the fire bolt cantrip. You can also cast the charm person spell and melf's minute meteors once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT" />
+			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" level="3" />
+			<grant type="Spell" id="ID_XGTE_SPELL_MELFS_MINUTE_METEORS" level="5" />
+			<select type="Racial Trait" name="Spellcasting Ability (Elder Dragon Magic)" supports="Spellcasting Ability" />
+		</rules>
+	</element>
+	
+	<element name="Fatalis" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_FATALIS">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>Fatalis dragonborn look similar to a regular dragonborn, except each day their scales change color. Fatalis dragonborn that live within society tend to only show themselves when they are one color, or cover themselves almost entirely. Outcasts or those who lean more towards evil, proudly show their heritage at all times.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Strength score increases by 2, and your Charisma score increases by 1.</p>
+			<p class="indent"><b><i>Darkvision.</i></b> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><b><i>Elder Ancestry.</i></b> You have advantage on saving throws against being charmed, and frightened.</p>
+			<p class="indent"><b><i>Shifting Scales.</i></b> Your scales change color daily. This determines your draconic resistance and breath weapon for the day. Each day at dawn, roll a d3 and refer to the table below to determine your scale's color.</p>
+			<table>
+				<thead>
+					<tr><td>d3</td><td>Color</td><td>Draconic Resistance</td><td>Breath Weapon</td></tr>
+				</thead>
+				<tr><td>1</td><td>Black</td><td>Necrotic</td><td>Black Fire (Dex. Save)</td></tr>
+				<tr><td>2</td><td>Red</td><td>Fire</td><td>Crimson Demon's Breath (Dex. Save)</td></tr>
+				<tr><td>3</td><td>White</td><td>Lightning</td><td>Emperor's Roar (Dex. Save)</td></tr>
+			</table>
+			<p class="indent"><b><i>Black Fire.</i></b> When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of black flames in a 15-foot cone. Each creature in that area must make a Dexterity saving throw, with the DC equaling 8 + your Constitution modifier + your proficiency bonus. A creature takes 1d10 necrotic damage on a failed save or half as much damage on a successful one. The damage increases to 1d10 necrotic plus 1d10 fire at 5th level, 2d10 necrotic plus 1d10 fire at 11th level, and 2d10 necrotic plus 2d10 fire at 17th level. You can use this breath weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><b><i>Crimson Demon's Breath.</i></b> When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of black flames in a 5 by 30-foot line. Each creature in that area must make a Dexterity saving throw, with the DC equaling 8 + your Constitution modifier + your proficiency bonus. A creature takes 1d10 fire damage on a failed save or half as much damage on a successful one. The damage increases to 1d10 fire plus 1d10 necrotic at 5th level, 2d10 fire plus 1d10 necrotic at 11th level, and 2d10 fire plus 2d10 necrotic at 17th level. You can use this breath weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><b><i>Emperor's Roar.</i></b> When you take the Attack action on your turn, you can replace one of your attacks with a cacophonous roar, calling down red lightning that strikes down in a 5-foot radius around you. Each creature in that area must make a Dexterity saving throw, with the DC equaling 8 + your Constitution modifier + your proficiency bonus. A creature takes 1d10 lightning damage on a failed save or half as much on a successful one. The damage increases to 2d10 lightning damage at 5th level, 3d10 lightning damage at 11th level, and 4d10 lightning damage at 17th level. You can use this breath weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_ELDER_ANCESTRY" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_SHIFTING_SCALES" />
+		</rules>
+	</element>
+	<element name="Elder Ancestry" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_ELDER_ANCESTRY">
+		<description>
+			<p>You have advantage on saving throws against being charmed, and frightened.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being charmed, and frightened.</description>
+		</sheet>
+	</element>
+	<element name="Shifting Scales" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_SHIFTING_SCALES">
+		<description>
+			<p>Your scales change color daily. This determines your draconic resistance and breath weapon for the day. Each day at dawn, roll a d3 and refer to the table below to determine your scale's color.</p>
+			<table>
+				<thead>
+					<tr><td>d3</td><td>Color</td><td>Draconic Resistance</td><td>Breath Weapon</td></tr>
+				</thead>
+				<tr><td>1</td><td>Black</td><td>Necrotic</td><td>Black Fire (Dex. Save)</td></tr>
+				<tr><td>2</td><td>Red</td><td>Fire</td><td>Crimson Demon's Breath (Dex. Save)</td></tr>
+				<tr><td>3</td><td>White</td><td>Lightning</td><td>Emperor's Roar (Dex. Save)</td></tr>
+			</table>
+			<p class="indent"><b><i>Black Fire.</i></b> When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of black flames in a 15-foot cone. Each creature in that area must make a Dexterity saving throw, with the DC equaling 8 + your Constitution modifier + your proficiency bonus. A creature takes 1d10 necrotic damage on a failed save or half as much damage on a successful one. The damage increases to 1d10 necrotic plus 1d10 fire at 5th level, 2d10 necrotic plus 1d10 fire at 11th level, and 2d10 necrotic plus 2d10 fire at 17th level. You can use this breath weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><b><i>Crimson Demon's Breath.</i></b> When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of black flames in a 5 by 30-foot line. Each creature in that area must make a Dexterity saving throw, with the DC equaling 8 + your Constitution modifier + your proficiency bonus. A creature takes 1d10 fire damage on a failed save or half as much damage on a successful one. The damage increases to 1d10 fire plus 1d10 necrotic at 5th level, 2d10 fire plus 1d10 necrotic at 11th level, and 2d10 fire plus 2d10 necrotic at 17th level. You can use this breath weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><b><i>Emperor's Roar.</i></b> When you take the Attack action on your turn, you can replace one of your attacks with a cacophonous roar, calling down red lightning that strikes down in a 5-foot radius around you. Each creature in that area must make a Dexterity saving throw, with the DC equaling 8 + your Constitution modifier + your proficiency bonus. A creature takes 1d10 lightning damage on a failed save or half as much on a successful one. The damage increases to 2d10 lightning damage at 5th level, 3d10 lightning damage at 11th level, and 4d10 lightning damage at 17th level. You can use this breath weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>Each day at dawn roll a d3, this changes the colour of your scales, determining your resistance and breath weapon for the day.</description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Shifting Scales (1d3/Day)" supports="Shifting Scales" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" requirements="ID_ALD_AGMH_RACIAL_TRAIT_SCALES_BLACK" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_ALD_AGMH_RACIAL_TRAIT_SCALES_RED" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" requirements="ID_ALD_AGMH_RACIAL_TRAIT_SCALES_WHITE" />
+		</rules>
+	</element>
+	<element name="Black" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_SCALES_BLACK">
+		<supports>Shifting Scales</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain resistance to nectrotic damage and can use the Black Fire breath weapon.</p>
+		</description>
+		<sheet alt="Black Fire" action="Attack" useage="{{proficiency}}/Long Rest">
+			<description>You can replace on of your attacks with an exhalation of black flames in a 15-foot cone. Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. A creature takes 1d10 necrotic damage on a failed save or half as much damage on a successful one.</description>
+			<description level="5">You can replace one of your attacks with an exhalation of black flames in a 15-foot cone. Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. A creature takes 1d10 necrotic damage and 1d10 fire damage on a failed save or half as much damage on a successful one.</description>
+			<description level="11">You can replace one of your attacks with an exhalation of black flames in a 15-foot cone. Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. A creature takes 2d10 necrotic damage and 1d10 fire damage on a failed save or half as much damage on a successful one.</description>
+			<description level="17">You can replace one of your attacks with an exhalation of black flames in a 15-foot cone. Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. A creature takes 2d10 necrotic damage and 2d10 fire damage on a failed save or half as much damage on a successful one.</description>
+		</sheet>
+		<rules>
+			<stat name="breath weapon:dc" value="8" />
+			<stat name="breath weapon:dc" value="constitution:modifier" />
+			<stat name="breath weapon:dc" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Red" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_SCALES_RED">
+		<supports>Shifting Scales</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain resistance to fire damage and can use the Crimson Demon's Breath breath weapon.</p>
+		</description>
+		<sheet alt="Crimson Demon's Breath" action="Attack" useage="{{proficiency}}/Long Rest">
+			<description>You can replace on of your attacks with an exhalation of black flames in a 5 by 30-foot line. Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. A creature takes 1d10 fire damage on a failed save or half as much damage on a successful one.</description>
+			<description level="5">You can replace one of your attacks with an exhalation of black flames in a 5 by 30-foot line. Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. A creature takes 1d10 fire damage and 1d10 necrotic damage on a failed save or half as much damage on a successful one.</description>
+			<description level="11">You can replace one of your attacks with an exhalation of black flames in a 5 by 30-foot line. Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. A creature takes 2d10 fire damage and 1d10 necrotic damage on a failed save or half as much damage on a successful one.</description>
+			<description level="17">You can replace one of your attacks with an exhalation of black flames in a 5 by 30-foot line. Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. A creature takes 2d10 fire damage and 2d10 necrotic damage on a failed save or half as much damage on a successful one.</description>
+		</sheet>
+		<rules>
+			<stat name="breath weapon:dc" value="8" />
+			<stat name="breath weapon:dc" value="constitution:modifier" />
+			<stat name="breath weapon:dc" value="proficiency" />
+		</rules>
+	</element>
+	<element name="White" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_SCALES_WHITE">
+		<supports>Shifting Scales</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain resistance to lightning damage and can use the Emperor's Roar breath weapon.</p>
+		</description>
+		<sheet alt="Emperor's Roar" action="Attack" useage="{{proficiency}}/Long Rest">
+			<description>You can replace one of your attacks with a cacophonous roar, calling down red lightning that strikes down in a 5-foot radius around you. Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. A creature takes 1d10 lightning damage on a failed save or half as much damage on a successful one.</description>
+			<description level="5">You can replace one of your attacks with a cacophonous roar, calling down red lightning that strikes down in a 5-foot radius around you. Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. A creature takes 2d10 lightning damage on a failed save or half as much damage on a successful one.</description>
+			<description level="11">You can replace one of your attacks with a cacophonous roar, calling down red lightning that strikes down in a 5-foot radius around you. Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. A creature takes 3d10 lightning damage on a failed save or half as much damage on a successful one.</description>
+			<description level="17">You can replace one of your attacks with a cacophonous roar, calling down red lightning that strikes down in a 5-foot radius around you. Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. A creature takes 4d10 lightning damage on a failed save or half as much damage on a successful one.</description>
+		</sheet>
+		<rules>
+			<stat name="breath weapon:dc" value="8" />
+			<stat name="breath weapon:dc" value="constitution:modifier" />
+			<stat name="breath weapon:dc" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Jhen Mohran" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_JHEN_MOHRAN">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>Like the ceadeus dragonborn, the jhen mohran dragonborn has a portly shape. It has an almost serpentine-like body shape with two sturdy, sharp-ended tusks. A rocky spine runs along its back. Due to the calm nature of the jhen mohran, the jhen mohran dragonborn takes little notice of slights against them, and is able to think clearly when in high stress situations.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Constitution score increases by 2, and your Wisdom score increases by 1.</p>
+			<p class="indent"><b><i>Darkvision.</i></b> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><b><i>Elder Dragon Magic.</i></b> You can cast the Enlarge/Reduce spell (Enlarge Only), using Wisdom as your spellcasting ability for it. Once you cast the spell, you can't cast it again with this trait until you finish a long rest.</p>
+			<p class="indent"><b><i>Elder Dragon Fortitude.</i></b> You have advantage on saving throws against poison.</p>
+			<p class="indent"><b><i>Hold Breath.</i></b> You can hold your breath for up to 1 hour.</p>
+			<p class="indent"><b><i>Sand Surfing.</i></b> You have a burrow speed of 20 feet. This speed is reduced by 10 feet if you are wearing heavy armor.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_JHEN_MOHRAN_ELDER_DRAGON_MAGIC" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_ELDER_DRAGON_FORTITUDE" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_HOLD_BREATH" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_SAND_SURFING" />
+		</rules>
+	</element>
+	<element name="Elder Dragon Magic" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_JHEN_MOHRAN_ELDER_DRAGON_MAGIC">
+		<description>
+			<p>You can cast the Enlarge/Reduce spell (Enlarge Only), using Wisdom as your spellcasting ability for it. Once you cast the spell, you can't cast it again with this trait until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast the Enlarge/Reduce spell (Enlarge Only), using Wisdom as your spellcasting ability for it.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" />
+		</rules>
+	</element>	
+	<element name="Elder Dragon Fortitude" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_ELDER_DRAGON_FORTITUDE">
+		<description>
+			<p>You have advantage on saving throws against poison.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against poison.</description>
+		</sheet>
+	</element>
+	<element name="Hold Breath" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_HOLD_BREATH">
+		<description>
+			<p>You can hold your breath for up to 1 hour.</p>
+		</description>
+		<sheet>
+			<description>You can hold your breath for up to 1 hour.</description>
+		</sheet>
+	</element>
+	<element name="Sand Surfing" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_SAND_SURFING">
+		<description>
+			<p>You have a burrow speed of 20 feet. This speed is reduced by 10 feet if you are wearing heavy armor.</p>
+		</description>
+		<sheet>
+			<description>You have a burrow speed of 20 feet. This speed is reduced by 10 feet if you are wearing heavy armor.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:burrow" value="20" bonus="base" equipped="![armor:heavy]" />
+			<stat name="innate speed:burrow" value="10" bonus="base" equipped="[armor:heavy]" />
+		</rules>
+	</element>
+	
+	<element name="'Jiiva" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_JIIVA">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>The 'jiiva dragonborn undergoes a remarkable transformation as it matures. Initially, it boasts an otherworldly visage, with glowing blue skin, six orange sensory organs adorning its horns, and frayed, grayish-blue wings. Upon molting in middle age, it adopts a more traditional appearance akin to a red dragonborn, with rigid scales, dark accents, and tan-colored wing undersides.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Intelligence score increases by 2, and your Constitution score increases by 1.</p>
+			<p class="indent"><b><i>Darkvision.</i></b> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><b><i>Dragon Claws.</i></b> Your claws are natural weapons, which counts as a simple melee weapon with which you are proficient. You add your Constitution modifier, instead of your Strength modifier, to the attack and damage rolls when you attack with your claws. It deals 1d4 necrotic damage on a hit. While you are missing half or more of your hit points, you have advantage on attack rolls you make with your claws.</p>
+			<p class="indent">When you attack with your claws and hit a creature that isn't a Construct or an Undead, you can empower yourself to regain hit points equal to the necrotic damage dealt by the claws.</p>
+			<p class="indent">You can empower yourself with these claws a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. At 5th level, your damage die with your claws increases to a d6.</p>
+			<p class="indent"><b><i>Draconic Resistance.</i></b> You have resistance to fire damage.</p>
+			<p class="indent"><b><i>Xeno'Jiiva Ancestry.</i></b> You have advantage on skill checks against being grappled, and magic can't put you to sleep.</p>
+			<p class="indent"><b><i>Keen Senses.</i></b> You have six orange sensory organs running up the length of your horns. You have proficiency in the Perception skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_DRAGON_CLAWS" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_XENO_JIIVA_ANCESTRY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+		</rules>
+	</element>
+	<element name="Dragon Claws" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_DRAGON_CLAWS">
+		<description>
+			<p>Your claws are natural weapons, which counts as a simple melee weapon with which you are proficient. You add your Constitution modifier, instead of your Strength modifier, to the attack and damage rolls when you attack with your claws. It deals 1d4 necrotic damage on a hit. While you are missing half or more of your hit points, you have advantage on attack rolls you make with your claws.</p>
+			<p class="indent">When you attack with your claws and hit a creature that isn't a Construct or an Undead, you can empower yourself to regain hit points equal to the necrotic damage dealt by the claws.</p>
+			<p class="indent">You can empower yourself with these claws a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. At 5th level, your damage die with your claws increases to a d6.</p>
+		</description>
+		<sheet>
+			<description>Your claws count as simple melee weapons with which you are proficient. You add {{constitution:modifier}} to your attack rolls instead of your Strength modifier, and deal 1d4 + {{constitution:modifier}} necrotic damage when you attack with your claws. You gain advantage on attack rolls made with your claws whilst you are missing at least half of your hit points. When you attack with your claws and hit a creature that isn't a Construct or Undead, you can regain a number of hit points equal to the necrotic damage dealt. You can do this {{proficiency}} times, regaining all expended uses when you finish a long rest.</description>
+			<description level="5">Your claws count as simple melee weapons with which you are proficient. You add {{constitution:modifier}} to your attack rolls instead of your Strength modifier, and deal 1d6 + {{constitution:modifier}} necrotic damage when you attack with your claws. You gain advantage on attack rolls made with your claws whilst you are missing at least half of your hit points. When you attack with your claws and hit a creature that isn't a Construct or Undead, you can regain a number of hit points equal to the necrotic damage dealt. You can do this {{proficiency}} times, regaining all expended uses when you finish a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Xeno'Jiiva Ancestry" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_XENO_JIIVA_ANCESTRY">
+		<description>
+			<p>You have advantage on skill checks against being grappled, and magic can't put you to sleep.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on skill checks against being grappled, and magic can't put you to sleep.</description>
+		</sheet>
+	</element>
+	
+	<element name="Kirin" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_KIRIN">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>The kirin dragonborn are the fairest dragonborns, whose beauty is often compared to that of the elves. Their bodies are sleek and slender, covered by fine white and dark cyan scales. The most prominent feature is their ability to grow majestic white hair that stands on end, as if charged with static when they get angry.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Dexterity, Intelligence, and Charisma scores each increases by 1.</p>
+			<p class="indent"><b><i>Control Lightning.</i></b> Whenever you cast a spell that deals lightning or thunder damage, you can cast it as if you were in a space within 15 feet of your actual location.</p>
+			<p class="indent"><b><i>Darkvision.</i></b> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><b><i>Draconic Resistance.</i></b> You have resistance to lightning damage.</p>
+			<p class="indent"><b><i>Elder Dragon Magic.</i></b> You know the thaumaturgy cantrip with this trait. Starting at 3rd level, you can cast the thunderwave spell with this trait. When you reach 5th level, you can cast the shatter spell with this trait. Once you cast any of these spells (excluding gust) with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_CONTROL_LIGHTNING" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_KIRIN_ELDER_DRAGON_MAGIC" />
+		</rules>
+	</element>
+	<element name="Control Lightning" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_CONTROL_LIGHTNING">
+		<description>
+			<p>Whenever you cast a spell that deals lightning or thunder damage, you can cast it as if you were in a space within 15 feet of your actual location.</p>
+		</description>
+		<sheet>
+			<description>Whenever you cast a spell that deals lightning or thunder damage, you can cast it as if you were in a space within 15 feet of your actual location.</description>
+		</sheet>
+	</element>
+	<element name="Elder Dragon Magic" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_KIRIN_ELDER_DRAGON_MAGIC">
+		<description>
+			<p>You know the thaumaturgy cantrip with this trait. Starting at 3rd level, you can cast the thunderwave spell with this trait. When you reach 5th level, you can cast the shatter spell with this trait. Once you cast any of these spells (excluding gust) with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet>
+			<description>You know the thaumaturgy cantrip. Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description level="3">You know the fire bolt cantrip. You can also cast the thunderwave spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description level="5">You know the fire bolt cantrip. You can also cast the thunderwave spell and shatter spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" />
+			<grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHATTER" level="5" />
+			<select type="Racial Trait" name="Spellcasting Ability (Elder Dragon Magic)" supports="Spellcasting Ability" />
+		</rules>
+	</element>
+
+	<element name="Kulve Taroth" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_KULVE_TAROTH">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>Kulve taroth dragonborn are slim and muscular with dark blue and golden scales covered by a metallic mantle (typically gold). They have large spiraling horns that resemble lapis lazuli, when they aren't covered in gold plating.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Charisma score increases by 2, and your Constitution score increases by 1.</p>
+			<p class="indent"><b><i>Draconic Resistance.</i></b> You have resistance to fire damage.</p>
+			<p class="indent"><b><i>Glorious Dragonborn.</i></b> You gain proficiency in the Persuasion skill.</p>
+			<p class="indent"><b><i>Metallic Coat.</i></b> As part of a long rest, you can produce a powerful magnetic force that attracts metals and minerals from the ground to your body and melt them with your high body temperature before letting it cool on your body, forming a metal coat. While wearing this metallic coat, your AC is 17, but your movement speed is reduced by 5 feet.</p>
+			<p class="indent">As an action you can shed the coat by entering a super heated state. Your super heated state lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra fire damage to one target when you deal damage to it with an attack or a spell. The extra fire damage equals your level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_METALLIC_COAT" />
+		</rules>
+	</element>
+	<element name="Metallic Coat" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_METALLIC_COAT">
+		<description>
+			<p>As part of a long rest, you can produce a powerful magnetic force that attracts metals and minerals from the ground to your body and melt them with your high body temperature before letting it cool on your body, forming a metal coat. While wearing this metallic coat, your AC is 17, but your movement speed is reduced by 5 feet.</p>
+			<p class="indent">As an action you can shed the coat by entering a super heated state. Your super heated state lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra fire damage to one target when you deal damage to it with an attack or a spell. The extra fire damage equals your level.</p>
+		</description>
+		<sheet>
+			<description>As part of a long rest, you can form a metallic coat. While wearing this metallic coat, your AC is 17, but your movement speed is reduced by 5 feet. As an action you can shed the coat by entering a super heated state, which lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal an extra {{level}} fire damage to one target when you deal damage to it with an attack or a spell.</description>
+		</sheet>
+		<!-- <rules>
+			<select name="Metallic Coat" type="Racial Trait" supports="Metallic Coat" />
+			<stat name="speed" value="-5" bonus="coat" requirements="ID_ALD_AGMH_RACIAL_TRAIT_COATED" />
+			<stat name="ac:natural armor:kulve taroth" value="17" bonus="base" requirements="ID_ALD_AGMH_RACIAL_TRAIT_COATED" />
+			<stat name="ac:calculation" value="ac:natural armor:kulve taroth" bonus="calculation" equipped="[armor:none]" alt="Metallic Coat (Kulve Taroth)" requirements="ID_ALD_AGMH_RACIAL_TRAIT_COATED" />
+		</rules> -->
+	</element>
+	<!-- <element name="Coated" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_COATED">
+		<supports>Metallic Coat</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have a metallic coat that grants you 17 AC but reduces your movement speed by 5 feet.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Uncoated" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_UNCOATED">
+		<supports>Metallic Coat</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have shed your metallic coat gaining your natural AC or that of your equipped armor and returning your movement speed to normal.</p>
+		</description>
+		<sheet display="false" />
+	</element> -->
+
+	<element name="Kushala Daora" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_KUSHALA_DAORA">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>Recognized by their two backward curving horns that blend in with the spikes lining their back and their organic metallic scales, the kushala dragonborn are steel willed defenders. Their mantra is "a cracked scale will lead to a dragon's downfall". So they train themselves and others to the best of their ability, to protect their beliefs.</p>
+			<p class="indent">The Kushala dragonborn scales are almost a pristine silver when they are born and begin to oxidize, darkening and rusting, as they age. To counteract the rust, the dragonborn molts as it grows, like a snake, shedding its old scales and beginning the process anew. Until their elder years when their molting ceases and they slowly turn the orange-red brown color of rust over the entirety of their body.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Strength, Constitution, and Intelligence scores each increase by 1.</p>
+			<p class="indent"><b><i>Acclimated.</i></b> You’re acclimated to high altitude, including elevations above 20,000 feet. You’re also naturally adapted to cold climates.</p>
+			<p class="indent"><b><i>Draconic Resistance.</i></b> You have resistance to thunder damage.</p>
+			<p class="indent"><b><i>Natural Armor.</i></b> Due to the constant oxidation of your metal scales, any armor you wear rusts rapidly. Your scales provide ample protection, however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</p>
+			<p class="indent"><b><i>Wind Barrier.</i></b> You can use an action to summon a barrier of wind around you for 1 minute. While the barrier is active, you have half cover against range attacks, resistance to nonmagical ammunition, and disperse any fog like effect in a 5-foot radius around you. Once used, you can't use this trait again until you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_ACCLIMATED" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_KUSHALA_DAORA_NATURAL_ARMOR" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_WIND_BARRIER" />
+		</rules>
+	</element>
+	<element name="Acclimated" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_ACCLIMATED">
+		<description>
+			<p>You’re acclimated to high altitude, including elevations above 20,000 feet. You’re also naturally adapted to cold climates.</p>
+		</description>
+		<sheet>
+			<description>You’re acclimated to high altitude, including elevations above 20,000 feet. You’re also naturally adapted to cold climates.</description>
+		</sheet>
+	</element>
+	<element name="Natural Armor" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_KUSHALA_DAORA_NATURAL_ARMOR">
+		<description>
+			<p>Due to the constant oxidation of your metal scales, any armor you wear rusts rapidly. Your scales provide ample protection, however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</p>
+		</description>
+		<sheet>
+			<description>Your scales provide you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:natural armor:kushala daora" value="17" bonus="base" />
+			<stat name="ac:calculation" value="ac:natural armor:kushala daora" bonus="calculation" equipped="[armor:none]" alt="Natural Armor (Kushala Daora)" />
+		</rules>
+	</element>
+
+	<element name="Magala" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_MAGALA">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>Magala dragonborn's are a unique elder dragonborn, possessing six limbs, including the clawed wings on its back. During its adolescent years, its body is covered in dark exoskeleton plates, and its wings are covered in jet-black fur that resemble a tattered and ragged cape, with notable features including the hidden feelers that are folded alongside its face. As an adult, following the skin-shedding, its body is covered in glittering golden scales, as well as its horns, claws and other spiky protrusions, which changed colors from crimson red/purple to dark brown. Its ragged-tattered wings also became golden scaly sheets that when fully expanded, resembles a star shape.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Constitution score increases by 2, and your Strength score increases by 1.</p>
+			<p class="indent"><b><i>Draconic Resistance.</i></b> You have resistance to necrotic damage.</p>
+			<p class="indent"><b><i>Darkvision.</i></b> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><b><i>Frenzied Immunity.</i></b> You are immune to the frenzy virus.</p>
+			<p class="indent"><b><i>Frenzied State.</i></b> Starting at 3rd level, you can use your bonus action to enter a frenzied state, causing two feelers to poke out from your head, and the color under your wings slowly changes to a bright purple. This state lasts for 1 minute or until you end it as a bonus action. Once you enter this state, you can't use it again until you finish a long rest.</p>
+			<p class="indent">While in this state, your darkvision increases by 30 feet, you can see normally in darkness, both magical and nonmagical; and at the end of each of your turns, each creature within 10 feet of you take necrotic damage equal to your proficiency bonus. Until the frenzied state ends, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.</p>
+			<p class="indent"><b><i>Winged Arms.</i></b> You have two claws on your extremely prehensile wings. These claws can manipulate an object, open or close a door or container, pick up or set down a Tiny object, or wield a weapon that has the light property.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_FRENZIED_IMMUNITY" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_FRENZIED_STATE" level="3"/>
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_WINGED_ARMS" />
+		</rules>
+	</element>
+	<element name="Frenzied Immunity" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_FRENZIED_IMMUNITY">
+		<description>
+			<p>You are immune to the frenzy virus.</p>
+		</description>
+		<sheet>
+			<description>You are immune to the frenzy virus.</description>
+		</sheet>
+	</element>
+	<element name="Frenzied State" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_FRENZIED_STATE">
+		<description>
+			<p>Starting at 3rd level, you can use your bonus action to enter a frenzied state, causing two feelers to poke out from your head, and the color under your wings slowly changes to a bright purple. This state lasts for 1 minute or until you end it as a bonus action. Once you enter this state, you can't use it again until you finish a long rest.</p>
+			<p class="indent">While in this state, your darkvision increases by 30 feet, you can see normally in darkness, both magical and nonmagical; and at the end of each of your turns, each creature within 10 feet of you take necrotic damage equal to your proficiency bonus. Until the frenzied state ends, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You can enter a frenzied state, which lasts for 1 minute or until you end it as a bonus action. While in this state, your darkvision increases by 30 feet, you can see normally in darkness, both magical and nonmagical; and at the end of each of your turns, each creature within 10 feet of you takes {{proficiency}} necrotic damage. Until the frenzied state ends, once on each of your turns, you can deal an extra {{proficiency}} necrotic damage to one target when you deal damage to it with an attack or a spell.</description>
+		</sheet>
+	</element>
+	<element name="Winged Arms" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_WINGED_ARMS">
+		<description>
+			<p>You have two claws on your extremely prehensile wings. These claws can manipulate an object, open or close a door or container, pick up or set down a Tiny object, or wield a weapon that has the light property.</p>
+		</description>
+		<sheet>
+			<description>Your clawed prehensile wings can manipulate an object, open or close a door or container, pick up or set down a Tiny object, or wield a weapon that has the light property.</description>
+		</sheet>
+	</element>
+
+	<element name="Malzeno" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_MALZENO">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>Resembling the revered velkhana dragonborn in their Regal and slender physique, the malzeno dragonborn are instead adorned with dark resilient scales. Their striking Visage features two resplendent golden horns and frills which gracefully extend from either side of their neck, reminiscent if an elegant cowl. Their tail exhibits three large movable prongs at its end granting them a versatile tool to ensnare smaller prey. One of their most unique abilities lies within their wings structure which allows them to wrap them around their bodies like a cape.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Constitution score increases by 2, and your Strength score increases by 1.</p>
+			<p class="indent"><b><i>Bloodmist Blink.</i></b> As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent">When you reach 3rd level, you can make one Tail attack against a creature within 5 feet of you immediately after you use your Bloodmist Blink.</p>
+			<p class="indent"><b><i>Darkvision.</i></b> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><b><i>Tail.</i></b> You can use your tail to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier as bludgeoning damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_BLOODMIST_BLINK" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_MALZENO_TAIL" />
+		</rules>
+	</element>
+	<element name="Bloodmist Blink" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_BLOODMIST_BLINK">
+		<description>
+			<p>As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent">When you reach 3rd level, you can make one Tail attack against a creature within 5 feet of you immediately after you use your Bloodmist Blink.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You can magically teleport up to 30 feet to an unoccupied space you can see.</description>
+			<description level="3">You can magically teleport up to 30 feet to an unoccupied space you can see. You can make one Tail attack against a creature within 5 feet of you immediately after you use your Bloodmist Blink.</description>
+		</sheet>
+	</element>
+	<element name="Tail" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_MALZENO_TAIL">
+		<description>
+			<p>You can use your tail to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier as bludgeoning damage.</p>
+		</description>
+		<sheet>
+			<description>You can use your tail to make unarmed strikes. When you hit with it, the strike deals 1d6 + {{strength:modifier}} as bludgeoning damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Nakarkos" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_NAKARKOS">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>Dragonborn only by name and silhouette, the nakarkos dragonborn are actually cephalopod-like humanoids. They have glowing yellow eyes and blue skin with spots of turquoise bioluminescence. The nakarkos dragonborn are able to secrete a sticky mucus from their pores, using it to adhere the bones of slain creatures to their body.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Constitution score increases by 2, and your Wisdom score increases by 1.</p>
+			<p class="indent"><b><i>Speed.</i></b> You have a swimming speed of 30 feet.</p>
+			<p class="indent"><b><i>Amphibious.</i></b> You can breathe air and water.</p>
+			<p class="indent"><b><i>Bone Armor.</i></b> As part of a short rest or long rest, you can harvest the bones from a slain creature of size Small or larger and adhere them to your body, gaining a number of temporary hit points equal to 1/2 the creature's CR. To use this trait, you need a blade, such as a dagger, or appropriate artisan's tools, such as woodcarver's tools.</p>
+			<p class="indent"><b><i>Draconic Resistance.</i></b> You have resistance to fire damage.</p>
+			<p class="indent"><b><i>Nakarkos Beams.</i></b> When you take the Attack action on your turn, you can replace one of your attacks with two 5 by 15 foot lines of draconic energy, which you fire from your hands. Each creature in a beam must make a Constitution saving throw, with the DC equaling 8 + your Constitution modifier + your proficiency bonus, and a creature in the line of more than one beam is affected only once. A creature takes 1d10 necrotic damage on a failed save or half as much on a successful one. The damage increases to 2d10 necrotic damage at 5th level, 3d10 necrotic damage at 11th level, and 4d10 necrotic damage at 17th level. After using your nakarkos beams, you cannot use them again until you complete a short or long rest.</p>
+			<p class="indent"><b><i>Sticky Mucus.</i></b> You secrete a sticky liquor through your skin. You have advantage on Strength (Athletics) checks to climb, grapple, or prevent yourself from being disarmed; but you also have disadvantage when attempting to escape a grapple.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed:swim" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_AMPHIBIOUS" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_BONE_ARMOR" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_NAKARKOS_BEAMS" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_STICKY_MUCUS" />
+		</rules>
+	</element>
+	<element name="Amphibious" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_AMPHIBIOUS">
+		<description>
+			<p>You can breathe air and water.</p>
+		</description>
+		<sheet>
+			<description>You can breathe air and water.</description>
+		</sheet>
+	</element>
+	<element name="Bone Armor" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_BONE_ARMOR">
+		<description>
+			<p>As part of a short rest or long rest, you can harvest the bones from a slain creature of size Small or larger and adhere them to your body, gaining a number of temporary hit points equal to 1/2 the creature's CR. To use this trait, you need a blade, such as a dagger, or appropriate artisan's tools, such as woodcarver's tools.</p>
+		</description>
+		<sheet>
+			<description>As part of a short rest or long rest, you can harvest the bones from a slain creature of size Small or larger and adhere them to your body, gaining a number of temporary hit points equal to 1/2 the creature's CR. To use this trait, you need a blade, such as a dagger, or appropriate artisan's tools, such as woodcarver's tools.</description>
+		</sheet>
+	</element>
+	<element name="Nakarkos Beams" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_NAKARKOS_BEAMS">
+		<description>
+			<p>When you take the Attack action on your turn, you can replace one of your attacks with two 5 by 15 foot lines of draconic energy, which you fire from your hands. Each creature in a beam must make a Constitution saving throw, with the DC equaling 8 + your Constitution modifier + your proficiency bonus, and a creature in the line of more than one beam is affected only once. A creature takes 1d10 necrotic damage on a failed save or half as much on a successful one. The damage increases to 2d10 necrotic damage at 5th level, 3d10 necrotic damage at 11th level, and 4d10 necrotic damage at 17th level. After using your nakarkos beams, you cannot use them again until you complete a short or long rest.</p>
+		</description>
+		<sheet action="Attack" usage="1/Rest">
+			<description>You can replace one of your attacks with two 5 by 15 foot lines of draconic energy, which you fire from your hands. Each creature in a beam must make a Constitution saving throw agianst a DC {{breath weapon:dc}}, and a creature in the line of more than one beam is affected only once. A creature takes 1d10 necrotic damage on a failed save or half as much on a successful one.</description>
+			<description level="5">You can replace one of your attacks with two 5 by 15 foot lines of draconic energy, which you fire from your hands. Each creature in a beam must make a Constitution saving throw agianst a DC {{breath weapon:dc}}, and a creature in the line of more than one beam is affected only once. A creature takes 2d10 necrotic damage on a failed save or half as much on a successful one.</description>
+			<description level="11">You can replace one of your attacks with two 5 by 15 foot lines of draconic energy, which you fire from your hands. Each creature in a beam must make a Constitution saving throw agianst a DC {{breath weapon:dc}}, and a creature in the line of more than one beam is affected only once. A creature takes 3d10 necrotic damage on a failed save or half as much on a successful one.</description>
+			<description level="15">You can replace one of your attacks with two 5 by 15 foot lines of draconic energy, which you fire from your hands. Each creature in a beam must make a Constitution saving throw agianst a DC {{breath weapon:dc}}, and a creature in the line of more than one beam is affected only once. A creature takes 4d10 necrotic damage on a failed save or half as much on a successful one.</description>
+		</sheet>
+		<rules>
+			<stat name="breath weapon:dc" value="8" />
+			<stat name="breath weapon:dc" value="constitution:modifier" />
+			<stat name="breath weapon:dc" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Sticky Mucus" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_STICKY_MUCUS">
+		<description>
+			<p>You secrete a sticky liquor through your skin. You have advantage on Strength (Athletics) checks to climb, grapple, or prevent yourself from being disarmed; but you also have disadvantage when attempting to escape a grapple.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Strength (Athletics) checks to climb, grapple, or prevent yourself from being disarmed; but you also have disadvantage when attempting to escape a grapple.</description>
+		</sheet>
+	</element>
+
+	<element name="Namielle" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_NAMIELLE">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>Namielle dragonborn have large needle-shaped teeth, like a deep-sea fish, and may have multiple long whiskers that resemble jellyfish-like tendrils. Normally their body is colored black and a deep sea blue, accented by a vibrant red while parts of their face and limbs glow with a bioluminescent light that pulses with the colors of the rainbow. When they haven't spent time in the rain or in water, their scales dry out changing to a milky tan coloring.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Constitution score increases by 2, and your Dexterity score increases by 1.</p>
+			<p class="indent"><b><i>Speed.</i></b> You have a swimming speed of 30 feet.</p>
+			<p class="indent"><b><i>Amphibious.</i></b> You can breathe air and water.</p>
+			<p class="indent"><b><i>Breath Weapon.</i></b> When you take the Attack action on your turn, you can replace one of your attacks with a 5 by 30 foot beam of water that fires from your maw. Each creature in that area must make a Constitution saving throw, with the DC equaling 8 + your Constitution modifier + your proficiency bonus. A creature takes 1d10 cold damage on a failed save or half as much on a successful one. The damage increases to 2d10 cold damage at 5th level, 3d10 cold damage at 11th level, and 4d10 cold damage at 17th level. You can use this breath weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><b><i>Draconic Resistance.</i></b> You have resistance to your choice of one of the following damage types: cold damage or lightning damage.</p>
+			<p class="indent"><b><i>Water Bending.</i></b> You know the shape water cantrip.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed:swim" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_AMPHIBIOUS" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_NAMIELLE_BREATH_WEAPON" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_NAMIELLE_DRACONIC_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_WATER_BENDING" />
+		</rules>
+	</element>
+	<element name="Breath Weapon" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_NAMIELLE_BREATH_WEAPON">
+		<description>
+			<p>When you take the Attack action on your turn, you can replace one of your attacks with a 5 by 30 foot beam of water that fires from your maw. Each creature in that area must make a Constitution saving throw, with the DC equaling 8 + your Constitution modifier + your proficiency bonus. A creature takes 1d10 cold damage on a failed save or half as much on a successful one. The damage increases to 2d10 cold damage at 5th level, 3d10 cold damage at 11th level, and 4d10 cold damage at 17th level. You can use this breath weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Attack" usage="{{proficiency}}/Long Rest">
+			<description>You can replace one of your attacks with a 5 by 30 foot beam of water that fires from your maw. Each creature in that area must make a Constitution saving throw against a DC {{breath weapon:dc}}. A creature takes 1d10 cold damage on a failed save or half as much on a successful one.</description>
+			<description level="5">You can replace one of your attacks with a 5 by 30 foot beam of water that fires from your maw. Each creature in that area must make a Constitution saving throw against a DC {{breath weapon:dc}}. A creature takes 2d10 cold damage on a failed save or half as much on a successful one.</description>
+			<description level="11">You can replace one of your attacks with a 5 by 30 foot beam of water that fires from your maw. Each creature in that area must make a Constitution saving throw against a DC {{breath weapon:dc}}. A creature takes 3d10 cold damage on a failed save or half as much on a successful one.</description>
+			<description level="17">You can replace one of your attacks with a 5 by 30 foot beam of water that fires from your maw. Each creature in that area must make a Constitution saving throw against a DC {{breath weapon:dc}}. A creature takes 4d10 cold damage on a failed save or half as much on a successful one.</description>
+		</sheet>
+		<rules>
+			<stat name="breath weapon:dc" value="8" />
+			<stat name="breath weapon:dc" value="constitution:modifier" />
+			<stat name="breath weapon:dc" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Draconic Resistance" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_NAMIELLE_DRACONIC_RESISTANCE">
+		<description>
+			<p>You have resistance to your choice of one of the following damage types: cold damage or lightning damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Draconic Resistance" supports="ID_ALD_AGMH_RACIAL_TRAIT_RESISTANCE_COLD|ID_ALD_AGMH_RACIAL_TRAIT_RESISTANCE_LIGHTNING" />
+		</rules>
+	</element>
+	<element name="Water Bending" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_WATER_BENDING">
+		<description>
+			<p>You know the shape water cantrip.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_SHAPE_WATER" />
+		</rules>
+	</element>
+
+	<element name="Nergigante" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_NERGIGANTE">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>Nergigante dragonborn have a bristly appearance. Much like their elder dragon brethren, their scales are black with purple and orange accents and sport two bulbous horns atop their head. The regenerative properties of the nergigante still flow in the blood of this elder dragonborn, though at a much slower rate. Taking hours to regrow their spikes instead of seconds.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Strength score increases by 2, and your Constitution score increases by 1.</p>
+			<p class="indent"><b><i>Horns.</i></b> Your horns are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal bludgeoning damage equal to 1d6 + your Strength modifier.</p>
+			<p class="indent"><b><i>Indurate Spikes.</i></b> You can cast shield of faith with this trait, but only target yourself. When you use this version of shield of faith, you have advantage on Constitution saving throws to maintain concentration on this spell. Once you cast this spell, you can't cast it again with this trait until you finish a long rest.</p>
+			<p class="indent"><b><i>Menacing.</i></b> You have proficiency in the Intimidation skill.</p>
+			<p class="indent"><b><i>Natural Armor.</i></b> You have tough, scaly skin. When you aren't wearing armor, your AC is 13 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.</p>
+			<p class="indent"><b><i>Spiked Regrowth.</i></b> As an action, you can regain a number of hit points equal to your level + your Constitution modifier. Once you use this trait, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_HORNS" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_INDURATE_SPIKES" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_NERGIGANTE_NATURAL_ARMOR" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_SPIKED_REGROWTH" />
+		</rules>
+	</element>
+	<element name="Horns" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_HORNS">
+		<description>
+			<p>Your horns are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal bludgeoning damage equal to 1d6 + your Strength modifier.</p>
+		</description>
+		<sheet>
+			<description>You can use your horns to make unarmed strikes. If you hit with them, you deal bludgeoning damage equal to 1d6 + {{strength:modifier}}</description>
+		</sheet>
+	</element>
+	<element name="Indurate Spikes" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_INDURATE_SPIKES">
+		<description>
+			<p>You can cast shield of faith with this trait, but only target yourself. When you use this version of shield of faith, you have advantage on Constitution saving throws to maintain concentration on this spell. Once you cast this spell, you can't cast it again with this trait until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast shield of faith with this trait, but only target yourself. When you use this version of shield of faith, you have advantage on Constitution saving throws to maintain concentration on this spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SHIELD_OF_FAITH" />
+		</rules>
+	</element>
+	<element name="Natural Armor" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_NERGIGANTE_NATURAL_ARMOR">
+		<description>
+			<p>You have tough, scaly skin. When you aren't wearing armor, your AC is 13 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.</p>
+		</description>
+		<sheet>
+			<description>When you aren't wearing armor, your AC is {{natural armor:ac}}. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.</description>
+		</sheet>
+		<rules>
+			<stat name="natural armor:ac" value="13" bonus="base" />
+			<stat name="natural armor:ac" value="dexterity:modifier" bonus="ability" />
+			<stat name="ac:calculation" value="natural armor:ac" bonus="calculation" equipped="[armor:none]" />
+		</rules>
+	</element>
+	<element name="Spiked Regrowth" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_SPIKED_REGROWTH">
+		<description>
+			<p>As an action, you can regain a number of hit points equal to your level + your Constitution modifier. Once you use this trait, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can regain {{spiked regrowth}} hit points.</description>
+		</sheet>
+		<rules>
+			<stat name="spiked regrowth" value="level" bonus="base" />
+			<stat name="spiked regrowth" value="constitution:modifier" bonus="ability" />
+			<stat name="spiked regrowth:calculation" value="spiked regrowth" bonus="calculation" />
+		</rules>
+	</element>
+
+	<element name="Shara Ishvalda" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_SHARA_ISHVALDA">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>The shara ishvalda dragonborn are as mysterious as the elder dragon they share their lineage with. The dragonborn from this ancestry share a strange trait in which they always seem to be endlessly gazing at something that's just right past you. Although this gaze never meets your eyes, one can’t help but feel they're looking at the real you. Their bodies are lithe and athletic, boasting a variety of bright colors, mainly yellows, purples, and white. They are known to manipulate the earth to surround their body, using their innate ability to control vibration, though they are not as skilled as their elder dragon ancestors.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Wisdom score increases by 2, and your Strength score increases by 1.</p>
+			<p class="indent"><b><i>Breath Weapon.</i></b> When you take the Attack action on your turn, you can replace one of your attacks with a 5 by 30 foot beam of high pitched vibrations. Each creature in that area must make a Constitution saving throw, with the DC equaling 8 + your Constitution modifier + your proficiency bonus. A creature takes 1d10 thunder damage on a failed save or half as much on a successful one. The damage increases to 2d10 thunder damage at 5th level, 3d10 thunder damage at 11th level, and 4d10 thunder damage at 17th level. You can use this breath weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><b><i>Draconic Resistance.</i></b> You have resistance to thunder damage.</p>
+			<p class="indent"><b><i>Perceptive.</i></b> You gain proficiency in the Perception skill.</p>
+			<p class="indent"><b><i>Stone Shell.</i></b> As an action, you gain 1d4 + 4 temporary hit points for 1 hour. At 3rd level you gain an additional 5 temporary hit points. Once you use this trait, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_SHARA_ISHVALDA_BREATH_WEAPON" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_STONE_SHELL" />
+		</rules>
+	</element>
+	<element name="Breath Weapon" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_SHARA_ISHVALDA_BREATH_WEAPON">
+		<description>
+			<p>When you take the Attack action on your turn, you can replace one of your attacks with a 5 by 30 foot beam of high pitched vibrations. Each creature in that area must make a Constitution saving throw, with the DC equaling 8 + your Constitution modifier + your proficiency bonus. A creature takes 1d10 thunder damage on a failed save or half as much on a successful one. The damage increases to 2d10 thunder damage at 5th level, 3d10 thunder damage at 11th level, and 4d10 thunder damage at 17th level. You can use this breath weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Attack" usage="{{proficiency}}/Long Rest">
+			<description>You can replace one of your attacks with a 5 by 30 foot beam of high pitched vibrations. Each creature in that area must make a Constitution saving throw against a DC {{breath weapon:dc}}. A creature takes 1d10 thunder damage on a failed save or half as much on a successful one.</description>
+			<description level="5">You can replace one of your attacks with a 5 by 30 foot beam of high pitched vibrations. Each creature in that area must make a Constitution saving throw against a DC {{breath weapon:dc}}. A creature takes 2d10 thunder damage on a failed save or half as much on a successful one.</description>
+			<description level="11">You can replace one of your attacks with a 5 by 30 foot beam of high pitched vibrations. Each creature in that area must make a Constitution saving throw against a DC {{breath weapon:dc}}. A creature takes 3d10 thunder damage on a failed save or half as much on a successful one.</description>
+			<description level="17">You can replace one of your attacks with a 5 by 30 foot beam of high pitched vibrations. Each creature in that area must make a Constitution saving throw against a DC {{breath weapon:dc}}. A creature takes 4d10 thunder damage on a failed save or half as much on a successful one.</description>		
+		</sheet>
+		<rules>
+			<stat name="breath weapon:dc" value="8" />
+			<stat name="breath weapon:dc" value="constitution:modifier" />
+			<stat name="breath weapon:dc" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Stone Shell" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_STONE_SHELL">
+		<description>
+			<p>As an action, you gain 1d4 + 4 temporary hit points for 1 hour. At 3rd level you gain an additional 5 temporary hit points. Once you use this trait, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You gain 1d4 + 4 temporary hit points for 1 hour.</description>
+			<description level="3">You gain 1d4 + 9 temporary hit points for 1 hour.</description>
+		</sheet>
+	</element>
+	
+	<element name="Teostra &amp; Lunastra" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_TEOSTRA_LUNASTRA">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>The teostra dragonborn has leonine features and a fiery red coloration. They have a grand mane, large fangs, and a pair of horns that curve backward. His wings are covered in fur, and its tail ends in a clump of such fur. The Lunastra dragonborn has the similar leonine features to the teostra dragonborn, but has a cool coloration. She has a prominent mane, large fangs, and a distinct crest that resembles a sort of crown. Her wings are covered in fur.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Charisma score increases by 2, and your Constitution score increases by 1.</p>
+			<p class="indent"><b><i>Regal.</i></b> You have advantage on Charisma checks when interacting with nobles.</p>
+			<p class="indent"><b><i>Dormat Power.</i></b> When you reach 3rd level, you can use a bonus action to unleash dormant elder dragon energy within yourself. Your transformation lasts for 1 minute, until you end it by expending the charges you built up or as a bonus action. Once you transform, you can’t use it again until you finish a long rest.</p>
+			<p class="indent">Searing light temporarily radiates from your eyes and mouth. For the duration, you are able to spread mass quantities of explosive powder made from your own scales, and at the end of each of your turns, each creature within 10 feet of you takes fire damage equal to your proficiency bonus.</p>
+			<p class="indent">Until the transformation ends, you gain a charge at the end of each of your turns. As an action you can expend all charges (minimum of 0) to release the stored dormant power inside of you, creating a supernova like explosion. Each creature within 10 feet of you must make a Dexterity saving throw equal to 8 + your Proficiency Bonus + your Constitution modifier. The creature takes fire equal to your level + an extra 1d6 fire damage for each charge gained on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent"><b><i>Draconic Resistance.</i></b> You have resistance to fire damage.</p>
+			<p class="indent"><b><i>Darkvision.</i></b> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_REGAL" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_DORMANT_POWER" level="3" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+		</rules>
+	</element>
+	<element name="Regal" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_REGAL">
+		<description>
+			<p>You have advantage on Charisma checks when interacting with nobles.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Charisma checks when interacting with nobles.</description>
+		</sheet>
+	</element>
+	<element name="Dormant Power" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_DORMANT_POWER">
+		<description>
+			<p>When you reach 3rd level, you can use a bonus action to unleash dormant elder dragon energy within yourself. Your transformation lasts for 1 minute, until you end it by expending the charges you built up or as a bonus action. Once you transform, you can’t use it again until you finish a long rest.</p>
+			<p class="indent">Searing light temporarily radiates from your eyes and mouth. For the duration, you are able to spread mass quantities of explosive powder made from your own scales, and at the end of each of your turns, each creature within 10 feet of you takes fire damage equal to your proficiency bonus.</p>
+			<p class="indent">Until the transformation ends, you gain a charge at the end of each of your turns. As an action you can expend all charges (minimum of 0) to release the stored dormant power inside of you, creating a supernova like explosion. Each creature within 10 feet of you must make a Dexterity saving throw equal to 8 + your Proficiency Bonus + your Constitution modifier. The creature takes fire equal to your level + an extra 1d6 fire damage for each charge gained on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You can unleash dormant elder dragon energy within yourself. Your transformation lasts for 1 minute, until you end it by expending the charges you built up or as a bonus action. For the duration at the end of each of your turns, each creature within 10 feet of you takes {{proficiency}} fire damage. Until the transformation ends, you gain a charge at the end of each of your turns. As an action you can expend all charges (minimum of 0) to release the stored dormant power inside of you, creating a supernova like explosion. Each creature within 10 feet of you must make a Dexterity saving throw against a DC {{breath weapon:dc}}. The creature takes {{level}} fire damage + an extra 1d6 fire damage for each charge gained on a failed save, or half as much damage on a successful one.</description>
+		</sheet>
+		<rules>
+			<stat name="breath weapon:dc" value="8" />
+			<stat name="breath weapon:dc" value="constitution:modifier" />
+			<stat name="breath weapon:dc" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Vaal Hazak" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_VAAL_HAZAK">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>Vaal hazak dragonborn's are typically slender and covered in silver scales, which are obscured by the fleshy red veil that covers most of their body. Similar to its elder dragon relative, the elder dragonborn vaal hazak, has the ability to transform the effluvium created by the bacteria on its body, into magic.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Constitution score increases by 2, and your Wisdom score increases by 1.</p>
+			<p class="indent"><b><i>Darkvision.</i></b> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><b><i>Draconic Resilience.</i></b> You have advantage on saving throws against disease, and you have resistance against acid damage.</p>
+			<p class="indent"><b><i>Effluvium Aura.</i></b> Starting at 3rd level, you can use your action to unleash effluvium stored within yourself, causing miasma to emanate in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. When a creature starts its turn in the effluvium or enters it for the first time on a turn, that creature takes 2 (1d4) acid damage.</p>
+			<p class="indent">The damage increases to 1d6 at 7th level, 1d8 at 11th, and 1d10 at 16th level. Once you use this trait, you can't use it again until you finish a long rest.</p>
+			<p class="indent"><b><i>Effluvium Magic.</i></b> Starting at 3rd level, you can cast the bestow curse spell, with this trait. Once you cast this spell with this trait, you can't cast it again until you finish a long rest. You can also cast this spell using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race). If the nature of the curse targets one of the creature's Ability Score, you have advantage on Constitution saving throws to maintain concentration on the spell and the spell acts as if it was casted as a 4th-level spell.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_ALD_AGMH_GRANTS_ELDER_VARIANT" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_DRACONIC_RESILIENCE" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_EFFLUVIUM_AURA" requirements="!ID_ALD_AGMH_GRANTS_ELDER_VARIANT" level="3" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_EFFLUVIUM_MAGIC" requirements="!ID_ALD_AGMH_GRANTS_ELDER_VARIANT" level="3" />
+			<select type="Race Variant" name="Elder Variant" supports="Elder Variant" optional="true" />
+		</rules>
+	</element>
+	<element name="Draconic Resilience" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_DRACONIC_RESILIENCE">
+		<description>
+			<p>You have advantage on saving throws against disease, and you have resistance against acid damage.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against disease.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+		</rules>
+	</element>
+	<element name="Effluvium Aura" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_EFFLUVIUM_AURA">
+		<description>
+			<p>Starting at 3rd level, you can use your action to unleash effluvium stored within yourself, causing miasma to emanate in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. When a creature starts its turn in the effluvium or enters it for the first time on a turn, that creature takes 2 (1d4) acid damage.</p>
+			<p class="indent">The damage increases to 1d6 at 7th level, 1d8 at 11th, and 1d10 at 16th level. Once you use this trait, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can unleash effluvium stored within yourself, causing miasma to emanate in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. When a creature starts its turn in the effluvium or enters it for the first time on a turn, that creature takes 1d4 acid damage.</description>
+			<description level="7">You can unleash effluvium stored within yourself, causing miasma to emanate in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. When a creature starts its turn in the effluvium or enters it for the first time on a turn, that creature takes 1d6 acid damage.</description>
+			<description level="11">You can unleash effluvium stored within yourself, causing miasma to emanate in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. When a creature starts its turn in the effluvium or enters it for the first time on a turn, that creature takes 1d8 acid damage.</description>
+			<description level="16">You can unleash effluvium stored within yourself, causing miasma to emanate in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. When a creature starts its turn in the effluvium or enters it for the first time on a turn, that creature takes 1d10 acid damage.</description>
+		</sheet>
+	</element>
+	<element name="Effluvium Magic" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_EFFLUVIUM_MAGIC">
+		<description>
+			<p>Starting at 3rd level, you can cast the bestow curse spell, with this trait. Once you cast this spell with this trait, you can't cast it again until you finish a long rest. You can also cast this spell using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race). If the nature of the curse targets one of the creature's Ability Score, you have advantage on Constitution saving throws to maintain concentration on the spell and the spell acts as if it was casted as a 4th-level spell.</p>
+		</description>
+		<sheet>
+			<description>You can cast the bestow curse spell, once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait. If the nature of the curse targets one of the creature's Ability Score, you have advantage on Constitution saving throws to maintain concentration on the spell and the spell acts as if it was casted as a 4th-level spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" />
+			<select type="Racial Trait" name="Spellcasting Ability (Elder Dragon Magic)" supports="Spellcasting Ability" />
+		</rules>
+	</element>
+
+	<element name="Blackveil Vaal Hazak" type="Race Variant" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_BLACKVEIL_VAAL_HAZAK">
+		<supports>Elder Variant</supports>
+		<description>
+			<p>The blackveil vaal hazak uses the vaal hazak dragonborn traits with the following traits replacing the Ability Score Increase, Effluvium Aura, and Effluvium Magic.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Constitution score increases by 2, and your Dexterity score increases by 1.</p>
+			<p class="indent"><b><i>Effluvium Explosion.</i></b> As an action you create an explosion of spores that fill a 30-foot sphere centered on you for 1 minute, until a wind of moderate or greater speed (at least 10 miles per hour) disperses it, or you use the effluvium spore trait. The sphere spreads around corners, and its area is lightly obscured.</p>
+			<p class="indent">While you remain in the spores, you know the location of all creatures and objects in the area, creatures or objects in the area can't benefit from being invisible, and you can use an action to cover one creature or object in spores.</p>
+			<p class="indent">The spores remain on the creature for the next 24 hours, or until they completely submerge their body and anything they were wearing or carrying (when the spores attached to it) in water for 5 minutes. For the duration, you know the location of the creature or object if you are within 30 feet of it.</p>
+			<p class="indent"><b><i>Effluvium Spores.</i></b> Starting at 3rd level, you can use your action to cause the effluvium spores on your body to float in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. Additionally, as a bonus action you can send your spores to a location of your choosing within 30 feet of you. The spores fill a 10-foot-squared area that is 5 feet tall and remain in that location until they deal damage to a creature, or your effluvium spore duration ends. At the start of your next turn, a new set of spores floats around you once again.</p>
+			<p class="indent">When a creature starts its turn in the spore's area or enters it for the first time on a turn, that creature takes 1d4 acid damage. The damage increases to 1d6 at 7th level, 1d8 at 11th, and 1d10 at 16th level. Once you use this trait, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_ALD_AGMH_GRANTS_ELDER_VARIANT" />
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_EFFLUVIUM_EXPLOSION" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_EFFLUVIUM_SPORES" level="3" />
+		</rules>
+	</element>
+	<element name="Effluvium Explosion" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_EFFLUVIUM_EXPLOSION">
+		<description>
+			<p>As an action you create an explosion of spores that fill a 30-foot sphere centered on you for 1 minute, until a wind of moderate or greater speed (at least 10 miles per hour) disperses it, or you use the effluvium spore trait. The sphere spreads around corners, and its area is lightly obscured.</p>
+			<p class="indent">While you remain in the spores, you know the location of all creatures and objects in the area, creatures or objects in the area can't benefit from being invisible, and you can use an action to cover one creature or object in spores.</p>
+			<p class="indent">The spores remain on the creature for the next 24 hours, or until they completely submerge their body and anything they were wearing or carrying (when the spores attached to it) in water for 5 minutes. For the duration, you know the location of the creature or object if you are within 30 feet of it.</p>
+		</description>
+		<sheet action="Action">
+			<description>You create an explosion of spores that fill a 30-foot sphere centered on you for 1 minute, until a wind of moderate or greater speed (at least 10 miles per hour) disperses it, or you use the effluvium spore trait. The sphere spreads around corners, and its area is lightly obscured. While you remain in the spores, you know the location of all creatures and objects in the area, creatures or objects in the area can't benefit from being invisible, and you can use an action to cover one creature or object in spores. The spores remain on the creature for the next 24 hours, or until they completely submerge their body and anything they were wearing or carrying (when the spores attached to it) in water for 5 minutes. For the duration, you know the location of the creature or object if you are within 30 feet of it.</description>
+		</sheet>
+	</element>
+	<element name="Effluvium Spores" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_EFFLUVIUM_SPORES">
+		<description>
+			<p>Starting at 3rd level, you can use your action to cause the effluvium spores on your body to float in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. Additionally, as a bonus action you can send your spores to a location of your choosing within 30 feet of you. The spores fill a 10-foot-squared area that is 5 feet tall and remain in that location until they deal damage to a creature, or your effluvium spore duration ends. At the start of your next turn, a new set of spores floats around you once again.</p>
+			<p class="indent">When a creature starts its turn in the spore's area or enters it for the first time on a turn, that creature takes 1d4 acid damage. The damage increases to 1d6 at 7th level, 1d8 at 11th, and 1d10 at 16th level. Once you use this trait, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can cause the effluvium spores on your body to float in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. Additionally, as a bonus action you can send your spores to a location of your choosing within 30 feet of you. The spores fill a 10-foot-squared area that is 5 feet tall and remain in that location until they deal damage to a creature, or your effluvium spore duration ends. At the start of your next turn, a new set of spores floats around you once again. When a creature starts its turn in the spore's area or enters it for the first time on a turn, that creature takes 1d4 acid damage.</description>
+			<description level="7">You can cause the effluvium spores on your body to float in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. Additionally, as a bonus action you can send your spores to a location of your choosing within 30 feet of you. The spores fill a 10-foot-squared area that is 5 feet tall and remain in that location until they deal damage to a creature, or your effluvium spore duration ends. At the start of your next turn, a new set of spores floats around you once again. When a creature starts its turn in the spore's area or enters it for the first time on a turn, that creature takes 1d6 acid damage.</description>
+			<description level="11">You can cause the effluvium spores on your body to float in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. Additionally, as a bonus action you can send your spores to a location of your choosing within 30 feet of you. The spores fill a 10-foot-squared area that is 5 feet tall and remain in that location until they deal damage to a creature, or your effluvium spore duration ends. At the start of your next turn, a new set of spores floats around you once again. When a creature starts its turn in the spore's area or enters it for the first time on a turn, that creature takes 1d8 acid damage.</description>
+			<description level="16">You can cause the effluvium spores on your body to float in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. Additionally, as a bonus action you can send your spores to a location of your choosing within 30 feet of you. The spores fill a 10-foot-squared area that is 5 feet tall and remain in that location until they deal damage to a creature, or your effluvium spore duration ends. At the start of your next turn, a new set of spores floats around you once again. When a creature starts its turn in the spore's area or enters it for the first time on a turn, that creature takes 1d10 acid damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Valstrax" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_VALSTRAX">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>Valstrax dragonborn are typically slender and covered in gleaming silver scales with blue eyes. Their backs are lined with fin-like projections.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Dexterity score increases by 2, and your Constitution score increases by 1.</p>
+			<p class="indent"><b><i>Draconic Resistance.</i></b> You have resistance to necrotic damage.</p>
+			<p class="indent"><b><i>The Red Comet.</i></b> Your ability to discharge draconic energy from your hands or wings allows you to move with a burst of speed that resembles a red comet traveling through space. When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can't use it again until you move 0 feet on one of your turns.</p>
+		 	<p class="indent"><b><i>Valstrax Lineage.</i></b> Starting at 3rd level, you can use your action to unleash the draconic energy within yourself, causing your eyes to glow red and two trident-like, wings to sprout from your back.</p>
+			<p class="indent">Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal extra fire damage to one target when you deal damage to it with an attack or a spell. The extra fire damage equals your level.</p>
+			<p class="indent">Once you use this trait, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_THE_RED_COMET" requirements="!ID_ALD_AGMH_GRANTS_ELDER_VARIANT" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_VALSTRAX_LINEAGE" level="3" />
+			<select type="Racial Trait" name="Variant Feature" supports="Variant Feature" optional="true" />
+		</rules>
+	</element>
+	<element name="The Red Comet" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_THE_RED_COMET">
+		<description>
+			<p>Your ability to discharge draconic energy from your hands or wings allows you to move with a burst of speed that resembles a red comet traveling through space. When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can't use it again until you move 0 feet on one of your turns.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you move on your turn in combat, you can double your speed until the end of the turn.</description>
+		</sheet>
+	</element>
+	<element name="Valstrax Lineage" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_VALSTRAX_LINEAGE">
+		<description>
+			<p>Starting at 3rd level, you can use your action to unleash the draconic energy within yourself, causing your eyes to glow red and two trident-like, wings to sprout from your back.</p>
+			<p class="indent">Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal extra fire damage to one target when you deal damage to it with an attack or a spell. The extra fire damage equals your level.</p>
+			<p class="indent">Once you use this trait, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can unleash the draconic energy within yourself, this transformation lasts for 1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal {{level}} fire damage to one target when you deal damage to it with an attack or a spell.</description>
+		</sheet>
+	</element>
+	<element name="Ignition" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_IGNITION">
+		<supports>Variant Feature</supports>
+		<description>
+			<p>You can use your action to discharge dragon element energy from your hands in one of the following ways: as a 5 by 30 ft. line, a 15 ft. cone, or in a 5-foot radius around you. When you use your ignition, each creature in the area of the discharge must make a Dexterity saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 necrotic damage on a failed save, and half as much damage on a successful one.</p>
+		 	<p class="indent">The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your ignition, you can’t use it again until you complete a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Rest">
+			<description>You can discharge dragon element energy from your hands in one of the following ways: as a 5 by 30 ft. line, a 15 ft. cone, or in a 5-foot radius around you. When you use your ignition, each creature in the area of the discharge must make a Dexterity saving throw against a DC {{breath weapon:dc}}. A creature takes 2d6 necrotic damage on a failed save, and half as much damage on a successful one.</description>
+			<description level="6">You can discharge dragon element energy from your hands in one of the following ways: as a 5 by 30 ft. line, a 15 ft. cone, or in a 5-foot radius around you. When you use your ignition, each creature in the area of the discharge must make a Dexterity saving throw against a DC {{breath weapon:dc}}. A creature takes 3d6 necrotic damage on a failed save, and half as much damage on a successful one.</description>
+			<description level="11">You can discharge dragon element energy from your hands in one of the following ways: as a 5 by 30 ft. line, a 15 ft. cone, or in a 5-foot radius around you. When you use your ignition, each creature in the area of the discharge must make a Dexterity saving throw against a DC {{breath weapon:dc}}. A creature takes 4d6 necrotic damage on a failed save, and half as much damage on a successful one.</description>
+			<description level="16">You can discharge dragon element energy from your hands in one of the following ways: as a 5 by 30 ft. line, a 15 ft. cone, or in a 5-foot radius around you. When you use your ignition, each creature in the area of the discharge must make a Dexterity saving throw against a DC {{breath weapon:dc}}. A creature takes 5d6 necrotic damage on a failed save, and half as much damage on a successful one.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_ALD_AGMH_GRANTS_ELDER_VARIANT" />
+			<stat name="breath weapon:dc" value="8" />
+			<stat name="breath weapon:dc" value="constitution:modifier" />
+			<stat name="breath weapon:dc" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Velkhana" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_VELKHANA">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>Velkhana dragonborn are elegant and slim. Their scales are a unique crystalline blue, and their head has a tiara-like crown of small horns. The velkhana dragonborn have the unique ability to summon ice to cover their bodies, providing additional protection. They also can use this ice offensively against those who attack them.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Charisma score increases by 2, and your Dexterity score increases by 1.</p>
+			<p class="indent"><b><i>Draconic Resistance.</i></b> You have resistance to cold damage.</p>
+			<p class="indent"><b><i>Frost Breath.</i></b> You know the ray of frost cantrip. Charisma is your spellcasting ability for it.</p>
+			<p class="indent"><b><i>Glacial Grace.</i></b> You gain proficiency in the Acrobatics and Persuasion skills.</p>
+			<p class="indent"><b><i>Ice Armor.</i></b> Starting at 3rd level, you can use an an action to coat your armor or clothing in magical ice for 1 hour, gaining 10 temporary hit points. If a creature hits you with a melee attack while you have these hit points, the creature takes 10 cold damage. At 5th-level you gain 15 temporary hit points when you use this action and a creature that hits you with a melee attack while you have these hit points takes 15 cold damage. Once you use this property you can't use it again until you finish a long rest.</p>
+			<p class="indent"><b><i>Ice Walk.</i></b> You can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost you extra moment.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_FROST_BREATH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_ICE_ARMOR" level="3" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_ICE_WALK" />
+		</rules>
+	</element>
+	<element name="Frost Breath" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_FROST_BREATH">
+		<description>
+			<p>You know the ray of frost cantrip. Charisma is your spellcasting ability for it.</p>
+		</description>
+		<sheet>
+			<description>You know the ray of frost cantrip. Charisma is your spellcasting ability for it.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_FROST" />
+		</rules>
+	</element>
+	<element name="Ice Armor" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_ICE_ARMOR">
+		<description>
+			<p>Starting at 3rd level, you can use an an action to coat your armor or clothing in magical ice for 1 hour, gaining 10 temporary hit points. If a creature hits you with a melee attack while you have these hit points, the creature takes 10 cold damage. At 5th-level you gain 15 temporary hit points when you use this action and a creature that hits you with a melee attack while you have these hit points takes 15 cold damage. Once you use this property you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can to coat your armor or clothing in magical ice for 1 hour, gaining 10 temporary hit points. If a creature hits you with a melee attack while you have these hit points, the creature takes 10 cold damage.</description>
+			<description level="5">You can to coat your armor or clothing in magical ice for 1 hour, gaining 15 temporary hit points. If a creature hits you with a melee attack while you have these hit points, the creature takes 15 cold damage.</description>
+		</sheet>
+	</element>
+	<element name="Ice Walk" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_ICE_WALK">
+		<description>
+			<p>You can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost you extra moment.</p>
+		</description>
+		<sheet>
+			<description>You can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost you extra moment.</description>
+		</sheet>
+	</element>
+
+	<element name="Zorah Magdaros" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_ZORAH_MAGDORAS">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>The zorah magdaros dragonborn is an extremely tall semi-aquatic elder dragonborn. They are covered in a rocky hide and have turtle-like characteristics, bearing a mountainous shell on its back that it can retreat under, though it is unable to walk like its elder dragon ancestor. When angered, fire, smoke, and lava constantly radiate from the creature's shell.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Constitution score increases by 2, and your Strength score increases by 1.</p>
+			<p class="indent"><b><i>Draconic Resistance.</i></b> You have resistance to fire damage.</p>
+			<p class="indent"><b><i>Elder Dragon Magic.</i></b> You know the firebolt cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+			<p class="indent"><b><i>Natural Armor.</i></b> Due to your rocky hide and the shape of your body, you are ill-suited to wearing armor. Your rocky hide provides ample protection, however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</p>
+			<p class="indent"><b><i>Rocky Defense.</i></b> You can withdraw into your rocky hide as an action. Until you emerge, you gain a +4 bonus to your AC, and you have advantage on Strength and Constitution saving throws. While in your rocky hide, you are prone, your speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reactions, and the only action you can take is a bonus action to emerge from your rocky hide.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_ZORAH_MAGDAROS_ELDER_DRAGON_MAGIC" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_ZORAH_MAGDAROS_NATURAL_ARMOR" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_ROCKY_DEFENSE" />
+		</rules>
+	</element>
+	<element name="Elder Dragon Magic" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_ZORAH_MAGDAROS_ELDER_DRAGON_MAGIC">
+		<description>
+			<p>You know the firebolt cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet>
+			<description>You know the firebolt cantrip. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT" />
+			<select type="Racial Trait" name="Spellcasting Ability (Elder Dragon Magic)" supports="Spellcasting Ability" />
+		</rules>
+	</element>
+	<element name="Natural Armor" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_ZORAH_MAGDAROS_NATURAL_ARMOR">
+		<description>
+			<p>Due to your rocky hide and the shape of your body, you are ill-suited to wearing armor. Your rocky hide provides ample protection, however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</p>
+		</description>
+		<sheet>
+			<description>Your rocky hide gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:natural armor:zorah magdaros" value="17" bonus="base" />
+			<stat name="ac:calculation" value="ac:natural armor:zorah magdaros" bonus="calculation" equipped="[armor:none]" alt="Natural Armor (Zorah Magdaros)" />
+		</rules>
+	</element>
+	<element name="Rocky Defense" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_ROCKY_DEFENSE">
+		<description>
+			<p>You can withdraw into your rocky hide as an action. Until you emerge, you gain a +4 bonus to your AC, and you have advantage on Strength and Constitution saving throws. While in your rocky hide, you are prone, your speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reactions, and the only action you can take is a bonus action to emerge from your rocky hide.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can withdraw into your rocky hide. Until you emerge, you gain a +4 bonus to your AC, and you have advantage on Strength and Constitution saving throws. While in your rocky hide, you are prone, your speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reactions, and the only action you can take is a bonus action to emerge from your rocky hide.</description>
+		</sheet>
+	</element>
+
+	<element name="Mizufolk" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_MIZUFOLK">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>Mizufolk have have a long, slender bodies. Dark purple fur covers its chest, underbelly, legs and tail. Their scales are light colored and resemble those of a fish. Their head has a long snout and is beautifully adorned by many fin-like appendages with that are pink with yellow markings.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Dexterity score increases by 2, and your Charimsa score increases by 1.</p>
+			<p class="indent"><b><i>Age.</i></b> Mizufolk reach maturity around age 18 and rarely live longer than 75 years.</p>
+			<p class="indent"><b><i>Bubbly.</i></b> Your body secretes a special fluid that creates tiny bubbles when you move. As an action you can magically clean yourself, your outfit, and your armor itself of dirt, grime, sweat, and so forth.</p>
+			<p class="indent"><b><i>Damage Resistance.</i></b> You have resistance to acid damage.</p>
+			<p class="indent"><b><i>Darkvision.</i></b> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><b><i>Slippery.</i></b> You have advantage on saving throws against being slick and you are proficient in the Acrobatic skill.</p>
+			<p class="indent"><b><i>Tail.</i></b> Your tail is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal damage equal to 1d8 + your Strength modifier as bludgeoning damage.</p>
+			<p class="indent"><b><i>Tool Proficiency.</i></b> You gain proficiency with calligrapher's supplies and you can use your tail as a calligraphy brush.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_BUBBLY" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_SLIPPERY" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_MIZUFOLK_TAIL" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_TOOL_PROFICIENCY" />
+		</rules>
+	</element>
+	<element name="Bubbly" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_BUBBLY">
+		<description>
+			<p>Your body secretes a special fluid that creates tiny bubbles when you move. As an action you can magically clean yourself, your outfit, and your armor itself of dirt, grime, sweat, and so forth.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can magically clean yourself, your outfit, and your armor itself of dirt, grime, sweat, and so forth.</description>
+		</sheet>
+	</element>
+	<element name="Slippery" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_SLIPPERY">
+		<description>
+			<p>You have advantage on saving throws against being slick and you are proficient in the Acrobatic skill.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being slick.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+		</rules>
+	</element>
+	<element name="Tail" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_MIZUFOLK_TAIL">
+		<description>
+			<p>Your tail is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal damage equal to 1d8 + your Strength modifier as bludgeoning damage.</p>
+		</description>
+		<sheet>
+			<description>You can use your tail to make unarmed strikes. If you hit with it, you deal 1d8 + {{strength:modifier}} bludgeoning damage.</description>
+		</sheet>
+	</element>
+	<element name="Tool Proficiency" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_TOOL_PROFICIENCY">
+		<description>
+			<p>You gain proficiency with calligrapher's supplies and you can use your tail as a calligraphy brush.</p>
+		</description>
+		<sheet>
+			<description>You can use your tail as a calligraphy brush.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+		</rules>
+	</element>
+	
+	<element name="Almudronfolk" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_ALMUDRONFOLK">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>Almudronfolk have scaly skin ranging in color from gray to creamy yellow to pinkish red. Its underbelly is covered in wide, pinkish scales. Almudron's head features some mammalian-like traits, sporting a short snout, a pair of red eyes, and several whisker-like tendrils. Both the back side of its body and its legs are covered by a gray-colored shell with some darker highlights. The shell forms two ridges on its neck reminiscent of Lagiacrus's hood.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Constitution score increases by 2, and your Strength score increases by 1.</p>
+			<p class="indent"><b><i>Age.</i></b> Almudronfolk reach maturity around age 20 and rarely live longer than 76 years.</p>
+			<p class="indent"><b><i>Speed.</i></b> You have a burrowing speed of 20 feet.</p>
+			<p class="indent"><b><i>Damage Resistance.</i></b> You have resistance to acid damage.</p>
+			<p class="indent"><b><i>Darkvision.</i></b> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><b><i>Jumper.</i></b> You are proficient in the Athletic skill and your standing jumps are treated as if you moved 10 feet before making the jump.</p>
+			<p class="indent"><b><i>Mud Bath.</i></b> As part of a long rest, you can melt the natural terrain around you, transforming it into a mud bath. A creature that spends at least one hour in this bath gains the following benefits:</p>
+			<ul>
+				<li>If the creature is poisoned it can repeat its saving throw when it gets out and has advantage on the save.</li>
+				<li>If the creature is suffering from more than one level of exhaustion, it can make a DC 15 Constitution saving throw, losing one extra level of exhaustion when it finishes the long rest.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_SPEED" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_JUMPER" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_MUD_BATH" />
+		</rules>
+	</element>
+	<element name="Speed" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_SPEED">
+		<description>
+			<p>You have a burrowing speed of 20 feet.</p>
+		</description>
+		<sheet>
+			<description>You have a burrowing speed of 20 feet.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:burrow" value="20" bonus="base" />
+		</rules>
+	</element>
+	<element name="Jumper" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_JUMPER">
+		<description>
+			<p>You are proficient in the Athletic skill and your standing jumps are treated as if you moved 10 feet before making the jump.</p>
+		</description>
+		<sheet>
+			<description>Your standing jumps are treated as if you moved 10 feet before making the jump.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+		</rules>
+	</element>
+	<element name="Mud Bath" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_MUD_BATH">
+		<description>
+			<p>As part of a long rest, you can melt the natural terrain around you, transforming it into a mud bath. A creature that spends at least one hour in this bath gains the following benefits:</p>
+			<ul>
+				<li>If the creature is poisoned it can repeat its saving throw when it gets out and has advantage on the save.</li>
+				<li>If the creature is suffering from more than one level of exhaustion, it can make a DC 15 Constitution saving throw, losing one extra level of exhaustion when it finishes the long rest.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>As part of a long rest you can transform the terrain around you into a mud bath. A creature that spends at least one hour in this bath gains the following benefits. If it is poisoned it can repeat its saving throw with advantage. If it is suffering from more than one level of exhaustion, it can make a Constitution saving throw against a DC 15, if it suceeds it loses one additional level of exhaustion when it finishes the long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Glavenusfolk" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_GLAVENUSFOLK">
+		<supports>Elder Dragonborn</supports>
+		<description>
+			<p>The glavenusfolk have dark red scales covering their body. Its belly is more of a cream color. Two rows of blue, bony plates run along their back, going from the eyes to the tail. They share the unique feature of a sword-like tail. The face and jaws are covered in sturdy plating, particularly resembling the head of a Carnotaurus.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Strength score increases by 2, and your Dexterity score increases by 1.</p>
+			<p class="indent"><b><i>Age.</i></b> Glavenusfolk reach maturity around age 22 and rarely live longer than 74 years.</p>
+			<p class="indent"><b><i>Damage Resistance.</i></b> You have resistance to fire damage.</p>
+			<p class="indent"><b><i>Menacing.</i></b> You gain proficiency in the Intimidation skill.</p>
+			<p class="indent"><b><i>Sharpen.</i></b> You can use a bonus action to sharpen your tail or a bladed weapon with your teeth. The next time you attack a target with this sharpened weapon and hit, roll your weapon's damage dice twice, using the higher of the two rolls as its damage on this attack. You can use this property a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest.</p>
+			<p class="indent"><b><i>Tail.</i></b> Your tail is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal damage equal to 1d6 + your Strength modifier as slashing damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elder Dragonborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elder Dragonborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_SHARPEN" />
+			<grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_GLAVENUSFOLK_TAIL" />
+		</rules>
+	</element>
+	<element name="Sharpen" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_SHARPEN">
+		<description>
+			<p>You can use a bonus action to sharpen your tail or a bladed weapon with your teeth. The next time you attack a target with this sharpened weapon and hit, roll your weapon's damage dice twice, using the higher of the two rolls as its damage on this attack. You can use this property a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You can sharpen your tail or a bladed weapon with your teeth. The next time you attack a target with this sharpened weapon and hit, roll your weapon's damage dice twice, using the higher of the two rolls as its damage on this attack.</description>
+		</sheet>
+	</element>
+	<element name="Tail" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_GLAVENUSFOLK_TAIL">
+		<description>
+			<p>Your tail is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal damage equal to 1d6 + your Strength modifier as slashing damage.</p>
+		</description>
+		<sheet>
+			<description>You can use your tail to make unarmed strikes. If you hit with it, you deal 1d6 + {{strength:modifier}} slashing damage.</description>
 		</sheet>
 	</element>
 </elements>
