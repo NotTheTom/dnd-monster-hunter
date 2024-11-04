@@ -16,4 +16,14 @@
             <set name="exotic">true</set>
         </setters>
     </element>
+
+    <element name="Troverian" type="Language" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_LANGUAGE_TROVERIAN">
+        <supports>Standard</supports>
+        <description>
+            <p>Typically spoken by Troverians.</p>
+        </description>
+        <setters>
+            <set name="standard">true</set>
+        </setters>
+    </element>
 </elements>
