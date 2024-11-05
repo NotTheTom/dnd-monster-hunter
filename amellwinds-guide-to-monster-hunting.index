@@ -18,8 +18,20 @@
 		<file name="background-wycademyresearcher.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-wycademyresearcher.xml" />
 		<file name="background-wycademystudent.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-wycademystudent.xml" />
 		 
-		<file name="faction-helixcommission.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/faction-features.xml" />
+		<file name="faction-features.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/faction-features.xml" />
+
+		<file name="languages.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/languages.xml" />
 	
+		<file name="race-elderdragonborn.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/race-elderdragonborn.xml" />
+		<file name="race-kechaborn.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/race-kechaborn.xml" />
+		<file name="race-lynian.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/race-lynian.xml" />
+		<file name="race-maflestian.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/race-malfestian.xml" />
+		<file name="race-neopteroids.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/race-neopteroid.xml" />
+		<file name="race-troverian.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/race-troverian.xml" />
+		<file name="race-wyverian.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/race-wyverian.xml" />
+
+		<file name="ranger-additional-favored-foe.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/ranger-additional-favored-foe.xml" />
+
 		<file name="source.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/source.xml" />
 	</files>
 </index>
