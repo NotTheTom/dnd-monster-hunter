@@ -399,9 +399,12 @@
             <p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
         </description>
         <sheet>
-            <description>You know the create bonfire cantrip. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
-            <description level="3">You know the create bonfire cantrip. You can also cast the enlarge/reduce spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
-            <description level="5">You know the create bonfire cantrip. You can also cast the enlarge/reduce spell and blindness/deafness spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+            <description>You know the create bonfire cantrip. 
+            Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+            <description level="3">You know the create bonfire cantrip. You can also cast the enlarge/reduce spell once per long rest with this trait or with an appropriate spell slot. 
+            Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+            <description level="5">You know the create bonfire cantrip. You can also cast the enlarge/reduce spell and blindness/deafness spell once per long rest with this trait or with an appropriate spell slot. 
+            Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
         </sheet>
         <rules>
 			<grant type="Spell" id="ID_XGTE_SPELL_CREATE_BONFIRE" />
@@ -438,9 +441,12 @@
             <p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
         </description>
         <sheet>
-            <description>You know the druidcraft cantrip. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
-            <description level="3">You know the druidcraft cantrip. You can also cast the barkskin spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
-            <description level="5">You know the druidcraft cantrip. You can also cast the barkskin spell and the earthbind spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+            <description>You know the druidcraft cantrip. 
+            Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+            <description level="3">You know the druidcraft cantrip. You can also cast the barkskin spell once per long rest with this trait or with an appropriate spell slot. 
+            Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+            <description level="5">You know the druidcraft cantrip. You can also cast the barkskin spell and the earthbind spell once per long rest with this trait or with an appropriate spell slot. 
+            Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
         </sheet>
         <rules>
 			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />

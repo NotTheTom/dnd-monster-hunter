@@ -141,9 +141,12 @@
             <p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
         </description>
         <sheet>
-            <description>You know the friends cantrip. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
-            <description level="3">You know the friends cantrip. You can also cast the calm emotions spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
-            <description level="5">You know the friends cantrip. You can also cast the calm emotions spell and suggestion spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+            <description>You know the friends cantrip. 
+            Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+            <description level="3">You know the friends cantrip. You can also cast the calm emotions spell once per long rest with this trait or with an appropriate spell slot.
+            Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+            <description level="5">You know the friends cantrip. You can also cast the calm emotions spell and suggestion spell once per long rest with this trait or with an appropriate spell slot. 
+            Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
         </sheet>
         <rules>
 			<grant type="Spell" id="ID_PHB_SPELL_FRIENDS" />
@@ -311,7 +314,9 @@
             <p class="indent">After you hit a creature with this knife, it shatters. During a short or long rest, you can create a new gaja knife, but you can never carry more than one at a time.</p>
         </description>
         <sheet>
-            <description>You're proficient with this knife, and it has the finesse and thrown property, with a normal range of 20 and a long range of 40. When you hit with a weapon attack using it, the target takes 1d4 + {{dexterity:modifier}} as piercing damage and they must make a Constitution saving throw against a DC {{gaja knife:dc}}. On a failed save the creature is afflicted with the {{tribal mask:condition}} condition and it lasts {{tribal mask:duration}}. After you hit a creature with this knife, it shatters. During a short or long rest, you can create a new gaja knife, but you can never carry more than one at a time.</description>
+            <description>You're proficient with this knife, and it has the finesse and thrown property, with a normal range of 20 and a long range of 40. When you hit with a weapon attack using it, the target takes 1d4 + {{dexterity:modifier}} as piercing damage and they must make a Constitution saving throw against a DC {{gaja knife:dc}}. 
+            On a failed save the creature is afflicted with the {{tribal mask:condition}} condition and it lasts {{tribal mask:duration}}. 
+            After you hit a creature with this knife, it shatters. During a short or long rest, you can create a new gaja knife, but you can never carry more than one at a time.</description>
         </sheet>
         <rules>
             <stat name="gaja knife:dc" value="8" />
@@ -373,7 +378,9 @@
             <p class="indent">After you hit a creature with this javelin, the javelin breaks. During a short or long rest, you can create a new javelin, but you can never carry more than one boa javelin at a time.</p>
         </description>
         <sheet>
-            <description>You're proficient wit this javelin, and it uses the same statistics as found in the Player's Handbook. When you hit a creature with it, they take damage as normal, but they must also make a Constitution saving throw against a DC {{boa javelin:dc}}. On a failed save, the creature is afflicted with the {{tribal mask:condition}} condition and it lasts {{tribal mask:duration}}. After you hit a creature with this javelin, the javelin breaks. During a short or long rest, you can create a new javelin, but you can never carry more than one boa javelin at a time.</description>
+            <description>You're proficient wit this javelin, and it uses the same statistics as found in the Player's Handbook. When you hit a creature with it, they take damage as normal, but they must also make a Constitution saving throw against a DC {{boa javelin:dc}}. 
+            On a failed save, the creature is afflicted with the {{tribal mask:condition}} condition and it lasts {{tribal mask:duration}}. 
+            After you hit a creature with this javelin, the javelin breaks. During a short or long rest, you can create a new javelin, but you can never carry more than one boa javelin at a time.</description>
         </sheet>
         <rules>
             <stat name="boa javelin:dc" value="8" />

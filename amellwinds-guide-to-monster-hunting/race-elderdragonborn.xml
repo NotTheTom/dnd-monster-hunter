@@ -197,9 +197,12 @@
 			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
 		</description>
 		<sheet>
-			<description>You know the gust cantrip. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
-			<description level="3">You know the gust cantrip. You can also cast the thunderwave spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
-			<description level="5">You know the gust cantrip. You can also cast the thunderwave spell and levitate spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description>You know the gust cantrip. 
+			Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description level="3">You know the gust cantrip. You can also cast the thunderwave spell once per long rest with this trait or with an appropriate spell slot. 
+			Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description level="5">You know the gust cantrip. You can also cast the thunderwave spell and levitate spell once per long rest with this trait or with an appropriate spell slot. 
+			Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_XGTE_SPELL_GUST" />
@@ -295,9 +298,12 @@
 			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
 		</description>
 		<sheet>
-			<description>You know the poison spray cantrip. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
-			<description level="3">You know the poison spray cantrip. You can also cast the fog cloud spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
-			<description level="5">You know the poison spray cantrip. You can also cast the fog cloud spell and misty step spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description>You know the poison spray cantrip. 
+			Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description level="3">You know the poison spray cantrip. You can also cast the fog cloud spell once per long rest with this trait or with an appropriate spell slot. 
+			Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description level="5">You know the poison spray cantrip. You can also cast the fog cloud spell and misty step spell once per long rest with this trait or with an appropriate spell slot. 
+			Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_POISON_SPRAY" />
@@ -360,9 +366,12 @@
 			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
 		</description>
 		<sheet>
-			<description>You know the fire bolt cantrip. Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
-			<description level="3">You know the fire bolt cantrip. You can also cast the charm person spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
-			<description level="5">You know the fire bolt cantrip. You can also cast the charm person spell and melf's minute meteors once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description>You know the fire bolt cantrip. 
+			Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description level="3">You know the fire bolt cantrip. You can also cast the charm person spell once per long rest with this trait or with an appropriate spell slot. 
+			Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description level="5">You know the fire bolt cantrip. You can also cast the charm person spell and melf's minute meteors once per long rest with this trait or with an appropriate spell slot. 
+			Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT" />
@@ -588,8 +597,10 @@
 			<p class="indent">You can empower yourself with these claws a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. At 5th level, your damage die with your claws increases to a d6.</p>
 		</description>
 		<sheet>
-			<description>Your claws count as simple melee weapons with which you are proficient. You add {{constitution:modifier}} to your attack rolls instead of your Strength modifier, and deal 1d4 + {{constitution:modifier}} necrotic damage when you attack with your claws. You gain advantage on attack rolls made with your claws whilst you are missing at least half of your hit points. When you attack with your claws and hit a creature that isn't a Construct or Undead, you can regain a number of hit points equal to the necrotic damage dealt. You can do this {{proficiency}} times, regaining all expended uses when you finish a long rest.</description>
-			<description level="5">Your claws count as simple melee weapons with which you are proficient. You add {{constitution:modifier}} to your attack rolls instead of your Strength modifier, and deal 1d6 + {{constitution:modifier}} necrotic damage when you attack with your claws. You gain advantage on attack rolls made with your claws whilst you are missing at least half of your hit points. When you attack with your claws and hit a creature that isn't a Construct or Undead, you can regain a number of hit points equal to the necrotic damage dealt. You can do this {{proficiency}} times, regaining all expended uses when you finish a long rest.</description>
+			<description>Your claws count as simple melee weapons with which you are proficient. You add {{constitution:modifier}} to your attack rolls instead of your Strength modifier, and deal 1d4 + {{constitution:modifier}} necrotic damage when you attack with your claws. You gain advantage on attack rolls made with your claws whilst you are missing at least half of your hit points. 
+			When you attack with your claws and hit a creature that isn't a Construct or Undead, you can regain a number of hit points equal to the necrotic damage dealt. You can do this {{proficiency}} times, regaining all expended uses when you finish a long rest.</description>
+			<description level="5">Your claws count as simple melee weapons with which you are proficient. You add {{constitution:modifier}} to your attack rolls instead of your Strength modifier, and deal 1d6 + {{constitution:modifier}} necrotic damage when you attack with your claws. You gain advantage on attack rolls made with your claws whilst you are missing at least half of your hit points. 
+			When you attack with your claws and hit a creature that isn't a Construct or Undead, you can regain a number of hit points equal to the necrotic damage dealt. You can do this {{proficiency}} times, regaining all expended uses when you finish a long rest.</description>
 		</sheet>
 	</element>
 	<element name="Xeno'Jiiva Ancestry" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_XENO_JIIVA_ANCESTRY">
@@ -640,9 +651,12 @@
 			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
 		</description>
 		<sheet>
-			<description>You know the thaumaturgy cantrip. Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
-			<description level="3">You know the fire bolt cantrip. You can also cast the thunderwave spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
-			<description level="5">You know the fire bolt cantrip. You can also cast the thunderwave spell and shatter spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description>You know the thaumaturgy cantrip. 
+			Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description level="3">You know the fire bolt cantrip. You can also cast the thunderwave spell once per long rest with this trait or with an appropriate spell slot. 
+			Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
+			<description level="5">You know the fire bolt cantrip. You can also cast the thunderwave spell and shatter spell once per long rest with this trait or with an appropriate spell slot. 
+			Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" />
@@ -679,7 +693,8 @@
 			<p class="indent">As an action you can shed the coat by entering a super heated state. Your super heated state lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra fire damage to one target when you deal damage to it with an attack or a spell. The extra fire damage equals your level.</p>
 		</description>
 		<sheet>
-			<description>As part of a long rest, you can form a metallic coat. While wearing this metallic coat, your AC is 17, but your movement speed is reduced by 5 feet. As an action you can shed the coat by entering a super heated state, which lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal an extra {{level}} fire damage to one target when you deal damage to it with an attack or a spell.</description>
+			<description>As part of a long rest, you can form a metallic coat. While wearing this metallic coat, your AC is 17, but your movement speed is reduced by 5 feet. 
+			As an action you can shed the coat by entering a super heated state, which lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal an extra {{level}} fire damage to one target when you deal damage to it with an attack or a spell.</description>
 		</sheet>
 		<!-- <rules>
 			<select name="Metallic Coat" type="Racial Trait" supports="Metallic Coat" />
@@ -790,7 +805,8 @@
 			<p class="indent">While in this state, your darkvision increases by 30 feet, you can see normally in darkness, both magical and nonmagical; and at the end of each of your turns, each creature within 10 feet of you take necrotic damage equal to your proficiency bonus. Until the frenzied state ends, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.</p>
 		</description>
 		<sheet action="Bonus Action" usage="1/Long Rest">
-			<description>You can enter a frenzied state, which lasts for 1 minute or until you end it as a bonus action. While in this state, your darkvision increases by 30 feet, you can see normally in darkness, both magical and nonmagical; and at the end of each of your turns, each creature within 10 feet of you takes {{proficiency}} necrotic damage. Until the frenzied state ends, once on each of your turns, you can deal an extra {{proficiency}} necrotic damage to one target when you deal damage to it with an attack or a spell.</description>
+			<description>You can enter a frenzied state, which lasts for 1 minute or until you end it as a bonus action. 
+			While in this state, your darkvision increases by 30 feet, you can see normally in darkness, both magical and nonmagical; and at the end of each of your turns, each creature within 10 feet of you takes {{proficiency}} necrotic damage. Until the frenzied state ends, once on each of your turns, you can deal an extra {{proficiency}} necrotic damage to one target when you deal damage to it with an attack or a spell.</description>
 		</sheet>
 	</element>
 	<element name="Winged Arms" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_WINGED_ARMS">
@@ -830,7 +846,8 @@
 		</description>
 		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
 			<description>You can magically teleport up to 30 feet to an unoccupied space you can see.</description>
-			<description level="3">You can magically teleport up to 30 feet to an unoccupied space you can see. You can make one Tail attack against a creature within 5 feet of you immediately after you use your Bloodmist Blink.</description>
+			<description level="3">You can magically teleport up to 30 feet to an unoccupied space you can see. 
+			You can make one Tail attack against a creature within 5 feet of you immediately after you use your Bloodmist Blink.</description>
 		</sheet>
 	</element>
 	<element name="Tail" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_MALZENO_TAIL">
@@ -886,7 +903,8 @@
 	</element>
 	<element name="Nakarkos Beams" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_NAKARKOS_BEAMS">
 		<description>
-			<p>When you take the Attack action on your turn, you can replace one of your attacks with two 5 by 15 foot lines of draconic energy, which you fire from your hands. Each creature in a beam must make a Constitution saving throw, with the DC equaling 8 + your Constitution modifier + your proficiency bonus, and a creature in the line of more than one beam is affected only once. A creature takes 1d10 necrotic damage on a failed save or half as much on a successful one. The damage increases to 2d10 necrotic damage at 5th level, 3d10 necrotic damage at 11th level, and 4d10 necrotic damage at 17th level. After using your nakarkos beams, you cannot use them again until you complete a short or long rest.</p>
+			<p>When you take the Attack action on your turn, you can replace one of your attacks with two 5 by 15 foot lines of draconic energy, which you fire from your hands. Each creature in a beam must make a Constitution saving throw, with the DC equaling 8 + your Constitution modifier + your proficiency bonus, and a creature in the line of more than one beam is affected only once. A creature takes 1d10 necrotic damage on a failed save or half as much on a successful one.</p>
+			<p class="indent">The damage increases to 2d10 necrotic damage at 5th level, 3d10 necrotic damage at 11th level, and 4d10 necrotic damage at 17th level. After using your nakarkos beams, you cannot use them again until you complete a short or long rest.</p>
 		</description>
 		<sheet action="Attack" usage="1/Rest">
 			<description>You can replace one of your attacks with two 5 by 15 foot lines of draconic energy, which you fire from your hands. Each creature in a beam must make a Constitution saving throw agianst a DC {{breath weapon:dc}}, and a creature in the line of more than one beam is affected only once. A creature takes 1d10 necrotic damage on a failed save or half as much on a successful one.</description>
@@ -935,7 +953,8 @@
 	</element>
 	<element name="Breath Weapon" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_NAMIELLE_BREATH_WEAPON">
 		<description>
-			<p>When you take the Attack action on your turn, you can replace one of your attacks with a 5 by 30 foot beam of water that fires from your maw. Each creature in that area must make a Constitution saving throw, with the DC equaling 8 + your Constitution modifier + your proficiency bonus. A creature takes 1d10 cold damage on a failed save or half as much on a successful one. The damage increases to 2d10 cold damage at 5th level, 3d10 cold damage at 11th level, and 4d10 cold damage at 17th level. You can use this breath weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p>When you take the Attack action on your turn, you can replace one of your attacks with a 5 by 30 foot beam of water that fires from your maw. Each creature in that area must make a Constitution saving throw, with the DC equaling 8 + your Constitution modifier + your proficiency bonus. A creature takes 1d10 cold damage on a failed save or half as much on a successful one.</p>
+			<p class="indent">The damage increases to 2d10 cold damage at 5th level, 3d10 cold damage at 11th level, and 4d10 cold damage at 17th level. You can use this breath weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
 		</description>
 		<sheet action="Attack" usage="{{proficiency}}/Long Rest">
 			<description>You can replace one of your attacks with a 5 by 30 foot beam of water that fires from your maw. Each creature in that area must make a Constitution saving throw against a DC {{breath weapon:dc}}. A creature takes 1d10 cold damage on a failed save or half as much on a successful one.</description>
@@ -1029,12 +1048,11 @@
 			<p>As an action, you can regain a number of hit points equal to your level + your Constitution modifier. Once you use this trait, you can't use it again until you finish a long rest.</p>
 		</description>
 		<sheet action="Action" usage="1/Long Rest">
-			<description>You can regain {{spiked regrowth}} hit points.</description>
+			<description>You can regain {{spiked regrowth:heal}} hit points.</description>
 		</sheet>
 		<rules>
-			<stat name="spiked regrowth" value="level" bonus="base" />
-			<stat name="spiked regrowth" value="constitution:modifier" bonus="ability" />
-			<stat name="spiked regrowth:calculation" value="spiked regrowth" bonus="calculation" />
+			<stat name="spiked regrowth:heal" value="level" bonus="base" />
+			<stat name="spiked regrowth:heal" value="constitution:modifier" bonus="ability" />
 		</rules>
 	</element>
 
@@ -1062,7 +1080,8 @@
 	</element>
 	<element name="Breath Weapon" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_SHARA_ISHVALDA_BREATH_WEAPON">
 		<description>
-			<p>When you take the Attack action on your turn, you can replace one of your attacks with a 5 by 30 foot beam of high pitched vibrations. Each creature in that area must make a Constitution saving throw, with the DC equaling 8 + your Constitution modifier + your proficiency bonus. A creature takes 1d10 thunder damage on a failed save or half as much on a successful one. The damage increases to 2d10 thunder damage at 5th level, 3d10 thunder damage at 11th level, and 4d10 thunder damage at 17th level. You can use this breath weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p>When you take the Attack action on your turn, you can replace one of your attacks with a 5 by 30 foot beam of high pitched vibrations. Each creature in that area must make a Constitution saving throw, with the DC equaling 8 + your Constitution modifier + your proficiency bonus. A creature takes 1d10 thunder damage on a failed save or half as much on a successful one.</p>
+			<p class="indent">The damage increases to 2d10 thunder damage at 5th level, 3d10 thunder damage at 11th level, and 4d10 thunder damage at 17th level. You can use this breath weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
 		</description>
 		<sheet action="Attack" usage="{{proficiency}}/Long Rest">
 			<description>You can replace one of your attacks with a 5 by 30 foot beam of high pitched vibrations. Each creature in that area must make a Constitution saving throw against a DC {{breath weapon:dc}}. A creature takes 1d10 thunder damage on a failed save or half as much on a successful one.</description>
@@ -1125,7 +1144,9 @@
 			<p class="indent">Until the transformation ends, you gain a charge at the end of each of your turns. As an action you can expend all charges (minimum of 0) to release the stored dormant power inside of you, creating a supernova like explosion. Each creature within 10 feet of you must make a Dexterity saving throw equal to 8 + your Proficiency Bonus + your Constitution modifier. The creature takes fire equal to your level + an extra 1d6 fire damage for each charge gained on a failed save, or half as much damage on a successful one.</p>
 		</description>
 		<sheet action="Bonus Action" usage="1/Long Rest">
-			<description>You can unleash dormant elder dragon energy within yourself. Your transformation lasts for 1 minute, until you end it by expending the charges you built up or as a bonus action. For the duration at the end of each of your turns, each creature within 10 feet of you takes {{proficiency}} fire damage. Until the transformation ends, you gain a charge at the end of each of your turns. As an action you can expend all charges (minimum of 0) to release the stored dormant power inside of you, creating a supernova like explosion. Each creature within 10 feet of you must make a Dexterity saving throw against a DC {{breath weapon:dc}}. The creature takes {{level}} fire damage + an extra 1d6 fire damage for each charge gained on a failed save, or half as much damage on a successful one.</description>
+			<description>You can unleash dormant elder dragon energy within yourself. Your transformation lasts for 1 minute, until you end it by expending the charges you built up or as a bonus action. 
+			For the duration at the end of each of your turns, each creature within 10 feet of you takes {{proficiency}} fire damage. 
+			Until the transformation ends, you gain a charge at the end of each of your turns. As an action you can expend all charges (minimum of 0) to release the stored dormant power inside of you, creating a supernova like explosion. Each creature within 10 feet of you must make a Dexterity saving throw against a DC {{breath weapon:dc}}. The creature takes {{level}} fire damage + an extra 1d6 fire damage for each charge gained on a failed save, or half as much damage on a successful one.</description>
 		</sheet>
 		<rules>
 			<stat name="breath weapon:dc" value="8" />
@@ -1187,7 +1208,8 @@
 			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race). If the nature of the curse targets one of the creature's Ability Score, you have advantage on Constitution saving throws to maintain concentration on the spell and the spell acts as if it was casted as a 4th-level spell.</p>
 		</description>
 		<sheet>
-			<description>You can cast the bestow curse spell, once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait. If the nature of the curse targets one of the creature's Ability Score, you have advantage on Constitution saving throws to maintain concentration on the spell and the spell acts as if it was casted as a 4th-level spell.</description>
+			<description>You can cast the bestow curse spell, once per long rest with this trait or with an appropriate spell slot. 
+			Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait. If the nature of the curse targets one of the creature's Ability Score, you have advantage on Constitution saving throws to maintain concentration on the spell and the spell acts as if it was casted as a 4th-level spell.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" />
@@ -1221,7 +1243,9 @@
 			<p class="indent">The spores remain on the creature for the next 24 hours, or until they completely submerge their body and anything they were wearing or carrying (when the spores attached to it) in water for 5 minutes. For the duration, you know the location of the creature or object if you are within 30 feet of it.</p>
 		</description>
 		<sheet action="Action">
-			<description>You create an explosion of spores that fill a 30-foot sphere centered on you for 1 minute, until a wind of moderate or greater speed (at least 10 miles per hour) disperses it, or you use the effluvium spore trait. The sphere spreads around corners, and its area is lightly obscured. While you remain in the spores, you know the location of all creatures and objects in the area, creatures or objects in the area can't benefit from being invisible, and you can use an action to cover one creature or object in spores. The spores remain on the creature for the next 24 hours, or until they completely submerge their body and anything they were wearing or carrying (when the spores attached to it) in water for 5 minutes. For the duration, you know the location of the creature or object if you are within 30 feet of it.</description>
+			<description>You create an explosion of spores that fill a 30-foot sphere centered on you for 1 minute, until a wind of moderate or greater speed (at least 10 miles per hour) disperses it, or you use the effluvium spore trait. The sphere spreads around corners, and its area is lightly obscured. 
+			While you remain in the spores, you know the location of all creatures and objects in the area, creatures or objects in the area can't benefit from being invisible, and you can use an action to cover one creature or object in spores. 
+			The spores remain on the creature for the next 24 hours, or until they completely submerge their body and anything they were wearing or carrying (when the spores attached to it) in water for 5 minutes. For the duration, you know the location of the creature or object if you are within 30 feet of it.</description>
 		</sheet>
 	</element>
 	<element name="Effluvium Spores" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_EFFLUVIUM_SPORES">
@@ -1230,10 +1254,14 @@
 			<p class="indent">When a creature starts its turn in the spore's area or enters it for the first time on a turn, that creature takes 1d4 acid damage. The damage increases to 1d6 at 7th level, 1d8 at 11th, and 1d10 at 16th level. Once you use this trait, you can't use it again until you finish a long rest.</p>
 		</description>
 		<sheet action="Action" usage="1/Long Rest">
-			<description>You can cause the effluvium spores on your body to float in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. Additionally, as a bonus action you can send your spores to a location of your choosing within 30 feet of you. The spores fill a 10-foot-squared area that is 5 feet tall and remain in that location until they deal damage to a creature, or your effluvium spore duration ends. At the start of your next turn, a new set of spores floats around you once again. When a creature starts its turn in the spore's area or enters it for the first time on a turn, that creature takes 1d4 acid damage.</description>
-			<description level="7">You can cause the effluvium spores on your body to float in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. Additionally, as a bonus action you can send your spores to a location of your choosing within 30 feet of you. The spores fill a 10-foot-squared area that is 5 feet tall and remain in that location until they deal damage to a creature, or your effluvium spore duration ends. At the start of your next turn, a new set of spores floats around you once again. When a creature starts its turn in the spore's area or enters it for the first time on a turn, that creature takes 1d6 acid damage.</description>
-			<description level="11">You can cause the effluvium spores on your body to float in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. Additionally, as a bonus action you can send your spores to a location of your choosing within 30 feet of you. The spores fill a 10-foot-squared area that is 5 feet tall and remain in that location until they deal damage to a creature, or your effluvium spore duration ends. At the start of your next turn, a new set of spores floats around you once again. When a creature starts its turn in the spore's area or enters it for the first time on a turn, that creature takes 1d8 acid damage.</description>
-			<description level="16">You can cause the effluvium spores on your body to float in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. Additionally, as a bonus action you can send your spores to a location of your choosing within 30 feet of you. The spores fill a 10-foot-squared area that is 5 feet tall and remain in that location until they deal damage to a creature, or your effluvium spore duration ends. At the start of your next turn, a new set of spores floats around you once again. When a creature starts its turn in the spore's area or enters it for the first time on a turn, that creature takes 1d10 acid damage.</description>
+			<description>You can cause the effluvium spores on your body to float in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. Additionally, as a bonus action you can send your spores to a location of your choosing within 30 feet of you. The spores fill a 10-foot-squared area that is 5 feet tall and remain in that location until they deal damage to a creature, or your effluvium spore duration ends. At the start of your next turn, a new set of spores floats around you once again. 
+			When a creature starts its turn in the spore's area or enters it for the first time on a turn, that creature takes 1d4 acid damage.</description>
+			<description level="7">You can cause the effluvium spores on your body to float in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. Additionally, as a bonus action you can send your spores to a location of your choosing within 30 feet of you. The spores fill a 10-foot-squared area that is 5 feet tall and remain in that location until they deal damage to a creature, or your effluvium spore duration ends. At the start of your next turn, a new set of spores floats around you once again. 
+			When a creature starts its turn in the spore's area or enters it for the first time on a turn, that creature takes 1d6 acid damage.</description>
+			<description level="11">You can cause the effluvium spores on your body to float in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. Additionally, as a bonus action you can send your spores to a location of your choosing within 30 feet of you. The spores fill a 10-foot-squared area that is 5 feet tall and remain in that location until they deal damage to a creature, or your effluvium spore duration ends. At the start of your next turn, a new set of spores floats around you once again. 
+			When a creature starts its turn in the spore's area or enters it for the first time on a turn, that creature takes 1d8 acid damage.</description>
+			<description level="16">You can cause the effluvium spores on your body to float in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. Additionally, as a bonus action you can send your spores to a location of your choosing within 30 feet of you. The spores fill a 10-foot-squared area that is 5 feet tall and remain in that location until they deal damage to a creature, or your effluvium spore duration ends. At the start of your next turn, a new set of spores floats around you once again. 
+			When a creature starts its turn in the spore's area or enters it for the first time on a turn, that creature takes 1d10 acid damage.</description>
 		</sheet>
 	</element>
 
@@ -1339,8 +1367,8 @@
 			<p>Starting at 3rd level, you can use an an action to coat your armor or clothing in magical ice for 1 hour, gaining 10 temporary hit points. If a creature hits you with a melee attack while you have these hit points, the creature takes 10 cold damage. At 5th-level you gain 15 temporary hit points when you use this action and a creature that hits you with a melee attack while you have these hit points takes 15 cold damage. Once you use this property you can't use it again until you finish a long rest.</p>
 		</description>
 		<sheet action="Action" usage="1/Long Rest">
-			<description>You can to coat your armor or clothing in magical ice for 1 hour, gaining 10 temporary hit points. If a creature hits you with a melee attack while you have these hit points, the creature takes 10 cold damage.</description>
-			<description level="5">You can to coat your armor or clothing in magical ice for 1 hour, gaining 15 temporary hit points. If a creature hits you with a melee attack while you have these hit points, the creature takes 15 cold damage.</description>
+			<description>You can coat your armor or clothing in magical ice for 1 hour, gaining 10 temporary hit points. If a creature hits you with a melee attack while you have these hit points, the creature takes 10 cold damage.</description>
+			<description level="5">You can coat your armor or clothing in magical ice for 1 hour, gaining 15 temporary hit points. If a creature hits you with a melee attack while you have these hit points, the creature takes 15 cold damage.</description>
 		</sheet>
 	</element>
 	<element name="Ice Walk" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_ICE_WALK">
@@ -1533,7 +1561,9 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>As part of a long rest you can transform the terrain around you into a mud bath. A creature that spends at least one hour in this bath gains the following benefits. If it is poisoned it can repeat its saving throw with advantage. If it is suffering from more than one level of exhaustion, it can make a Constitution saving throw against a DC 15, if it suceeds it loses one additional level of exhaustion when it finishes the long rest.</description>
+			<description>As part of a long rest you can transform the terrain around you into a mud bath. A creature that spends at least one hour in this bath gains the following benefits: 
+			If it is poisoned it can repeat its saving throw with advantage. 
+			If it is suffering from more than one level of exhaustion, it can make a Constitution saving throw against a DC 15, if it suceeds it loses one additional level of exhaustion when it finishes the long rest.</description>
 		</sheet>
 	</element>
 

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Faction Features</name>
+        <update version="0.0.1">
+            <file name="faction-features.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/faction-features.xml" />
+        </update>
+    </info>
+    
+    <element name="Helix Commission Spells" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FACTION_FEATURE_HELIX_COMMISSION_SPELLS">
+        <supports>2nd Background Feature</supports>
+        <description>
+            <p><i>Prerequisite: Spellcasting or Pact Magic class feature</i></p>
+            <p>For you, the spells on the Helix Commission Spells table are added to the spell list of your spellcasting class. (If you are a multiclass character with multiple spell lists, these spells are added to all of them.)</p>
+            <h5>Helix Commission Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>Cantrip</td><td><i>druidcraft, message</i></td></tr>
+                <tr><td>1st</td><td><i>disguise self, heroism</i></td></tr>
+                <tr><td>2nd</td><td><i>alter self, enhance ability</i></td></tr>
+                <tr><td>3rd</td><td><i>nondetection, water breathing</i></td></tr>
+                <tr><td>4th</td><td><i>divination, dominate beast</i></td></tr>
+                <tr><td>5th</td><td><i>passwall, tree stride</i></td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <spellcasting all="true" extend="true">
+            <extend>ID_PHB_SPELL_DRUIDCRAFT</extend>
+            <extend>ID_PHB_SPELL_MESSAGE</extend>
+            <extend>ID_PHB_SPELL_DISGUISE_SELF</extend>
+            <extend>ID_PHB_SPELL_HEROISM</extend>
+            <extend>ID_PHB_SPELL_ALTER_SELF</extend>
+            <extend>ID_PHB_SPELL_ENHANCE_ABILITY</extend>
+            <extend>ID_PHB_SPELL_NONDETECTION</extend>
+            <extend>ID_PHB_SPELL_WATER_BREATHING</extend>
+            <extend>ID_PHB_SPELL_DIVINATION</extend>
+            <extend>ID_PHB_SPELL_DOMINATE_BEAST</extend>
+            <extend>ID_PHB_SPELL_PASSWALL</extend>
+            <extend>ID_PHB_SPELL_TREE_STRIDE</extend>
+        </spellcasting>
+    </element>
+    <element name="Guild Feature: Experimental Resources" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FACTION_FEATURE_EXPERIMENTAL_RESOURCES">
+        <supports>Background Feature</supports>
+        <description>
+            <p>As a member of the Helix Commission, you have access to advanced experimental equipment and resources not available to the public. You can use this equipment to enhance your weapons and armor, craft unique items, or conduct research on monsters and their behaviors (work with your DM to determine what these might be).</p>
+        </description>
+        <sheet alt="Experimental Resources">
+            <description>As a member of the Helix Commission, you have access to advanced experimental equipment and resources not available to the public. You can use this equipment to enhance your weapons and armor, craft unique items, or conduct research on monsters and their behaviors (work with your DM to determine what these might be).</description>
+        </sheet>
+    </element>
+
+    <element name="Hunter's Guild Spells" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FACTION_FEATURE_HUNTERS_GUILD_SPELLS">
+        <supports>2nd Background Feature</supports>
+        <description>
+            <p><i>Prerequisite: Spellcasting or Pact Magic class feature</i></p>
+            <p>For you, the spells on the Hunter's Guild Spells table are added to the spell list of your spellcasting class. (If you are a multiclass character with multiple spell lists, these spells are added to all of them.)</p>
+            <h5>Hunter's Guild Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>Cantrip</td><td><i>produce flame, resistance</i></td></tr>
+                <tr><td>1st</td><td><i>detect poison and disease, longstrider</i></td></tr>
+                <tr><td>2nd</td><td><i>enhance ability, gust of wind</i></td></tr>
+                <tr><td>3rd</td><td><i>fear, plant growth</i></td></tr>
+                <tr><td>4th</td><td><i>elemental bane, guardian of nature</i></td></tr>
+                <tr><td>5th</td><td><i>awaken, skill empowerment</i></td></tr>
+            </table>
+        </description>
+        <sheet> 
+            <description></description>
+        </sheet>
+        <spellcasting all="true" extend="true">
+            <extend>ID_PHB_SPELL_PRODUCE_FLAME</extend>
+            <extend>ID_PHB_SPELL_RESISTANCE</extend>
+            <extend>ID_PHB_SPELL_DETECT_POISON_AND_DISEASE</extend>
+            <extend>ID_PHB_SPELL_LONGSTRIDER</extend>
+            <extend>ID_PHB_SPELL_ENHANCE_ABILITY</extend>
+            <extend>ID_PHB_SPELL_GUST_OF_WIND</extend>
+            <extend>ID_PHB_SPELL_FEAR</extend>
+            <extend>ID_PHB_SPELL_PLANT_GROWTH</extend>
+            <extend>ID_XGTE_SPELL_ELEMENTAL_BANE</extend>
+            <extend>ID_XGTE_SPELL_GUARDIAN_OF_NATURE</extend>
+            <extend>ID_PHB_SPELL_AWAKEN</extend>
+            <extend>ID_XGTE_SPELL_SKILL_EMPOWERMENT</extend>
+        </spellcasting>
+    </element>
+    <element name="Guild Feature: Guild Membership" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FACTION_FEATURE_GUILD_MEMBERSHIP">
+        <supports>Background Feature</supports>
+        <description>
+            <p>Your guild will provide you with food and accommodation if necessary. You have access to a guild hall if one is present (located in most cities, towns, and villages). The guild will support you in legal matters, so long as your rank is high enough and you are in good standing with the guild, and is a good way to gain introduction to influential members of society. Connections made through the guild for personal reasons may require a donation to the guild coffers. The guild requires dues of 5gp a month or at least one completed hunt per month.</p>
+        </description>
+        <sheet alt="Guild Memebership">
+            <description>Your guild will provide you with food and accommodation if necessary. You have access to a guild hall if one is present (located in most cities, towns, and villages). The guild will support you in legal matters, so long as your rank is high enough and you are in good standing with the guild, and is a good way to gain introduction to influential members of society. Connections made through the guild for personal reasons may require a donation to the guild coffers. The guild requires dues of 5gp a month or at least one completed hunt per month.</description>
+        </sheet>
+    </element>
+
+     <element name="Royal Scrivener Spells" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FACTION_FEATURE_ROYAL_SCRIVENER_SPELLS">
+        <supports>2nd Background Feature</supports>
+        <description>
+            <p><i>Prerequisite: Spellcasting or Pact Magic class feature</i></p>
+            <p>For you, the spells on the Royal Scrivener Spells table are added to the spell list of your spellcasting class. (If you are a multiclass character with multiple spell lists, these spells are added to all of them).</p>
+            <h5>Royal Scrivener Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>Cantrip</td><td>guidance, mending</td></tr>
+                <tr><td>1st</td><td>purify food and drink, heroism</td></tr>
+                <tr><td>2nd</td><td>animal messenger, enhance ability</td></tr>
+                <tr><td>3rd</td><td>speak with dead, water walk</td></tr>
+                <tr><td>4th</td><td>freedom of movement, fabricate</td></tr>
+                <tr><td>5th</td><td>commune with nature, modify memory</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <spellcasting all="true" extend="true">
+            <extend>ID_PHB_SPELL_GUIDANCE</extend>
+            <extend>ID_PHB_SPELL_MENDING</extend>
+            <extend>ID_PHB_SPELL_PURIFY_FOOD_AND_DRINK</extend>
+            <extend>ID_PHB_SPELL_HEROISM</extend>
+            <extend>ID_PHB_SPELL_ANIMAL_MESSENGER</extend>
+            <extend>ID_PHB_SPELL_ENHANCE_ABILITY</extend>
+            <extend>ID_PHB_SPELL_SPEAK_WITH_DEAD</extend>
+            <extend>ID_PHB_SPELL_WATER_WALK</extend>
+            <extend>ID_PHB_SPELL_FREEDOM_OF_MOVEMENT</extend>
+            <extend>ID_PHB_SPELL_FABRICATE</extend>
+            <extend>ID_PHB_SPELL_COMMUNE_WITH_NATURE</extend>
+            <extend>ID_PHB_SPELL_MODIFY_MEMORY</extend>
+        </spellcasting>
+    </element>
+    <element name="Specialty" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FACTION_FEATURE_SPECIALTY">
+        <description>
+            <p>To determine with category of monsters you are most knowledgeable about, roll a d10 or choose from the options in the table below.</p>
+            <table>
+                <thead>
+                    <tr><td>d10</td><td>Monser Category</td></tr>
+                </thead>
+                <tr><td>1</td><td>Amphibians &amp; Carapaceon</td></tr>
+                <tr><td>2</td><td>Lynians &amp; Herbivores</td></tr>
+                <tr><td>3</td><td>Bird Wyverns &amp; Fanged Beasts</td></tr>
+                <tr><td>4</td><td>Leviathans &amp; Piscine Wyverns</td></tr>
+                <tr><td>5</td><td>Flying Wyverns</td></tr>
+                <tr><td>6</td><td>Elder Dragons</td></tr>
+                <tr><td>7</td><td>Snake Wyverns, Temnoceran, &amp; Unknown</td></tr>
+                <tr><td>8</td><td>Neopteron &amp; Theropods</td></tr>
+                <tr><td>9</td><td>Brute Wyverns &amp; Fange Wyverns</td></tr>
+                <tr><td>10</td><td>Reroll</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select name="Specialty" type="List" optional="true">
+                <item id="1">Amphibians &amp; Carapaceon</item>
+                <item id="2">Lynians &amp; Herbivores</item>
+                <item id="3">Bird Wyverns &amp; Fanged Beasts</item>
+                <item id="4">Leviathans &amp; Piscine Wyverns</item>
+                <item id="5">Flying Wyverns</item>
+                <item id="6">Elder Dragons</item>
+                <item id="7">Snake Wyverns, Temnoceran, &amp; Unknown</item>
+                <item id="8">Neopteron &amp; Theropods</item>
+                <item id="9">Brute Wyverns &amp; Fange Wyverns</item>
+                <item id="10">Reroll</item>
+            </select>
+        </rules>
+    </element>
+    <element name="Guild Feature: Scrivener Researcher" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FACTION_FEATURE_SCRIVENER_RESEARCHER">
+        <supports>Background Feature</supports>
+        <description>
+            <p>When you attempt to learn or recall a piece of information about a creature mentioned by someone or that you have encountered, if you do not known that information, you often know where and from whom you can obtain it. Usually, this information comes from the hunter's guild, dragon observation team, wycademy, or a scrivener or other learned person or creature. Your DM might rule that the knowledge you seek if secreted away in an almost inaccesible place, or that it simply cannot be found. Unearthing the deepest secrets of reclusive or unknown monsters of the world can require an adventure or even a whole campaign.</p>
+        </description>
+        <sheet alt="Scrivener Researcher">
+            <description>When you attempt to learn or recall a piece of information about a creature mentioned by someone or that you have encountered, if you do not known that information, you often know where and from whom you can obtain it. Usually, this information comes from the hunter's guild, dragon observation team, wycademy, or a scrivener or other learned person or creature. Your DM might rule that the knowledge you seek if secreted away in an almost inaccesible place, or that it simply cannot be found. Unearthing the deepest secrets of reclusive or unknown monsters of the world can require an adventure or even a whole campaign.</description>
+        </sheet>
+    </element>
+
+    <element name="Talon Society Spells" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FACTION_FEATURE_TALON_SOCIETY_SPELLS">
+        <supports>2nd Background Feature</supports>
+        <description>
+            <p><i>Prerequisite: Spellcasting or Pact Magic class feature</i></p>
+            <p>For you, the spells on the Talon Society Spells table are added to the spell list of your spellcasting. (If you are a multiclass character with multiple spell lists, these are added to all of them.)</p>
+            <h5>Talon Society Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>Cantrip</td><td>mage hand, minor illusion</td></tr>
+                <tr><td>1st</td><td>detect magic, longstrider</td></tr>
+                <tr><td>2nd</td><td>pass without trace, locate object</td></tr>
+                <tr><td>3rd</td><td>nondetection, speak with dead</td></tr>
+                <tr><td>4th</td><td>divination, arcane eye</td></tr>
+                <tr><td>5th</td><td>mislead, modify memory</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <spellcasting all="true" extend="true">
+            <extend>ID_PHB_SPELL_MAGE_HAND</extend>
+            <extend>ID_PHB_SPELL_MINOR_ILLUSION</extend>
+            <extend>ID_PHB_SPELL_DETECT_MAGIC</extend>
+            <extend>ID_PHB_SPELL_LONGSTRIDER</extend>
+            <extend>ID_PHB_SPELL_PASS_WITHOUT_TRACE</extend>
+            <extend>ID_PHB_SPELL_LOCATE_OBJECT</extend>
+            <extend>ID_PHB_SPELL_NONDETECTION</extend>
+            <extend>ID_PHB_SPELL_SPEAK_WITH_DEAD</extend>
+            <extend>ID_PHB_SPELL_DIVINATION</extend>
+            <extend>ID_PHB_SPELL_ARCANE_EYE</extend>
+            <extend>ID_PHB_SPELL_MISLEAD</extend>
+            <extend>ID_PHB_SPELL_MODIFY_MEMORY</extend>
+        </spellcasting>
+    </element>
+    <element name="Guild Feature: Talon Network" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FACTION_FEATURE_TALON_NETWORK">
+        <supports>Background Feature</supports>
+        <description>
+            <p>You have connections to the Talon Society's vast network of poachers, scouts, and other operatives. You can call upon these contacts to gain information about monsters, track down rare resources, or arrange transportation to remote locations.</p>
+        </description>
+        <sheet alt="Talon Network">
+            <description>You have connections to the Talon Society's vast network of poachers, scouts, and other operatives. You can call upon these contacts to gain information about monsters, track down rare resources, or arrange transportation to remote locations.</description>
+        </sheet>
+    </element>
+
+    <element name="Wycademy Spells" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FACTION_FEATURE_WYCADEMY_SPELLS">
+        <supports>2nd Background Feature</supports>
+        <description>
+            <p><i>Prerequisite: Spellcasting or Pact Magic class feature</i></p>
+            <p>For you, the spells on the Wycademy Spells table are added to the spell list of your spellcasting class. (If you are a multiclass character with multiple spell lists, these spells are added to all of them.)</p>
+            <h5>Wycademy Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>Cantrip</td><td>druidcraft, light</td></tr>
+                <tr><td>1st</td><td>comprehend languages, expeditious retreat</td></tr>
+                <tr><td>2nd</td><td>alter self, locate animals or plants</td></tr>
+                <tr><td>3rd</td><td>water breathing, tongues</td></tr>
+                <tr><td>4th</td><td>control water, leomund's secret chest</td></tr>
+                <tr><td>5th</td><td>commune with nature, legend lore</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <spellcasting all="true" extend="true">
+            <extend>ID_PHB_SPELL_DRUIDCRAFT</extend>
+            <extend>ID_PHB_SPELL_LIGHT</extend>
+            <extend>ID_PHB_SPELL_COMPREHEND_LANGUAGES</extend>
+            <extend>ID_PHB_SPELL_EXPEDITIOUS RETREAT</extend>
+            <extend>ID_PHB_SPELL_ALTER_SELF</extend>
+            <extend>ID_PHB_SPELL_LOCATE_ANIMALS_OR_PLANTS</extend>
+            <extend>ID_PHB_SPELL_WATER_BREATHING</extend>
+            <extend>ID_PHB_SPELL_TONGUES</extend>
+            <extend>ID_PHB_SPELL_CONTROL_WATER</extend>
+            <extend>ID_PHB_SPELL_LEOMUNDS_SECRET_CHEST</extend>
+            <extend>ID_PHB_SPELL_COMMUNE_WITH_NATURE</extend>
+            <extend>ID_PHB_SPELL_LEGEND_LORE</extend>
+        </spellcasting>
+    </element>
+    <element name="Guild Feature: Magic Gathering" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FACTION_FEATURE_MAGIC_GATHERING">
+        <supports>Background Feature</supports>
+        <description>
+            <p>When you attempt to gather a resource, you can use the specified cantrip from the table below to automatically succeed on the gather check, but you do not gain the effects from materials that provide additional resources from gathering when you gather resources in this way.</p>
+            <table>
+                <thead>
+                    <tr><td>Cantrip</td><td>Resources</td></tr>
+                </thead>
+                <tr><td>druidcraft</td><td>mushrooms, plants</td></tr>
+                <tr><td>gust of wind</td><td>insects</td></tr>
+                <tr><td>mold earth</td><td>bones, minerals</td></tr>
+                <tr><td>shape water</td><td>fish</td></tr>
+            </table>
+        </description>
+        <sheet alt="Magic Gathering">
+            <description>When you attempt to gather a resource, you can use the specified cantrip from the table below to automatically succeed on the gather check, but you do not gain the effects from materials that provide additional resources from gathering when you gather resources in this way. Mushrooms and plants can be gathered with the druidcraft cantrip. Insects can be gathered with the gust of wind cantrip. Bones and minerals can be gathered with the mold earth cantrip. Fish can be gathered with the shape water cantrip.</description>
+        </sheet>
+    </element>
+</elements>

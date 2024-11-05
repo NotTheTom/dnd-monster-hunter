@@ -64,8 +64,10 @@
             <p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
         </description>
         <sheet>
-            <description>You know the mold earth cantrip. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
-            <description level="3">You know the mold earth cantrip. You can also cast the heat metal spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+            <description>You know the mold earth cantrip. 
+            Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+            <description level="3">You know the mold earth cantrip. You can also cast the heat metal spell once per long rest with this trait or with an appropriate spell slot. 
+            Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_XGTE_SPELL_MOLD_EARTH" />
