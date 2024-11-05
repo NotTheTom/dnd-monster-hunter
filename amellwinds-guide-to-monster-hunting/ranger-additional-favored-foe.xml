@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Ranger Additional Favored Foe</name>
+        <update version="0.0.1">
+            <file name="ranger-additional-favored-foe.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/ranger-additional-favored-foe.xml" />
+        </update>
+    </info>
+    
+    <element name="Amphibians" type="Class Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_CLASSFEATURE_RANGER_FAVORED_ENEMY_AMPHIBIANS">
+		<supports>Favored Enemy,Monster Type</supports>
+		<description>
+			<p>Amphibians are a class of monsters that are superficially frog-like in body structure, with powerful, spring-like back legs and muscular forelegs. They are known to inhabit a diverse range of environments and are typically carnivorous.</p>
+		</description>
+	</element>
+    <element name="Bird Wyverns" type="Class Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_CLASSFEATURE_RANGER_FAVORED_ENEMY_BIRD_WYVERNS">
+		<supports>Favored Enemy,Monster Type</supports>
+        <description>
+		    <p>Bird Wyverns are, as their name implies, bird-like in nature, with slender delicate bodies. Despite their comparatively small stature, Bird Wyverns often use their agility to their advantage to neutralize attacks and prey alike. Flying Bird Wyverns exhibit similar characteristics to True Wyverns, with a bipedal stance along with developed and functional wings. Many of these possess a hard, sharp beak which can be used to peck at attackers, and generally behave in a bird-like manner.</p>
+		</description>
+    </element>
+    <element name="Brute Wyverns" type="Class Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_CLASSFEATURE_RANGER_FAVORED_ENEMY_BRUTE_WYVERNS">
+		<supports>Favored Enemy,Monster Type</supports>
+        <description>
+			<p>Brute Wyverns are considered to be Wyverns that are adapted to complete life on land, even sometimes being called Theropods from greatly resembling some predatory dinosaurs. These monsters are typically large, bipedal theropods, that are prone to living in areas abundant in food sources. Brute Wyverns exhibit a wide variety of dietary habits; some are strictly herbivorous or carnivorous, while others subsist on insects or even minerals. These monsters often use their heavy, muscular bodies to charge blindly through an environment to damage attackers or prey, and include many defensive adaptations, including tail clubs, horns, and even hammer-like chins and fists. Brute Wyverns can be found in almost any type of environment.</p>
+		</description>
+    </element>
+    <element name="Carapaceons" type="Class Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_CLASSFEATURE_RANGER_FAVORED_ENEMY_CARAPACEONS">
+		<supports>Favored Enemy,Monster Type</supports>
+        <description>
+			<p>Carapaceons are crustacean-like monsters that have hard shells and exoskeletons or crab-like bodies, When they're weakened by physical damage, they show internal bleeding by the frothing of the purple bubbles from their mouths. Carapaceons are known to hide underground and attack their prey once within range. Most of these crustaceans resemble crabs, lobsters or scorpions.</p>
+		</description>
+    </element>
+    <element name="Elder Dragons" type="Class Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_CLASSFEATURE_RANGER_FAVORED_ENEMY_ELDER_DRAGONS">
+		<supports>Favored Enemy,Monster Type</supports>
+        <description>
+		    <p>A very broad term, the only thing in common amongst all elder dragons is their power which seems to border the mystical as opposed to the wyverns which are all limited to natural laws. It is said that an elder dragon is powerful enough to single handedly bring about the destruction of an ecosystem. In ancient times, they would be mistaken for gods. Many elder dragons feature four legs and wings that are separate limbs, unlike wyverns with two legs and winged forelimbs.</p>
+            <p class="indent">Although all are called dragons, the genus isn't limited to four-legged, winged creatures. Spanning to beasts such as Kirin and Yama Tsukami as well as the more traditional Fatalis. Aside from these are the 'second generation' breeds that all feature a similar build, the Teostra and Kushala Daora are members of this type with all featuring some form of barrier or aura to protect them.</p>
+		</description>
+    </element>
+    <element name="Fanged Beasts" type="Class Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_CLASSFEATURE_RANGER_FAVORED_ENEMY_FANGED_BEASTS">
+		<supports>Favored Enemy,Monster Type</supports>
+        <description>
+			<p>Once known as Pelagus, Fanged Beasts are mammalian creatures with no wings. They are often much faster than other larger threats, but not all of them are aggressive. Many of these beasts will ignore adventurers unless they make themselves known or startle the beast. While other Fanged Beasts attack on site, using the environment and speed to their advantage.</p>
+            <p class="indent">Fanged Beasts exhibit a wide variety of dietary habits; some are strictly herbivorous or carnivorous, while others subsist on insects. Most of them have unique attributes for survival, such as powerful forelimbs or large tusks, and are well evolved for the environment they live in. Others form packs, with the strongest of them as the Alpha.</p>
+		</description>
+	</element>
+    <element name="Fanged Wyverns" type="Class Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_CLASSFEATURE_RANGER_FAVORED_ENEMY_FANGED_WYVERNS">
+		<supports>Favored Enemy,Monster Type</supports>
+        <description>
+			<p>Fanged Wyverns are known for being Fanged Beast-like Wyvern monsters that have highly developed limbs. Typically ignored by towns and cities due to their preferred territories being far away from civilization. Up until recently scholars only classified the Zinogre as the only known species of these wyverns. New species have been discovered in far off regions, although they are more reptilian in nature when compared to their kin.</p>
+		</description>
+    </element>
+    <element name="Flying Wyverns" type="Class Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_CLASSFEATURE_RANGER_FAVORED_ENEMY_FLYING_WYVERNS">
+		<supports>Favored Enemy,Monster Type</supports>
+        <description>
+			<p>Flying Wyverns are typically large, bipedal monsters capable of flight, having developed wings. Some, due to their sheer size and weight are able to hover in the air for a brief time. that have two wings. These Wyverns are known as "True Wyverns". However, there are some Wyverns that are quadrupedal, operating their wingarms as forearms instead like Tigrex and Nargacuga. These monsters have been dubbed by academics as "Pseudo Wyverns" (Pseudo meaning "False" or "Mimic"), due to these species only displaying partial Wyvern traits. Some are flightless despite their classification as Flying Wyverns, like the Akantor and Ukanlos. These wyverns show their Wyvern ancestry by the small forewings on their two front limbs. Flying wyverns have evolved over time and live in nearly every known area, encompassing many elements and types.</p>
+		</description>
+    </element>
+    <element name="Leviathans" type="Class Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_CLASSFEATURE_RANGER_FAVORED_ENEMY_LEVIATHANS">
+		<supports>Favored Enemy,Monster Type</supports>
+        <description>
+		    <p>The Leviathan monster species are identified by their similar appearance to crocodiles. They are also known to survive in underwater conditions, while others throughout magma in volcanoes. Fighting one almost always involves underwater combat; a leviathan is always guaranteed at some point to retreat to the depths of the oceans or lakes. They are almost always more adept at fighting underwater, while most adventurers are hindered by the liquids. Fighting one requires at least a modest proficiency in underwater fighting, and, barring any skill in that, a measure of luck to coax the Leviathan on land.</p>
+		</description>
+    </element>
+    <element name="Neopterons" type="Class Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_CLASSFEATURE_RANGER_FAVORED_ENEMY_NEOPTERONS">
+		<supports>Favored Enemy,Monster Type</supports>
+        <description>
+			<p>Neopterons are insectoid monsters known for their rigid carapaces. These monsters can range in size from tiny to enormous, and some species can fly, while others cannot. Neopterons are situated in large groups rather than individually. Most carry poisonous stingers that can paralyze prey, and their bodies are made up of acidic substances. Their weak outer-shell structures means that they are easily damaged, making it difficult to obtain adequate materials from their remains. Their materials are often used to make very sharp weapons.</p>
+		</description>
+    </element>
+    <element name="Piscine Wyverns" type="Class Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_CLASSFEATURE_RANGER_FAVORED_ENEMY_PISCINE_WYVERNS">
+		<supports>Favored Enemy,Monster Type</supports>
+        <description>
+			<p>The term 'Piscine' is applied to creatures that are known to swim or glide in preference to walking on solid ground. The body structure of a Piscine usually resembles that of a fish, with lesser evolved legs in comparison to most other monster species. Piscines include the sand-dwelling creatures, which can be found throughout the desert. Monsters found commonly in the waters and one which dwells in magma, and can be found in the volcanic areas. Piscines are also known as Wyverns, due to their similar structure and ability of flight. All Piscines have two Limbs that enable them to walk on land, and a selection of Fins to help them swim through their chosen habitat. Many of their "wings" have evolved into fins.</p>
+		</description>
+    </element>
+    <element name="Snake Wyverns" type="Class Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_CLASSFEATURE_RANGER_FAVORED_ENEMY_SNAKE_WYVERNS">
+		<supports>Favored Enemy,Monster Type</supports>
+        <description>
+			<p>Snake Wyverns are a class of monsters known for their serpentine features, such as long, coiling bodies and forked tongues. They can range dramatically in both size and overall body structure, with some members being large, serpentine land-dwellers, while others are smaller and more reminiscent of Flying Wyverns.</p>
+		</description>
+    </element>
+    <element name="Temnoceran" type="Class Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_CLASSFEATURE_RANGER_FAVORED_ENEMY_TEMNOCERAN">
+		<supports>Favored Enemy,Monster Type</supports>
+        <description>
+			<p>Temnoceran, are a class of monster characterized by its arachnoid characteristics, such as the ability to produce silk, though they have six limbs similar to Neopterons or Carapaceons.</p>
+		</description>
+    </element>
+    <element name="Theropods" type="Class Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_CLASSFEATURE_RANGER_FAVORED_ENEMY_THEROPODS">
+		<supports>Favored Enemy,Monster Type</supports>
+        <description>
+			<p>Theropods are reminiscent of Brute Wyverns; flightless, bipedal creatures with long tails and powerful legs. Unlike Brute Wyverns however, these monsters are generally quite small. Furthermore, Theropods almost always live under a social hierarchy, with young individuals, females and beta males led by a strong, dominant alpha male, which can command and control his subjects during combat.</p>
+		</description>
+    </element>
+    <element name="Unknown" type="Class Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_CLASSFEATURE_RANGER_FAVORED_ENEMY_UNKNOWN">
+		<supports>Favored Enemy,Monster Type</supports>
+        <description>
+			<p>Unknown, are a class of monsters that has been identified by scholars, but not yet given a proper classification.</p>
+		</description>
+    </element>
+    <element name="Lynians" type="Class Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_CLASSFEATURE_RANGER_FAVORED_ENEMY_LYNIANS">
+		<supports>Favored Enemy,Monster Type</supports>
+        <description>
+			<p>Lynians are sapient monsters, and are typically short of stature. There are currently two distinct groups of Lynian: the cat-like Melynx, Felyne, and Grimalkyne, and the humanoid Shakalaka and Gajalaka. Lynians are intelligent, have complex societies, and speak their own languages. Whereas the Shakalaka and Gajalaka are more primitive and tribal, the feline species tend to lead peaceful lives and often coexist with human society.</p>
+		</description>
+    </element>
+</elements>
