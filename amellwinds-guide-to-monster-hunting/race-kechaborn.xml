@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Kechaborn</name>
+        <update version="0.0.1">
+            <file name="race-kechaborn.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/race-kechaborn.xml" />
+        </update>
+    </info>
+    
+    <element name="Kechaborn" type="Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACE_KECHABORN">
+        <description>
+            <p>Kechaborn have agile, muscular bodies covered in short, dense fur ranging from tawny brown to deep russet. Their limbs are long and end in dexterous hands and feet with retractable claws, ideal for climbing. Their large, expressive eyes provide excellent night vision, and their faces feature prominent, tufted ears. Kechaborn possess prehensile tails and skin membranes between their limbs, allowing them to glide short distances. Often found in forested regions, their natural agility and climbing abilities make them adept at navigating treetops.</p>
+            <h4>Kechaborn Traits</h4>
+            <p>As an Kechaborn, you have the following racial traits.</p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b> Your Dexterity score increases by 2, and your Wisdom score increases by 1.</p>
+            <p class="indent"><b><i>Age.</i></b> Kechaborn's mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 200 years.</p>
+            <p class="indent"><b><i>Alignment.</i></b> Kechaborns are naturally chaotic, but can grow into other alignments.</p>
+            <p class="indent"><b><i>Size.</i></b> Kechaborns range from just under 5 to over 6 feet tall and have varied body shapes. Your size is Medium.</p>
+            <p class="indent"><b><i>Speed.</i></b> Your base walking speed is 30 feet, and you have a climbing speed of 30 feet.</p>
+            <p class="indent"><b><i>Glide.</i></b> When you are falling and aren't incapacitated, you can subtract up to 30 feet from the fall when calculating falling damage, and you can move up to 2 feet horizontally for every 1 foot you descend.</p>
+            <p class="indent"><b><i>Claws.</i></b> Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+            <p class="indent"><b><i>Large Ears.</i></b> Your ears are highly flexible. As a bonus action, you can cover your face with them until you use another bonus action to reveal your face again. While it is covered, you gain tremorsense out to 10 feet, are blinded and are unable to hear anything further than 10 feet from you.</p>
+            <p class="indent">Additionally, when you are subjected to an effect that requires you to see it (such as an effect that would blind you or the hypnotic pattern spell) you can use your reaction to cover your face with your ears to avoid the effect. You can use this property a number of times equal to half your proficiency level rounded up (minimum of 1), regaining all expended uses when you finish a long rest.</p>
+            <p class="indent"><b><i>Prehensile Tail.</i></b> Your particular heritage has allowed you to develop a prehensile tail. Your tail is muscular and very long, about your body length, and can support your weight if you aren't encumbered (e.g. while hanging from a branch). While the tail is used primarily to assist in climbing and keeping the hands free for foraging and carrying, you can use it to do the following simple tasks: lift, drop, hold, push, or pull an object or a creature up to 50 pounds; open or close a door or a container. Your tail can’t wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell.</p>
+            <p class="indent"><b><i>Skill Proficiency.</i></b> You have proficiency in the Acrobatics skill.</p>
+            <p class="indent"><b><i>Tool Proficiency.</i></b> You gain proficiency with one of the following tools of your choice: smith’s tools, woodcarver’s supplies, or herbalism kit.</p>
+            <p class="indent"><b><i>Languages.</i></b> You can speak, read, and write Common.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Kechaborn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Kechaborn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <stat name="innate speed:climb" value="30" bonus="base" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_GLIDE" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_CLAWS" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_LARGE_EARS" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_PREHENSILE_TAIL" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+            <select type="Proficiency" name="Tool Proficiency (Kechaborn)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <select type="Language" name="Customized Language" supports="Custom Race Language"  number="1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+        </rules>
+    </element>
+    <element name="Glide" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_GLIDE">
+        <description>
+            <p>When you are falling and aren't incapacitated, you can subtract up to 30 feet from the fall when calculating falling damage, and you can move up to 2 feet horizontally for every 1 foot you descend.</p>
+        </description>
+        <sheet>
+            <description>When you are falling and aren't incapacitated, you can subtract up to 30 feet from the fall when calculating falling damage, and you can move up to 2 feet horizontally for every 1 foot you descend.</description>
+        </sheet>
+    </element>
+    <element name="Claws" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_CLAWS">
+        <description>
+            <p>Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+        </description>
+        <sheet>
+            <description>You can use you claws to make unarmed strikes. If you hit with them, you deal 1d6 + {{strength:modifier}} slashing damage, instead of the bludgeoning damage normal for an unarmed strike.</description>
+        </sheet>
+    </element>
+    <element name="Large Ears" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_LARGE_EARS">
+        <description>
+            <p>Your ears are highly flexible. As a bonus action, you can cover your face with them until you use another bonus action to reveal your face again. While it is covered, you gain tremorsense out to 10 feet, are blinded and are unable to hear anything further than 10 feet from you.</p>
+            <p class="indent">Additionally, when you are subjected to an effect that requires you to see it (such as an effect that would blind you or the hypnotic pattern spell) you can use your reaction to cover your face with your ears to avoid the effect. You can use this property a number of times equal to half your proficiency level rounded up (minimum of 1), regaining all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>You can cover your face with your ears until you use another bonus action to reveal your face again. While it is covered, you gain tremorsense out to 10 feet, are blinded and are unable to hear anything further than 10 feet from you.
+            Additionally, when you are subjected to an effect that requires you to see it (such as an effect that would blind you or the hypnotic pattern spell) you can use your reaction to cover your face with your ears to avoid the effect. You can use this property a number {{proficiency:half:up}} times, regaining all expended uses when you finish a long rest.{{proficiency:half:up}}</description>
+        </sheet>
+    </element>
+    <element name="Prehensile Tail" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_PREHENSILE_TAIL">
+        <description>
+            <p>Your particular heritage has allowed you to develop a prehensile tail. Your tail is muscular and very long, about your body length, and can support your weight if you aren't encumbered (e.g. while hanging from a branch). While the tail is used primarily to assist in climbing and keeping the hands free for foraging and carrying, you can use it to do the following simple tasks: lift, drop, hold, push, or pull an object or a creature up to 50 pounds; open or close a door or a container. Your tail can’t wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell.</p>
+        </description>
+        <sheet>
+            <description>Your tail is muscular and very long, about your body length, and can support your weight if you aren't encumbered (e.g. while hanging from a branch). While the tail is used primarily to assist in climbing and keeping the hands free for foraging and carrying, you can use it to do the following simple tasks: lift, drop, hold, push, or pull an object or a creature up to 50 pounds; open or close a door or a container. Your tail can’t wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell.</description>
+        </sheet>
+    </element>
+</elements>
