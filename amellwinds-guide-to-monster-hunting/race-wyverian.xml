@@ -7,5 +7,446 @@
         </update>
     </info>
     
-    
+    <element name="Wyverian" type="Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACE_WYVERIAN">
+        <description>
+            <p>Wyverians superficially resemble humans, but they have several traits that suggest a wyvern ancestry. They have pointed ears, four-fingered hands, and an increased lifespan. Many, though not all, Wyverians also possess digitigrade legs.</p>
+            <h4>A Wyverians Thinking</h4>
+            <p>Wyverians think differently than most races, perhaps in part due to their increased lifespan, and are often considered more intelligent and rational. Some Wyverians have an extensive education, more than most races can learn in a feasible timespan, and are versed in multiple subjects. They are also more attuned to nature, which they greatly respect. They are peaceful and prefer to avoid conflict if possible, but still, recognize the value of Hunters. In fact, they were the first Hunters, but eventually gave way to the Hunter's Guild and transitioned into a supporting role. There are very few Wyverian Hunters today and are considered rarities. Wyverian humor is strange by human standards.</p>
+            <h4>Wyverian Traits</h4>
+            <p>Here you will find the general information about the wyverian race.</p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b> Your Intelligence score increases by 2.</p>
+            <p class="indent"><b><i>Age.</i></b> Although wyverians reach physical maturity at about the same age as humans, the wyverian understanding of adulthood goes beyond physical growth to encompass worldly experience. A wyverian typically reaches adulthood around the age of 80 and can typically live to be 1000 years old.</p>
+            <p class="indent"><b><i>Alignment.</i></b> Wyverians are most often good. Those who tend towards law are hunters, researchers, scholars, investigators, and soldiers. Those who tend toward chaos are hermits, sages, wanderers, and tend to prefer nature to civilization, but understand the need of both.</p>
+            <p class="indent"><b><i>Size.</i></b> The average Wyverians grow to the size of a human, but shrink to about 4 feet tall as their old age begins to set in. Your size is Medium.</p>
+            <p class="indent"><b><i>Speed.</i></b> Your base walking speed is 30 feet.</p>
+            <p class="indent"><b><i>Expert.</i></b> Choose one Expert Type. Whenever you make an Intelligence (History) check to recall information about a creature of that type, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p>
+            <p class="indent"><b><i>Inquisitive.</i></b> You have proficiency in the Investigation skill.</p>
+            <p class="indent"><b><i>Languages.</i></b> You can speak, read, and write Common, Draconic, and Wyverian.</p>
+            <p class="indent"><b><i>Subrace.</i></b> There are two kinds of wyverian: modern and ancient. These two are more akin to ancestors and descendants to each other more than true subraces. Choose one of these subraces.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="intelligence" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Wyverian)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAITEXPERT" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Language" id="ID_LANGUAGE_DRACONIC" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Language" id="ID_ALD_AGMH_LANGUAGE_WYVERIAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <select type="Language" name="Customized Language" supports="Custom Race Language"  number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <select type="Sub Race" name="Wyverian Subrace" supports="Wyverian" />
+        </rules>
+    </element>
+    <element name="Expert" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAITEXPERT">
+        <description>
+            <p>Choose one Expert Type. Whenever you make an Intelligence (History) check to recall information about a creature of that type, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>Whenever you make an Intelligence (History) check to recall information about {{creature:type}}, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</description>
+        </sheet>    
+        <rules>
+            <select type="Racial Trait" name="Expert Type (Wyverian)" supports="Expert Type" />
+        </rules>
+    </element>
+
+    <element name="Aberrations" type="Racial Trait" source="Player’s Handbook" id="ID_ALD_AGMH_RACIAL_TRAIT_ABERRATIONS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Aberrations are utterly alien beings. Many of them have innate magical abilities drawn from the creature’s alien mind rather than the mystical forces of the world. The quintessential aberrations are aboleths, beholders, mind fiayers, and slaadi.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Aberrations" inline="true" />
+        </rules>
+	</element>
+	<element name="Beasts" type="Racial Trait" source="Player’s Handbook" id="ID_ALD_AGMH_RACIAL_TRAIT_BEAST">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Beasts are nonhumanoid creatures that are a natural part of the fantasy ecology. Some of them have magical powers, but most are unintelligent and lack any society or language. Beasts include all varieties of ordinary animals, dinosaurs, and giant versions of animals.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Beasts" inline="true" />
+        </rules>
+	</element>
+	<element name="Celestials" type="Racial Trait" source="Player’s Handbook" id="ID_ALD_AGMH_RACIAL_TRAIT_CELESTIALS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Celestials are creatures native to the Upper Planes. Many of them are the servants of deities, employed as messengers or agents in the mortal realm and throughout the planes. Celestials are good by nature, so the exceptional celestial who strays from a good alignment is a horrifying rarity. Celestials include angels, couatls, and pegasi.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Celestials" inline="true" />
+        </rules>
+	</element>
+	<element name="Constructs" type="Racial Trait" source="Player’s Handbook" id="ID_ALD_AGMH_RACIAL_TRAIT_CONSTRUCTS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Constructs are made, not born. Some are programmed by their creators to follow a simple set of instructions, while others are imbued with sentience and capable of independent thought. Golems are the iconic constructs. Many creatures native to the outer plane of Mechanus, such as modrons, are constructs shaped from the raw material of the plane by the will of more powerful creatures.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Constructs" inline="true" />
+        </rules>
+	</element>
+	<element name="Dragons" type="Racial Trait" source="Player’s Handbook" id="ID_ALD_AGMH_RACIAL_TRAIT_DRAGONS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Dragons are large reptilian creatures of ancient origin and tremendous power. True dragons, including the good metallic dragons and the evil chromatic dragons, are highly intelligent and have innate magic. Also in this category are creatures distantly related to true dragons, but less powerful, less intelligent, and less magical, such as wyverns and pseudodragons.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Dragons" inline="true" />
+        </rules>
+	</element>
+	<element name="Elementals" type="Racial Trait" source="Player’s Handbook" id="ID_ALD_AGMH_RACIAL_TRAIT_ELEMENTALS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Elementals are creatures native to the elemental planes. Some creatures of this type are little more than animate masses of their respective elements, including the creatures simply called elementals. Others have biological forms infused with elemental energy. The races of genies, including djinn and efreet, form the most important civilizations on the elemental planes. Other elemental creatures include azers, invisible stalkers, and water weirds.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Elementals" inline="true" />
+        </rules>
+	</element>
+	<element name="Fey" type="Racial Trait" source="Player’s Handbook" id="ID_ALD_AGMH_RACIAL_TRAIT_FEY">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Fey are magical creatures closely tied to the forces of nature. They dwell in twilight groves and misty forests. In some worlds, they are closely tied to the Feywild, also called the Plane of Faerie. Some are also found in the Outer Planes, particularly the planes of Arborea and the Beastlands. Fey include dryads, pixies, and satyrs.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Fey" inline="true" />
+        </rules>
+	</element>
+	<element name="Fiends" type="Racial Trait" source="Player’s Handbook" id="ID_ALD_AGMH_RACIAL_TRAIT_FIENDS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Fiends are creatures of wickedness that are native to the Lower Planes. A few are the servants of deities, but many more labor under the leadership of archdevils and demon princes. Evil priests and mages sometimes summon fiends to the material world to do their bidding. If an evil celestial is a rarity, a good fiend is almost inconceivable. Fiends include demons, devils, hell hounds, rakshasas, and yugoloths.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Fiends" inline="true" />
+        </rules>
+	</element>
+	<element name="Giants" type="Racial Trait" source="Player’s Handbook" id="ID_ALD_AGMH_RACIAL_TRAIT_GIANTS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Giants tower over humans and their kind. They are humanlike in shape, though some have multiple heads (ettins) or deformities (fomorians). The six varieties of true giant are hill giants, stone giants, frost giants, fire giants, cloud giants, and storm giants. Besides these, creatures such as ogres and trolls are giants.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Giants" inline="true" />
+        </rules>
+	</element>
+	<element name="Monstrosities" type="Racial Trait" source="Player’s Handbook" id="ID_ALD_AGMH_RACIAL_TRAIT_BEAST_MONSTROSITIES">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Monstrosities are monsters in the strictest sensefrightening creatures that are not ordinary, not truly natural, and almost never benign. Some are the results of magical experimentation gone awry (such as owl bears), and others, are the product-of terrible curses (including minotaurs and yuan-ti). They defy categorization, and in some sense serve as a catch-all category for creatures that don’t fit into any other type.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Monstrosities" inline="true" />
+        </rules>
+	</element>
+	<element name="Oozes" type="Racial Trait" source="Player’s Handbook" id="ID_ALD_AGMH_RACIAL_TRAIT_OOZES">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Oozes are gelatinous creatures that rarely have a fixed shape. They are mostly subterranean, dwelling in caves and dungeons and feeding on refuse, carrion, or creatures unlucky enough to get in their way. Black puddings and gelatinous cubes are among the most recognizable oozes.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Oozes" inline="true" />
+        </rules>
+	</element>
+	<element name="Plants" type="Racial Trait" source="Player’s Handbook" id="ID_ALD_AGMH_RACIAL_TRAIT_PLANTS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Plants in this context are vegetable creatures, not ordinary flora. Most of them are ambulatory, and some are carnivorous. The quintessential plants are the shambling mound and the treant. Fungal creatures such as the gas spore and the myconid also fall into this category.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Plants" inline="true" />
+        </rules>
+	</element>
+	<element name="Undead" type="Racial Trait" source="Player’s Handbook" id="ID_ALD_AGMH_RACIAL_TRAIT_UNDEAD">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Undead are once-living creatures brought to a horrifying state of undeath through the practice of necromantic magic or some unholy curse. Undead include walking corpses, such as vampires and zombies, as well as bodiless spirits, such as ghosts and specters.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Undead" inline="true" />
+        </rules>
+	</element>
+
+    <element name="Amphibians" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_AMPHIBIANS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Amphibians are a class of monsters that are superficially frog-like in body structure, with powerful, spring-like back legs and muscular forelegs. They are known to inhabit a diverse range of environments and are typically carnivorous.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Amphibians" inline="true" />
+        </rules>
+	</element>
+    <element name="Bird Wyverns" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_BIRD_WYVERNS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+		    <p>Bird Wyverns are, as their name implies, bird-like in nature, with slender delicate bodies. Despite their comparatively small stature, Bird Wyverns often use their agility to their advantage to neutralize attacks and prey alike. Flying Bird Wyverns exhibit similar characteristics to True Wyverns, with a bipedal stance along with developed and functional wings. Many of these possess a hard, sharp beak which can be used to peck at attackers, and generally behave in a bird-like manner.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Bird Wyverns" inline="true" />
+        </rules>
+	</element>
+    <element name="Brute Wyverns" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_BRUTE_WYVERNS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Brute Wyverns are considered to be Wyverns that are adapted to complete life on land, even sometimes being called Theropods from greatly resembling some predatory dinosaurs. These monsters are typically large, bipedal theropods, that are prone to living in areas abundant in food sources. Brute Wyverns exhibit a wide variety of dietary habits; some are strictly herbivorous or carnivorous, while others subsist on insects or even minerals. These monsters often use their heavy, muscular bodies to charge blindly through an environment to damage attackers or prey, and include many defensive adaptations, including tail clubs, horns, and even hammer-like chins and fists. Brute Wyverns can be found in almost any type of environment.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Brute Wyverns" inline="true" />
+        </rules>
+	</element>
+    <element name="Carapaceons" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_CARAPACEONS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Carapaceons are crustacean-like monsters that have hard shells and exoskeletons or crab-like bodies, When they're weakened by physical damage, they show internal bleeding by the frothing of the purple bubbles from their mouths. Carapaceons are known to hide underground and attack their prey once within range. Most of these crustaceans resemble crabs, lobsters or scorpions.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Carapaceons" inline="true" />
+        </rules>
+	</element>
+    <element name="Elder Dragons" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_ELDER_DRAGONS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+		    <p>A very broad term, the only thing in common amongst all elder dragons is their power which seems to border the mystical as opposed to the wyverns which are all limited to natural laws. It is said that an elder dragon is powerful enough to single handedly bring about the destruction of an ecosystem. In ancient times, they would be mistaken for gods. Many elder dragons feature four legs and wings that are separate limbs, unlike wyverns with two legs and winged forelimbs.</p>
+            <p class="indent">Although all are called dragons, the genus isn't limited to four-legged, winged creatures. Spanning to beasts such as Kirin and Yama Tsukami as well as the more traditional Fatalis. Aside from these are the 'second generation' breeds that all feature a similar build, the Teostra and Kushala Daora are members of this type with all featuring some form of barrier or aura to protect them.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Elder Dragons" inline="true" />
+        </rules>
+	</element>
+    <element name="Fanged Beasts" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_FANGED_BEASTS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Once known as Pelagus, Fanged Beasts are mammalian creatures with no wings. They are often much faster than other larger threats, but not all of them are aggressive. Many of these beasts will ignore adventurers unless they make themselves known or startle the beast. While other Fanged Beasts attack on site, using the environment and speed to their advantage.</p>
+            <p class="indent">Fanged Beasts exhibit a wide variety of dietary habits; some are strictly herbivorous or carnivorous, while others subsist on insects. Most of them have unique attributes for survival, such as powerful forelimbs or large tusks, and are well evolved for the environment they live in. Others form packs, with the strongest of them as the Alpha.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Fanged Beasts" inline="true" />
+        </rules>
+	</element>
+    <element name="Fanged Wyverns" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_FANGED_WYVERNS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Fanged Wyverns are known for being Fanged Beast-like Wyvern monsters that have highly developed limbs. Typically ignored by towns and cities due to their preferred territories being far away from civilization. Up until recently scholars only classified the Zinogre as the only known species of these wyverns. New species have been discovered in far off regions, although they are more reptilian in nature when compared to their kin.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Fanged Wyverns" inline="true" />
+        </rules>
+	</element>
+    <element name="Flying Wyverns" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_FLYING_WYVERNS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Flying Wyverns are typically large, bipedal monsters capable of flight, having developed wings. Some, due to their sheer size and weight are able to hover in the air for a brief time. that have two wings. These Wyverns are known as "True Wyverns". However, there are some Wyverns that are quadrupedal, operating their wingarms as forearms instead like Tigrex and Nargacuga. These monsters have been dubbed by academics as "Pseudo Wyverns" (Pseudo meaning "False" or "Mimic"), due to these species only displaying partial Wyvern traits. Some are flightless despite their classification as Flying Wyverns, like the Akantor and Ukanlos. These wyverns show their Wyvern ancestry by the small forewings on their two front limbs. Flying wyverns have evolved over time and live in nearly every known area, encompassing many elements and types.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Flying Wyverns" inline="true" />
+        </rules>
+	</element>
+    <element name="Leviathans" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_LEVIATHANS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+		    <p>The Leviathan monster species are identified by their similar appearance to crocodiles. They are also known to survive in underwater conditions, while others throughout magma in volcanoes. Fighting one almost always involves underwater combat; a leviathan is always guaranteed at some point to retreat to the depths of the oceans or lakes. They are almost always more adept at fighting underwater, while most adventurers are hindered by the liquids. Fighting one requires at least a modest proficiency in underwater fighting, and, barring any skill in that, a measure of luck to coax the Leviathan on land.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Leviathans" inline="true" />
+        </rules>
+	</element>
+    <element name="Neopterons" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_NEOPTERONS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Neopterons are insectoid monsters known for their rigid carapaces. These monsters can range in size from tiny to enormous, and some species can fly, while others cannot. Neopterons are situated in large groups rather than individually. Most carry poisonous stingers that can paralyze prey, and their bodies are made up of acidic substances. Their weak outer-shell structures means that they are easily damaged, making it difficult to obtain adequate materials from their remains. Their materials are often used to make very sharp weapons.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Neopterons" inline="true" />
+        </rules>
+	</element>
+    <element name="Piscine Wyverns" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_PISCINE_WYVERNS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>The term 'Piscine' is applied to creatures that are known to swim or glide in preference to walking on solid ground. The body structure of a Piscine usually resembles that of a fish, with lesser evolved legs in comparison to most other monster species. Piscines include the sand-dwelling creatures, which can be found throughout the desert. Monsters found commonly in the waters and one which dwells in magma, and can be found in the volcanic areas. Piscines are also known as Wyverns, due to their similar structure and ability of flight. All Piscines have two Limbs that enable them to walk on land, and a selection of Fins to help them swim through their chosen habitat. Many of their "wings" have evolved into fins.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Piscine Wyverns" inline="true" />
+        </rules>
+	</element>
+    <element name="Snake Wyverns" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_SNAKE_WYVERNS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Snake Wyverns are a class of monsters known for their serpentine features, such as long, coiling bodies and forked tongues. They can range dramatically in both size and overall body structure, with some members being large, serpentine land-dwellers, while others are smaller and more reminiscent of Flying Wyverns.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Snake Wyverns" inline="true" />
+        </rules>
+	</element>
+    <element name="Temnoceran" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_TEMNOCERAN">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Temnoceran, are a class of monster characterized by its arachnoid characteristics, such as the ability to produce silk, though they have six limbs similar to Neopterons or Carapaceons.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Temnocerans" inline="true" />
+        </rules>
+	</element>
+    <element name="Theropods" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_THEROPODS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Theropods are reminiscent of Brute Wyverns; flightless, bipedal creatures with long tails and powerful legs. Unlike Brute Wyverns however, these monsters are generally quite small. Furthermore, Theropods almost always live under a social hierarchy, with young individuals, females and beta males led by a strong, dominant alpha male, which can command and control his subjects during combat.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Theropods" inline="true" />
+        </rules>
+	</element>
+    <element name="Unknown" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_UNKNOWN">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Unknown, are a class of monsters that has been identified by scholars, but not yet given a proper classification.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Unknown Creatures" inline="true" />
+        </rules>
+	</element>
+    <element name="Lynians" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_LYNIANS">
+		<supports>Expert Type</supports>
+        <compendium display="false" />
+		<description>
+			<p>Lynians are sapient monsters, and are typically short of stature. There are currently two distinct groups of Lynian: the cat-like Melynx, Felyne, and Grimalkyne, and the humanoid Shakalaka and Gajalaka. Lynians are intelligent, have complex societies, and speak their own languages. Whereas the Shakalaka and Gajalaka are more primitive and tribal, the feline species tend to lead peaceful lives and often coexist with human society.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+            <stat name="creature:type" value="Lynians" inline="true" />
+        </rules>
+	</element>
+
+    <element name="Modern Wyverian" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_MODERN">
+        <supports>Wyverian</supports>
+        <description>
+            <p>Modern wyverians peacefully coexist with humans and often live among them, especially older modern wyverians, past their prime. Younger Wyverians are known to travel far and wide, often accompanying humans. Modern wyverians are usually between 20 and 200 years old.</p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b> Your Strength or Dexterity score increases by 1.</p>
+            <p class="indent"><b><i>Modern Magic.</i></b> You know the create bonfire cantrip with this trait. Starting at 3rd level, you can cast the Enlarge/Reduce spell with this trait. When you reach 5th level, you can cast the Blindness/Deafness spell with this trait. Once you cast any of these spells (excluding create bonfire) with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+            <p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+            <p class="indent"><b><i>Tool Proficiency.</i></b> You have proficiency in two artisan tools of your choice.</p>
+            <p class="indent"><b><i>Wyverian Weapon Training.</i></b> You have proficiency with two martial weapons of your choice.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Increase (Wyverian)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Wyverian)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_MODERN_MAGIC" />
+            <select type="Proficiency" name="Tool Proficiency (Modern Wyverian)" number="2" supports="Artisan tools" />
+            <select type="Proficiency" name="Martial Weapon Proficiency (Modern Wyverian)" number="2" supports="Martial" />
+        </rules>
+    </element>
+    <element name="Modern Magic" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_MODERN_MAGIC">
+        <description>
+            <p>You know the create bonfire cantrip with this trait. Starting at 3rd level, you can cast the Enlarge/Reduce spell with this trait. When you reach 5th level, you can cast the Blindness/Deafness spell with this trait. Once you cast any of these spells (excluding create bonfire) with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+            <p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+        </description>
+        <sheet>
+            <description>You know the create bonfire cantrip. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+            <description level="3">You know the create bonfire cantrip. You can also cast the enlarge/reduce spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+            <description level="5">You know the create bonfire cantrip. You can also cast the enlarge/reduce spell and blindness/deafness spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+        </sheet>
+        <rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_CREATE_BONFIRE" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" level="5" />
+			<select type="Racial Trait" name="Spellcasting Ability (Modern Magic)" supports="Spellcasting Ability" />
+		</rules>
+    </element>
+
+   <element name="Ancient Wyverian" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_ANCIENT">
+        <supports>Wyverian</supports>
+        <description>
+            <p>Ancient wyverian are the wyverian who survived the Great Dragon War and may even remember the time of the ancient civilization. They are small in stature, sometimes a bit stubborn, but always seek to help those lost in the world. Ancient wyverians are usually between 600 and 1000 years old.</p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b> Your Constitution score increases by 1.</p>
+            <p class="indent"><b><i>Ancient Magic.</i></b> You know the druidcraft cantrip with this trait. Starting at 3rd level, you can cast the Barkskin spell with this trait. When you reach 5th level, you can cast the earthbind spell with this trait. Once you cast any of these spells (excluding druidcraft) with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+            <p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+            <p class="indent"><b><i>Kit Proficiency.</i></b> You gain proficiency with the kit of your choice: herbalism kit or poisoner's kit.</p>
+            <p class="indent"><b><i>Mask of the Wild.</i></b> You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</p>
+            <p class="indent"><b><i>Survivor.</i></b> You have proficiency in the Survival skill.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Wyverian)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_ANCIENT_MAGIC" />
+            <select type="Proficiency" name="Tool Proficiency (Ancient Wyverian)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_MASK_OF_THE_WILD" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+        </rules>
+    </element>
+    <element name="Ancient Magic" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_ANCIENT_MAGIC">
+        <description>
+            <p>You know the druidcraft cantrip with this trait. Starting at 3rd level, you can cast the Barkskin spell with this trait. When you reach 5th level, you can cast the earthbind spell with this trait. Once you cast any of these spells (excluding druidcraft) with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+            <p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+        </description>
+        <sheet>
+            <description>You know the druidcraft cantrip. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+            <description level="3">You know the druidcraft cantrip. You can also cast the barkskin spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+            <description level="5">You know the druidcraft cantrip. You can also cast the barkskin spell and the earthbind spell once per long rest with this trait or with an appropriate spell slot. Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
+        </sheet>
+        <rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />
+			<grant type="Spell" id="ID_PHB_SPELL_BARKSKIN" level="3" />
+			<grant type="Spell" id="ID_XGTE_SPELL_EARTHBIND" level="5" />
+			<select type="Racial Trait" name="Spellcasting Ability (Modern Magic)" supports="Spellcasting Ability" />
+		</rules>
+    </element> 
 </elements>
