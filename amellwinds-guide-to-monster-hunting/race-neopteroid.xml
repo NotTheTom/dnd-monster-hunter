@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Neopteroid</name>
+        <update version="0.0.1">
+            <file name="race-neopteroids.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/race-neopteroid.xml" />
+        </update>
+    </info>
+    
+    <element name="Neopteroid" type="Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACE_NEOPTEROID">
+        <description>
+            <p>Neopteroids are small, insect-like humanoids known for their agility and resilience. They have slender bodies covered in a chitinous exoskeleton and multifaceted eyes. Their limbs are equipped with tiny bristles that allow them to cling to surfaces with ease. Neopteroids are often found within bustling settlements, where their unique abilities make them valuable as scouts, messengers, and gatherers. Their skills allow them to navigate complex environments effortlessly and provide essential support to their communities.</p>
+            <h4>Neopteroid Traits</h4>
+            <p>As a Neopteroid, you have the following racial traits.</p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b> Increase one ability score by 2, and increase a different one by 1, or increase three different scores by 1.</p>
+            <p class="indent"><b><i>Age.</i></b> Neopteroid reach maturity by age 3. Compared to humans, neopteroid don’t usually live longer than 30 years.</p>
+            <p class="indent"><b><i>Alignment.</i></b> Neopteroids are typically neutral.</p>
+            <p class="indent"><b><i>Size.</i></b> Neopteroid average about 2 feet tall and weight about 30 pounds. Your size is Small.</p>
+            <p class="indent"><b><i>Speed.</i></b> Your base walking speed is 25 feet.</p>
+            <p class="indent"><b><i>Tarsal Claws.</i></b> Because of the tiny microscopic bristles on your limbs, you have a climbing speed of 20 feet.</p>
+            <p class="indent"><b><i>Languages.</i></b> You can speak, read, and write Common, one other language of their choice.</p>
+            <p class="indent"><b><i>Subrace.</i></b> Two subraces of Neopteroids exist: flying or ground. Choose one of these subraces.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Improvement Option (Neopteroid)" supports="Custom Ability Score Improvement Option" />
+            <grant type="Size" id="ID_SIZE_SMALL" />
+            <stat name="innate speed" value="25" bonus="base" />
+            <stat name="innate speed:climb" value="20" bonus="base" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <select type="Language" name="Language (Neopteroid)" supports="Standard||Exotic" />
+            <select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <select type="Sub Race" name="Neopteroid Subrace" supports="Neopteroid" />
+        </rules>
+    </element>
+    
+    <element name="Flying Neopteroid" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_FLYING">
+        <supports>Neopteroid</supports>
+        <description>
+            <p>Flying Neopteroids are distinguished by their translucent, iridescent wings that shimmer in the light. Their wings beat rapidly, producing a distinctive buzzing sound as they zip through the air. Known for their speed and grace, Flying Neopteroids deftly evade predators and obstacles alike, often using their natural agility to escape danger. They are highly valued by the Hunter's Guild for their ability to quickly traverse large distances, making them excellent couriers and lookouts.</p>
+            <p class="indent"><b><i>Flight.</i></b> Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.</p>
+            <p class="indent"><b><i>Flyby.</i></b> You don't provoke opportunity attacks when you fly out of an enemy's reach. You can use this trait only if your flying speed is greater than 0. You can use it a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+            <p class="indent"><b><i>Stinger.</i></b> Your stinger is a natural melee weapon, which you can use to make unarmed strikes. If you hit with them, you deal poison damage equal to 1d6 + your Constitution modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID_WOTC_MOTM_RACIAL_TRAIT_AARAKOCRA_FLIGHT" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_FLYBY" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_STINGER" />
+        </rules>
+    </element>
+    <element name="Flyby" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_FLYBY">
+        <description>
+            <p>You don't provoke opportunity attacks when you fly out of an enemy's reach. You can use this trait only if your flying speed is greater than 0. You can use it a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>You don't provoke opportunity attacks when you fly out of an enemy's reach. You can use this trait only if your flying speed is greater than 0.</description>
+        </sheet>
+    </element>
+    <element name="Stinger" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_STINGER">
+        <description>
+            <p>Your stinger is a natural melee weapon, which you can use to make unarmed strikes. If you hit with them, you deal poison damage equal to 1d6 + your Constitution modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+        </description>
+        <sheet>
+            <description>You can use your stinger to make unarmed strikes. If you hit with them, you deal 1d6 + {{constitution:modifier}} poison damage, instead of the bludgeoning damage normal for an unarmed strike.</description>
+        </sheet>
+    </element>
+    
+    <element name="Ground Neopteroid" type="Sub Race" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SUBRACE_GROUND">
+        <supports>Neopteroid</supports>
+        <description>
+            <p>Ground Neopteroids are more robust and muscular than their flying counterparts. They possess powerful limbs adapted for digging and climbing, with large, sturdy mandibles for breaking through tough vegetation and soil. Despite lacking the ability to fly, Ground Neopteroids are incredibly b and resilient, making them formidable in their own right. Their natural strength and endurance allow them to perform heavy labor, construct defenses, and serve as frontline workers in their communities, ensuring the safety and prosperity of their people.</p>
+            <p class="indent"><b><i>Altaroth Strength.</i></b> You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+            <p class="indent"><b><i>Athletic.</i></b> You gain proficiency in the Athletics skill.</p>
+            <p class="indent"><b><i>Hornetaur Power.</i></b> As a bonus action, you can jump a number of feet equal to five times your proficiency bonus, without provoking opportunity attacks. You can use this trait only if your speed is greater than 0. You can use it a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+            <p class="indent"><b><i>Forager (AGtMH Rule Set).</i></b> When you harvest mushrooms, you instead gather 2.</p>
+            <p class="indent"><b><i>Neopteroid Magic.</i></b> You know the lesser restoration spell. You can cast this spell once, but you can only end the poisoned condition on a creature, and regain the ability to do so when you finish a long rest.</p>
+            <p class="indent"><b><i>Neopteroid Resilience.</i></b> You have advantage on saving throws against poison.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_ALTAROTH_STRENGTH" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_HORNETAUR_POWER" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_FORAGER" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_NEOPTEROID_MAGIC" />
+            <grant type="Racial Trait" id="ID_ALD_AGMH_RACIAL_TRAIT_NEOPTEROID_RESILIENCE" />
+        </rules>
+    </element>
+    <element name="Altaroth Strength" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_ALTAROTH_STRENGTH">
+        <description>
+            <p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+        </description>
+        <sheet>
+            <description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+        </sheet>
+        <rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+		</rules>
+    </element>
+    <element name="Hornetaur Power" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_HORNETAUR_POWER">
+        <description>
+            <p>As a bonus action, you can jump a number of feet equal to five times your proficiency bonus, without provoking opportunity attacks. You can use this trait only if your speed is greater than 0. You can use it a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+            <description>You can jump a total of {{hornetaur power:feet}} feet, without provoking opportunity attacks. You can use this trait only if your speed is greater than 0.</description>
+        </sheet>
+        <rules>
+            <stat name="hornetaur power:feet" value="proficiency" />
+            <stat name="hornetaur power:feet" value="proficiency" />
+            <stat name="hornetaur power:feet" value="proficiency" />
+            <stat name="hornetaur power:feet" value="proficiency" />
+            <stat name="hornetaur power:feet" value="proficiency" />
+        </rules>
+    </element>
+    <element name="Forager" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_FORAGER">
+        <description>
+            <p>When you harvest mushrooms, you instead gather 2.</p>
+        </description>
+        <sheet>
+            <description>When you harvest mushrooms, you instead gather 2.</description>
+        </sheet>
+    </element>
+    <element name="Neoperoid Magic" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_NEOPTEROID_MAGIC">
+        <description>
+            <p>You know the lesser restoration spell. You can cast this spell once, but you can only end the poisoned condition on a creature, and regain the ability to do so when you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You know the lesser restoration spell. You can only end the poisoned condition on a creature.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" />
+        </rules>
+    </element>
+    <element name="Neopteroid Resilience" type="Racial Trait" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_RACIAL_TRAIT_NEOPTEROID_RESILIENCE">
+        <description>
+            <p>You have advantage on saving throws against poison.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against poison.</description>
+        </sheet>
+    </element>
+</elements>
