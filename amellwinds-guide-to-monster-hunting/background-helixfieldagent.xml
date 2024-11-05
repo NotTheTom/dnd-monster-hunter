@@ -71,6 +71,7 @@
         </rules>
     </element>
     <element name="Feature: Hybrid Hunter" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_FEATURE_HYBRID_HUNTER">
+        <supports>Background Feature</supports>
         <description>
             <p>You are experienced and have expertise in tracking and hunting down hybrid creatures that have escaped from the faction's laboratories or breeding facilities. You recognize the signs of a hybrid creature when acting as the trailblazer or scout. Additionally, you can find a place to hide, rest, ir recuperate among other members of the commission, if doing so does not put them in danger.</p>
         </description>
