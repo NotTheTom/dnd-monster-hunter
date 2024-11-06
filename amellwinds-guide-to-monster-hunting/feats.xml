@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Feats</name>
+        <update version="0.0.1">
+            <file name="feats.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/feats.xml" />
+        </update>
+    </info>
+    
+    <element name="Arcane Adaptation" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_ARCANE_ADAPTATION">
+        <description>
+            <p>Your natural arcane ability allows you to improvise and adapt to your surroundings.</p>
+            <ul>
+                <li>Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.</li>
+                <li>You can cast a spell that requires a spell slot with both an action and a bonus action on the same turn as long as the bonus action spell does not require a spell attack roll, saving throw, or deals damage.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.
+            You can cast a spell that requires a spell slot with both an action and a bonus action on the same turn as long as the bonus action spell does not require a spell attack roll, saving throw, or deals damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Armored Gunner" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_ARMORED_GUNNER">
+        <prerequisite>Strength 13 or higher</prerequisite>
+		<requirements>[str:13]</requirements>
+        <description>
+            <p><i>Prerequisite: Strength 13 or higher</i></p>
+            <ul>
+                <li>As a bonus action, you can attach or detach a shield to your heavy bowgun.</li>
+                <li>While the shield is attached, you gain a +2 bonus to your AC, your movement speed is halved, and being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls.</li>
+                <li>When you attack a creature with your heavy bowgun, and they are within the weapon's normal range, you can choose to use Strength instead of Dexterity for its attack and damage bonuses.</li>
+            </ul>
+        </description>
+        <sheet action="Bonus Action">
+            <description>You can attach or detach a shield to your heavy bowgun.
+            While the shield is attached, you gain a +2 bonus to your AC, your movement speed is halved, and being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls.
+            When you attack a creature with your heavy bowgun, and they are within the weapon's normal range, you can choose to use Strength instead of Dexterity for its attack and damage bonuses.</description>
+        </sheet>
+    </element>
+
+    <element name="Bastion" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_BASTION">
+        <prerequisite>Strength 13 or higher</prerequisite>
+		<requirements>[str:13]</requirements>
+        <description>
+            <p><i>Prerequisite: Strength 13 or higher</i></p>
+            <p>If you are subjected to an effect or action originating from a creature or object that does not spread around corners (for example, a red dragon's breath weapon, the lightning bolt spell, or the thunderwave spell), you can use your reaction to employ your shield or a weapon with the guard property, positioning it between yourself and the effect or action. When you do, you gain the following benefits:</p>
+            <ul>
+                <li>You can make a Strength saving throw instead of the original saving throw.</li>
+                <li>Creatures in a 90-foot cone behind you have total cover from the effect.</li>
+            </ul>
+            <p>You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="{{proficiency}}/Long Rest">
+            <description>If you are subjected to an effect or action originating from a creature or object that does not spread around corners (for example, a red dragon's breath weapon, the lightning bolt spell, or the thunderwave spell), you can employ your shield or a weapon with the guard property, positioning it between yourself and the effect or action. When you do, you gain the following benefits:
+            You can make a Strength saving throw instead of the original saving throw.
+            Creatures in a 90-foot cone behind you have total cover from the effect.</description>
+        </sheet>
+    </element>
+
+    <element name="Bomb Specialist" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_BOMB_SPECIALIST">
+        <description>
+            <ul>    
+                <li>Increase your Dexterity score by 1, up to a maximum of 20.</li>
+                <li>You are proficient with improvised thrown weapons.</li>
+                <li>You gain proficiency with tinker's tools. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with them.</li>
+            </ul>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dexterity" value="1" />
+            <grant type="Feat Feature" id="ID_ALD_AGMH_FEAT_FEATURE_DOUBLE_TINKERS" requirements="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+            <grant type="Feat Feature" id="ID_ALD_AGMH_FEAT_FEATURE_PROF_TINKERS" requirements="!ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Prof Tinkers" type="Feat Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_FEATURE_PROF_TINKERS">
+        <compendium display="false" />
+        <description>
+            <p>You are proficient with improvised thrown weapons.</p>
+        </description>
+        <sheet alt="Bomb Specialist">
+            <description>You are proficient with improvised thrown weapons.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Double Tinkers" type="Feat Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_FEATURE_DOUBLE_TINKERS">
+        <compendium display="false" />
+        <description>
+            <p>You are proficient with improvised thrown weapons.</p>
+            <p>You can add double your proficiency bonus to checks you make with tinker's tools.</p>
+        </description>
+        <sheet alt="Bomb Specialist">
+            <description>You are proficient with improvised thrown weapons.
+            You can add double your proficiency bonus to checks you make with tinker's tools.</description>
+        </sheet>
+    </element>
+
+    <element name="Frenzy Fever" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_FRENZY_FEVER">
+        <description>
+            <p>Research once again goes a step too far with the invention of a medicine that will give you the frenzy virus.</p>
+            <ul>
+                <li>Increase your Constitution by 1, up to a maximum of 20.</li>
+                <li>You are infected with a mutated version of the frenzy virus. You gain all the effects of the frenzy virus sentient race template on page 80 of the Monster Hunter Monster Manual except for the impaired healing effect. You can still heal from nonmagical means.</li>
+                <li>At your DM’s discretion, whenever you hit a creature with your natural weapon attacks (claws or bite mainly), they can have the creature make a Constitution saving throw equal to 8 + your proficiency bonus + your Constitution modifier. On a failed save the creature is infected with the frenzy virus (See page 379 of the Monster Hunter Monster Manual). On a successful save, the target is immune to your mutated version of the frenzy virus, forever.</li>
+            </ul>
+            <h3>Creator's Note</h3>
+            <p>Dungeon Masters, don't allow your players to intentionally infect other players' characters. This could be a great story and mechanical feat, but could potentially ruin a campaign if you let it.</p>
+        </description>
+        <sheet>
+            <description>At your DM’s discretion, whenever you hit a creature with your natural weapon attacks (claws or bite mainly), they can have the creature make a Constitution saving against a DC {{frenzy fever:dc}}. On a failed save the creature is infected with the frenzy virus. On a successful save, the target is immune to your mutated version of the frenzy virus, forever.</description>
+        </sheet>
+        <rules>
+            <stat name="constitution" value="1" />
+            <grant type="Feat Feature" id="ID_ALD_AGMH_FEAT_FEATURE_FRENZY_CRITICAL" />
+            <grant type="Feat Feature" id="ID_ALD_AGMH_FEAT_FEATURE_FRENZY_DAMAGE" />
+            <grant type="Feat Feature" id="ID_ALD_AGMH_FEAT_FEATURE_FRENZY_SUPPRESSION" />
+            <grant type="Feat Feature" id="ID_ALD_AGMH_FEAT_FEATURE_FRENZY_VULNERABILITY" />
+            <stat name="frenzy fever:dc" value="8" />
+			<stat name="frenzy fever:dc" value="constitution:modifier" />
+			<stat name="frenzy fever:dc" value="proficiency" />
+        </rules>
+    </element>
+    <element name="Improved Critical (Frenzy Fever)" type="Feat Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_FEATURE_FRENZY_CRITICAL">
+        <compendium display="false" />
+        <description>
+            <p>Your weapon attacks score a critical hit on a roll of 19 or 20.</p>
+        </description>
+        <sheet>
+            <description>Your weapon attacks score a critical hit on a roll of 19 or 20.</description>
+        </sheet>
+    </element>
+    <element name="Improved Damage (Frenzy Fever)" type="Feat Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_FEATURE_FRENZY_DAMAGE">
+        <compendium display="false" />
+        <description>
+            <p>All spells and attacks deal an additional 1d4 damage.</p>
+        </description>
+        <sheet>
+            <description>All spells and attacks deal an additional 1d4 damage.</description>
+        </sheet>
+    </element>
+    <element name="Suppressed Immunities (Frenzy Fever)" type="Feat Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_FEATURE_FRENZY_SUPPRESSION">
+        <compendium display="false" />
+        <description>
+            <p>You no longer benefit from any resistance, absorption, or immunity for conditions or damage.</p>
+        </description>
+        <sheet>
+            <description>You no longer benefit from any resistance, absorption, or immunity for conditions or damage.</description>
+        </sheet>
+    </element>
+    <element name="Vulnerability (Frenzy Fever)" type="Feat Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_FEATURE_FRENZY_VULNERABILITY">
+        <compendium display="false" />
+        <description>
+            <p>If you gain a frenzy charge, you take an additional 1d6 necrotic damage from the attack.</p>
+        </description>
+        <sheet>
+            <description>If you gain a frenzy charge, you take an additional 1d6 necrotic damage from the attack.</description>
+        </sheet>
+    </element>
+
+    <element name="Gunlance Mastery" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_GUNLANCE_MASTERY">
+        <description>
+            <p>You have unlocked the secrets of the gunlance. While you are attuned to a gunlance, its wyvernfire now recharges on a short or long rest. Additionally, it uses a new type of shell. Choose one of the following shells below that you now use in place of your original shells:</p>
+            <ul>
+                <li><b>Long Range Shells.</b> Your shell's attack range is now 150/600 feet.</li>
+                <li><b>Wide Range Shells.</b> When you hit a creature with your shell attack, you also deal your damage against a different creature that is within 5 feet of the original target and within range of your weapon.</li>
+                <li><b>Short Range Shells.</b> The attack range of your shells is reduced by half, but you can add your Strength or Dexterity modifier to the damage.</li>
+            </ul>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Feat Feature" name="Shell Type (Gunlance Mastery)" supports="Shell Type" />
+        </rules>
+    </element>
+    <element name="Long Range Shells" type="Feat Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_FEATURE_LONG_RANGE_SHELLS">
+        <supports>Shell Type</supports>
+        <compendium display="false" />
+        <description>
+            <p>Your shell's attack range is now 150/600 feet.</p>
+        </description>
+        <sheet alt="Gunlance Mastery">
+            <description>While you are attuned to a gunlance, its wyvernfire now recharges on a short or long rest.
+            Your shell's attack range is now 150/600 feet.</description>
+        </sheet>
+    </element>
+    <element name="Wide Range Shells" type="Feat Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_FEATURE_WIDE_RANGE_SHELLS">
+        <supports>Shell Type</supports>
+        <compendium display="false" />
+        <description>
+            <p>When you hit a creature with your shell attack, you also deal your damage against a different creature that is within 5 feet of the original target and within range of your weapon.</p>
+        </description>
+        <sheet>
+            <description>While you are attuned to a gunlance, its wyvernfire now recharges on a short or long rest.
+            When you hit a creature with your shell attack, you also deal your damage against a different creature that is within 5 feet of the original target and within range of your weapon.</description>
+        </sheet>
+    </element>
+    <element name="Short Range Shells" type="Feat Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_FEATURE_SHORT_RANGE_SHELLS">
+        <supports>Shell Type</supports>
+        <compendium display="false" />
+        <description>
+            <p>The attack range of your shells is reduced by half, but you can add your Strength or Dexterity modifier to the damage.</p>
+        </description>
+        <sheet>
+            <description>While you are attuned to a gunlance, its wyvernfire now recharges on a short or long rest.
+            The attack range of your shells is reduced by half, but you can add your Strength or Dexterity modifier to the damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Horn Maestro" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_HORN_MAESTRO">
+        <description>
+            <p>Thanks to extensive practice with the hunting horn, you gain the following benefits:</p>
+            <ul>
+                <li>Your hunting horn's chord length is increased by 1.</li>
+                <li>You can now complete a hunting horn's melody as a bonus action.</li>
+                <li>Fortissimo! Your hunting horn's single note melody effect is doubled.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Your hunting horn's chord length is increased by 1.
+            You can now complete a hunting horn's melody as a bonus action.
+            Fortissimo! Your hunting horn's single note melody effect is doubled.</description>
+        </sheet>
+    </element>
+
+    <element name="Insect Glaive Mastery" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_INSECT_GLAIVE_MASTERY">
+        <description>
+            <p>You master fighting with an insect glaive, gaining the following benefits:</p>
+            <ul>
+                <li>Increase your Strength by 1, up to a maximum of 20.</li>
+                <li>When you use the insect glaive standing leap property, you can now use the Attack action as part of the same action, instead of a single weapon attack. Additionally, if you use the standing leap property to jump into the air, the distance you can jump is doubled.</li>
+                <li>When you hit a creature with a melee weapon attack from your insect glaive, while you are in the air, you can move up to 10 feet in any direction. This movement does not count against your normal movement speed or the amount of movement you gain from the standing leap property.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When you use the insect glaive standing leap property, you can now use the Attack action as part of the same action, instead of a single weapon attack. Additionally, if you use the standing leap property to jump into the air, the distance you can jump is doubled.
+            When you hit a creature with a melee weapon attack from your insect glaive, while you are in the air, you can move up to 10 feet in any direction. This movement does not count against your normal movement speed or the amount of movement you gain from the standing leap property.</description>
+        </sheet>
+        <rules>
+            <stat name="strength" value="1" />
+        </rules>
+    </element>
+
+    <element name="Improved Hammer Charge" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_IMPROVED_HAMMER_CHARGE">
+        <description>
+            <ul>
+                <li>When you are wielding a Hammer, you can use its hammer charge property when you move 15 feet instead of 20.</li>
+                <li>If you jump when performing a hammer charge, you perform a spinning hammer charge that allows you to pass through a hostile creatures space without provoking opportunity attacks.</li>
+                <li>You can add the extra damage from the hammer charge to 1 additional attack on this turn for every 5 feet you jump during the charge, so long as the attacks target a creature you passed through during the spinning hammer charge.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When you are wielding a Hammer, you can use its hammer charge property when you move 15 feet instead of 20.
+            If you jump when performing a hammer charge, you perform a spinning hammer charge that allows you to pass through a hostile creatures space without provoking opportunity attacks.
+            You can add the extra damage from the hammer charge to 1 additional attack on this turn for every 5 feet you jump during the charge, so long as the attacks target a creature you passed through during the spinning hammer charge.</description>
+        </sheet>
+    </element>
+
+    <element name="Kinsect Mastery" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_KINSECT_MASTERY">
+        <description>
+            <p>You can use an action to have your kinsect act as if it was summoned by the find familiar spell, with the following differences:</p>
+            <ul>
+                <li>It can only be used in this way for a total of 1 hour each day.</li>
+                <li>It cannot be dismissed, instead you can use an action to call it back to you.</li>
+                <li>It uses the stat block of a hawk (MM p.330).</li>
+                <li>When its hit points reaches 0 it reappears on your insect glaive at full hit points and will resume what it was last doing unless told otherwise.</li>
+                <li>It can use its action to absorb a creature's essence in the standard order, but it can return this essence to you or one other creature you designate as an action.</li>
+                <li>While being used in this way, you cannot use it to attack as part of your Attack action.</li>
+            </ul>
+        </description>
+        <sheet usage="Action">
+            <description>You can have your kinsect act as if it was summoned by the find familiar spell, with the following differences:
+            It can only be used in this way for a total of 1 hour each day.
+            It cannot be dismissed, instead you can use an action to call it back to you.
+            It uses the stat block of a hawk.
+            When its hit points reaches 0 it reappears on your insect glaive at full hit points and will resume what it was last doing unless told otherwise.
+            It can use its action to absorb a creature's essence in the standard order, but it can return this essence to you or one other creature you designate as an action.
+            While being used in this way, you cannot use it to attack as part of your Attack action.</description>
+        </sheet>
+    </element>
+
+    <element name="Master Craftsman" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_MASTER_CRAFTSMAN">
+        <description>
+            <ul>
+                <li>Increase your Intelligence or Wisdom score by 1, up to a maximum of 20.</li>
+                <li>You gain proficiency with one tool of your choice that is listed in the combo list section of chapter 3.</li>
+                <li>Whenever you attempt to craft anything from the combo list, the DC to craft it is reduced by the number of times this feat has been taken by you.</li>
+                <li>You can select this feat multiple times. Each time you do so, you must choose a different tool.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Whenever you attempt to craft anything from the combo list, the DC to craft it is reduced by {{craftsmen:total}}.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Master Craftsmen" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" />
+            <select type="Proficiency" name="Tool Proficiency (Master Craftsmen)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS|ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
+            <stat name="craftsmen:total" value="1" />
+        </rules>
+    </element>
+    <element name="Master Craftsman" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_MASTER_CRAFTSMAN_2">
+        <requirements>ID_ALD_AGMH_FEAT_MASTER_CRAFTSMAN</requirements>
+        <compendium display="false" />
+        <description>
+            <ul>
+                <li>Increase your Intelligence or Wisdom score by 1, up to a maximum of 20.</li>
+                <li>You gain proficiency with one tool of your choice that is listed in the combo list section of chapter 3.</li>
+                <li>Whenever you attempt to craft anything from the combo list, the DC to craft it is reduced by the number of times this feat has been taken by you.</li>
+                <li>You can select this feat multiple times. Each time you do so, you must choose a different tool.</li>
+            </ul>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Ability Score Improvement" name="Master Craftsmen" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" />
+            <select type="Proficiency" name="Tool Proficiency (Master Craftsmen)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS|ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
+            <stat name="craftsmen:total" value="1" />
+        </rules>
+    </element>
+    <element name="Master Craftsman" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_MASTER_CRAFTSMAN_3">
+        <requirements>ID_ALD_AGMH_FEAT_MASTER_CRAFTSMAN_2</requirements>
+        <compendium display="false" />
+        <description>
+            <ul>
+                <li>Increase your Intelligence or Wisdom score by 1, up to a maximum of 20.</li>
+                <li>You gain proficiency with one tool of your choice that is listed in the combo list section of chapter 3.</li>
+                <li>Whenever you attempt to craft anything from the combo list, the DC to craft it is reduced by the number of times this feat has been taken by you.</li>
+                <li>You can select this feat multiple times. Each time you do so, you must choose a different tool.</li>
+            </ul>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Ability Score Improvement" name="Master Craftsmen" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" />
+            <select type="Proficiency" name="Tool Proficiency (Master Craftsmen)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS|ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
+            <stat name="craftsmen:total" value="1" />
+        </rules>
+    </element>
+    <element name="Master Craftsman" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_MASTER_CRAFTSMAN_4">
+        <requirements>ID_ALD_AGMH_FEAT_MASTER_CRAFTSMAN_3</requirements>
+        <compendium display="false" />
+        <description>
+            <ul>
+                <li>Increase your Intelligence or Wisdom score by 1, up to a maximum of 20.</li>
+                <li>You gain proficiency with one tool of your choice that is listed in the combo list section of chapter 3.</li>
+                <li>Whenever you attempt to craft anything from the combo list, the DC to craft it is reduced by the number of times this feat has been taken by you.</li>
+                <li>You can select this feat multiple times. Each time you do so, you must choose a different tool.</li>
+            </ul>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Ability Score Improvement" name="Master Craftsmen" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" />
+            <select type="Proficiency" name="Tool Proficiency (Master Craftsmen)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS|ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
+            <stat name="craftsmen:total" value="1" />
+        </rules>
+    </element>
+    <element name="Master Craftsman" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_MASTER_CRAFTSMAN_5">
+        <requirements>ID_ALD_AGMH_FEAT_MASTER_CRAFTSMAN_4</requirements>
+        <compendium display="false" />
+        <description>
+            <ul>
+                <li>Increase your Intelligence or Wisdom score by 1, up to a maximum of 20.</li>
+                <li>You gain proficiency with one tool of your choice that is listed in the combo list section of chapter 3.</li>
+                <li>Whenever you attempt to craft anything from the combo list, the DC to craft it is reduced by the number of times this feat has been taken by you.</li>
+                <li>You can select this feat multiple times. Each time you do so, you must choose a different tool.</li>
+            </ul>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Ability Score Improvement" name="Master Craftsmen" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" />
+            <select type="Proficiency" name="Tool Proficiency (Master Craftsmen)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS|ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
+            <stat name="craftsmen:total" value="1" />
+        </rules>
+    </element>
+    
+    <element name="Master Mounter" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_MASTER_MOUNTER">
+        <prerequisite>8th level or higher</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p><i>Prerequisite: 8th level or higher</i></p>
+            <ul>
+                <li>You have advantage on Strength (Athletics) or Dexterity (Acrobatics) checks to climb onto a bigger creature (DMG p.271) or remain on a creature you are already on.</li>
+                <li>While you remain on a bigger creature, you can use your action to make an unarmed strike against the creature. On a hit, the creature must use its reaction to move up to half its movement speed in a direction of your choice. If it hits a solid object - that is as big or larger than it - before the end of its movement, the creature is knocked prone. If the creature would enter into any environmental hazard dangerous to the creature (such as falling off a cliff when it can't fly, or into lava when it isn't immune to fire), it instead falls prone in the space adjacent to the hazard.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You have advantage on Strength (Athletics) or Dexterity (Acrobatics) checks to climb onto a bigger creature or remain on a creature you are already on.</description>
+            While you remain on a bigger creature, you can use your action to make an unarmed strike against the creature. On a hit, the creature must use its reaction to move up to half its movement speed in a direction of your choice. If it hits a solid object - that is as big or larger than it - before the end of its movement, the creature is knocked prone. If the creature would enter into any environmental hazard dangerous to the creature (such as falling off a cliff when it can't fly, or into lava when it isn't immune to fire), it instead falls prone in the space adjacent to the hazard.
+        </sheet>
+    </element>
+
+    <element name="Switch Axe Mastery" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH__FEAT_SWITCH_AXE_MASTERY">
+        <description>
+            <p>You master fighting with the switch axe, gaining the following benefits:</p>
+            <ul>
+                <li>Increase your Strength by 1, up to a maximum of 20.</li>
+                <li>When you use a phial and critically hit with this weapon, you regain a number of expended phials equal to half the cost of the one you used (rounded up).</li>
+                <li>Your phials save DC is increased by 1.</li>
+                <li>You can use a free action on your turn to switch weapon modes. This replaces your free action to draw or stow a weapon.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When you use a phial and critically hit with this weapon, you regain a number of expended phials equal to half the cost of the one you used (rounded up).
+            Your phials save DC is increased by 1.
+            You can use a free action on your turn to switch weapon modes. This replaces your free action to draw or stow a weapon.</description>
+        </sheet>
+        <rules>
+            <stat name="strength" value="1" />
+        </rules>
+    </element>
+
+    <element name="Additional Wildshapes" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_ADDITIONAL_WILDSHAPES">
+        <prerequisite>Druid</prerequisite>
+        <requirements>ID_WOTC_PHB_CLASS_DRUID</requirements>
+        <description>
+            <p>Choose a creature type: Bird Wyverns, Brute Wyverns, Fanged Wyverns, Flying Wyverns, Leviathans, Neopterons &amp; Temnoceran, Piscine Wyverns.</p>
+            <p class="indent">You can use your Wild Shape to transform into a creature from the type you chose (you ignore the fact that the creature isn't a beast, but must abide by the other wildshape limitations for your level). Additionally when you wildshape into one of these creatures, you cannot use their legendary resistances (if it has any), any recharge ability can only be used once per wildshape, and you cannot use any action or ability that can only be used a limited number of times a day/rest.</p>
+            <p class="indent">You can select this feat multiple times. Each time you do so, you must choose a different creature type.</p>
+            <h3>Creator's Note</h3>
+            <p>The Additional Wildshape feat is still in the testing phases. Allowing the recharge ability to be used once, keeps the creatures CR more accurate to its calculated CR. This might be removed after some testing, but for the time being it should be ok, but your DM may use their own discretion to limit use of recharge abilities.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Feat Feature" name="Additional Wildshape" supports="Additional Wildshape" />
+        </rules>
+    </element>
+    <element name="Bird Wyverns" type="Feat Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_FEATURE_BIRD_WYVERNS">
+        <supports>Additional Wildshape</supports>
+        <compendium display="false" />
+        <description>
+            <p>You can use your Wild Shape to transform into a Bird Wyvern (you ignore the fact that the creature isn't a beast, but must abide by the other wildshape limitations for your level). Additionally when you wildshape into one of these creatures, you cannot use their legendary resistances (if it has any), any recharge ability can only be used once per wildshape, and you cannot use any action or ability that can only be used a limited number of times a day/rest.</p>
+        </description>
+        <sheet alt="Additional Wildshapes, Bird Wyverns">
+            <description>You can Wild Shape into a Bird Wyvern, you must abide by the other wildshape limitations for your level. Additionally, you cannot use their legendary resistances (if it has any), any recharge ability can only be used once per wildshape, and you cannot use any action or ability that can only be used a limited number of times a day/rest.</description>
+        </sheet>
+    </element>
+    <element name="Brute Wyverns" type="Feat Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_FEATURE_BRUTE_WYVERNS">
+        <supports>Additional Wildshape</supports>
+        <compendium display="false" />
+        <description>
+            <p>You can use your Wild Shape to transform into a Brute Wyvern (you ignore the fact that the creature isn't a beast, but must abide by the other wildshape limitations for your level). Additionally when you wildshape into one of these creatures, you cannot use their legendary resistances (if it has any), any recharge ability can only be used once per wildshape, and you cannot use any action or ability that can only be used a limited number of times a day/rest.</p>
+        </description>
+        <sheet alt="Additional Wildshapes, Brute Wyverns">
+            <description>You can Wild Shape into a Brute Wyvern, you must abide by the other wildshape limitations for your level. Additionally, you cannot use their legendary resistances (if it has any), any recharge ability can only be used once per wildshape, and you cannot use any action or ability that can only be used a limited number of times a day/rest.</description>
+        </sheet>
+    </element>
+    <element name="Fanged Wyverns" type="Feat Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_FEATURE_FANGED_WYVERNS">
+        <supports>Additional Wildshape</supports>
+        <compendium display="false" />
+        <description>
+            <p>You can use your Wild Shape to transform into a Fanged Wyvern (you ignore the fact that the creature isn't a beast, but must abide by the other wildshape limitations for your level). Additionally when you wildshape into one of these creatures, you cannot use their legendary resistances (if it has any), any recharge ability can only be used once per wildshape, and you cannot use any action or ability that can only be used a limited number of times a day/rest.</p>
+        </description>
+        <sheet alt="Additional Wildshapes, Fanged Wyverns">
+            <description>You can Wild Shape into a Fanged Wyvern, you must abide by the other wildshape limitations for your level. Additionally, you cannot use their legendary resistances (if it has any), any recharge ability can only be used once per wildshape, and you cannot use any action or ability that can only be used a limited number of times a day/rest.</description>
+        </sheet>
+    </element>
+    <element name="Flying Wyverns" type="Feat Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_FEATURE_FLYING_WYVERNS">
+        <supports>Additional Wildshape</supports>
+        <compendium display="false" />
+        <description>
+            <p>You can use your Wild Shape to transform into a Flying Wyvern (you ignore the fact that the creature isn't a beast, but must abide by the other wildshape limitations for your level). Additionally when you wildshape into one of these creatures, you cannot use their legendary resistances (if it has any), any recharge ability can only be used once per wildshape, and you cannot use any action or ability that can only be used a limited number of times a day/rest.</p>
+        </description>
+        <sheet alt="Additional Wildshapes, Flying Wyverns">
+            <description>You can Wild Shape into a Flying Wyvern, you must abide by the other wildshape limitations for your level. Additionally, you cannot use their legendary resistances (if it has any), any recharge ability can only be used once per wildshape, and you cannot use any action or ability that can only be used a limited number of times a day/rest.</description>
+        </sheet>
+    </element>
+    <element name="Leviathans" type="Feat Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_FEATURE_LEVIATHANS">
+        <supports>Additional Wildshape</supports>
+        <compendium display="false" />
+        <description>
+            <p>You can use your Wild Shape to transform into a Leviathan (you ignore the fact that the creature isn't a beast, but must abide by the other wildshape limitations for your level). Additionally when you wildshape into one of these creatures, you cannot use their legendary resistances (if it has any), any recharge ability can only be used once per wildshape, and you cannot use any action or ability that can only be used a limited number of times a day/rest.</p>
+        </description>
+        <sheet alt="Additional Wildshapes, Leviathans">
+            <description>You can Wild Shape into a Leviathan, you must abide by the other wildshape limitations for your level. Additionally, you cannot use their legendary resistances (if it has any), any recharge ability can only be used once per wildshape, and you cannot use any action or ability that can only be used a limited number of times a day/rest.</description>
+        </sheet>
+    </element>
+    <element name="Neopterans &amp; Temnoceran" type="Feat Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_FEATURE_NEOPTERANS_TEMNOCERAN">
+        <supports>Additional Wildshape</supports>
+        <compendium display="false" />
+        <description>
+            <p>You can use your Wild Shape to transform into Neopterans &amp; Temnoceran (you ignore the fact that the creature isn't a beast, but must abide by the other wildshape limitations for your level). Additionally when you wildshape into one of these creatures, you cannot use their legendary resistances (if it has any), any recharge ability can only be used once per wildshape, and you cannot use any action or ability that can only be used a limited number of times a day/rest.</p>
+        </description>
+        <sheet alt="Additional Wildshapes, Neopterans &amp; Temnoceran">
+            <description>You can Wild Shape into Neopterans &amp; Temnoceran, you must abide by the other wildshape limitations for your level. Additionally, you cannot use their legendary resistances (if it has any), any recharge ability can only be used once per wildshape, and you cannot use any action or ability that can only be used a limited number of times a day/rest.</description>
+        </sheet>
+    </element>
+    <element name="Piscine Wyverns" type="Feat Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_FEATURE_PISCINE_WYVERNS">
+        <supports>Additional Wildshape</supports>
+        <compendium display="false" />
+        <description>
+            <p>You can use your Wild Shape to transform into a Piscine Wyvern (you ignore the fact that the creature isn't a beast, but must abide by the other wildshape limitations for your level). Additionally when you wildshape into one of these creatures, you cannot use their legendary resistances (if it has any), any recharge ability can only be used once per wildshape, and you cannot use any action or ability that can only be used a limited number of times a day/rest.</p>
+        </description>
+        <sheet alt="Additional Wildshapes, Piscine Wyverns">
+            <description>You can Wild Shape into a Piscine Wyvern, you must abide by the other wildshape limitations for your level. Additionally, you cannot use their legendary resistances (if it has any), any recharge ability can only be used once per wildshape, and you cannot use any action or ability that can only be used a limited number of times a day/rest.</description>
+        </sheet>
+    </element>
+    <element name="Additional Wildshapes" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_ADDITIONAL_WILDSHAPES_2">
+        <prerequisite>Druid</prerequisite>
+        <requirements>ID_ALD_AGMH_FEAT_ADDITIONAL_WILDSHAPES,ID_WOTC_PHB_CLASS_DRUID</requirements>
+        <compendium display="false" />
+        <description>
+            <p>Choose a creature type: Bird Wyverns, Brute Wyverns, Fanged Wyverns, Flying Wyverns, Leviathans, Neopterons &amp; Temnoceran, Piscine Wyverns.</p>
+            <p class="indent">You can use your Wild Shape to transform into a creature from the type you chose (you ignore the fact that the creature isn't a beast, but must abide by the other wildshape limitations for your level). Additionally when you wildshape into one of these creatures, you cannot use their legendary resistances (if it has any), any recharge ability can only be used once per wildshape, and you cannot use any action or ability that can only be used a limited number of times a day/rest.</p>
+            <p class="indent">You can select this feat multiple times. Each time you do so, you must choose a different creature type.</p>
+            <h3>Creator's Note</h3>
+            <p>The Additional Wildshape feat is still in the testing phases. Allowing the recharge ability to be used once, keeps the creatures CR more accurate to its calculated CR. This might be removed after some testing, but for the time being it should be ok, but your DM may use their own discretion to limit use of recharge abilities.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Feat Feature" name="Additional Wildshape" supports="Additional Wildshape" />
+        </rules>
+    </element>
+    <element name="Additional Wildshapes" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_ADDITIONAL_WILDSHAPES_3">
+        <prerequisite>Druid</prerequisite>
+        <requirements>ID_ALD_AGMH_FEAT_ADDITIONAL_WILDSHAPES_2,ID_WOTC_PHB_CLASS_DRUID</requirements>
+        <compendium display="false" />
+        <description>
+            <p>Choose a creature type: Bird Wyverns, Brute Wyverns, Fanged Wyverns, Flying Wyverns, Leviathans, Neopterons &amp; Temnoceran, Piscine Wyverns.</p>
+            <p class="indent">You can use your Wild Shape to transform into a creature from the type you chose (you ignore the fact that the creature isn't a beast, but must abide by the other wildshape limitations for your level). Additionally when you wildshape into one of these creatures, you cannot use their legendary resistances (if it has any), any recharge ability can only be used once per wildshape, and you cannot use any action or ability that can only be used a limited number of times a day/rest.</p>
+            <p class="indent">You can select this feat multiple times. Each time you do so, you must choose a different creature type.</p>
+            <h3>Creator's Note</h3>
+            <p>The Additional Wildshape feat is still in the testing phases. Allowing the recharge ability to be used once, keeps the creatures CR more accurate to its calculated CR. This might be removed after some testing, but for the time being it should be ok, but your DM may use their own discretion to limit use of recharge abilities.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Feat Feature" name="Additional Wildshape" supports="Additional Wildshape" />
+        </rules>
+    </element>
+    <element name="Additional Wildshapes" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_ADDITIONAL_WILDSHAPES_4">
+        <prerequisite>Druid</prerequisite>
+        <requirements>ID_ALD_AGMH_FEAT_ADDITIONAL_WILDSHAPES_3,ID_WOTC_PHB_CLASS_DRUID</requirements>
+        <compendium display="false" />
+        <description>
+            <p>Choose a creature type: Bird Wyverns, Brute Wyverns, Fanged Wyverns, Flying Wyverns, Leviathans, Neopterons &amp; Temnoceran, Piscine Wyverns.</p>
+            <p class="indent">You can use your Wild Shape to transform into a creature from the type you chose (you ignore the fact that the creature isn't a beast, but must abide by the other wildshape limitations for your level). Additionally when you wildshape into one of these creatures, you cannot use their legendary resistances (if it has any), any recharge ability can only be used once per wildshape, and you cannot use any action or ability that can only be used a limited number of times a day/rest.</p>
+            <p class="indent">You can select this feat multiple times. Each time you do so, you must choose a different creature type.</p>
+            <h3>Creator's Note</h3>
+            <p>The Additional Wildshape feat is still in the testing phases. Allowing the recharge ability to be used once, keeps the creatures CR more accurate to its calculated CR. This might be removed after some testing, but for the time being it should be ok, but your DM may use their own discretion to limit use of recharge abilities.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Feat Feature" name="Additional Wildshape" supports="Additional Wildshape" />
+        </rules>
+    </element>
+    <element name="Additional Wildshapes" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_ADDITIONAL_WILDSHAPES_5">
+        <prerequisite>Druid</prerequisite>
+        <requirements>ID_ALD_AGMH_FEAT_ADDITIONAL_WILDSHAPES_4,ID_WOTC_PHB_CLASS_DRUID</requirements>
+        <compendium display="false" />
+        <description>
+            <p>Choose a creature type: Bird Wyverns, Brute Wyverns, Fanged Wyverns, Flying Wyverns, Leviathans, Neopterons &amp; Temnoceran, Piscine Wyverns.</p>
+            <p class="indent">You can use your Wild Shape to transform into a creature from the type you chose (you ignore the fact that the creature isn't a beast, but must abide by the other wildshape limitations for your level). Additionally when you wildshape into one of these creatures, you cannot use their legendary resistances (if it has any), any recharge ability can only be used once per wildshape, and you cannot use any action or ability that can only be used a limited number of times a day/rest.</p>
+            <p class="indent">You can select this feat multiple times. Each time you do so, you must choose a different creature type.</p>
+            <h3>Creator's Note</h3>
+            <p>The Additional Wildshape feat is still in the testing phases. Allowing the recharge ability to be used once, keeps the creatures CR more accurate to its calculated CR. This might be removed after some testing, but for the time being it should be ok, but your DM may use their own discretion to limit use of recharge abilities.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Feat Feature" name="Additional Wildshape" supports="Additional Wildshape" />
+        </rules>
+    </element>
+</elements>
