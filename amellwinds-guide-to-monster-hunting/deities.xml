@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Deities</name>
+        <update version="0.0.1">
+            <file name="deities.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/deities.xml" />
+        </update>
+    </info>
+    
+    <element name="Io" type="Deity" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_DEITY_IO">
+		<description>
+			<p class="flavor">the first aspect</p>
+		</description>
+		<setters>
+			<set name="setting">The Old World</set>
+			<set name="alignment">N</set>
+			<set name="domains">Dragons, Knowledge, Magic, Spells, Strength, Travel, Wealth</set>
+			<set name="symbol">Multi-colored disk</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>the first aspect</description>
+		</sheet>
+	</element>
+
+    <element name="Persana" type="Deity" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_DEITY_PERSANA">
+		<description>
+			<p class="flavor">guardian of the deep</p>
+		</description>
+		<setters>
+			<set name="setting">The Old World</set>
+			<set name="alignment">G</set>
+			<set name="domains">Deep Wilds</set>
+			<set name="symbol">Silver trident against a silhouetted conch</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>guardian of the deep</description>
+		</sheet>
+	</element>
+
+    <element name="Shilallia" type="Deity" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_DEITY_SHILALLIA">
+		<description>
+			<p class="flavor">the lady of the woods</p>
+		</description>
+		<setters>
+			<set name="setting">The Old World</set>
+			<set name="alignment">G</set>
+			<set name="domains">Deep Wilds</set>
+			<set name="symbol">Golden arcorn</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>the lady of the woods</description>
+		</sheet>
+	</element>
+
+    <element name="Nobanion" type="Deity" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_DEITY_NOBANION">
+		<description>
+			<p class="flavor">lord firemane</p>
+		</description>
+		<setters>
+			<set name="setting">The Old World</set>
+			<set name="alignment">CG</set>
+			<set name="domains">Nature, War</set>
+			<set name="symbol">Male lion's head on a green shield</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>lord firemane</description>
+		</sheet>
+	</element>
+
+    <element name="Fatalis" type="Deity" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_DEITY_FATALIS">
+		<description>
+			<p class="flavor">god of eternal darkness</p>
+		</description>
+		<setters>
+			<set name="setting">The Old World</set>
+			<set name="alignment">CE</set>
+			<set name="domains">Creation, Death, Trickery</set>
+			<set name="symbol">Jagged counterclockwise dark spiral rune</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>god of eternal darkness</description>
+		</sheet>
+	</element>
+</elements>
