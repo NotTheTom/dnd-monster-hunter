@@ -750,7 +750,7 @@
             <set name="cost" currency="gp">75</set>
             <set name="weight" lb="1/2">1/2 lb.</set>
             <set name="type">Potion</set>
-            <set name="rarity">Uncommmon</set>
+            <set name="rarity">Uncommon</set>
             <set name="stackable">true</set>
         </setters>
     </element>

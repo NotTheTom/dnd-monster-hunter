@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Resources</name>
+        <update version="0.0.1">
+            <file name="items-resources.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/items-gear.xml" />
+        </update>
+    </info>
+    
+    <element name="Bone" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_BONE">
+        <description>
+            <p><i>Just a bone. So worn and weathered, it's unidentifiable.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="cp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Sm Bone Husk" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SM_BONE_HUSK">
+        <description>
+            <p><i>Bone ammunition casing. Stronger than a Huskberry.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="cp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Lg Bone Husk" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_LG_BONE_HUSK">
+        <description>
+            <p><i>Bone ammunition casing that can withstand powerful explosions.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="cp">2</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Sm Monster Bone" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SM_MONSTER_BONE">
+        <description>
+            <p>Resource used to upgrade weapons to Uncommon.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Bird Wyvern Bone" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_BIRD_WYVERN_BONE">
+        <description>
+            <p>Resource used to upgrade armor to Uncommon.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Jumbo Bone" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_JUMBO_BONE">
+        <description>
+            <p>Resource used to upgrade armor to Uncommon.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Brute Bone" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_BRUTE_BONE">
+        <description>
+            <p>Resource used to upgrade armor to Rare.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">40</set>
+            <set name="rarity">Uncommon</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Med Monster Bone" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_MED_MONSTER_BONE">
+        <description>
+            <p>Resource used to upgrade armor to Rare.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">40</set>
+            <set name="rarity">Uncommon</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Monster Bone+" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_MONSTER_BONE_PLUS">
+        <description>
+            <p>Resource used to upgrade weapon to Rare.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">40</set>
+            <set name="rarity">Uncommon</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Lg Monster Bone" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_LG_MONSTER_BONE">
+        <description>
+            <p>Resource used to upgrade armor to Very Rare.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">250</set>
+            <set name="rarity">Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Monster Toughbone" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_MONSTER_TOUGHBONE">
+        <description>
+            <p>Resource used to upgrade weapons to Very Rare.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">250</set>
+            <set name="rarity">Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Elder Dragon Bone" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_ELDER_DRAGON_BONE">
+        <description>
+            <p>Resource used to upgrade armor to any rarity.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">900</set>
+            <set name="rarity">Very Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    
+    <element name="Bomb Arrowana" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_BOMB_ARROWANA">
+        <description>
+            <p><i>A fish that explodes when killed.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="sp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Burst Arrowana" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_BURST_ARROWANA">
+        <description>
+            <p><i>A fish that ruptures open when killed.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="sp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Pin Tuna" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_PIN_TUNA">
+        <description>
+            <p><i>A fish with a jaw covered in tiny needle-like spikes.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="sp">2</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Sleepyfish" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SLEEPYFISH">
+        <description>
+            <p><i>A fish with sleep-inducing properties.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="sp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Sushifish" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SUSHIFISH">
+        <description>
+            <p>A delicious fish that restores 1d4 hit points when consumed.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Whetfish" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_">
+        <description>
+            <p><i>A fish with a dorsal fin hard enough to be used to sharpen weapons.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Popfish" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_POPFISH">
+        <description>
+            <p><i>A fish that literally pops when it dies.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">20</set>
+            <set name="rarity">Uncommon</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Wanchovy" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_WANCHOVY">
+        <description>
+            <p>When a creature ingests this fish, they must succeed on a DC 12 Constitution saving throw or gain one level of exhaustion.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">20</set>
+            <set name="rarity">Uncommon</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Blue Cutthroat" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_BLUE_CUTTHROAT">
+        <description>
+            <p><i>A fish that emits blue light. Its sharp body will cut you to pieces if you're not careful.</i> Deals 1 piercing damage when picked up.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">550</set>
+            <set name="rarity">Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Glutton Tuna" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_GLUTTON_TUNA">
+        <description>
+            <p><i>Will devour anything in its path, and sometimes these remain inside.</i> Contains one random material or additional resource.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">2</set>
+            <set name="rarity">Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Small Goldenfish" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SMALL_GOLDENFISH">
+        <description>
+            <p><i>A curiously small, rare, gold fish. Commands a high price.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="rarity">Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Ancient Tuna" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_ANCIENT_TUNA">
+        <description>
+            <p>A fish which can be used as an upgrade material for any armor or weapon rarity.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">850</set>
+            <set name="rarity">Very Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Speartuna" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SPEARTUNA">
+        <description>
+            <p><i>A rare and valuable giant-sized fish.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">600</set>
+            <set name="rarity">Very Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Gastronome Tuna" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_GASTRONOME_TUNA">
+        <description>
+            <p>Can be cooked by making a DC 20 Cooking Utensil check. On a successful check, the gastronome tuna acts as the Heroes' Feast spell. On a failed save, the tuna is burnt and inedible.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">1000</set>
+            <set name="rarity">Legendary</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    
+    <element name="Bitterbug" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_BITTTERBUG">
+        <description>
+            <p><i>Contains a bitter essence.</i> Has a 50% chance of curingpoison if consumed.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="sp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Bughopper" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_BUGHOPPER">
+        <description>
+            <p><i>An insect that exudes a scent that drives fish wild.</i> You have a +1 bonus to fishing skill checks when used as bait.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="cp">5</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Carpenterbug" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_CARPENTERBUG">
+        <description>
+            <p><i>Viscous body fluids and sharp jaws make this insect an artisan.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="cp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Cricket" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_CRICKET">
+        <description>
+            <p><i>Energetic insect that works well as fishing bait.</i> You have a +2 bonus to fishing skill checks when used as bait.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="cp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Firefly" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_FIREFLY">
+        <description>
+            <p><i>A firefly that's always glowing.</i> You have a +1 bonus to fishing skill checks when used as bait.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="cp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Honey" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_HONEY">
+        <description>
+            <p>You can add this to a potion, increasing the amount it heals you by 1d4. (Alchemy DC 10) You cannot add more than one to a potion.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Insect Husk" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_INSECT_HUSK">
+        <description>
+            <p><i>The remains of a dead insect.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="cp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Snakebee Larva" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SNAKEBEE_LARVA">
+        <description>
+            <p><i>A snake-like larva with a scent that fish just love.</i> You have a +3 bonus to fishing skill checks when used as bait.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="sp">3</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Spiderweb" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SPIDERWEB">
+        <description>
+            <p><i>A very sticky web.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="cp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Worm" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_WORM">
+        <description>
+            <p><i>Can increase soil fertility.</i> You have a +1 bonus to fishing skill checks when used as bait.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="cp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Flashbug" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_FLASHBUG">
+        <description>
+            <p><i>An insect that emits a powerful flash when it dies.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">20</set>
+            <set name="rarity">Uncommon</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Godbug" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_GODBUG">
+        <description>
+            <p><i>An insect said to live for a thousand years.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">30</set>
+            <set name="rarity">Uncommon</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Thunderbug" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_THUNDERBUG">
+        <description>
+            <p><i>An insect that emits electricity when struck. Has many applications.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">40</set>
+            <set name="rarity">Uncommon</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Blossom Cricket" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_BLOSSOM_CRICKET">
+        <description>
+            <p><i>A beautiful bell cricket resembling a flower. Its sound opens even the hardest of hearts.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">200</set>
+            <set name="rarity">Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Toxic Kumori" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_TOXI_KUMORI">
+        <description>
+            <p>You can make a DC 10 Poisoner's Kit check, to crush the bug and extract its poison into a single vial. This poison acts as the Serpent Venom poison (DMG p.258).</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">100</set>
+            <set name="rarity">Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Emperor Locust" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_EMPEROR_LOCUST">
+        <description>
+            <p><i>A grasshopper with an exceptionally strong shell.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">900</set>
+            <set name="rarity">Very Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Large Toxic Kumori" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_LARGE_TOXIC_KUMORI">
+        <description>
+            <p>You can make a DC 15 Poisoner's Kit check, to crush the bug and extract its poison into a single vial. This poison acts as Wyvern Poison (DMG p.258).</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">600</set>
+            <set name="rarity">Very Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Great Hornfly" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_GREAT_HORNFLY">
+        <description>
+            <p><i>Its giant horn and massive shell give it a rare, butterfly-like beauty.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">750</set>
+            <set name="rarity">Very Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="King Scarab" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_KING_SCARAB">
+        <description>
+            <p><i>The Royal Class of the scarabs, with a hard shell and lustrous wings.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">1750</set>
+            <set name="rarity">Legendary</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Phantom Butterfly" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_PHANTOM_BUTTERFLY">
+        <description>
+            <p><i>Rarely seen by humans, its wings shimmer like precious gems.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">2000</set>
+            <set name="rarity">Legendary</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    
+    <element name="Armor Sphere" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_ARMOR_SPHERE">
+        <description>
+            <p>Resource used to upgrade armor to Uncommon.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Earth Crystal" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_EARTH_CRYSTAL">
+        <description>
+            <p>Resource used to upgrade a weapon to Uncommon.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Ice Crystal" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_ICE_CRYSTAL">
+        <description>
+            <p><i>Ice that will not melt at room temperature.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="sp">6</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Stone" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_STONE">
+        <description>
+            <p>Can be thrown, deals 1 damage.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="cp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Hard Armor Sphere" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_HARD_ARMOR_SPHERE">
+        <description>
+            <p>Resource used to upgrade armor to Rare. Can be traded to the smithy for two Armor Spheres.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">40</set>
+            <set name="rarity">Uncommon</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Machalite Ore" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_MACHALITE_ORE">
+        <description>
+            <p>Resource used to upgrade a weapon to Rare. Can be traded to the smithy for two Earth Crystals.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">40</set>
+            <set name="rarity">Uncommon</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Dragonite Ore" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_DRAGONITE_ORE">
+        <description>
+            <p>Resource used to upgrade a weapon to Very Rare. Can be traded to the smithy for two Machalite Ore.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">250</set>
+            <set name="rarity">Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Heavy Armor Spherre" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_HEAVY_ARMOR_SPHERE">
+        <description>
+            <p>Resource used to upgrade armor to Very Rare. Can be traded to the smithy for two Hard Armor Spheres.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">250</set>
+            <set name="rarity">Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Lifecrystals" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_LIFECRYSTALS">
+        <description>
+            <p>Long worshipped as a source of life. You can use an action to cast the light cantrip from the crystals for 1 hour. They shatter when the light fades.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">150</set>
+            <set name="rarity">Rare</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Lightcrystal" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_LIGHTCRYSTAL">
+        <description>
+            <p>Same effect as a <b>gypceros</b> lightcrystal.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">250</set>
+            <set name="rarity">Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Carbalite Ore" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_CARBALITE_ORE">
+        <description>
+            <p>Resource used to upgrade a weapon to Legendary. Can be traded to the smithy for two Dragonite Ore.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">900</set>
+            <set name="rarity">Very Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Royal Armor Sphere" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_ROYAL_ARMOR_SPHERE">
+        <description>
+            <p>Resource used to upgrade armor to Legendary. Can be traded to the smithy for two Heavy Armor Spheres.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">900</set>
+            <set name="rarity">Very Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+   
+    <element name="Blue Mushroom" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_BLUE_MUSHROOM">
+        <description>
+            <p><i>Common mushroom with a power-enhancing effect.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="sp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Toadstool" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_TOADSTOOL">
+        <description>
+            <p><i>A poisonous fungus.</i> Counts as 1 days ration when eaten, but the creature must succeed on a DC 10 Constitution saving throw, or be poisoned for 24 hours.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="cp">5</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Nitroshroom" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_NITROSHROOM">
+        <description>
+            <p><i>A common mushroom with the power to generate heat.</i> Acts as a campfire for 8 hours if crushed on the ground, but generates no light or smoke.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">4</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Parashroom" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_PARASHROOM">
+        <description>
+            <p><i>Mushroom that induces a paralysis effect when cooked with meat.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">20</set>
+            <set name="rarity">Uncommon</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Bindshroom" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_BINDSHROOM">
+        <description>
+            <p><i>A giant paralyzing mushroom.</i> When a creature plucks this mushroom from the ground, they must succeed on a DC 15 Constitutionsaving throw, or be paralyzed for 1 minute.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">100</set>
+            <set name="rarity">Rare</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Exciteshroom" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_EXCITESHROOM">
+        <description>
+            <p><i>A mushroom with a very strange smell.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">100</set>
+            <set name="rarity">Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Chaos Mushroom" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_CHAOS_MUSHROOM">
+        <description>
+            <p><i>A mushroom that invites disarray.</i> As an action, you can crush this mushroom in your hand and blow its spores at a creature within 5 feet of you. That creature must make a DC 15 Wisdom saving throw or become confused as if by the confusion spell for 1 minute. A creature can repeat its saving throw at the end of its turns, ending the confusion early on a success.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">700</set>
+            <set name="rarity">Very Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Dragon Toadstool" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_DRAGON_TOADSTOOL">
+        <description>
+            <p><i>A dangerous fungus said to draw the life out of people. Beware.</i> A creature takes 1d6 necrotic damage when they pluck it from the ground.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">600</set>
+            <set name="rarity">Very Rare</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    
+    <element name="Antidote Herb" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_ANTIDOTE_HERB">
+        <description>
+            <p>You can eat this herb as an action, curing yourself of the poisoned condition.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Bomberry" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_BOMBERRY">
+        <description>
+            <p><i>A berry that explodes when subjected to an impact. Makes a firecracker-like sound.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="sp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Cactus Flower" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_CACTUS_FLOWER">
+        <description>
+            <p><i>Possess antidotal agents, but it will not work by itself.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Dragon Seed" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_DRAGON_SEED">
+        <description>
+            <p><i>A Mysterious berry, said to be hated by dragons.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="sp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Felvine" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_FELVINE">
+        <description>
+            <p>When given to a lynian they are charmed by you as if under the charm person spell for 1 hour. A lynian always knows when a creature has felvine and will react violently if it is not given it willingly.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="sp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Fire Herb" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_FIRE_HERB">
+        <description>
+            <p><i>A plant that has flammable properties.</i> Can be crushed and thrown into a campfire to light it.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Hern" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_HERB">
+        <description>
+            <p>You can use an action to eat this herb, regaining 1d4 hit points.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Huskberry" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_HUSKBERRY">
+        <description>
+            <p><i>An empty berry that can grow anywhere.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="sp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Ivy" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_IVY">
+        <description>
+            <p><i>A lightweight and extremely strong plant.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="sp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Needleberry" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_NEEDLEBERRY">
+        <description>
+            <p><i>Berry covered in needle-like thorns.</i> Deals 1 piercing damage when picked up.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="sp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Nullberry" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_NULLBERRY">
+        <description>
+            <p>You are cured of blight, or blight-like spells or effects when you eat this berry.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Paintberry" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_PAINTBERRY">
+        <description>
+            <p><i>Releases a smelly paint-like juice when broken.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="sp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Sap Plant" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SAP_PLANT">
+        <description>
+            <p><i>A plant with leaves coated in sticky sap. The sap can be used as a simple glue.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="sp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Scatternut" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SCATTERNUT">
+        <description>
+            <p><i>A nut that violently ejects its contents when struck.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="sp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Sleep Herb" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SLEEP_HERB">
+        <description>
+            <p><i>Plant with sleep-inducing qualities.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="sp">1</set>
+            <set name="rarity">Common</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Airweed" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_AIRWEED">
+        <description>
+            <p>Chewing it releases oxygen, allowing you to breathe underwater for 1 minute.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">20</set>
+            <set name="rarity">Uncommon</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Gloamgrass" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_GLOAMGRASS">
+        <description>
+            <p>Possesses antidotal agents, but it will not work by itself.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">35</set>
+            <set name="rarity">Uncommon</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Hot Pepper" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_HOT_PEPPER">
+        <description>
+            <p>Works as a Hot Drink but only for 1 hour.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">20</set>
+            <set name="rarity">Uncommon</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Snow Herb" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SNOW_HERB">
+        <description>
+            <p>Works as a Cool Drink but only for 1 hour.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">20</set>
+            <set name="rarity">Uncommon</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Tropical Berry" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_TROPICAL_BERRY">
+        <description>
+            <p><i>A bright red strawberry from scorching climes.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">40</set>
+            <set name="rarity">Uncommon</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Adamant Seed" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_ADAMANT_SEED">
+        <description>
+            <p>When you eat this seed, your AC increases by +1 for 1 minute. Only one of these can be used per short or long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">100</set>
+            <set name="rarity">Rare</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Might Seed" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_MIGHT_SEED">
+        <description>
+            <p>When you eat this seed, your Strength score increases by +2 for 1 minute. Once the effect wears off you gain one level of exhaustion.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">125</set>
+            <set name="rarity">Rare</set>
+            <set name="crafting material">Y</set>
+        </setters>
+    </element>
+    <element name="Dosbiscus" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_DOSBISCUS">
+        <description>
+            <p><i>A large, beautifully colored flowering plant</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="rarity">Very Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="King Cactus" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_KING_CACTUS">
+        <description>
+            <p>Upon collection the creature must make a DC 15 Constitution saving throw or become poisoned for 24 hours.</p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">650</set>
+            <set name="rarity">Very Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+    <element name="Stargazer Flower" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_STARGAZER_FLOWER">
+        <description>
+            <p><i>A plant that looks to the heavens when it blooms. Its petals are used to make dye.</i></p>
+        </description>
+        <setters>
+            <set name="category">Resources</set>
+            <set name="cost" currency="gp">800</set>
+            <set name="rarity">Very Rare</set>
+            <set name="crafting material">N</set>
+        </setters>
+    </element>
+</elements>
