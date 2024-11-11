@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>Monster Hunter Items</name>
+        <name>Gear</name>
         <update version="0.0.1">
-            <file name="items-hunting.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/items-hunting.xml" />
+            <file name="items-gear.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/items-gear.xml" />
         </update>
     </info>
     
