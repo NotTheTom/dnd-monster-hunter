@@ -7,7 +7,7 @@
         </update>
     </info>
     
-    <element name="Armor Class: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_ARMOR_CLASS_1">
+    <element name="Armor Class: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_ARMOR_CLASS_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>You armor class increases by 1.</p>
@@ -23,7 +23,7 @@
 		</rules>
 	</element>
 
-	<element name="Acrobatics Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_ACROBATICS_MODIFIER_1">
+	<element name="Acrobatics Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_ACROBATICS_MODIFIER_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>You Acrobatics modifier increases by 1.</p>
@@ -38,7 +38,7 @@
 			<stat name="acrobatics:misc" value="1" />
 		</rules>
 	</element>
-	<element name="Animal handling Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_ANIMAL_HANDLING_MODIFIER_1">
+	<element name="Animal handling Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_ANIMAL_HANDLING_MODIFIER_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>You Animal Handling modifier increases by 1.</p>
@@ -53,7 +53,7 @@
 			<stat name="animal handling:misc" value="1" />
 		</rules>
 	</element>
-	<element name="Arcana Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_ARCANA_MODIFIER_1">
+	<element name="Arcana Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_ARCANA_MODIFIER_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>You Arcana modifier increases by 1.</p>
@@ -68,7 +68,7 @@
 			<stat name="arcana:misc" value="1" />
 		</rules>
 	</element>
-	<element name="Athletics Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_ATHLETICS_MODIFIER_1">
+	<element name="Athletics Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_ATHLETICS_MODIFIER_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>You Athletics modifier increases by 1.</p>
@@ -83,7 +83,7 @@
 			<stat name="athletics:misc" value="1" />
 		</rules>
 	</element>
-	<element name="Deception Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_DECEPTION_MODIFIER_1">
+	<element name="Deception Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_DECEPTION_MODIFIER_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>You Deception modifier increases by 1.</p>
@@ -98,7 +98,7 @@
 			<stat name="deception:misc" value="1" />
 		</rules>
 	</element>
-	<element name="History Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_HISTORY_MODIFIER_1">
+	<element name="History Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_HISTORY_MODIFIER_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>You History modifier increases by 1.</p>
@@ -113,7 +113,7 @@
 			<stat name="history:misc" value="1" />
 		</rules>
 	</element>
-	<element name="Insight Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_INSIGHT_MODIFIER_1">
+	<element name="Insight Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_INSIGHT_MODIFIER_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>You Insight modifier increases by 1.</p>
@@ -128,7 +128,7 @@
 			<stat name="insight:misc" value="1" />
 		</rules>
 	</element>
-	<element name="Intimidation Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_INTIMIDATION_MODIFIER_1">
+	<element name="Intimidation Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_INTIMIDATION_MODIFIER_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>You Intimidation modifier increases by 1.</p>
@@ -143,7 +143,7 @@
 			<stat name="intimidation:misc" value="1" />
 		</rules>
 	</element>
-	<element name="Investigation Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_INVESTIGATION_MODIFIER_1">
+	<element name="Investigation Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_INVESTIGATION_MODIFIER_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>You Investigation modifier increases by 1.</p>
@@ -158,7 +158,7 @@
 			<stat name="investigation:misc" value="1" />
 		</rules>
 	</element>
-	<element name="Medicine Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_MEDICINE_MODIFIER_1">
+	<element name="Medicine Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_MEDICINE_MODIFIER_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>You Medicine modifier increases by 1.</p>
@@ -173,7 +173,7 @@
 			<stat name="medicine:misc" value="1" />
 		</rules>
 	</element>
-	<element name="Nature Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_NATURE_MODIFIER_1">
+	<element name="Nature Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_NATURE_MODIFIER_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>You Nature modifier increases by 1.</p>
@@ -188,7 +188,7 @@
 			<stat name="nature:misc" value="1" />
 		</rules>
 	</element>
-	<element name="Perception Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_PERCEPTION_MODIFIER_1">
+	<element name="Perception Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_PERCEPTION_MODIFIER_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>You Perception modifier increases by 1.</p>
@@ -203,7 +203,7 @@
 			<stat name="perception:misc" value="1" />
 		</rules>
 	</element>
-	<element name="Performance Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_PERFORMANCE_MODIFIER_1">
+	<element name="Performance Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_PERFORMANCE_MODIFIER_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>You Performance modifier increases by 1.</p>
@@ -218,7 +218,7 @@
 			<stat name="performance:misc" value="1" />
 		</rules>
 	</element>
-	<element name="Persuasion Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_PERSUASION_MODIFIER_1">
+	<element name="Persuasion Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_PERSUASION_MODIFIER_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>You Persuasion modifier increases by 1.</p>
@@ -233,7 +233,7 @@
 			<stat name="persuasion:misc" value="1" />
 		</rules>
 	</element>
-	<element name="Religion Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_RELIGION_MODIFIER_1">
+	<element name="Religion Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_RELIGION_MODIFIER_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>You Religion modifier increases by 1.</p>
@@ -248,7 +248,7 @@
 			<stat name="religion:misc" value="1" />
 		</rules>
 	</element>
-	<element name="Sleight of Hand Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SLEIGHT_OF_HAND_MODIFIER_1">
+	<element name="Sleight of Hand Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_SLEIGHT_OF_HAND_MODIFIER_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>You Sleight of Hand modifier increases by 1.</p>
@@ -263,7 +263,7 @@
 			<stat name="sleight of hand:misc" value="1" />
 		</rules>
 	</element>
-	<element name="Stealth Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_STEALTH_MODIFIER_1">
+	<element name="Stealth Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_STEALTH_MODIFIER_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>You Stealth modifier increases by 1.</p>
@@ -278,7 +278,7 @@
 			<stat name="stealth:misc" value="1" />
 		</rules>
 	</element>
-	<element name="Survival Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SURVIVAL_MODIFIER_1">
+	<element name="Survival Modifier: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_SURVIVAL_MODIFIER_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>You Survival modifier increases by 1.</p>
@@ -294,7 +294,7 @@
 		</rules>
 	</element>
 
-	<element name="Strength Save: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_STRENGTH_SAVE_1">
+	<element name="Strength Save: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_STRENGTH_SAVE_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>Your Strength save increases by 1.</p>
@@ -309,7 +309,7 @@
 			<stat name="strength:save:misc" value="1" />
 		</rules>
 	</element>
-	<element name="Dexterity Save: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_DEXTERITY_SAVE_1">
+	<element name="Dexterity Save: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_DEXTERITY_SAVE_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>Your Dexterity save increases by 1.</p>
@@ -324,7 +324,7 @@
 			<stat name="dexterity:save:misc" value="1" />
 		</rules>
 	</element>
-	<element name="Constitution Save: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_CONSTITUTION_SAVE_1">
+	<element name="Constitution Save: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_CONSTITUTION_SAVE_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>Your Constitution save increases by 1.</p>
@@ -339,7 +339,7 @@
 			<stat name="constitution:save:misc" value="1" />
 		</rules>
 	</element>
-	<element name="Intelligence Save: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_INTELLIGENCE_SAVE_1">
+	<element name="Intelligence Save: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_INTELLIGENCE_SAVE_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>Your Intelligence save increases by 1.</p>
@@ -354,7 +354,7 @@
 			<stat name="intelligence:save:misc" value="1" />
 		</rules>
 	</element>
-	<element name="Wisdom Save: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_WISDOM_SAVE_1">
+	<element name="Wisdom Save: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_WISDOM_SAVE_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>Your Wisdom save increases by 1.</p>
@@ -369,7 +369,7 @@
 			<stat name="wisdom:save:misc" value="1" />
 		</rules>
 	</element>
-	<element name="Charisma Save: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_CHARISMA_SAVE_1">
+	<element name="Charisma Save: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_CHARISMA_SAVE_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>Your Charisma save increases by 1.</p>
@@ -385,7 +385,7 @@
 		</rules>
 	</element>
 
-	<element name="Non-Proficient Saves: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_NON_PROFICIENT_SAVES_1">
+	<element name="Non-Proficient Saves: +1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_INTERNAL_ITEM_NON_PROFICIENT_SAVES_1">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p>Saving Throws you are not proficient with increase by 1.</p>
