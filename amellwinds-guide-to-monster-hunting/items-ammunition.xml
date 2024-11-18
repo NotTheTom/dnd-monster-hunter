@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Ammunition</name>
+        <update version="0.0.1">
+            <file name="items-ammunition.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/items-ammunition.xml" />
+        </update>
+    </info>
+    
+    <element name="Acid Attack up (s)" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_ACID_ATTACK_UP_S">
+		<description>
+			<p>Allies in your melody's radius that deal acid damage to a target deal an extra 2 acid damage.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Affinity Up" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_AFFINITY_UP">
+		<description>
+			<p>Allies in your melody's radius critical hit range is increased by 1.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Charm Resist" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_CHARM_RESIST">
+		<description>
+			<p>Allies in your melody's radius have advantage against being charmed.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Cold Attack up (s)" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_COLD_ATTACK_UP_S">
+		<description>
+			<p>Allies in your melody's radius that deal cold damage to a target deal an extra 2 cold damage.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Damage up (s)" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_DAMAGE_UP_S">
+		<description>
+			<p>Allies in your melody's radius gain a +1 bonus to bludgeoning, slashing, and piercing damage.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Damage up (M)" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_DAMAGE_UP_M">
+		<description>
+			<p>Allies in your melody's radius gain a +2 bonus to bludgeoning, slashing, and piercing damage.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Damage up (L)" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_DAMAGE_UP_L">
+		<description>
+			<p>Allies in your melody's radius gain a +3 bonus to bludgeoning, slashing, and piercing damage.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Death Save Up" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_DEATH_SAVE_UP">
+		<description>
+			<p>Allies in your melody's radius gain a +1 to death saving throws.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Defense up (s)" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_DEFENSE_UP_S">
+		<description>
+			<p>Allies in your melody's radius gain a +1 bonus to their AC.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Defense up (L)" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_DEFENSE_UP_L">
+		<description>
+			<p>Allies in your melody's radius gain a +2 bonus to their AC.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Earplugs" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_EARPLUGS">
+		<description>
+			<p>All creatures while within your melody's range are deafened.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Fire Attack up (s)" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_FIRE_ATTACK_UP_S">
+		<description>
+			<p>Allies in your melody's radius that deal fire damage to a target deal an extra 2 fire damage.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Elemental Damage Up" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_ELEMENTAL_DAMAGE_UP">
+		<description>
+			<p>Allies in your melody's radius that deal cold, fire, or lightning damage to a target deal an extra 3 damage of the same damage type.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Force Attack up (s)" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_FORCE_ATTACK_UP_S">
+		<description>
+			<p>Allies in your melody's radius that deal force damage to a target deal an extra 2 force damage.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Frightened Resist" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_FRIGHTENED_RESIST">
+		<description>
+			<p>Allies in your melody's radius have advantage against being frightened.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Lightning Attack up (s)" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_LIGHTNING_ATTACK_UP_S">
+		<description>
+			<p>Allies in your melody's radius that deal lightning damage to a target deal an extra 2 lightning damage.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Movement up (s)" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_MOVEMENT_UP_S">
+		<description>
+			<p>Allies in your melody's radius have their walking speed increased by 5 feet.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Movement up (L)" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_MOVEMENT_UP_L">
+		<description>
+			<p>Allies in your melody's radius have their walking speed increased by 10 feet.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Necrotic Attack up (s)" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_NECROTIC_ATTACK_UP_S">
+		<description>
+			<p>Allies in your melody's radius that deal necrotic damage to a target deal an extra 2 necrotic damage.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Paralysis Resist" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_PARALYSIS_RESIST">
+		<description>
+			<p>Allies in your melody's radius have advantage against being paralyzed.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Poison Attack up (s)" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_POISON_ATTACK_UP_S">
+		<description>
+			<p>Allies in your melody's radius that deal poison damage to a target deal an extra 2 poison damage.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Poison Resist" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_POISON_RESIST">
+		<description>
+			<p>Allies in your melody's radius have advantage against being poisoned.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Psychic Attack up (s)" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_PSYCHIC_ATTACK_UP_S">
+		<description>
+			<p>Allies in your melody's radius that deal psychic damage to a target deal an extra 2 psychic damage.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Radiant Attack up (s)" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_RADIANT_ATTACK_UP_S">
+		<description>
+			<p>Allies in your melody's radius that deal radiant damage to a target deal an extra 2 radiant damage.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Saving Throw up" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SAVING_THROW_UP">
+		<description>
+			<p>Allies in your melody's radius gain a +2 bonus to all saving throws.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Skill up (s)" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SKILL_UP_S">
+		<description>
+			<p>Allies in your melody's radius gain a +1 bonus to any one skill chosen by the wielder.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Skill up (L)" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SKILL_UP_L">
+		<description>
+			<p>Allies in your melody's radius gain a +2 bonus to any one skill chosen by the wielder.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Spell Save up (s)" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SPELL_SAVE_UP_S">
+		<description>
+			<p>Allies in your melody's radius gain a +1 bonus to their spell save DC.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Stun Resist" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_STUN_RESIST">
+		<description>
+			<p>Allies in your melody's radius have advantage against being stunned.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Temperate" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_TEMPERATE">
+		<description>
+			<p>Allies in your melody's radius suffer no harm from extreme cold or extreme heat.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Thunder Attack up (s)" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_THUNDER_ATTACK_UP_S">
+		<description>
+			<p>Allies in your melody's radius that deal thunder damage to a target deal an extra 2 thunder damage.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Tremor Sense" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_TREMOR_SENSE">
+		<description>
+			<p>Allies can detect and pinpoint the origin of vibrations within 30 foot radius provided that the ally and the source of the vibrations are in contact with the same ground or substance.</p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    <element name="Water Walking" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_WATER_WALKING">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Hunting Horn Notes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+		</setters>
+	</element>
+    
+    <element name="Blast Coating" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_BLAST_COATING">
+		<description>
+			<p>An arrow with this coating damage type changes from piercing to fire. When you hit a target with this arrow, each creature in a 5-foot radius of the target takes half as much damage as the target as fire damage.</p>
+		</description>
+		<setters>
+			<set name="category">Bow Coatings</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Close Range Coating" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_CLOSE_RANGE_COATING">
+		<description>
+			<p>You ignore all disadvantages when attacking a creature that you can see, if it is within 15 feet of you, but you have disadvantage on attacks against creatures that are more than 15 feet from you.</p>
+		</description>
+		<setters>
+			<set name="category">Bow Coatings</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Paralysis Coating" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_PARALYSIS_COATING">
+		<description>
+			<p>A creature struck by this arrow must succeed on a Wisdom saving throw or be paralyzed for 1 minute. The creature can repeat the save at the end of each of their turns, ending the effect on a successful save. A creature that succeeds on a save against this coating is immune to its effect for 24 hours.</p>
+		</description>
+		<setters>
+			<set name="category">Bow Coatings</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Poison Coating" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_POISON_COATING">
+		<description>
+			<p>A creature struck by this arrow must succeed a Constitution saving throw or be poisoned until the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="category">Bow Coatings</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Power Coating" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_POWER_COATING">
+		<description>
+			<p>You gain a +1 bonus to damage rolls.</p>
+		</description>
+		<setters>
+			<set name="category">Bow Coatings</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Power Coating +2" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_POWER_COATING_2">
+		<description>
+			<p>You gain a +2 bonus to damage rolls.</p>
+		</description>
+		<setters>
+			<set name="category">Bow Coatings</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Power Coating +3" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_POWER_COATING_3">
+		<description>
+			<p>You gain a +3 bonus to damage rolls.</p>
+		</description>
+		<setters>
+			<set name="category">Bow Coatings</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Sleep Coating" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SLEEP_COATING">
+		<description>
+			<p>A creature struck by this coating must succeed a Constitution saving throw or be incapacitated until the end of your next turn. If the creature fails the save by 5 or more, it instead falls unconscious for 1 minute, until the creature takes damage, or is shaken awake as an action. A creature that succeeds a save against this coating or wakes up after suffering from its effects is immune to its effect for 24 hours.</p>
+		</description>
+		<setters>
+			<set name="category">Bow Coatings</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    
+    <element name="Blaze Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_BLAZE_AMMO">
+		<description>
+			<p>Your attacks with this ammo deal fire damage instead of piercing.</p>
+		</description>
+		<setters>
+			<set name="category">Dual Repeaters Ammunition</set>
+			<set name="cost" currency="cp">8</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Cryo Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_CRYO_AMMO">
+		<description>
+			<p>Your attacks with this ammo deal cold damage instead of piercing.</p>
+		</description>
+		<setters>
+			<set name="category">Dual Repeaters Ammunition</set>
+			<set name="cost" currency="cp">16</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Dawnstar Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_DAWNSTAR_AMMO">
+		<description>
+			<p>Your attacks with this ammo deal radiant damage instead of piercing.</p>
+		</description>
+		<setters>
+			<set name="category">Dual Repeaters Ammunition</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Full-Bore Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_FULLBORE_AMMO">
+		<description>
+			<p>This ammo passes through each creature in a line equal to your normal attack range. The damage it deals is split evenly between each creature that would be hit by the attack roll made using this ammo.</p>
+		</description>
+		<setters>
+			<set name="category">Dual Repeaters Ammunition</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Marksman Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_MARKSMAN_AMMO">
+		<description>
+			<p>Your normal attack range is equal to your maximum attack range while using this ammo.</p>
+		</description>
+		<setters>
+			<set name="category">Dual Repeaters Ammunition</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Normal Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_REPEATERS_NORMAL_AMMO">
+		<description>
+			<p>Deals normal weapon damage.</p>
+		</description>
+		<setters>
+			<set name="category">Dual Repeaters Ammunition</set>
+			<set name="cost" currency="cp">6</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Slime Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SLIME_AMMO">
+		<description>
+			<p>Your attacks with this ammo deal acid damage instead of piercing.</p>
+		</description>
+		<setters>
+			<set name="category">Dual Repeaters Ammunition</set>
+			<set name="cost" currency="cp">8</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Storm Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_STORM_AMMO">
+		<description>
+			<p>Your attacks with this ammo deal lightning damage instead of piercing.</p>
+		</description>
+		<setters>
+			<set name="category">Dual Repeaters Ammunition</set>
+			<set name="cost" currency="cp">16</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Tranq Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_REPEATERS_TRANQ_AMMO">
+		<description>
+			<p>Acts as a tranq bomb with the repeater's range and weapon proficiency.</p>
+		</description>
+		<setters>
+			<set name="category">Dual Repeaters Ammunition</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Twilight Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_TWILIGHT_AMMO">
+		<description>
+			<p>Your attacks with this ammo deal necrotic damage instead of piercing.</p>
+		</description>
+		<setters>
+			<set name="category">Dual Repeaters Ammunition</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    
+    <element name="Cluster Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_CLUSTER_AMMO">
+		<description>
+			<p>This ammo deals no weapon damage, it instead explodes on a hit, dealing 2d6 fire damage to the target and each creature within 5 feet of it. This damage is increased by 1d6 for each rarity above Rare.</p>
+		</description>
+		<setters>
+			<set name="category">Heavy Bowgun Ammunition</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Normal Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_HEAVY_NORMAL_AMMO">
+		<description>
+			<p>Deals normal weapon damage.</p>
+		</description>
+		<setters>
+			<set name="category">Heavy Bowgun Ammunition</set>
+			<set name="cost" currency="cp">5</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Paralysis Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_HEAVY_PARALYSIS_AMMO">
+		<description>
+			<p>A creature hit by this ammo must succeed a Constitution saving throw or be incapacitated and have its movement speed reduced to 0 until the end of your next turn. If the creature fails the save by 5 or more, it is paralyzed instead until the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="category">Heavy Bowgun Ammunition</set>
+			<set name="cost" currency="gp">4</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Pierce lvl 1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_PIERCE_LVL_1">
+		<description>
+			<p>You gain a +1 bonus to damage rolls.</p>
+		</description>
+		<setters>
+			<set name="category">Heavy Bowgun Ammunition</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Pierce lvl 2" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_PIERCE_LVL_2">
+		<description>
+			<p>You gain a +2 bonus to damage rolls.</p>
+		</description>
+		<setters>
+			<set name="category">Heavy Bowgun Ammunition</set>
+			<set name="cost" currency="sp">2</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Pierce lvl 3" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_PIERCE_LVL_3">
+		<description>
+			<p>You gain a +3 bonus to damage rolls.</p>
+		</description>
+		<setters>
+			<set name="category">Heavy Bowgun Ammunition</set>
+			<set name="cost" currency="sp">3</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Poison Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_HEAVY_POISON_AMMO">
+		<description>
+			<p>A creature hit by this ammo must succeed a Constitution saving throw or be poisoned for 1 minute. A poisoned creature can repeat its saving throw at the end of its turn, ending the poison on a success.</p>
+		</description>
+		<setters>
+			<set name="category">Heavy Bowgun Ammunition</set>
+			<set name="cost" currency="gp">4</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Recover lvl 1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_HEAVY_RECOVER_LVL_1">
+		<description>
+			<p>Instead of taking damage, a creature hit by this ammo regains 1d4 hit points.</p>
+		</description>
+		<setters>
+			<set name="category">Heavy Bowgun Ammunition</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Recover lvl 2" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_HEAVY_RECOVER_LVL_2">
+		<description>
+			<p>Instead of taking damage, a creature hit by this ammo regains 1d6 hit points.</p>
+		</description>
+		<setters>
+			<set name="category">Heavy Bowgun Ammunition</set>
+			<set name="cost" currency="gp">7</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Slicing Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SLICING_AMMO">
+		<description>
+			<p>Instead of making a ranged weapon attack, choose a target within your bowgun's maximum range. That target must succeed on a Dexterity saving throw against your ammo save DC, taking 4d6 slashing damage on a failed save, or half as much on a successful one. If the target is beyond your normal bowgun range, it has advantage on its save. This damage is increased by 1d6 for each rarity above Rare.</p>
+		</description>
+		<setters>
+			<set name="category">Heavy Bowgun Ammunition</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Spread Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_HEAVY_SPREAD_AMMO">
+		<description>
+			<p>When you hit a creature with this ammo and it is within half your normal bowgun range, the damage dealt to the target is split evenly between it and each creature adjacent to it.</p>
+		</description>
+		<setters>
+			<set name="category">Heavy Bowgun Ammunition</set>
+			<set name="cost" currency="cp">15</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Sticky Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_HEAVY_STICKY_AMMO">
+		<description>
+			<p>A creature hit by this ammo must succeed a Strength saving throw or be restrained for 1 minute, the creature can use their action to attempt to break free (Escape DC equal to your Ammo save DC).</p>
+		</description>
+		<setters>
+			<set name="category">Heavy Bowgun Ammunition</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Tranq Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_HEAVY_TRANQ_AMMO">
+		<description>
+			<p>Acts as a tranq bomb with the bowgun's range and weapon proficiency.</p>
+		</description>
+		<setters>
+			<set name="category">Heavy Bowgun Ammunition</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Wyvern Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_WYVERN_AMMO">
+		<description>
+			<p>You do not make an attack with this ammo, instead each creature in a 15-foot cone in front of you must make a Dexterity saving throw, taking 2d12 fire damage on a failed save, or half as much damage on a successful one. This damage is increased by 1d12 for each rarity above Rare.</p>
+		</description>
+		<setters>
+			<set name="category">Heavy Bowgun Ammunition</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    
+    <element name="Armor Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_ARMOR_AMMO">
+		<description>
+			<p>This ammo deals no damage, instead when you hit a creature with this ammo, that creature gains a +2 bonus to its AC for 1 minute. Hitting a creature with armor ammo again refreshes the duration.</p>
+		</description>
+		<setters>
+			<set name="category">Light Bowgun Ammunition</set>
+			<set name="cost" currency="gp">8</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Demon Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_DEMON_AMMO">
+		<description>
+			<p>This ammo deals no damage, instead when you hit a creature with this ammo, that creature gains a +2 bonus to damage rolls for 1 minute. Hitting a creature with demon ammo again refreshes the duration.</p>
+		</description>
+		<setters>
+			<set name="category">Light Bowgun Ammunition</set>
+			<set name="cost" currency="gp">8</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Dragon Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_DRAGON_AMMO">
+		<description>
+			<p>Your attacks deal necrotic damage.</p>
+		</description>
+		<setters>
+			<set name="category">Light Bowgun Ammunition</set>
+			<set name="cost" currency="sp">3</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Flaming Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_FLAMING_AMMO">
+		<description>
+			<p>Your attacks deal fire damage.</p>
+		</description>
+		<setters>
+			<set name="category">Light Bowgun Ammunition</set>
+			<set name="cost" currency="sp">3</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Normal Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_LIGHT_NORMAL_AMMO">
+		<description>
+			<p>Deals normal weapon damage.</p>
+		</description>
+		<setters>
+			<set name="category">Light Bowgun Ammunition</set>
+			<set name="cost" currency="cp">5</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Paralysis Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_LIGHT_PARALYSIS_AMMO">
+		<description>
+			<p>A creature hit by this ammo must succeed a Constitution saving throw or be incapacitated and have its movement speed reduced to 0 until the end of your next turn. If the creature fails the save by 5 or more, it is paralyzed instead until the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="category">Light Bowgun Ammunition</set>
+			<set name="cost" currency="gp">4</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Pierce Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_PIERCE_AMMO">
+		<description>
+			<p>You gain a +1 bonus to damage rolls.</p>
+		</description>
+		<setters>
+			<set name="category">Light Bowgun Ammunition</set>
+			<set name="cost" currency="sp">2</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Poison Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_LIGHT_POISON_AMMO">
+		<description>
+			<p>A creature hit by this ammo must succeed a Constitution saving throw or be poisoned for 1 minute. A poisoned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a  success.</p>
+		</description>
+		<setters>
+			<set name="category">Light Bowgun Ammunition</set>
+			<set name="cost" currency="gp">4</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Recover lvl 1" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_LIGHT_RECOVER_LVL_1">
+		<description>
+			<p>Instead of taking damage, a creature hit by this ammo regains 1d4 hit points.</p>
+		</description>
+		<setters>
+			<set name="category">Light Bowgun Ammunition</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Recover lvl 2" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_LIGHT_RECOVER_LVL_2">
+		<description>
+			<p>Instead of taking damage, a creature hit by this ammo regains 1d6 hit points.</p>
+		</description>
+		<setters>
+			<set name="category">Light Bowgun Ammunition</set>
+			<set name="cost" currency="gp">7</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Sleep Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_SLEEP_AMMO">
+		<description>
+			<p>This ammo deals no damage, if the target is below 50 hit points it falls unconscious for 1 minute, until it takes damage, or until someone uses an action to shake or slap it awake.</p>
+		</description>
+		<setters>
+			<set name="category">Light Bowgun Ammunition</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Spread Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_LIGHT_SPREAD_AMMO">
+		<description>
+			<p>When you hit a creature with this ammo and it is within half your normal bowgun range, the damage dealt to the target is split evenly between it and each creature adjacent to it.</p>
+		</description>
+		<setters>
+			<set name="category">Light Bowgun Ammunition</set>
+			<set name="cost" currency="sp">3</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Sticky Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_LIGHT_STICKY_AMMO">
+		<description>
+			<p>A creature hit by this ammo must succeed a Strength saving throw or be restrained for 1 minute, the creature can use their action to attempt to break free (Escape DC equal to your Ammo save DC).</p>
+		</description>
+		<setters>
+			<set name="category">Light Bowgun Ammunition</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Thunder Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_THUNDER_AMMO">
+		<description>
+			<p>Your attacks deal thunder damage.</p>
+		</description>
+		<setters>
+			<set name="category">Light Bowgun Ammunition</set>
+			<set name="cost" currency="sp">3</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Tranq Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_LIGHT_TRANQ_AMMO">
+		<description>
+			<p>Acts as a tranq bomb with the bowgun's range and weapon proficiency.</p>
+		</description>
+		<setters>
+			<set name="category">Light Bowgun Ammunition</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Water Ammo" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_WATER_AMMO">
+		<description>
+			<p>Your attacks deal acid damage.</p>
+		</description>
+		<setters>
+			<set name="category">Light Bowgun Ammunition</set>
+			<set name="cost" currency="sp">3</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+            <set name="stackable">true</set>
+		</setters>
+	</element>
+</elements>
