@@ -24,6 +24,14 @@
 
 		<file name="feats.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/feats.xml" />
 
+		<file name="internal-bonuses.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/more-internals.xml" />
+
+		<file name="items-ammunition.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/items-ammunition.xml" />
+		<file name="items-armor.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/items-armor.xml" />
+		<file name="items-gear.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/items-gear.xml" />
+		<file name="items-resources.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/items-gear.xml" />
+		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/items-weapons.xml" />
+
 		<file name="languages.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/languages.xml" />
 	
 		<file name="race-elderdragonborn.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/race-elderdragonborn.xml" />
