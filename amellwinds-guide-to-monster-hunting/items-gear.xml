@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Gear</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="items-gear.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/items-gear.xml" />
         </update>
     </info>
@@ -954,7 +954,7 @@
             <p class="indent"><i>Players can choose a trinket from the Player's Handbook (p.159) or perhaps a trophy from a creature they have hunted. If they do not find something they like on the list, the player can work with the GM to choose an appropriate trinket for their setting.</i></p>
         </description>
         <setters>
-            <set name="category">Adventuring Gear</set>
+            <set name="category">Hunter Trinkets</set>
             <set name="cost" currency="gp">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="attunement">true</set>
