@@ -24,7 +24,7 @@
 
 		<file name="feats.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/feats.xml" />
 
-		<file name="internal-bonuses.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/more-internals.xml" />
+		<file name="internal-bonuses.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/internal-bonuses.xml" />
 
 		<file name="items-ammunition.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/items-ammunition.xml" />
 		<file name="items-armor.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/items-armor.xml" />
