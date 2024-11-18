@@ -936,4 +936,28 @@
             <set name="stackable">true</set>
         </setters>
     </element>
+
+    <element name="Ammo Pouch" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_AMMO_POUCH">
+        <description>
+            <p>A pouch used to store ammo for the Dual Repeaters, Heavy Bowgun, or Light Bowgun.</p>
+        </description>
+        <setters>
+            <set name="category">Adventuring Gear</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="10">10 lb.</set>
+        </setters>
+    </element>
+
+    <element name="Hunter Trinket" type="Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_ITEM_HUNTER_TRINKET">
+        <description>
+            <p>Trinkets in Monster Hunter are not just for show. They have 1 material slot that you can place a weapon or armor material  into and still gain their benefit as if it was in a weapon or armor set. You can have up to two trinkets on you at a time, but you only gain the effect of one of the trinkets at a time. As an action, you can swap which trinket effect you are using.</p>
+            <p class="indent"><i>Players can choose a trinket from the Player's Handbook (p.159) or perhaps a trophy from a creature they have hunted. If they do not find something they like on the list, the player can work with the GM to choose an appropriate trinket for their setting.</i></p>
+        </description>
+        <setters>
+            <set name="category">Adventuring Gear</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
 </elements>
