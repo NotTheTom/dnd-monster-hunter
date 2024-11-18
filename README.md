@@ -1,5 +1,5 @@
 # dnd-monster-hunter
-An implementation of Amellwind's Guide to Monster Hunting for [Aurora Builder](https://aurorabuilder.com).
+An implementation of [Amellwind's Guide to Monster Hunting](https://www.gmbinder.com/share/-LCk9FgQaqaXBVmLeCeT) for [Aurora Builder](https://aurorabuilder.com).
 
 ## Installation
 First, install [AuroraLegacy](https://github.com/AuroraLegacy/elements), as these files were built with at least the `core` & `supplements` from AuroraLegacy as a prerequisite.
@@ -20,17 +20,25 @@ Also the additional spells granted from these backgrounds will only appear in sp
 Whilst Amellwind's Guide to Monster Hunting describes Elder Dragonborn as variants of the base Dragonborn race, they have been implemented as a seperate race and split into subraces for convenience.
 
 ### Equipment
-The weapons and armor changes in Amellwind's Guide to Monster Hunting have been added as new categories in the Items page. 
+It is recommended you have item cards enabled to be able to easily see all the abilities these new items grant.
 
-Due to each upgrade level of armor granting a choice for which stat is boosted the player will need to manually alter the description.
+The armor changes in Amellwind's Guide to Monster Hunting have been added as seperate items in the Magic Armor category on the Items page. 
+
+The stat boosts that later upgrade levels of armor grant are present in the Additional Bonuses category of the items page. 
+
+Whilst they will still alter the character sheet appropriately they will not be present in the inventory on the character. 
+
+It is reccomened you alter the description of your armor to keep track of which bonuses you selected.
+
+The common tier of weapons have been added to the normal Weapon category and all subsequent upgrade tiers are present in the Magic Weapons category on the Items page.
 
 A variant of the Hunting Horn has been created that does not have any Notes if your DM chose to use the variant rule. 
 
 In this situation the Notes have been added as seperate items that you can add to your inventory if the player wishes or they can be added to the items description.
 
-Due to trinkets being unique to each character they are implemented as just a base unstackable item that can be renamed or edited if the player chooses to.
+The ammunition for ranged weapons has been added in their own categories for each weapon that requires them. The Bow just uses the normal arrows found in the Player's Handbook.
 
-It is recommended you have item cards enabled to be able to see all the abilities they have.
+Due to trinkets being unique to each character they are implemented as just a base unstackable item that can be renamed or edited if the player chooses to.
 
 You are required to attune to your currently equipped weapon, armor and both trinkets as per the rules in Amellwind's Guide to Monster Hunting. 
 
