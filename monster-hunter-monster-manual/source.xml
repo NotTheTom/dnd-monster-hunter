@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <update version="0.0.1">
+            <file name="source.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/mosnter-hunter-monster-manual/source.xml" />
+        </update>
+    </info>
+    <element name="Monster Hunter Monster Manual" type="Source" source="Core" id="ID_ALD_MONSTER_HUNTER_MONSTER_MANUAL">
+        <description>
+            <p>A bestiary of deadly monsters from the Monster Hunter universe.</p>
+        </description>
+        <setters>
+            <set name="abbreviation">MHMM</set>
+            <set name="url">https://www.gmbinder.com/share/-L0j3FWNhBx15I-lR7qC</set>
+            <set name="image">https://www.gmbinder.com/images/vrbEXYu.png</set>
+            <set name="author" abbreviation="ALD" url="https://www.patreon.com/amellwind/posts">Amellwind</set>
+            <set name="third-party">true</set>
+            <set name="release">20181220</set>
+        </setters>
+    </element>
+</elements>
