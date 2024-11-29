@@ -11,7 +11,7 @@
         </description>
         <setters>
             <set name="abbreviation">AGMH</set>
-            <set name="url">https://www.gmbinder.com/share/-LCk9FgQaqaXBVmLeCeT#p29</set>
+            <set name="url">https://www.gmbinder.com/share/-LCk9FgQaqaXBVmLeCeT</set>
             <set name="image">https://www.gmbinder.com/images/CBsVqAj.png</set>
             <set name="author" abbreviation="ALD" url="https://www.patreon.com/amellwind/posts">Amellwind</set>
             <set name="third-party">true</set>
