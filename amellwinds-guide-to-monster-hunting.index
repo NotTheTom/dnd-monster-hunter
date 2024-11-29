@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Amellwind's Guide to Monster Hunting</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="amellwinds-guide-to-monster-hunting.index" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting.index" />
 		</update>
 	</info>
@@ -14,7 +14,7 @@
 		<file name="background-hunterinitiate.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-hunterinitiate.xml" />
 		<file name="background-infiltrator.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-infiltrator.xml" />
 		<file name="background-poacher.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-poacher.xml" />
-		<file name="background-srivener.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-scrivener.xml" />
+		<file name="background-scrivener.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-scrivener.xml" />
 		<file name="background-wycademyresearcher.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-wycademyresearcher.xml" />
 		<file name="background-wycademystudent.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-wycademystudent.xml" />
 		 
@@ -29,7 +29,7 @@
 		<file name="items-ammunition.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/items-ammunition.xml" />
 		<file name="items-armor.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/items-armor.xml" />
 		<file name="items-gear.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/items-gear.xml" />
-		<file name="items-resources.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/items-gear.xml" />
+		<file name="items-resources.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/items-resources.xml" />
 		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/items-weapons.xml" />
 
 		<file name="languages.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/languages.xml" />
