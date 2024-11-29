@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Resources</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="items-resources.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/items-resources.xml" />
         </update>
     </info>
