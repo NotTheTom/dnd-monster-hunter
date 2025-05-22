@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Feats</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="feats.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/feats.xml" />
         </update>
     </info>
@@ -372,7 +372,7 @@
     
     <element name="Master Mounter" type="Feat" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FEAT_MASTER_MOUNTER">
         <prerequisite>8th level or higher</prerequisite>
-        <requirements>[level:4]</requirements>
+        <requirements>[level:8]</requirements>
         <description>
             <p><i>Prerequisite: 8th level or higher</i></p>
             <ul>
