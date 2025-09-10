@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Quematrice</name>
+        <update version="0.0.1">
+            <file name="quematrice.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/monster-hunter-monster-manual/quematrice.xml" />
+        </update>
+    </info>
+    
+    <element name="Quematrice Scale (Armor)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_QUEMATRICE_SCALE_ARMOR">
+        <description>
+            <p>While you are wearing this armor, you can use your reaction or bonus action to gain resistance to fire damage until the end of your next turn. Once you use this property, you cannot use it again until you finish a long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Quematrice Scale (Weapon)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_QUEMATRICE_SCALE_WEAPON">
+        <description>
+            <p><b>Cosmetic</b></p>
+            <p>While attuned to this weapon you can speak its command word to transform it into a tinderbox. Speaking the command word again changes the tinderbox back into the weapon.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Quematrice Hide (Armor)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_QUEMATRICE_HIDE_ARMOR">
+        <description>
+            <p>You have a +2 bonus to Intimidation checks while you wear this armor.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <stat name="intimidation:misc" value="2" />
+        </rules>
+    </element>
+
+    <element name="Quematrice Hide (Weapon)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_QUEMATRICE_HIDE_WEAPON">
+        <description>
+            <p><b>Shield Only</b></p>
+            <p>When you roll initiative while holding this weapon, you can immediately don a shield you're carrying (no action required).</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Quematrice Igniter (Armor)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_QUEMATRIE_IGNITER_ARMOR">
+        <description>
+            <p>You suffer no harm in temperature as cold as -20 degrees Fahrenheit while you wear this armor.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Quematrice Igniter (Weapon)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_QUEMATRICE_IGNITER_WEAPON">
+        <description>
+            <p>While holding this weapon, you can use a bonus action to speak this weapons command word, causing flames to erupt from it. These flames shed bright light in a 20-foot radius and dim light for an additional 20 feet.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Quematrice Tail (Armor)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_QUEMATRICE_TAIL_ARMOR">
+        <description>
+            <p>While wearing this armor, you can safely handle mundane hot objects without taking damage or discomfort.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Quematrice Tail (Weapon)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_QUEMATRICE_TAIL_WEAPON">
+        <description>
+            <p><i>Quick Sheath.</i> While attuned to this weapon, you can always sheath it as a free action even if you have already drawn a weapon as part of your move action.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Quematrice Crest (Armor)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_QUEMATRICE_CREST_ARMOR">
+        <description>
+            <p><i>Heat Guard.</i> While wearing this armor you are immune to damage from lava and you are unaffected by extreme heat.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Quematrice Crest (Weapon)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_QUEMATRICE_CREST_WEAPON">
+        <description>
+            <p>Your weapon deals an extra 1d4 fire damage.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Quematrice Gem (Armor)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_QUEMATRICE_GEM_ARMOR">
+        <description>
+            <p><i>Tremor-Proof.</i> You cannot be knocked prone while you wear this armor.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Quematrice Gem (Weapon)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_QUEMATRICE_GEM_WEAPON">
+        <description>
+            <p><i>Minor Critical Status (Ignite)</i>. When you make a weapon attack with this weapon, and roll a 20 for the attack roll, the target catches fire; Until a creature takes an action to douse the fire, the target takes 2 (1d4) fire damage at the start of each of its turns.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+</elements>

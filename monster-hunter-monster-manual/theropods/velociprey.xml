@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Velociprey</name>
+        <update version="0.0.1">
+            <file name="velociprey.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/monster-hunter-monster-manual/velociprey.xml" />
+        </update>
+    </info>
+    
+    <element name="Velociprey Hide" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_VELOCIPREY_HIDE">
+        <description>
+            <p>You reduce fire, cold, lightning, and necrotic damage you take by 1 while you wear this armor.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Velociprey Scale" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_VELOCIPREY_SCALE">
+        <description>
+            <p>You have a +1 bonus to Medicine checks while you wear this amror</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <stat name="medicine:misc" value="1" />
+        </rules>
+    </element>
+
+    <element name="Velociprey Fang" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_VELOCIPREY_FANG">
+        <description>
+            <p>When you cast a spell that deals bludgeoning, piercing, or slashing damage, add half of your proficiency bonus to that damage.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+</elements>

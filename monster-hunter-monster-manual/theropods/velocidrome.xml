@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Velocidrome</name>
+        <update version="0.0.1">
+            <file name="velocidrome.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/monster-hunter-monster-manual/velocidrome.xml" />
+        </update>
+    </info>
+    
+    <element name="Velocidrome Hide (Armor)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_VELOCIDROME_HIDE_ARMOR">
+        <description>
+            <p>While wearing your armor it plays appropriate music for whatever situation you're in. Blaring horn sections and drums during combat, that sort of thing.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Velocidrome Hide (Weapon)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_VELOCIDROME_HIDE_WEAPON">
+        <description>
+            <p>When you cast a spell that deals thunder damage, add half of your proficiency bonus to that damage.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+    
+    <element name="Velocidrome Head (Armor)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_VELOCIDROME_HEAD_ARMOR">
+        <description>
+            <p>Whenever you make a saving throw against the unconscious condition or other sleep-like effects, you do so with a +1 bonus.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Velocidrome Head (Weapon)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_VELOCIDROME_HEAD_WEAPON">
+        <description>
+            <p>The first time you make a Carve check on a creature, you do so with advantage.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Velocidrome Shard (Armor)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_VELOCIDROME_SHARD_ARMOR">
+        <description>
+            <p>While wearing this armor, you can use an action to cast the long strider spell from it. Once used, you can't use this property again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Velocidrome Shard (Weapon)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_VELOCIDROME_SHARD_WEAPON">
+        <description>
+            <p>As an action you can make this weapon shed bright light in a 15-foot radius and dim light in another 15 feet. You can use another action to make the weapon stop shedding light.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Velocidrome Claw (Weapon)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_VELOCIDROME_CLAW_WEAPON">
+        <description>
+            <p>You can use a bonus action to speak this weapon's command word and transform your weapon into a walking cane or back to its original form.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Velocidrome Claw (Misc)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_VELOCIDROME_CLAW_MISC">
+        <description>
+            <p>This material can be crafted into a 6 six-sided die (DC 10 tinker's tool check). When you roll it, you can control which number it rolls.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Screamer Sac" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_SCREAMER_SAC">
+        <description>
+            <p>A crafting material used to make sonic bombs.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+</elements>

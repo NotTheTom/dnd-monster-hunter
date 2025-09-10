@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Talioth</name>
+        <update version="0.0.1">
+            <file name="talioth.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/monster-hunter-monster-manual/talioth.xml" />
+        </update>
+    </info>
+    
+    <element name="Talioth Scale (Armor)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_ITEM_TALIOTH_SCALE_ARMOR">
+        <description>
+            <p><i>Leap of Faith.</i> When you are targeted by a melee attack roll while you wear this armor, you can use your reaction to dive into an unoccupied space within 5 feet of you to impose disadvantage on the attacker's roll, but you fall prone after the attack. You can use this property a number of times equal to your proficiency modifier, regaining all expended uses when you finish a long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Talioth Scale (Weapon)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_TALIOTH_SCALE_WEAPON">
+        <description>
+            <p>You have a +1 bonus to Strength (Athletics) checks to grapple a creature while you are attuned to this weapon.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Sharp Fang" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_SHARP_FANG">
+        <description>
+            <p>Your slashing weapon deals an extra 1 slashing damage.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>    
+    </element>
+
+    <element name="Raw Meat" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_RAW_MEAT">
+        <description>
+            <p>Provides 2 days rations when cooked.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+</elements>

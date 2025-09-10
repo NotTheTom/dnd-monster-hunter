@@ -2,7 +2,7 @@
 <elements>
     <info>
         <update version="0.0.1">
-            <file name="source.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/mosnter-hunter-monster-manual/source.xml" />
+            <file name="source.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/monster-hunter-monster-manual/source.xml" />
         </update>
     </info>
     <element name="Monster Hunter Monster Manual" type="Source" source="Core" id="ID_ALD_MONSTER_HUNTER_MONSTER_MANUAL">
