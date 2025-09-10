@@ -3,7 +3,7 @@
     <info>
         <name>Velocidrome</name>
         <update version="0.0.1">
-            <file name="velocidrome.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/monster-hunter-monster-manual/velocidrome.xml" />
+            <file name="velocidrome.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/monster-hunter-monster-manual/theropods/velocidrome.xml" />
         </update>
     </info>
     

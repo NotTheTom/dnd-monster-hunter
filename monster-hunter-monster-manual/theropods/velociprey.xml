@@ -3,7 +3,7 @@
     <info>
         <name>Velociprey</name>
         <update version="0.0.1">
-            <file name="velociprey.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/monster-hunter-monster-manual/velociprey.xml" />
+            <file name="velociprey.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/monster-hunter-monster-manual/theropods/velociprey.xml" />
         </update>
     </info>
     

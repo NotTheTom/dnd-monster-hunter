@@ -3,7 +3,7 @@
     <info>
         <name>Talioth</name>
         <update version="0.0.1">
-            <file name="talioth.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/monster-hunter-monster-manual/talioth.xml" />
+            <file name="talioth.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/monster-hunter-monster-manual/theropods/talioth.xml" />
         </update>
     </info>
     
