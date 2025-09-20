@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Generic</name>
+        <update version="0.0.1">
+            <file name="generic.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/monster-hunter-monster-manual/generic.xml" />
+        </update>
+    </info>
+    
+    <element name="Sharp Fang" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_SHARP_FANG">
+        <description>
+            <p>Your slashing weapon deals an extra 1 slashing damage.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>    
+    </element>
+
+    <element name="Raw Meat" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_RAW_MEAT">
+        <description>
+            <p>Provides 2 days rations when cooked.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Screamer Sac" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_SCREAMER_SAC">
+        <description>
+            <p>A crafting material used to make sonic bombs.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Bird Wyvern Fang" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_BIRD_WYVERN_FANG">
+        <description>
+            <p>Your piercing weapon deals an extra 1 piercing damage.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+</elements>

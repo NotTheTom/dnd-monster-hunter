@@ -109,16 +109,4 @@
             <set name="type">Monster Material</set>
         </setters>
     </element>
-
-    <element name="Screamer Sac" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_SCREAMER_SAC">
-        <description>
-            <p>A crafting material used to make sonic bombs.</p>
-        </description>
-        <setters>
-            <set name="category">Monster Materials</set>
-            <set name="cost" currency="gp">0</set>
-            <set name="weight" lb="0">0 lb.</set>
-            <set name="type">Monster Material</set>
-        </setters>
-    </element>
 </elements>
