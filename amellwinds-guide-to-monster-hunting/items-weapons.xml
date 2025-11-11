@@ -2,50 +2,56 @@
 <elements>
     <info>
         <name>Weapons</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="items-weapons.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/items-weapons.xml" />
         </update>
     </info>
 
-    <element name="AccelAxe" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_ACCELAXE" />
-    <element name="ChargeBlade" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CHARGEBLADE" />
-    <element name="DualBlades" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DUALBLADES" />
-    <element name="Gunlance" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE" />
-    <element name="Hammer" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HAMMER" />
-    <element name="HuntingHorn" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HUNTINGHORN" />
-    <element name="InsectGlaive" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_INSECTGLAIVE" />
-    <element name="Lance" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HUNTER_LANCE" />
-    <element name="Longsword" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HUNTER_LONGSWORD" />
-    <element name="MagnetSpike" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MAGNETSPIKE" />
-    <element name="SplintRapier" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPLINTRAPIER" />
-    <element name="SwitchAxe" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SWITCHAXE" />
-    <element name="SwordAndShield" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SWORDANDSHIELD" />
-    <element name="Tonfas" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TONFAS" />
-    <element name="WyvernBoomerang" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WYVERNBOOMERANG" />
-    <element name="Bow" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BOW" />
-    <element name="DualRepeaters" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DUALREPEATERS" />
+    <element name="AccelAxe" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_ACCELAXE" />
+    <element name="ChargeBlade" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_CHARGEBLADE" />
+    <element name="DualBlades" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_DUALBLADES" />
+    <element name="Gunlance" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE" />
+    <element name="Hammer" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_HAMMER" />
+    <element name="HuntingHorn" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_HUNTINGHORN" />
+    <element name="InsectGlaive" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_INSECTGLAIVE" />
+    <element name="Lance" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_HUNTER_LANCE" />
+    <element name="Longsword" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_HUNTER_LONGSWORD" />
+    <element name="MagnetSpike" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_MAGNETSPIKE" />
+    <element name="SplintRapier" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AMGH_PROFICIENCY_WEAPON_PROFICIENCY_SPLINTRAPIER" />
+    <element name="SwitchAxe" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_SWITCHAXE" />
+    <element name="SwordAndShield" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_SWORDANDSHIELD" />
+    <element name="Tonfas" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_TONFAS" />
+    <element name="WyvernBoomerang" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_WYVERNBOOMERANG" />
+    <element name="Bow" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_BOW" />
+    <element name="DualRepeaters" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_DUALREPEATERS" />
     
-    <append id="ID_INTERNAL_GRANTS_CHARACTER_BASE">
+    <element name="AGtMH Weapon Proficiencies" type="Option" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_OPTION_FEATURE_OPTIONAL_WEAPON_PROFICIENCIES">
+		<description>
+			<p>Option to enable the weapon proficiencies for Amellwind's guide to monster hunting. They will be automatically added to your character, though they may not appear on your character sheet, if you have the equivalent base D&amp;D weapon proficiencies.</p>
+		</description>
+		<setters>
+			<set name="short">Enables the weapon proficiencies for the weapons from Amellwind's Guide to Monster Hunting.</set>
+		</setters>
         <rules>
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_ACCELAXE" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE|ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CHARGEBLADE" requirements="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DUALBLADES" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD|ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR|ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE" requirements="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_HALBERD" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HAMMER" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER|ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HUNTINGHORN" requirements="ID_PROFICIENCY_TOOL_PROFICIENCY_MUSICAL_INSTRUMENT|ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL|ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_INSECTGLAIVE" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_HALBERD|ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE|ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT|ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN|ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE" requirements="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_HALBERD" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD|ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MAGNETSPIKE" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD|ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPLINTRAPIER" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD|ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER|ID_PROFICENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SWITCHAXE" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE|ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SWORDANDSHIELD" requirements="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTHAMMER|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TONFAS" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB|ID_PROFICIENCY_WEAPON_PROFICIENCY_FLAIL|ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE|ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTHAMMER|ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE|ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF|ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WYVERNBOOMERANG" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD|ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER|ID_PROFICIENCY_WEAPON_PROFICIENCY_DART|ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE|ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN|ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTHAMMER|ID_PROFICIENCY_WEAPON_PROFICIENCY_NET|ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR|ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BOW" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW|ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DUALREPEATERS" requirements="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS|ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" />
+            <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_ACCELAXE" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE|ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE" />
+            <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_CHARGEBLADE" requirements="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" />
+            <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_DUALBLADES" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD|ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR|ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+            <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE" requirements="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_HALBERD" />
+            <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_HAMMER" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER|ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL" />
+            <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_HUNTINGHORN" requirements="ID_PROFICIENCY_TOOL_PROFICIENCY_MUSICAL_INSTRUMENT|ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL|ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER" />
+            <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_INSECTGLAIVE" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_HALBERD|ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE|ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT|ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN|ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" />
+            <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_HUNTER_LANCE" requirements="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_HALBERD" />
+            <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_HUNTER_LONGSWORD" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD|ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
+            <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_MAGNETSPIKE" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD|ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL" />
+            <grant type="Proficiency" id="ID_ALD_AMGH_PROFICIENCY_WEAPON_PROFICIENCY_SPLINTRAPIER" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD|ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER|ID_PROFICENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+            <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_SWITCHAXE" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE|ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD" />
+            <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_SWORDANDSHIELD" requirements="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTHAMMER|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE" />
+            <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_TONFAS" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB|ID_PROFICIENCY_WEAPON_PROFICIENCY_FLAIL|ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE|ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTHAMMER|ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE|ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF|ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER" />
+            <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_WYVERNBOOMERANG" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD|ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER|ID_PROFICIENCY_WEAPON_PROFICIENCY_DART|ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE|ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN|ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTHAMMER|ID_PROFICIENCY_WEAPON_PROFICIENCY_NET|ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR|ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
+            <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_BOW" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW|ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" />
+            <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_DUALREPEATERS" requirements="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS|ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" />
         </rules>
-    </append>
+    </element>
 
     <element name="Common Accel Axe" type="Weapon" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_WEAPON_COMMON_ACCEL_AXE">
         <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
@@ -58,7 +64,7 @@
             <set name="weight" lb="8">8 lb.</set>
             <set name="slot">twohand</set>
             <set name="damage" type="slashing">1d12</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ACCELAXE</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_ACCELAXE</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
             <set name="name-format">Common Accel Axe</set>
@@ -176,7 +182,7 @@
             <set name="weight" lb="7">7 lb.</set>
             <set name="slot">twohand</set>
             <set name="damage" type="slashing">1d12</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CHARGEBLADE</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_CHARGEBLADE</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
             <set name="name-format">Common Charge Blade, Axe</set>
@@ -195,7 +201,7 @@
             <set name="weight" lb="8">8 lb.</set>
             <set name="slot">twohand</set>
             <set name="damage" type="slashing">1d6</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CHARGEBLADE</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_CHARGEBLADE</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
             <set name="name-format">Common Charge Blade, Sword</set>
@@ -397,7 +403,7 @@
             <set name="weight" lb="2">2 lb.</set>
             <set name="slot">onehand</set>
             <set name="damage" type="slashing">1d6</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DUALBLADES</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_DUALBLADES</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
             <set name="name-format">Common Dual Blades</set>
@@ -588,7 +594,7 @@
             <set name="weight" lb="6">6 lb.</set>
             <set name="slot">onehand</set>
             <set name="damage" type="piercing">1d8</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
             <set name="name-format">Common Greatsword</set>
@@ -701,7 +707,7 @@
             <set name="weight" lb="10">10 lb.</set>
             <set name="slot">twohand</set>
             <set name="damage" type="bludgeoning">2d6</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_HAMMER</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_HAMMER</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
             <set name="name-format">Common Hammer</set>
@@ -804,7 +810,7 @@
             <set name="weight" lb="8">8 lb.</set>
             <set name="slot">twohand</set>
             <set name="damage" type="bludgeoning">1d12</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_HUNTINGHORN</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_HUNTINGHORN</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
             <set name="name-format">Common Hunting Horn</set>
@@ -834,7 +840,7 @@
             <set name="weight" lb="8">8 lb.</set>
             <set name="slot">twohand</set>
             <set name="damage" type="bludgeoning">1d12</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_HUNTINGHORN</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_HUNTINGHORN</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
             <set name="name-format">Common Hunting Horn</set>
@@ -1144,7 +1150,7 @@
             <set name="weight" lb="5">5 lb.</set>
             <set name="slot">twohand</set>
             <set name="damage" type="slashing">1d10</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_INSECTGLAIVE</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_INSECTGLAIVE</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
             <set name="name-format">Common Insect Glaive</set>
@@ -1275,7 +1281,7 @@
             <set name="slot">onehand</set>
             <set name="damage" type="piercing">1d8</set>
             <set name="versatile">1d10</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_HUNTER_LANCE</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_HUNTER_LANCE</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
             <set name="name-format">Common Lance</set>
@@ -1379,7 +1385,7 @@
             <set name="weight" lb="3">3 lb.</set>
             <set name="slot">twohand</set>
             <set name="damage" type="slashing">1d10</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_HUNTER_LONGSWORD</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_HUNTER_LONGSWORD</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
             <set name="name-format">Common Longsword</set>
@@ -1492,7 +1498,7 @@
             <set name="weight" lb="7">7 lb.</set>
             <set name="slot">twohand</set>
             <set name="damage" type="bludgeoning/slashing">2d4</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_MAGNETSPIKE</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_MAGNETSPIKE</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
             <set name="name-format">Common Magnet Spike</set>
@@ -1723,7 +1729,7 @@
             <set name="weight" lb="4">4 lb.</set>
             <set name="slot">onehand</set>
             <set name="damage" type="piercing">1d8</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SPLINTRAPIER</set>
+            <set name="proficiency">ID_ALD_AMGH_PROFICIENCY_WEAPON_PROFICIENCY_SPLINTRAPIER</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
             <set name="name-format">Common Splint Rapier Single</set>
@@ -1742,7 +1748,7 @@
             <set name="weight" lb="4">4 lb.</set>
             <set name="slot">onehand</set>
             <set name="damage" type="piercing">1d6</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SPLINTRAPIER</set>
+            <set name="proficiency">ID_ALD_AMGH_PROFICIENCY_WEAPON_PROFICIENCY_SPLINTRAPIER</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
             <set name="name-format">Common Splint Rapier Splint</set>
@@ -2014,7 +2020,7 @@
             <set name="weight" lb="7">7 lb.</set>
             <set name="slot">twohand</set>
             <set name="damage" type="piercing">1d10</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SWITCHAXE</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_SWITCHAXE</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
             <set name="name-format">Common Switch Axe Sword</set>
@@ -2033,7 +2039,7 @@
             <set name="weight" lb="7">7 lb.</set>
             <set name="slot">twohand</set>
             <set name="damage" type="piercing">1d10</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SWITCHAXE</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_SWITCHAXE</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
             <set name="name-format">Common Switch Axe Axe</set>
@@ -2255,7 +2261,7 @@
             <set name="weight" lb="2">2 lb.</set>
             <set name="slot">onehand</set>
             <set name="damage" type="piercing">1d6</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SWORDANDSHIELD</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_SWORDANDSHIELD</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
             <set name="name-format">Common Sword and Shield</set>
@@ -2357,7 +2363,7 @@
             <set name="weight" lb="4">4 lb.</set>
             <set name="slot">onehand</set>
             <set name="damage" type="bludgeoning">1d6</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_TONFAS</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_TONFAS</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
             <set name="name-format">Common Tonfas</set>
@@ -2606,7 +2612,7 @@
             <set name="slot">twohand</set>
             <set name="range">60/180</set>
             <set name="damage" type="slashing">1d10</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WYVERNBOOMERANG</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_WYVERNBOOMERANG</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
             <set name="name-format">Common Wyvern Boomerang</set>
@@ -2721,7 +2727,7 @@
             <set name="slot">twohand</set>
             <set name="range">150/600</set>
             <set name="damage" type="piercing">1d8</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_BOW</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_BOW</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
             <set name="name-format">Common Bow</set>
@@ -2879,7 +2885,7 @@
             <set name="slot">onehand</set>
             <set name="range">30/120</set>
             <set name="damage" type="piercing">2d4</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DUALREPEATERS</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_DUALREPEATERS</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
             <set name="name-format">Common Dual Repeaters</set>

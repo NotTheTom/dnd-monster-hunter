@@ -7,6 +7,19 @@
         </update>
     </info>
     
+<!--<element name="" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_">
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>    
+    </element>-->
+
     <element name="Sharp Fang" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_SHARP_FANG">
         <description>
             <p>Your slashing weapon deals an extra 1 slashing damage.</p>
@@ -55,5 +68,67 @@
             <set name="slot">material</set>
             <set name="type">Monster Material</set>
         </setters>
+    </element>
+
+    <element name="Monster Guts" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_MONSTER_GUTS">
+        <description>
+            <p>Monster Innards. A prized delicacy worth 50 gp.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">50</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Piscine Liver" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_PISCINE_LIVER">
+        <description>
+            <p>After it is cooked (DC 11), it can be eaten to cure any disease or poison.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Monster Material</set>
+        </setters>    
+    </element>
+
+    <element name="Sharpened Fang (Armor)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_SHARPENED_FANG_ARMOR">
+        <description>
+            <p>You reduce slashing damage you take by 2 while you wear this armor.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Sharpened Fang (Weapon)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_SHARPENED_FANG_WEAPON">
+        <description>
+            <p>Your slashing weapon deals an extra 1 slashing damage.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+
+    <element name="Monster Fluid" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_MONSTER_FLUID">
+        <description>
+            <p>Uncommon or rare upgrade material that can be used for weapons or armor.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Monster Material</set>
+        </setters>    
     </element>
 </elements>

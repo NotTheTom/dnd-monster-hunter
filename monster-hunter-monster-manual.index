@@ -20,7 +20,10 @@
 		<!--Flying Wyverns-->
 		<!--Leviathans-->
 		<!--Neopteons-->
+		<file name="konchu.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/monster-hunter-monster-manual/neopterons/konchu.xml" />
 		<!--Piscine Wyverns-->
+		<file name="cephalos.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/monster-hunter-monster-manual/piscine-wyverns/cephalos.xml" />
+		<file name="delex.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/monster-hunter-monster-manual/piscine-wyverns/delex.xml" />
 		<!--Snake Wyverns-->
 		<!--Temnoceran-->
 		<!--Theropods-->

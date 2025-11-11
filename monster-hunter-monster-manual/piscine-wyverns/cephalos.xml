@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Cephalos</name>
+        <update version="0.0.1">
+            <file name="cephalos.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/monster-hunter-monster-manual/piscine-wyverns/cephalos.xml" />
+        </update>
+    </info>
+    
+    <element name="Cephalos Scale" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_CEPHALOS_SCALE">
+        <description>
+            <p><i>Load up.</i> While attuned to this weapon, you increase the maximum capacity for all your ammo by 2.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>    
+    </element>
+    
+    <element name="Piscine Fang (Armor)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_PISCINE_FANG_ARMOR">
+        <description>
+            <p><i>Archeologist.</i> When you successfully gather a bone resource, you instead gather 2.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>    
+    </element>
+
+    <element name="Piscine Fang (Weapon)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_PISCINE_FANG_WEAPON">
+        <description>
+            <p>Your weapon deals an extra 1 slashing damage.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>    
+    </element>
+
+    <element name="Cephalos Fin" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_CEPHALOS_FIN">
+        <description>
+            <p>You have advantage on Wisdom (Medicine) checks while you wear this armor.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>    
+    </element>
+</elements>

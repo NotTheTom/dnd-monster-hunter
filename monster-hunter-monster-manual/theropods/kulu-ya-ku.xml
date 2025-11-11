@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Kulu-Ya-Ku</name>
+        <update version="0.0.1">
+            <file name="kulu-ya-ku.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/monster-hunter-monster-manual/theropods/kulu-ya-ku.xml" />
+        </update>
+    </info>
+    
+    
+</elements>

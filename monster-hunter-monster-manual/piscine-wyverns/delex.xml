@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Delex</name>
+        <update version="0.0.1">
+            <file name="delex.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/monster-hunter-monster-manual/piscine-wyverns/delex.xml" />
+        </update>
+    </info>
+    
+    <element name="Quality Fin (Armor)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_QUALITY_FIN_ARMOR">
+        <description>
+            <p>While wearing this armor, your swimming speed is increased by 5 feet.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed:swim" value="5"/>
+		</rules>
+    </element>
+
+    <element name="Quality Fin (Weapon)" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_QUALITY_FIN_WEAPON">
+        <description>
+            <p><i>Current Resist.</i> While holding this weapon you are unaffected by the waters current, natural or magical, unless you otherwise choose to be.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>
+    </element>
+</elements>

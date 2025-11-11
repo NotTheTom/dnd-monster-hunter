@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Konchu</name>
+        <update version="0.0.1">
+            <file name="konchu.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/monster-hunter-monster-manual/neopterons/konchu.xml" />
+        </update>
+    </info>
+    
+    <element name="Konchu Shell" type="Magic Item" source="Monster Hunter Monster Manual" id="ID_ALD_MHMM_MAGIC_ITEM_KONCHU_SHELL">
+        <description>
+            <p>While you are attuned to this armor, you can doff or don it as an action.</p>
+        </description>
+        <setters>
+            <set name="category">Monster Materials</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">material</set>
+            <set name="type">Monster Material</set>
+        </setters>    
+    </element>
+</elements>
