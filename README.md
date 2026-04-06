@@ -20,7 +20,7 @@ Also the additional spells granted from these backgrounds will only appear in sp
 Whilst Amellwind's Guide to Monster Hunting describes Elder Dragonborn as variants of the base Dragonborn race, they have been implemented as a seperate race and split into subraces for convenience.
 
 ### Equipment
-Because of how Aurora evaluates weapon proficiencies and the hunter weapons having multiple equivalent proficiencies there is a Character Option to automatically add these proficiencies when you have the equivalent weapon proficiences without affected non-Monste Hunter characters.
+Because of how Aurora evaluates weapon proficiencies and the hunter weapons having multiple equivalent proficiencies there is a Character Option to automatically add these proficiencies when you have the equivalent weapon proficiences without affecting non-Monster Hunter characters. The proficiencies for the Boomfists, Great Chakram and Wyvern Kunai are currently based on my opinion and subject to change if they get official equivalents.
 
 It is recommended you have item cards enabled to be able to easily see all the abilities these new items grant.
 

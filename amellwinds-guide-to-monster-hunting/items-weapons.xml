@@ -2,14 +2,16 @@
 <elements>
     <info>
         <name>Weapons</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="items-weapons.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/items-weapons.xml" />
         </update>
     </info>
 
     <element name="AccelAxe" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_ACCELAXE" />
+    <element name="BoomFists" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_BOOMFISTS" />
     <element name="ChargeBlade" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_CHARGEBLADE" />
     <element name="DualBlades" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_DUALBLADES" />
+    <element name="GreatChakram" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_GREATCHAKRAM" />
     <element name="Gunlance" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE" />
     <element name="Hammer" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_HAMMER" />
     <element name="HuntingHorn" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_HUNTINGHORN" />
@@ -22,6 +24,7 @@
     <element name="SwordAndShield" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_SWORDANDSHIELD" />
     <element name="Tonfas" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_TONFAS" />
     <element name="WyvernBoomerang" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_WYVERNBOOMERANG" />
+    <element name="WyvernKunai" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_WYVERNKUNAI" />
     <element name="Bow" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_BOW" />
     <element name="DualRepeaters" type="Proficiency" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_DUALREPEATERS" />
     
@@ -34,8 +37,10 @@
 		</setters>
         <rules>
             <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_ACCELAXE" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE|ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE" />
+            <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_BOOMFISTS" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL|ID_PROFICIENCY_WEAPON_PROFICIENCY_MORNINGSTAR|ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER" />
             <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_CHARGEBLADE" requirements="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" />
             <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_DUALBLADES" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD|ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR|ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+            <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_GREATCHAKRAM" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER|ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE|ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN|ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR|ID_PROFICIENCY_WEAPON_PROFICIENCY_DART|ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT|ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" />
             <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE" requirements="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_HALBERD" />
             <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_HAMMER" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER|ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL" />
             <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_HUNTINGHORN" requirements="ID_PROFICIENCY_TOOL_PROFICIENCY_MUSICAL_INSTRUMENT|ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL|ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER" />
@@ -48,6 +53,7 @@
             <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_SWORDANDSHIELD" requirements="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTHAMMER|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE" />
             <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_TONFAS" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB|ID_PROFICIENCY_WEAPON_PROFICIENCY_FLAIL|ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE|ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTHAMMER|ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE|ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF|ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER" />
             <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_WYVERNBOOMERANG" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD|ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER|ID_PROFICIENCY_WEAPON_PROFICIENCY_DART|ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE|ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN|ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTHAMMER|ID_PROFICIENCY_WEAPON_PROFICIENCY_NET|ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR|ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
+            <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_WYVERNKUNAI" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER|ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE|ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN|ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR|ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" />
             <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_BOW" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW|ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" />
             <grant type="Proficiency" id="ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_DUALREPEATERS" requirements="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS|ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" />
         </rules>
@@ -169,6 +175,115 @@
         </setters>
     </element>
 
+    <element name="Common Boomfists" type="Weapon" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_WEAPON_COMMON_BOOMFISTS">
+        <supports>ID_INTERNAL_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+        <description>
+            <p>This weapon has 1 slot you can insert materials into.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">30</set>
+            <set name="weight" lb="5">5 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="bludgeoning">1d6</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_BOOMFISTS</set>
+            <set name="rarity">Common</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Common Boomfists</set>
+        </setters>
+    </element>
+    <element name="Uncommon" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_UNCOMMON_BOOMFISTS">
+        <description>
+            <p>This weapon has 2 slots that you can insert materials into.</p>
+            <br />
+            <p><i>You gain a +1 bonus on attacks and damage rolls.</i></p>
+            <p class="indent"><b>Phial Canisters.</b> The boom fists have three phial canisters on each shoulder. When you hit a hostile creature with a main-hand attack, it fills one green phial canister. When you hit a hostile creature with an off-hand attack, it fills one red phial canister (to a maximum of 3). These canisters remain filled until your next short or long rest.</p>
+            <p class="indent"><b>Haymaker.</b> When you hit a creature with this weapon, you can expend one canister to increase the damage by 1. You must expend a canister of the same color as the arm that made the attack.</p>
+            <p class="indent"><b>Boomspring.</b> As a bonus action, you can expend one green canister and one red canister to grant yourself a surge of power. Your jump height and distance increases by 10 feet until the end of your turn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="common boomfists">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="enhancement">1</set>
+            <set name="weapon">Common Boomfists</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Uncommon Boomfists</set>
+        </setters>
+    </element>
+    <element name="Rare" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_RARE_BOOMFISTS">
+        <description>
+            <p>This weapon has 3 slots that you can insert materials into.</p>
+            <br />
+            <p><i>You gain a +1 bonus on attacks and damage rolls.</i></p>
+            <p class="indent"><b>Phial Canisters.</b> The boom fists have three phial canisters on each shoulder. When you hit a hostile creature with a main-hand attack, it fills one green phial canister. When you hit a hostile creature with an off-hand attack, it fills one red phial canister (to a maximum of 3). These canisters remain filled until your next short or long rest.</p>
+            <p class="indent"><b>Haymaker.</b> When you hit a creature with this weapon, you can expend one canister to increase the damage by 1. You can instead expend two canisters to increase the damage dealt by 1d4. You must expend a canister of the same color as the arm that made the attack.</p>
+            <p class="indent"><b>Boomspring.</b> As a bonus action, you can expend one green canister and one red canister to grant yourself a surge of power. Your jump height and distance increases by 10 feet until the end of your turn.</p>
+            <p class="indent"><b>Big Boom.</b>As an action, you can expend all six canisters (3 green and 3 red) to unleash a massive shockwave in a 30-foot line that is 10 feet wide. Each creature in that area must make a Dexterity saving throw equal to 8 + your proficiency modifier + your Strength or Dexterity modifier (your choice). On a failed save, a creature takes 3d6 fire damage plus 3d6 thunder damage and is deafened until the end of your next turn. On a successful save, the creature takes half as much damage and isn't deafened.</p>
+            <p class="indent">The damage is doubled, if the creature is Large or larger, the width of the line goes through the creature's space, and it is the only creature in the line.</p>
+            <p class="indent"><b>Jawbreaker.</b>When you score a critical hit with this weapon, you can expend one green and one red canister increase the force of the blow. The target must then succeed on a Strength saving throw with a DC equal to 8 + your proficiency modifier + your Strength or Dexterity modifier (your choice), or be knocked prone and unable to speak until the end of its next turn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="common boomfists">Weapon</set>
+            <set name="rarity">Rare</set>
+            <set name="enhancement">1</set>
+            <set name="weapon">Common Boomfists</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Rare Boomfists</set>
+        </setters>
+    </element>
+    <element name="Very Rare" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_VERY_RARE_BOOMFISTS">
+        <description>
+            <p>This weapon has 4 slots that you can insert materials into.</p>
+            <br />
+            <p><i>You gain a +2 bonus on attacks and damage rolls.</i></p>
+            <p class="indent"><b>Phial Canisters.</b> The boom fists have three phial canisters on each shoulder. When you hit a hostile creature with a main-hand attack, it fills one green phial canister. When you hit a hostile creature with an off-hand attack, it fills one red phial canister (to a maximum of 3). These canisters remain filled until your next short or long rest.</p>
+            <p class="indent"><b>Haymaker.</b> When you hit a creature with this weapon, you can expend one canister to increase the damage by 1. You can instead expend two canisters to increase the damage dealt by 1d4. You must expend a canister of the same color as the arm that made the attack.</p>
+            <p class="indent"><b>Boomspring.</b> As a bonus action, you can expend any number of green or red canisters to grant yourself a surge of power. Your jump height and distance increases by 5 feet for each canister expended until the end of your turn.</p>
+            <p class="indent"><b>Big Boom.</b> As an action, you can expend all six canisters (3 green and 3 red) to unleash a massive shockwave in a 30-foot line that is 10 feet wide. Each creature in that area must make a Dexterity saving throw equal to 8 + your proficiency modifier + your Strength or Dexterity modifier (your choice). On a failed save, a creature takes 3d8 fire damage plus 3d8 thunder damage and is deafened until the end of your next turn. On a successful save, the creature takes half as much damage and isn't deafened.</p>
+            <p class="indent">The damage is doubled, if the creature is Large or larger, the width of the line goes through the creature's space, and it is the only creature in the line.</p>
+            <p class="indent"><b>Jawbreaker.</b> When you score a critical hit with this weapon, you can expend one green and one red canister increase the force of the blow. The target must then succeed on a Strength saving throw with a DC equal to 10 + your proficiency modifier + your Strength or Dexterity modifier (your choice), or be knocked prone and unable to speak until the end of its next turn.</p>
+            <p class="indent"><b>Barrage.</b> As an action, you assume a specialized stance and unleash a rapid series of strikes. Make six melee weapon attacks, each dealing 1d6 bludgeoning damage and no other effects or damage bonuses. For each attack that hits, you gain 1 red or green canister charge depending on which hand you hit with. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="common boomfists">Weapon</set>
+            <set name="rarity">Very Rare</set>
+            <set name="enhancement">2</set>
+            <set name="weapon">Common Boomfists</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Very Rare Boomfists</set>
+        </setters>
+    </element>
+    <element name="Legendary" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_LEGENDARY_BOOMFISTS">
+        <description>
+            <p>This weapon has 5 slots that you can insert materials into.</p>
+            <br />
+            <p><i>You gain a +3 bonus on attacks and damage rolls.</i></p>
+            <p class="indent"><b>Phial Canisters.</b> The boom fists have three phial canisters on each shoulder. When you hit a hostile creature with a main-hand attack, it fills one green phial canister. When you hit a hostile creature with an off-hand attack, it fills one red phial canister (to a maximum of 3). These canisters remain filled until your next short or long rest.</p>
+            <p class="indent"><b>Haymaker.</b> When you hit a creature with this weapon, you can expend one canister to increase the damage by 1. You can instead expend two canisters to increase the damage dealt by 1d4 or three canisters to increase the damage by 1d6. You must expend a canister of the same color as the arm that made the attack.</p>
+            <p class="indent"><b>Boomspring.</b> As a bonus action, you can expend any number of green or red canisters to grant yourself a surge of power. Your jump height and distance increases by 5 feet for each canister expended until the end of your turn.</p>
+            <p class="indent"><b>Big Boom.</b> As an action, you can expend all six canisters (3 green and 3 red) to unleash a massive shockwave in a 30-foot line that is 10 feet wide. Each creature in that area must make a Dexterity saving throw equal to 8 + your proficiency modifier + your Strength or Dexterity modifier (your choice). On a failed save, a creature takes 3d10 fire damage plus 3d10 thunder damage and is deafened until the end of your next turn. On a successful save, the creature takes half as much damage and isn't deafened.</p>
+            <p class="indent">The damage is doubled, if the creature is Large or larger, the width of the line goes through the creature's space, and it is the only creature in the line.</p>
+            <p class="indent"><b>Jawbreaker.</b> When you score a critical hit with this weapon, you can expend one green and one red canister increase the force of the blow. The target must then succeed on a Strength saving throw with a DC equal to 11 + your proficiency modifier + your Strength or Dexterity modifier (your choice), or be knocked prone and unable to speak until the end of its next turn.</p>
+            <p class="indent"><b>Barrage.</b> As an action, you assume a specialized stance and unleash a rapid series of strikes. Make six melee weapon attacks, each dealing 1d6 bludgeoning damage and no other effects or damage bonuses. For each attack that hits, you gain 1 red or green canister charge depending on which hand you hit with. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="common boomfists">Weapon</set>
+            <set name="rarity">Legendary</set>
+            <set name="enhancement">3</set>
+            <set name="weapon">Common Boomfists</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Legendary Boomfists</set>
+        </setters>
+    </element>
+    
     <element name="Common Charge Blade Axe" type="Weapon" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_WEAPON_COMMON_CHARGE_BLADE_AXE">
         <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
         <description>
@@ -225,9 +340,9 @@
             <set name="type" addition="common charge blade axe">Weapon</set>
             <set name="rarity">Uncommon</set>
             <set name="enhancement">1</set>
-            <set name="weapon">Common Charge Blade Axe</set>
+            <set name="weapon">Common Charge Blade, Axe</set>
             <set name="attunement">true</set>
-            <set name="name-format">Uncommon Charge Blade Axe</set>
+            <set name="name-format">Uncommon Charge Blade, Axe</set>
         </setters>
     </element>
     <element name="Uncommon" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_UNCOMMON_CHARGE_BLADE_SWORD">
@@ -245,9 +360,9 @@
             <set name="type" addition="common charge blade sword">Weapon</set>
             <set name="rarity">Uncommon</set>
             <set name="enhancement">1</set>
-            <set name="weapon">Common Charge Blade Sword</set>
+            <set name="weapon">Common Charge Blade, Sword</set>
             <set name="attunement">true</set>
-            <set name="name-format">Uncommon Charge Blade Sword</set>
+            <set name="name-format">Uncommon Charge Blade, Sword</set>
         </setters>
     </element>
     <element name="Rare" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_RARE_CHARGE_BLADE_AXE">
@@ -267,9 +382,9 @@
             <set name="type" addition="common charge blade axe">Weapon</set>
             <set name="rarity">Rare</set>
             <set name="enhancement">1</set>
-            <set name="weapon">Common Charge Blade Axe</set>
+            <set name="weapon">Common Charge Blade, Axe</set>
             <set name="attunement">true</set>
-            <set name="name-format">Rare Charge Blade Axe</set>
+            <set name="name-format">Rare Charge Blade, Axe</set>
         </setters>
     </element>
     <element name="Rare" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_RARE_CHARGE_BLADE_SWORD">
@@ -289,9 +404,9 @@
             <set name="type" addition="common charge blade sword">Weapon</set>
             <set name="rarity">Rare</set>
             <set name="enhancement">1</set>
-            <set name="weapon">Common Charge Blade Sword</set>
+            <set name="weapon">Common Charge Blade, Sword</set>
             <set name="attunement">true</set>
-            <set name="name-format">Rare Charge Blade Sword</set>
+            <set name="name-format">Rare Charge Blade, Sword</set>
         </setters>
         <rules>
 			<stat name="ac:shield" value="1" bonus="enhancement" />
@@ -314,9 +429,9 @@
             <set name="type" addition="common charge blade axe">Weapon</set>
             <set name="rarity">Very Rare</set>
             <set name="enhancement">2</set>
-            <set name="weapon">Common Charge Blade Axe</set>
+            <set name="weapon">Common Charge Blade, Axe</set>
             <set name="attunement">true</set>
-            <set name="name-format">Very Rare Charge Blade Axe</set>
+            <set name="name-format">Very Rare Charge Blade, Axe</set>
         </setters>
     </element>
     <element name="Very Rare" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_VERY_RARE_CHARGE_BLADE_SWORD">
@@ -336,9 +451,9 @@
             <set name="type" addition="common charge blade sword">Weapon</set>
             <set name="rarity">Very Rare</set>
             <set name="enhancement">2</set>
-            <set name="weapon">Common Charge Blade Sword</set>
+            <set name="weapon">Common Charge Blade, Sword</set>
             <set name="attunement">true</set>
-            <set name="name-format">Very Rare Charge Blade Sword</set>
+            <set name="name-format">Very Rare Charge Blade, Sword</set>
         </setters>
         <rules>
 			<stat name="ac:shield" value="2" bonus="enhancement" />
@@ -351,7 +466,7 @@
             <p><i>You gain a +3 bonus on attacks and damage rolls; and +1 AC while shield is equipped.</i></p>
             <p class="indent"><b>Switch Mode.</b> As a bonus action, you can switch the weapon between its axe or sword and shield mode.</p>
             <p class="indent"><b>Phial Charge.</b> When you hit a creature with this weapon's sword and shield mode, it gains 1 phial charge up to a maximum of 5. The charges last until your next short or long rest.</p>
-             <p class="indent"><b>Elemental Guard (Sword).</b> As a reaction, when you are hit by an attack you can expend 1 phial to deal 1d6 damage to the creature, this damage is done as your choice of acid, cold, fire, or lightning.</p>
+            <p class="indent"><b>Elemental Guard (Sword).</b> As a reaction, when you are hit by an attack you can expend 1 phial to deal 1d6 damage to the creature, this damage is done as your choice of acid, cold, fire, or lightning.</p>
             <p class="indent"><b>Elemental Discharge (Axe).</b> As a bonus action upon hitting a creature, you can expend 1 phial to deal an extra 1d10 acid, cold, fire, or lightning damage (your choice).</p>
             <p class="indent"><b>Amped Element Discharge (Axe).</b> As an action you can expend any number of phial charges and release a shockwave of acid, cold, fire, or lightning damage (your choice) in a 15- foot cone in front of you. Each creature in that area must succeed on a Dexterity saving throw equal to 8 + your proficiency modifier + your Strength modifier taking #d8 of your chosen damage type, where # is the number of phials you have expended on a failed save. On a successful save, the creature takes half as much damage. Additionally, you double the damage against a Huge or larger creature if the amped discharge's cone fits in the creature's space. You can use this property a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest.</p>
         </description>
@@ -361,9 +476,9 @@
             <set name="type" addition="common charge blade axe">Weapon</set>
             <set name="rarity">Legendary</set>
             <set name="enhancement">3</set>
-            <set name="weapon">Common Charge Blade Axe</set>
+            <set name="weapon">Common Charge Blade, Axe</set>
             <set name="attunement">true</set>
-            <set name="name-format">Very Rare Charge Blade Axe</set>
+            <set name="name-format">Very Rare Charge Blade, Axe</set>
         </setters>
     </element>
     <element name="Legendary" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_LEGENDARY_CHARGE_BLADE_SWORD">
@@ -383,9 +498,9 @@
             <set name="type" addition="common charge blade sword">Weapon</set>
             <set name="rarity">Legendary</set>
             <set name="enhancement">3</set>
-            <set name="weapon">Common Charge Blade Sword</set>
+            <set name="weapon">Common Charge Blade, Sword</set>
             <set name="attunement">true</set>
-            <set name="name-format">Legendary Charge Blade Sword</set>
+            <set name="name-format">Legendary Charge Blade, Sword</set>
         </setters>
         <rules>
 			<stat name="ac:shield" value="2" bonus="enhancement" />
@@ -413,7 +528,7 @@
         <description>
             <p>This weapon has 2 slots that you can insert materials into.</p>
             <br />
-            <p><b>Demon Mode (2/long rest).</b> As a bonus action your body is enveloped in a demonic aura for 30 seconds or until you are knocked prone. While Demon mode is active, you gain +5 movement speed, and deal an extra 1d4 weapon damage on the first attack that hits each turn. Once demon mode ends you cannot use it again for 30 seconds.</p>
+            <p class="indent"><b>Demon Mode (2/long rest).</b> As a bonus action your body is enveloped in a demonic aura for 30 seconds or until you are knocked prone. While Demon mode is active, you gain +5 movement speed, and deal an extra 1d4 weapon damage on the first attack that hits each turn. Once demon mode ends you cannot use it again for 30 seconds.</p>
         </description>
         <setters>
             <set name="category">Magic Weapons</set>
@@ -482,6 +597,169 @@
             <set name="name-format">Legendary Dual Blades</set>
         </setters>
     </element>
+
+    <element name="Common Great Chakram" type="Weapon" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_WEAPON_COMMON_GREATCHAKRAM">
+        <supports>ID_INTERNAL_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+        <description>
+            <p>This weapon has 1 slot you can insert materials into.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">25</set>
+            <set name="weight" lb="3">3 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="slashing">1d8</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_GREATCHAKRAM</set>
+            <set name="rarity">Common</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Common Great Chakram</set>
+        </setters>
+    </element>
+    <element name="Uncommon" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_UNCOMMON_GREATCHAKRAM">
+        <description>
+            <p>This weapon has 2 slots that you can insert materials into.</p>
+            <br />
+            <p><i>You gain a +1 bonus on attacks and damage rolls.</i></p>
+            <p class="indent"><b>Terrashape.</b> When you take the Dash action, your chakram takes on the properties of the terrain you are touching, changing its damage type (determined by the terrain type as shown below) until the end of your next turn:</p>
+            <table>
+                <thead>
+                    <tr><td>Terrain</td><td>Damage Type</td></tr>
+                </thead>
+                    <tr><td>Grass</td><td>Thunder</td></tr>
+                    <tr><td>Stone</td><td>Bludgeoning</td></tr>
+                    <tr><td>Water</td><td>Acid</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="common great chakram">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="enhancement">1</set>
+            <set name="weapon">Common Great Chakram</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Uncommon Great Chakram</set>
+        </setters>
+    </element>
+    <element name="Rare" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_RARE_GREATCHAKRAM">
+        <description>
+            <p>This weapon has 3 slots that you can insert materials into.</p>
+            <br />
+            <p><i>You gain a +1 bonus on attacks and damage rolls.</i></p>
+            <p class="indent"><b>Terrashape.</b> When you take the Dash action, your chakram takes on the properties of the terrain you are touching, changing its damage type (determined by the terrain type as shown below) until the end of your next turn. Additionally your movement speed increases by 5 feet, while you on the terrain related to your weapon's current damage type.</p>
+            <table>
+                <thead>
+                    <tr><td>Terrain</td><td>Damage Type</td></tr>
+                </thead>
+                    <tr><td>Grass</td><td>Thunder</td></tr>
+                    <tr><td>Stone</td><td>Bludgeoning</td></tr>
+                    <tr><td>Water</td><td>Acid</td></tr>
+            </table>
+            <p class="indent"><b>Elemental Wrath.</b>Once per turn, when you hit a creaturewith this weapon it causes an additional effect determined by the damage type its terrashape changed it to.</p>
+            <table>
+                <thead>
+                    <tr><td>Damage Type</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>Acid</td><td>The target's movement speed is reduced by 5 feet</td></tr>
+                <tr><td>Bludgeoning</td><td>The target takes an 1d4 bludgeoning damage</td></tr>
+                <tr><td>Slashing</td><td>None</td></tr>
+                <tr><td>Thunder</td><td>Debris and dust is kicked up in a 15-foot- cubed area centered on your, heavily obscuring the area until the start of your next turn or until you leave the area.</td></tr>
+            </table>
+            <p class="indent"><b>Spell Infused Chakram.</b> As an bonus action you touch your chakram to cast a spell with a range of touch into it. Immediately after infusing your chakram, you can use an action to throw it at a target within 30 feet of you, delivering the spell as if you had cast it. If the spell requires an attack roll, you make melee weapon attack with your chakram for the roll. The chakram then returns to your hand.</p>
+            <p class="indent"><b>Swift Steps.</b> While you are wielding this weapon, you take the Dash action as a bonus action. You can use this property a number of times equal to your proficiency modifier, regaining all expended uses when you finish a long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="common great chakram">Weapon</set>
+            <set name="rarity">Rare</set>
+            <set name="enhancement">1</set>
+            <set name="weapon">Common Great Chakram</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Rare Great Chakram</set>
+        </setters>
+    </element>
+    <element name="Very Rare" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_VERY_RARE_GREATCHAKRAM">
+        <description>
+            <p>This weapon has 4 slots that you can insert materials into.</p>
+            <br />
+            <p><i>You gain a +2 bonus on attacks and damage rolls.</i></p>
+            <p class="indent"><b>Terrashape.</b> When you take the Dash action, your chakram takes on the properties of the terrain you are touching, changing its damage type (determined by the terrain type as shown below) until the end of your next turn. Additionally your movement speed increases by 10 feet, while you on the terrain related to your weapon's current damage type.</p>
+            <table>
+                <thead>
+                    <tr><td>Terrain</td><td>Damage Type</td></tr>
+                </thead>
+                    <tr><td>Grass</td><td>Thunder</td></tr>
+                    <tr><td>Stone</td><td>Bludgeoning</td></tr>
+                    <tr><td>Water</td><td>Acid</td></tr>
+            </table>
+            <p class="indent"><b>Elemental Wrath.</b>Once per turn, when you hit a creaturewith this weapon it causes an additional effect determined by the damage type its terrashape changed it to.</p>
+            <table>
+                <thead>
+                    <tr><td>Damage Type</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>Acid</td><td>The target's movement speed is reduced by 5 feet</td></tr>
+                <tr><td>Bludgeoning</td><td>The target takes an 1d4 bludgeoning damage</td></tr>
+                <tr><td>Slashing</td><td>None</td></tr>
+                <tr><td>Thunder</td><td>Debris and dust is kicked up in a 15-foot- cubed area centered on your, heavily obscuring the area until the start of your next turn or until you leave the area.</td></tr>
+            </table>
+            <p class="indent"><b>Spell Infused Chakram.</b> As an bonus action you touch your chakram to cast a spell with a range of touch into it. Immediately after infusing your chakram, you can use an action to throw it at a target within 30 feet of you, delivering the spell as if you had cast it. If the spell requires an attack roll, you make melee weapon attack with your chakram for the roll. The chakram then returns to your hand.</p>
+            <p class="indent"><b>Swift Steps.</b> While you are wielding this weapon, you take the Dash action as a bonus action. You can use this property a number of times equal to your proficiency modifier, regaining all expended uses when you finish a long rest.</p>
+            <p class="indent"><b>Elemenal Detonation Wave.</b> When you take the Attack action on your turn, you can replace one of your attacks to release a shockwave in a 30-foot line that is 5 feet wide. Each creature in that line must make a Dexterity saving throw. The DC of this saving throw is 8 + your Dexterity modifier + your proficiency bonus or it is equal to your Spellcasting Modifier. A creature takes 4d6 damage on a failed save, and half as much damage on a successful one. The damage type is equal to the damage type of the terrain it moves across (see Terrashape). You can use this property a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest.</p>
+            <p class="indent"><b>Evasion Dance.</b> When you take the Dash action, you gain a +2 bonus to your AC until the start of your next turn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="common great chakram">Weapon</set>
+            <set name="rarity">Very Rare</set>
+            <set name="enhancement">2</set>
+            <set name="weapon">Common Great Chakram</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Very Rare Great Chakram</set>
+        </setters>
+    </element>
+    <element name="Legendary" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_LEGENDARY_GREATCHAKRAM">
+        <description>
+            <p>This weapon has 5 slots that you can insert materials into.</p>
+            <br />
+            <p><i>You gain a +3 bonus on attacks and damage rolls.</i></p>
+            <p class="indent"><b>Terrashape.</b> When you take the Dash action, your chakram takes on the properties of the terrain you are touching, changing its damage type (determined by the terrain type as shown below) until the end of your next turn. Additionally your movement speed increases by 10 feet, while you on the terrain related to your weapon's current damage type.</p>
+            <table>
+                <thead>
+                    <tr><td>Terrain</td><td>Damage Type</td></tr>
+                </thead>
+                    <tr><td>Grass</td><td>Thunder</td></tr>
+                    <tr><td>Stone</td><td>Bludgeoning</td></tr>
+                    <tr><td>Water</td><td>Acid</td></tr>
+            </table>
+            <p class="indent"><b>Elemental Wrath.</b>Once per turn, when you hit a creaturewith this weapon it causes an additional effect determined by the damage type its terrashape changed it to.</p>
+            <table>
+                <thead>
+                    <tr><td>Damage Type</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>Acid</td><td>The target's movement speed is reduced by 10 feet</td></tr>
+                <tr><td>Bludgeoning</td><td>The target takes an 1d6 bludgeoning damage</td></tr>
+                <tr><td>Slashing</td><td>None</td></tr>
+                <tr><td>Thunder</td><td>Debris and dust is kicked up in a 20-foot cubed area centered on your, heavily obscuring the area until the start of your next turn or until you leave the area.</td></tr>
+            </table>
+            <p class="indent"><b>Spell Infused Chakram.</b> As an bonus action you touch your chakram to cast a spell with a range of touch into it. Immediately after infusing your chakram, you can use an action to throw it at a target within 30 feet of you, delivering the spell as if you had cast it. If the spell requires an attack roll, you make melee weapon attack with your chakram for the roll. The chakram then returns to your hand.</p>
+            <p class="indent"><b>Swift Steps.</b> While you are wielding this weapon, you take the Dash action as a bonus action. You can use this property a number of times equal to your proficiency modifier, regaining all expended uses when you finish a long rest.</p>
+            <p class="indent"><b>Elemenal Detonation Wave.</b> When you take the Attack action on your turn, you can replace one of your attacks to release a shockwave in a 30-foot line that is 5 feet wide. Each creature in that line must make a Dexterity saving throw. The DC of this saving throw is 8 + your Dexterity modifier + your proficiency bonus or it is equal to your Spellcasting Modifier. A creature takes 5d6 damage on a failed save, and half as much damage on a successful one. The damage type is equal to the damage type of the terrain it moves across (see Terrashape). You can use this property a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest.</p>
+            <p class="indent"><b>Evasion Dance.</b> When you take the Dash action, you gain a +2 bonus to your AC until the start of your next turn.</p>
+            <p class="indent"><b>Dance of the Elements.</b> While you are wielding this weapon, you can use an action to speak it command word, changing the terrain in a 30-foot radius around you into the terrain of your choice. Once you use this property, you can't use it again until you finish a long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="common great chakram">Weapon</set>
+            <set name="rarity">Legendary</set>
+            <set name="enhancement">3</set>
+            <set name="weapon">Common Great Chakram</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Legendary Great Chakram</set>
+        </setters>
+    </element>
     
     <element name="Common Greatsword" type="Weapon" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_WEAPON_COMMON_GREATSWORD">
         <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
@@ -504,7 +782,7 @@
         <description>
             <p>This weapon has 2 slots that you can insert materials into.</p>
             <br />
-            <p><b>Charged Slash.</b> As part of the Attack action or when you make an opportunity attack you can forgo an attack with this weapon in order to grant the weapon 1 charge (3 max). Charges are lost if not used within 1 minute.</p>
+            <p class="indent"><b>Charged Slash.</b> As part of the Attack action or when you make an opportunity attack you can forgo an attack with this weapon in order to grant the weapon 1 charge (3 max). Charges are lost if not used within 1 minute.</p>
             <p class="indent">When you make an attack roll while the weapon has any charges, all charges are expended and that attack is made with advantage; you can forgo this advantage and all other advantages you gain on this turn to gain 1 extra charge to expend on this attack.</p>
             <p class="indent">On hit the weapon deals an extra 1d6 + your Strength modifier as weapon damage + the weapon's extra damage material (if it has one) for each charge expended in this way, plus an extra 3 damage if you expended 2 charges, or 6 damage if you expended 3 charges.</p>
         </description>
@@ -533,6 +811,7 @@
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="common greatsword">Weapon</set>
             <set name="rarity">Rare</set>
+            <set name="enhancement">1</set>
             <set name="weapon">Common Greatsword</set>
             <set name="attunement">true</set>
             <set name="name-format">Rare Greatsword</set>
@@ -597,7 +876,7 @@
             <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
-            <set name="name-format">Common Greatsword</set>
+            <set name="name-format">Common Gunlance</set>
         </setters>
     </element>
     <element name="Uncommon" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_UNCOMMON_GUNLANCE">
@@ -843,7 +1122,7 @@
             <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_HUNTINGHORN</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
-            <set name="name-format">Common Hunting Horn</set>
+            <set name="name-format">Common Hunting Horn, Variant</set>
         </setters>
     </element>
     <element name="Uncommon" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_UNCOMMON_HUNTING_HORN">
@@ -898,9 +1177,9 @@
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="common hunting horn variant">Weapon</set>
             <set name="rarity">Uncommon</set>
-            <set name="weapon">Common Hunting Horn Variant</set>
+            <set name="weapon">Common Hunting Horn, Variant</set>
             <set name="attunement">true</set>
-            <set name="name-format">Uncommon Hunting Horn Variant</set>
+            <set name="name-format">Uncommon Hunting Horn, Variant</set>
         </setters>
     </element>
     <element name="Rare" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_RARE_HUNTING_HORN">
@@ -963,9 +1242,9 @@
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="common hunting horn variant">Weapon</set>
             <set name="rarity">Rare</set>
-            <set name="weapon">Common Hunting Horn Variant</set>
+            <set name="weapon">Common Hunting Horn, Variant</set>
             <set name="attunement">true</set>
-            <set name="name-format">Rare Hunting Horn Variant</set>
+            <set name="name-format">Rare Hunting Horn, Variant</set>
         </setters>
     </element>
     <element name="Very Rare" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_VERY_RARE_HUNTING_HORN">
@@ -1040,9 +1319,9 @@
             <set name="type" addition="common hunting horn variant">Weapon</set>
             <set name="rarity">Very Rare</set>
             <set name="enhancement">1</set>
-            <set name="weapon">Common Hunting Horn Variant</set>
+            <set name="weapon">Common Hunting Horn, Variant</set>
             <set name="attunement">true</set>
-            <set name="name-format">Very Rare Hunting Horn Variant</set>
+            <set name="name-format">Very Rare Hunting Horn, Variant</set>
         </setters>
     </element>
     <element name="Legendary" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_LEGENDARY_HUNTING_HORN">
@@ -1126,9 +1405,9 @@
             <set name="type" addition="common hunting horn variant">Weapon</set>
             <set name="rarity">Legendary</set>
             <set name="enhancement">2</set>
-            <set name="weapon">Common Hunting Horn Variant</set>
+            <set name="weapon">Common Hunting Horn, Variant</set>
             <set name="attunement">true</set>
-            <set name="name-format">Very Rare Hunting Horn Variant</set>
+            <set name="name-format">Very Rare Hunting Horn, Variant</set>
         </setters>
     </element>
 
@@ -1732,7 +2011,7 @@
             <set name="proficiency">ID_ALD_AMGH_PROFICIENCY_WEAPON_PROFICIENCY_SPLINTRAPIER</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
-            <set name="name-format">Common Splint Rapier Single</set>
+            <set name="name-format">Common Splint Rapier, Single</set>
         </setters>
     </element>
     <element name="Common Splint Rapier Splint" type="Weapon" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_WEAPON_COMMON_SPLINT_RAPIER_SPLINT">
@@ -1751,7 +2030,7 @@
             <set name="proficiency">ID_ALD_AMGH_PROFICIENCY_WEAPON_PROFICIENCY_SPLINTRAPIER</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
-            <set name="name-format">Common Splint Rapier Splint</set>
+            <set name="name-format">Common Splint Rapier, Splint</set>
         </setters>
     </element>
     <element name="Uncommon" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_UNCOMMON_SPLINT_RAPIER_SINGLE">
@@ -1778,9 +2057,9 @@
             <set name="type" addition="common splint rapier single">Weapon</set>
             <set name="rarity">Uncommon</set>
             <set name="enhancement">1</set>
-            <set name="weapon">Common Splint Rapier Single</set>
+            <set name="weapon">Common Splint Rapier, Single</set>
             <set name="attunement">true</set>
-            <set name="name-format">Uncommon Splint Rapier Single</set>
+            <set name="name-format">Uncommon Splint Rapier, Single</set>
         </setters>
     </element>
     <element name="Uncommon" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_UNCOMMON_SPLINT_RAPIER_SPLINT">
@@ -1807,9 +2086,9 @@
             <set name="type" addition="common splint rapier splint">Weapon</set>
             <set name="rarity">Uncommon</set>
             <set name="enhancement">1</set>
-            <set name="weapon">Common Splint Rapier Splint</set>
+            <set name="weapon">Common Splint Rapier, Splint</set>
             <set name="attunement">true</set>
-            <set name="name-format">Uncommon Splint Rapier Splint</set>
+            <set name="name-format">Uncommon Splint Rapier, Splint</set>
         </setters>
     </element>
     <element name="Rare" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_RARE_SPLINT_RAPIER_SINGLE">
@@ -1839,9 +2118,9 @@
             <set name="type" addition="common splint rapier single">Weapon</set>
             <set name="rarity">Rare</set>
             <set name="enhancement">2</set>
-            <set name="weapon">Common Splint Rapier Single</set>
+            <set name="weapon">Common Splint Rapier, Single</set>
             <set name="attunement">true</set>
-            <set name="name-format">Rare Splint Rapier Single</set>
+            <set name="name-format">Rare Splint Rapier, Single</set>
         </setters>
     </element>
     <element name="Rare" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_RARE_SPLINT_RAPIER_SPLINT">
@@ -1871,9 +2150,9 @@
             <set name="type" addition="common splint rapier splint">Weapon</set>
             <set name="rarity">Rare</set>
             <set name="enhancement">2</set>
-            <set name="weapon">Common Splint Rapier Splint</set>
+            <set name="weapon">Common Splint Rapier, Splint</set>
             <set name="attunement">true</set>
-            <set name="name-format">Rare Splint Rapier Splint</set>
+            <set name="name-format">Rare Splint Rapier, Splint</set>
         </setters>
     </element>
     <element name="Very Rare" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_VERY_RARE_SPLINT_RAPIER_SINGLE">
@@ -1903,9 +2182,9 @@
             <set name="type" addition="common splint rapier single">Weapon</set>
             <set name="rarity">Very Rare</set>
             <set name="enhancement">2</set>
-            <set name="weapon">Common Splint Rapier Single</set>
+            <set name="weapon">Common Splint Rapier, Single</set>
             <set name="attunement">true</set>
-            <set name="name-format">Very Rare Splint Rapier Single</set>
+            <set name="name-format">Very Rare Splint Rapier, Single</set>
         </setters>
     </element>
     <element name="Very Rare" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_VERY_RARE_SPLINT_RAPIER_SPLINT">
@@ -1935,9 +2214,9 @@
             <set name="type" addition="common splint rapier splint">Weapon</set>
             <set name="rarity">Very Rare</set>
             <set name="enhancement">2</set>
-            <set name="weapon">Common Splint Rapier Splint</set>
+            <set name="weapon">Common Splint Rapier, Splint</set>
             <set name="attunement">true</set>
-            <set name="name-format">Very Rare Splint Rapier Splint</set>
+            <set name="name-format">Very Rare Splint Rapier, Splint</set>
         </setters>
     </element>
     <element name="Legendary" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_LEGENDARY_SPLINT_RAPIER_SINGLE">
@@ -1968,9 +2247,9 @@
             <set name="type" addition="common splint rapier single">Weapon</set>
             <set name="rarity">Legendary</set>
             <set name="enhancement">3</set>
-            <set name="weapon">Common Splint Rapier Single</set>
+            <set name="weapon">Common Splint Rapier, Single</set>
             <set name="attunement">true</set>
-            <set name="name-format">Legendary Splint Rapier Single</set>
+            <set name="name-format">Legendary Splint Rapier, Single</set>
         </setters>
     </element>
     <element name="Legendary" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_LEGENDARY_SPLINT_RAPIER_SPLINT">
@@ -2001,9 +2280,9 @@
             <set name="type" addition="common splint rapier splint">Weapon</set>
             <set name="rarity">Legendary</set>
             <set name="enhancement">3</set>
-            <set name="weapon">Common Splint Rapier Splint</set>
+            <set name="weapon">Common Splint Rapier, Splint</set>
             <set name="attunement">true</set>
-            <set name="name-format">Legendary Splint Rapier Splint</set>
+            <set name="name-format">Legendary Splint Rapier, Splint</set>
         </setters>
     </element>
 
@@ -2023,7 +2302,7 @@
             <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_SWITCHAXE</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
-            <set name="name-format">Common Switch Axe Sword</set>
+            <set name="name-format">Common Switch Axe, Sword</set>
         </setters>
     </element>
     <element name="Common Switch Axe Axe" type="Weapon" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_WEAPON_COMMON_SWITCH_AXE_AXE">
@@ -2042,7 +2321,7 @@
             <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_SWITCHAXE</set>
             <set name="rarity">Common</set>
             <set name="attunement">true</set>
-            <set name="name-format">Common Switch Axe Axe</set>
+            <set name="name-format">Common Switch Axe, Axe</set>
         </setters>
     </element>
     <element name="Uncommon" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_UNCOMMON_SWITCH_AXE_SWORD">
@@ -2063,9 +2342,9 @@
             <set name="type" addition="common switch axe sword">Weapon</set>
             <set name="rarity">Uncommon</set>
             <set name="enhancement">1</set>
-            <set name="weapon">Common Switch Axe Sword</set>
+            <set name="weapon">Common Switch Axe, Sword</set>
             <set name="attunement">true</set>
-            <set name="name-format">Uncommon Switch Axe Sword</set>
+            <set name="name-format">Uncommon Switch Axe, Sword</set>
         </setters>
     </element>
     <element name="Uncommon" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_UNCOMMON_SWITCH_AXE_AXE">
@@ -2086,9 +2365,9 @@
             <set name="type" addition="common switch axe axe">Weapon</set>
             <set name="rarity">Uncommon</set>
             <set name="enhancement">1</set>
-            <set name="weapon">Common Switch Axe Axe</set>
+            <set name="weapon">Common Switch Axe, Axe</set>
             <set name="attunement">true</set>
-            <set name="name-format">Uncommon Switch Axe Axe</set>
+            <set name="name-format">Uncommon Switch Axe, Axe</set>
         </setters>
     </element>
     <element name="Rare" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_RARE_SWITCH_AXE_SWORD">
@@ -2111,9 +2390,9 @@
             <set name="type" addition="common switch axe sword">Weapon</set>
             <set name="rarity">Rare</set>
             <set name="enhancement">2</set>
-            <set name="weapon">Common Switch Axe Sword</set>
+            <set name="weapon">Common Switch Axe, Sword</set>
             <set name="attunement">true</set>
-            <set name="name-format">Rare Switch Axe Sword</set>
+            <set name="name-format">Rare Switch Axe, Sword</set>
         </setters>
     </element>
     <element name="Rare" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_RARE_SWITCH_AXE_AXE">
@@ -2136,9 +2415,9 @@
             <set name="type" addition="common switch axe axe">Weapon</set>
             <set name="rarity">Rare</set>
             <set name="enhancement">2</set>
-            <set name="weapon">Common Switch Axe Axe</set>
+            <set name="weapon">Common Switch Axe, Axe</set>
             <set name="attunement">true</set>
-            <set name="name-format">Rare Switch Axe Axe</set>
+            <set name="name-format">Rare Switch Axe, Axe</set>
         </setters>
     </element>
     <element name="Very Rare" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_VERY_RARE_SWITCH_AXE_SWORD">
@@ -2162,9 +2441,9 @@
             <set name="type" addition="common switch axe sword">Weapon</set>
             <set name="rarity">Very Rare</set>
             <set name="enhancement">2</set>
-            <set name="weapon">Common Switch Axe Sword</set>
+            <set name="weapon">Common Switch Axe, Sword</set>
             <set name="attunement">true</set>
-            <set name="name-format">Very Rare Switch Axe Sword</set>
+            <set name="name-format">Very Rare Switch Axe, Sword</set>
         </setters>
     </element>
     <element name="Very Rare" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_VERY_RARE_SWITCH_AXE_AXE">
@@ -2188,9 +2467,9 @@
             <set name="type" addition="common switch axe axe">Weapon</set>
             <set name="rarity">Very Rare</set>
             <set name="enhancement">2</set>
-            <set name="weapon">Common Switch Axe Axe</set>
+            <set name="weapon">Common Switch Axe, Axe</set>
             <set name="attunement">true</set>
-            <set name="name-format">Very Rare Switch Axe Axe</set>
+            <set name="name-format">Very Rare Switch Axe, Axe</set>
         </setters>
     </element>
     <element name="Legendary" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_LEGENDARY_SWITCH_AXE_SWORD">
@@ -2216,9 +2495,9 @@
             <set name="type" addition="common switch axe sword">Weapon</set>
             <set name="rarity">Legendary</set>
             <set name="enhancement">3</set>
-            <set name="weapon">Common Switch Axe Sword</set>
+            <set name="weapon">Common Switch Axe, Sword</set>
             <set name="attunement">true</set>
-            <set name="name-format">Legendary Switch Axe Sword</set>
+            <set name="name-format">Legendary Switch Axe, Sword</set>
         </setters>
     </element>
     <element name="Legendary" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_LEGENDARY_SWITCH_AXE_AXE">
@@ -2244,9 +2523,9 @@
             <set name="type" addition="common switch axe axe">Weapon</set>
             <set name="rarity">Legendary</set>
             <set name="enhancement">3</set>
-            <set name="weapon">Common Switch Axe Axe</set>
+            <set name="weapon">Common Switch Axe, Axe</set>
             <set name="attunement">true</set>
-            <set name="name-format">Legendary Switch Axe Axe</set>
+            <set name="name-format">Legendary Switch Axe, Axe</set>
         </setters>
     </element>
 
@@ -2707,6 +2986,140 @@
             <set name="weapon">Common Wyvern Boomerang</set>
             <set name="attunement">true</set>
             <set name="name-format">Legendary Wyvern Boomerang</set>
+        </setters>
+    </element>
+
+    <element name="Common Wyvern Kunai" type="Weapon" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_WEAPON_COMMON_WYVERNKUNAI">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+        <description>
+            <p>This weapon has 1 slot you can insert materials into.</p>
+            <br />
+            <p class="indent"><b>Unlimited Knives.</b> You carry a magical pouch weighing 10 pounds that produces wyvern kunai. You can use an action or item interaction to draw one kunai from it or a bonus action to draw up to three kunai, all of which are held in the same hand. You can hold up to six kunai, which vanish if you stop holding them. Drawing kunai into a hand causes any kunai already in that hand to vanish. When a kunai is used to make a ranged weapon attack, it vanishes immediately after the attack hits or misses.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">30</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="range">20/60</set>
+            <set name="damage" type="piercing">1d4</set>
+            <set name="proficiency">ID_ALD_AGMH_PROFICIENCY_WEAPON_PROFICIENCY_WYVERNKUNAI</set>
+            <set name="rarity">Common</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Common Wyvern Kunai</set>
+        </setters>
+    </element>
+    <element name="Uncommon" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_UNCOMMON_WYVERNKUNAI">
+        <description>
+            <p>This weapon has 2 slots that you can insert materials into.</p>
+            <br />
+            <p><i>You gain a +1 bonus on attacks and damage rolls.</i></p>
+            <p class="indent"><b>Unlimited Knives.</b> You carry a magical pouch weighing 10 pounds that produces wyvern kunai. You can use an action or item interaction to draw one kunai from it or a bonus action to draw up to three kunai, all of which are held in the same hand. You can hold up to six kunai, which vanish if you stop holding them. Drawing kunai into a hand causes any kunai already in that hand to vanish. When a kunai is used to make a ranged weapon attack, it vanishes immediately after the attack hits or misses.</p>
+            <p class="indent"><b>Coat Kunai.</b> As part of the bonus action used to draw a set of kunai, you can coat them in one of the following special oils (these oils don’t count against weapon rules found in Amellwind’s Guide to Monster Hunting, p. 79). A coating applies to all kunai drawn with that bonus action. If the coating causes an effect that requires a saving throw the DC equals 8 + your proficiency bonus + your Dexterity modifier or Strength modifier.</p>
+            <ul>
+                <li><i>Decay.</i> Your weapon deals an extra 1d4 poison damage.</li>
+                <li><i>Dragon.</i> Your weapon deals an extra 1d4 necrotic damage.</li>
+                <li><i>Electric.</i> Your weapon deals an extra 1d4 lightning damage.</li>
+                <li><i>Explosive.</i> Your weapon deals an extra 1d4 fire damage.</li>
+                <li><i>Frost.</i> Your weapon deals an extra 1d4 cold damage.</li>
+                <li><i>Sonic.</i> Your weapon deals an extra 1d4 thunder damage.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="common wyvern kunai">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="enhancement">1</set>
+            <set name="weapon">Common Wyvern Kunai</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Uncommon Wyvern Kunai</set>
+        </setters>
+    </element>
+    <element name="Rare" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_RARE_WYVERNKUNAI">
+        <description>
+            <p>This weapon has 3 slots that you can insert materials into.</p>
+            <br />
+            <p><i>You gain a +1 bonus on attacks and damage rolls.</i></p>
+            <p class="indent"><b>Unlimited Knives.</b> You carry a magical pouch weighing 10 pounds that produces wyvern kunai. You can use an action or item interaction to draw one kunai from it or a bonus action to draw up to three kunai, all of which are held in the same hand. You can hold up to six kunai, which vanish if you stop holding them. Drawing kunai into a hand causes any kunai already in that hand to vanish. When a kunai is used to make a ranged weapon attack, it vanishes immediately after the attack hits or misses.</p>
+            <p class="indent"><b>Coat Kunai.</b> As part of the bonus action used to draw a set of kunai, you can coat them in one of the following special oils (these oils don’t count against weapon rules found in Amellwind’s Guide to Monster Hunting, p. 79). A coating applies to all kunai drawn with that bonus action. If the coating causes an effect that requires a saving throw the DC equals 8 + your proficiency bonus + your Dexterity modifier or Strength modifier.</p>
+            <ul>
+                <li><i>Decay.</i> Your weapon deals an extra 1d4 poison damage. Additionally when you roll a 20 on an attack roll with this weapon, the target is poisoned while it has at least one decay-coated kunai impaled in it.</li>
+                <li><i>Dragon.</i> Your weapon deals an extra 1d4 necrotic damage. Additionally when you hit a creature or a space with a dragon-coated kunai, you can use your bonus action to release a cloud of black smoke that heavily obscures the kunai’s space. The cloud fills a 5-foot cube centered on the kunai for 1 minute, or until the kunai is removed or vanishes.</li>
+                <li><i>Electric.</i> Your weapon deals an extra 1d4 lightning damage. Additionally when you coat a set of kunai, your weapon’s reach increases to 10 feet until the start of your next turn. While you are holding at least one electric-coated kunai, you can use a bonus action on your subsequent turns to increase your weapon’s reach to 10 feet until the start of your next turn.</li>
+                <li><i>Explosive.</i> Your weapon deals an extra 1d4 fire damage. Additionally you can throw an explosive-coated kunai at a space within your weapon’s range. The kunai remains in that space until you draw a new set of kunai into the hand it was thrown from or until a creature enters the kunai’s space. When a creature enters the space, the kunai detonates and the creature must make a Dexterity saving throw against your Coating Save DC, taking 3d6 fire damage on a failed save, or half as much damage on a successful one.</li>
+                <li><i>Frost.</i> Your weapon deals an extra 1d4 cold damage. Additionally a creature’s movement speed is reduced by 5 feet for each frost-coated kunai impaled in it, up to a maximum reduction of 15 feet.</li>
+                <li><i>Sonic.</i> Your weapon deals an extra 1d4 thunder damage. Additionally you can use your action to teleport to an unoccupied space adjacent to a creature within 20 feet of you that has a sonic-coated kunai impaled in it. You can use this property twice, regaining all expended uses when you finish a short or long rest.</li>
+            </ul>
+            <p class="indent"><b>Impaling Kunai.</b> When you hit a creature with a kunai, you can choose for the kunai to remain impaled in the target instead of vanishing. An impaled kunai remains embedded until the creature uses an action to remove it by succeeding on a Strength saving throw against your Coating Save DC. If the creature can make multiple attacks on its turn, it can replace one of those attacks to attempt this save instead.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="common wyvern kunai">Weapon</set>
+            <set name="rarity">Rare</set>
+            <set name="enhancement">1</set>
+            <set name="weapon">Common Wyvern Kunai</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Rare Wyvern Kunai</set>
+        </setters>
+    </element>
+    <element name="Very Rare" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_VERY_RARE_WYVERNKUNAI">
+        <description>
+            <p>This weapon has 4 slots that you can insert materials into.</p>
+            <br />
+            <p><i>You gain a +2 bonus on attacks and damage rolls.</i></p>
+            <p class="indent"><b>Unlimited Knives.</b> You carry a magical pouch weighing 10 pounds that produces wyvern kunai. You can use an action or item interaction to draw one kunai from it or a bonus action to draw up to three kunai, all of which are held in the same hand. You can hold up to six kunai, which vanish if you stop holding them. Drawing kunai into a hand causes any kunai already in that hand to vanish. When a kunai is used to make a ranged weapon attack, it vanishes immediately after the attack hits or misses.</p>
+            <p class="indent"><b>Coat Kunai.</b> As part of the bonus action used to draw a set of kunai, you can coat them in one of the following special oils (these oils don’t count against weapon rules found in Amellwind’s Guide to Monster Hunting, p. 79). A coating applies to all kunai drawn with that bonus action. If the coating causes an effect that requires a saving throw the DC equals 8 + your proficiency bonus + your Dexterity modifier or Strength modifier.</p>
+            <ul>
+                <li><i>Decay.</i> Your weapon deals an extra 1d4 poison damage. Additionally when you roll a 20 on an attack roll with this weapon, the target is poisoned while it has at least one decay-coated kunai impaled in it. A poisoned creature also takes 1d4 poison damage at the start of each of its turns while it has at least one decay-coated kunai impaled in it.</li>
+                <li><i>Dragon.</i> Your weapon deals an extra 1d4 necrotic damage. Additionally when you hit a creature or a space with a dragon-coated kunai, you can use your bonus action to release a cloud of black smoke that heavily obscures the kunai’s space and lightly obscures the area within 5-feet of the kunai. The cloud fills a 10-foot cube centered on the kunai for 1 minute, or until the kunai is removed or vanishes.</li>
+                <li><i>Electric.</i> Your weapon deals an extra 1d4 lightning damage. Additionally when you coat a set of kunai, your weapon’s reach increases to 10 feet until the start of your next turn. While you are holding at least one electric-coated kunai, you can use a bonus action on your subsequent turns to increase your weapon’s reach to 10 feet until the start of your next turn.</li>
+                <li><i>Explosive.</i> Your weapon deals an extra 1d4 fire damage. Additionally you can throw an explosive-coated kunai at a space within your weapon’s range. The kunai remains in that space until you draw a new set of kunai into the hand it was thrown from or until a creature enters the kunai’s space. When a creature enters the space, the kunai detonates and the creature must make a Dexterity saving throw against your Coating Save DC, taking 3d6 fire damage on a failed save, or half as much damage on a successful one. You can also use a bonus action to detonate any number of explosive-coated kunai impaled in a creature. The creature automatically fails its saving throw against these explosions. Each kunai can be detonated only once.</li>
+                <li><i>Frost.</i> Your weapon deals an extra 1d4 cold damage. Additionally a creature’s movement speed is reduced by 5 feet for each frost-coated kunai impaled in it, up to a maximum reduction of 15 feet.</li>
+                <li><i>Sonic.</i> Your weapon deals an extra 1d4 thunder damage. Additionally you can use your action to teleport to an unoccupied space adjacent to a creature within 20 feet of you that has a sonic-coated kunai impaled in it, when you do so you can immediately make one melee weapon attack after you appear in the new location. You can use this property twice, regaining all expended uses when you finish a short or long rest.</li>
+            </ul>
+            <p class="indent"><b>Impaling Kunai.</b> When you hit a creature with a kunai, you can choose for the kunai to remain impaled in the target instead of vanishing. An impaled kunai remains embedded until the creature uses an action to remove it by succeeding on a Strength saving throw against your Coating Save DC. If the creature can make multiple attacks on its turn, it can replace one of those attacks to attempt this save instead.</p>
+            <p class="indent"><b>Silkbound Knives.</b> When you draw a set of kunai, instead of coating them with an oil, you can attach a strand of wirebug silk to each kunai. When you hit a creature with a silkbound kunai, you can use your bonus action to pull the creature up to 20 feet straight toward you into an unoccupied space. If the creature is Huge or larger, it instead moves up to 10 feet.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="common wyvern kunai">Weapon</set>
+            <set name="rarity">Very Rare</set>
+            <set name="enhancement">2</set>
+            <set name="weapon">Common Wyvern Kunai</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Very Rare Wyvern Kunai</set>
+        </setters>
+    </element>
+    <element name="Legendary" type="Magic Item" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_MAGIC_ITEM_LEGENDARY_WYVERNKUNAI">
+        <description>
+            <p>This weapon has 5 slots that you can insert materials into.</p>
+            <br />
+            <p><i>You gain a +3 bonus on attacks and damage rolls.</i></p>
+            <p class="indent"><b>Unlimited Knives.</b> You carry a magical pouch weighing 10 pounds that produces wyvern kunai. You can use an action or item interaction to draw one kunai from it or a bonus action to draw up to three kunai, all of which are held in the same hand. You can hold up to six kunai, which vanish if you stop holding them. Drawing kunai into a hand causes any kunai already in that hand to vanish. When a kunai is used to make a ranged weapon attack, it vanishes immediately after the attack hits or misses.</p>
+            <p class="indent"><b>Coat Kunai.</b> As part of the bonus action used to draw a set of kunai, you can coat them in one of the following special oils (these oils don’t count against weapon rules found in Amellwind’s Guide to Monster Hunting, p. 79). A coating applies to all kunai drawn with that bonus action. If the coating causes an effect that requires a saving throw the DC equals 8 + your proficiency bonus + your Dexterity modifier or Strength modifier.</p>
+            <ul>
+                <li><i>Decay.</i> Your weapon deals an extra 2d4 poison damage. Additionally when you roll a 20 on an attack roll with this weapon, the target is poisoned while it has at least one decay-coated kunai impaled in it. A poisoned creature also takes 1d6 poison damage at the start of each of its turns while it has at least one decay-coated kunai impaled in it.</li>
+                <li><i>Dragon.</i> Your weapon deals an extra 2d4 necrotic damage. Additionally when you hit a creature or a space with a dragon-coated kunai, you can use your bonus action to release a cloud of black smoke that heavily obscures the kunai’s space and lightly obscures the area within 5-feet of the kunai. The cloud fills a 10-foot cube centered on the kunai for 1 minute, or until the kunai is removed or vanishes.</li>
+                <li><i>Electric.</i> Your weapon deals an extra 2d4 lightning damage. Additionally when you coat a set of kunai, your weapon’s reach increases to 15 feet until the start of your next turn. While you are holding at least one electric-coated kunai, you can use a bonus action on your subsequent turns to increase your weapon’s reach to 10 feet until the start of your next turn.</li>
+                <li><i>Explosive.</i> Your weapon deals an extra 2d4 fire damage. Additionally you can throw an explosive-coated kunai at a space within your weapon’s range. The kunai remains in that space until you draw a new set of kunai into the hand it was thrown from or until a creature enters the kunai’s space. When a creature enters the space, the kunai detonates and the creature must make a Dexterity saving throw against your Coating Save DC, taking 6d6 fire damage on a failed save, or half as much damage on a successful one. You can also use a bonus action to detonate any number of explosive-coated kunai impaled in a creature. The creature automatically fails its saving throw against these explosions. Each kunai can be detonated only once.</li>
+                <li><i>Frost.</i> Your weapon deals an extra 2d4 cold damage. Additionally a creature’s movement speed is reduced by 10 feet for each frost-coated kunai impaled in it, up to a maximum reduction of 20 feet.</li>
+                <li><i>Sonic.</i> Your weapon deals an extra 2d4 thunder damage. Additionally you can use your action to teleport to an unoccupied space adjacent to a creature within 20 feet of you that has a sonic-coated kunai impaled in it, when you do so you can immediately make one melee weapon attack after you appear in the new location. You can use this property thrice, regaining all expended uses when you finish a short or long rest.</li>
+            </ul>
+            <p class="indent"><b>Impaling Kunai.</b> When you hit a creature with a kunai, you can choose for the kunai to remain impaled in the target instead of vanishing. An impaled kunai remains embedded until the creature uses an action to remove it by succeeding on a Strength saving throw against your Coating Save DC. If the creature can make multiple attacks on its turn, it can replace one of those attacks to attempt this save instead.</p>
+            <p class="indent"><b>Silkbound Knives.</b> When you draw a set of kunai, instead of coating them with an oil, you can attach a strand of wirebug silk to each kunai. When you hit a creature with a silkbound kunai, you can use your bonus action to pull the creature up to 20 feet straight toward you into an unoccupied space. If the creature is Huge or larger, it instead moves up to 10 feet.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="common wyvern kunai">Weapon</set>
+            <set name="rarity">Legendary</set>
+            <set name="enhancement">3</set>
+            <set name="weapon">Common Wyvern Kunai</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Legendary Wyvern Kunai</set>
         </setters>
     </element>
 
