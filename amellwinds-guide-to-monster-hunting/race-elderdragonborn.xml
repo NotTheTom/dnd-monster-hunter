@@ -367,11 +367,11 @@
 		</description>
 		<sheet>
 			<description>You know the fire bolt cantrip. 
-			Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
+			Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
 			<description level="3">You know the fire bolt cantrip. You can also cast the charm person spell once per long rest with this trait or with an appropriate spell slot. 
-			Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
+			Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
 			<description level="5">You know the fire bolt cantrip. You can also cast the charm person spell and melf's minute meteors once per long rest with this trait or with an appropriate spell slot. 
-			Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
+			Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT" />
@@ -652,11 +652,11 @@
 		</description>
 		<sheet>
 			<description>You know the thaumaturgy cantrip. 
-			Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
+			Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
 			<description level="3">You know the fire bolt cantrip. You can also cast the thunderwave spell once per long rest with this trait or with an appropriate spell slot. 
-			Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
+			Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
 			<description level="5">You know the fire bolt cantrip. You can also cast the thunderwave spell and shatter spell once per long rest with this trait or with an appropriate spell slot. 
-			Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait.</description>
+			Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" />
@@ -1209,7 +1209,7 @@
 		</description>
 		<sheet>
 			<description>You can cast the bestow curse spell, once per long rest with this trait or with an appropriate spell slot. 
-			Your spellcasting ability modifer is {{spellcasting ability:stat}} when you use this trait. If the nature of the curse targets one of the creature's Ability Score, you have advantage on Constitution saving throws to maintain concentration on the spell and the spell acts as if it was casted as a 4th-level spell.</description>
+			Your spellcasting ability modifier is {{spellcasting ability:stat}} when you use this trait. If the nature of the curse targets one of the creature's Ability Score, you have advantage on Constitution saving throws to maintain concentration on the spell and the spell acts as if it was casted as a 4th-level spell.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" />
