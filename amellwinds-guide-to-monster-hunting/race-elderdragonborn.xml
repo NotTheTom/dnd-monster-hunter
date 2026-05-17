@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Elder Dragonborn</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-elderdragonborn.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/race-elderdragonborn.xml" />
 		</update>
 	</info>
