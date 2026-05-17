@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Spells</name>
+        <update version="0.0.1">
+            <file name="spells.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/spells.xml" />
+        </update>
+    </info>
+
+    <element name="Snaring Ground" type="Spell" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SPELL_SNARING_GROUND">
+        <supports>Artificer, Druid, Ranger, Wizard</supports>
+        <description>
+            <p>You create binding wire and adhesive resin in a 5-foot square on the ground that you can see within range. The area becomes difficult terrain for the duration.</p>
+            <p class="indent">The first time a creature enters the area on a turn or ends its turn there, it takes 1d4 slashing damage.</p>
+            <p class="indent">This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
+        </description>
+        <setters>
+            <set name="keywords">slashing</set>
+            <set name="level">0</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a twisted strand of wire</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Blood Scent" type="Spell" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SPELL_BLOOD_SCENT">
+        <supports>Druid, Ranger, Sorcerer</supports>
+        <description>
+            <p>You attune yourself to the scent of wounded prey. Choose one creature that took damage from you within the last 24 hours, or one creature that was present at your current location within the last hour.</p>
+            <p class="indent">You learn any conditions or ailments currently affecting the creature and for the duration, you gain advantage on Wisdom (Survival) checks made to track it.</p>
+            <p class="indent">Additionally, if your role on a hunt is Trailblazer, the GM gains a +2 bonus to rolls made on the Finding Signs table, except on a roll of 1.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Divination</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">8 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Open Wounds" type="Spell" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SPELL_OPEN_WOUNDS">
+        <supports>Cleric, Warlock, Paladin, Sorcerer</supports>
+        <description>
+            <p>You hurl a small jar at one creature you can see within range. The target must make a Constitution saving throw or take 2d6 necrotic damage on a failed save, or half as much damage on a successful one. If the creature is suffering from a wound (such as the odogaron's bloody wound or bearded devil's infernal wound), increase the number of damage dice rolled for that wound by 1.</p>
+            <p class="indent"><b>At Higher Levels.</b> The damage increases by 1d6 for each spell slot level above 1.</p>
+        </description>
+        <setters>
+            <set name="keywords">necrotic</set>
+            <set name="level">1</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a jar filled with metal shavings</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Redirect Aggression" type="Spell" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SPELL_REDIRECT_AGGRESSION">
+        <supports>Bard, Ranger, Warlock, Wizard</supports>
+        <description>
+            <p>You shift the attacker's focus toward another creature within range. Choose another creature, other than the attacker, within range that is also within the triggering attack’s range to become the new target of the attack. If the new target is unwilling, it can make a Wisdom saving throw. On a success, the spell has no effect.</p>
+            <p class="indent"><b>At Higher Levels.</b> When you cast this spell using a spell slot of 2nd level or higher, the new target can be an extra 5 feet away from you, but must still be within the triggering attack's range for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 reaction, which you take when you are targeted by an attack from a creature you can see</set>
+            <set name="range">5 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Serrated Edge" type="Spell" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SPELL_SERRATED_EDGE">
+        <supports>Paladin, Ranger</supports>
+        <description>
+            <p>The next time you hit a creature with a melee weapon attack during the spell's duration, the attack deals an extra 1d6 slashing damage and causes a lingering wound on the target.</p>
+            <p class="indent">At the start of each of its turns until the spell ends, the target loses 1d6 hit points. If the target or a creature within 5 feet of it uses an action to staunch the wound by succeeding on a Wisdom (Medicine) check against your spell save DC. The wound also closes if the target receives magical healing. This spell has no effect on undead or constructs.</p>
+            <p class="indent"><b>At Higher Levels.</b> When you cast this spell using a spell slot of 2nd level or higher, the initial extra damage increases by 1d6 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a whetstone</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Trapper's Hex" type="Spell" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SPELL_TRAPPERS_HEX">
+        <supports>Ranger, Warlock, Wizard</supports>
+        <description>
+            <p>One creature you can see within range must succeed on a Wisdom saving throw or be hindered for the duration.</p>
+            <p class="indent">Whenever the creature moves using a reaction, bonus action, or legendary action while hindered, it must spend 2 feet of movement for every 1 foot it moves. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.</p>
+            <p class="indent"><b>At Higher Levels.</b> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creature must be within 30 feet of each other when you target them.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a loop of twisted wire</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Dragging Mire" type="Spell" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SPELL_DRAGGING_MIRE">
+        <supports>Druid, Ranger, Sorcerer, Wizard</supports>
+        <description>
+            <p>The ground softens and turns to mud in 20-foot-square area. The area becomes difficult terrain for the duration.</p>
+            <p class="indent">A creature in the area when you cast the spell must succeed on a Strength saving throw or be grappled by mud until the end of its next turn, at which point it must repeat the save. If the target fails the second save, the target has the restrained condition, until the end of its next turn, at which point it must repeat the save again. If the target fails the third save, it is fully submerged in the mud. On any success, the creature can escape from the mud by using half its movement to move into an unoccupied space adjacent to the spell's area. If no unoccupied space is within range, the creature instead remains in the spell's area but does not sink.</p>
+            <p class="indent">A creature that is completely submerged in the mud is restrained, blinded, has total cover, and can't breathe (see the suffocation rules in the SRD). The submerged creature can attempt to escape or a creature can pull another creature out of the mud by using its action and succeeding on a Strength check against your spell save DC.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">90 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a watering can</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Lure Monster" type="Spell" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SPELL_LURE_MONSTER">
+        <supports>Bard, Druid, Ranger, Warlock, Wizard</supports>
+        <description>
+            <p>You wave a piece of bait in the air. One non-humanoid creature that you can see within range must make a Wisdom saving throw. On a failed save, the creature is drawn by the scent of a meal. A creature automatically succeeds on its saving throw if it doesn't eat the type of bait you use as a material when casting this spell.</p>
+            <p class="indent">For the duration, the creature has disadvantage on attack rolls against creatures other than you, must move towards you by the safest possible route on each of its turns, and it must make a Wisdom saving throw each time it willingly moves to a space more than 45 feet away from you. On a successful save, the spell doesn't restrict the target's movement for that turn. If the creature hits you with a melee weapon attack before the bait is thrown, it consumes the bait.</p>
+            <p class="indent">As a bonus action on your turn, you can throw the bait to an unoccupied space you can see within 20 feet of you. When you do, the target repeats the Wisdom saving throw. On a failed save, it remains fixated on the bait and moves toward it by the safest available route on each of its turns. If enters a space adjacent to the bait, it must use its action to consume the bait. On a successful save, the spell ends.</p>
+            <p class="indent">The spell ends early if the creature consumes the bait, if you attack any other creature, if you cast a spell that targets a hostile creature other than the target, if a creature friendly to you damages the target or casts a harmful spell on it, or if you end your turn more than 45 feet away from the target.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">45 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">at least 1 pound of meat or vegetation used as bait, which the spell consumes</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Expose Weakness" type="Spell" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SPELL_EXPOSE_WEAKNESS">
+        <supports>Artificer, Ranger, Wizard</supports>
+        <description>
+            <p>You assess one creature that you can see within range, learning its damage resistances, damage immunities, and condition immunities.</p>
+            <p class="indent">The target must then make a Constitution saving throw. On a failed save, choose one damage type. The creature loses resistance to that damage type for the duration.</p>
+            <p class="indent"><b>At Higher Levels.</b> When you cast this spell using a spell slot of 5th level or higher, you can choose one damage immunity instead of a damage resistance. On a failed save, the target's immunity to that damage type becomes resistance to the damage type for the duration.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a set of binoculars</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Summon Lesser Monsters" type="Spell" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_SPELL_SUMMON_LESSER_MONSTERS">
+        <supports>Druid, Ranger, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>You utter foul hunting calls, summoning lesser monsters from nearby territory. Roll on the following table to determine what appears.</p>
+            <table>
+                <thead>
+                    <tr><td>d6</td><td>Monsters Summoned</td></tr>
+                </thead>
+                <tr><td>1-2</td><td>One creature of challenge rating 1 or lower</td></tr>
+                <tr><td>3-4</td><td>Two creautres of challenge rating 1/2 or lower</td></tr>
+                <tr><td>5-6</td><td>Four creautres of challenge rating 1/4 or lower</td></tr>
+            </table>
+            <p class="indent">The GM chooses the monsters, appropriate to the environment (using the tables in the back of the MHMM starting on p.614), and you choose the unoccupied spaces you can see within range where they appear. A summoned monster disappears when it drops to 0 hit points or when the spell ends.</p>
+            <p class="indent">The summoned monsters are hostile to all creatures, including you. Roll initiative for the summoned monsters as a group, which has its own turns. The monsters pursue and attack the nearest creatures that weren't summoned to the best of their ability.</p>
+            <p class="indent">As part of casting the spell, you can imitate the territorial cries of a larger creature by succeeding on a Charisma (Performance) check against the passive Perception of the summoned creatures. On a success, the summoned monster is not hostile towards you, unless you make an attack roll against any of the summoned monster or cast a harmful spell that target one or more of them.</p>
+            <p class="indent"><b>At Higher Levels.</b> When you cast this spell using a spell slot of 6th or 7th level, you summon twice as many monsters. If you cast it using a spell slot of 8th or 9th level, you summon three times as many monsters.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a qurupeco beak</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+</elements>

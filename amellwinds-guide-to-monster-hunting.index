@@ -45,5 +45,7 @@
 		<file name="ranger-additional-favored-foe.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/ranger-additional-favored-foe.xml" />
 
 		<file name="source.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/source.xml" />
+
+		<file name="spells.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/spells.xml" />
 	</files>
 </index>
