@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Faction Features</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="faction-features.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/faction-features.xml" />
         </update>
     </info>
@@ -25,9 +25,7 @@
                 <tr><td>5th</td><td><i>passwall, tree stride</i></td></tr>
             </table>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
+        <sheet display="false" />
         <spellcasting all="true" extend="true">
             <extend>ID_PHB_SPELL_DRUIDCRAFT</extend>
             <extend>ID_PHB_SPELL_MESSAGE</extend>
@@ -71,9 +69,7 @@
                 <tr><td>5th</td><td><i>awaken, skill empowerment</i></td></tr>
             </table>
         </description>
-        <sheet> 
-            <description></description>
-        </sheet>
+        <sheet display="false" />
         <spellcasting all="true" extend="true">
             <extend>ID_PHB_SPELL_PRODUCE_FLAME</extend>
             <extend>ID_PHB_SPELL_RESISTANCE</extend>
@@ -117,9 +113,7 @@
                 <tr><td>5th</td><td>commune with nature, modify memory</td></tr>
             </table>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
+        <sheet display="false" />
         <spellcasting all="true" extend="true">
             <extend>ID_PHB_SPELL_GUIDANCE</extend>
             <extend>ID_PHB_SPELL_MENDING</extend>
@@ -154,9 +148,7 @@
                 <tr><td>10</td><td>Reroll</td></tr>
             </table>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
+        <sheet display="false" />
         <rules>
             <select name="Specialty" type="List" optional="true">
                 <item id="1">Amphibians &amp; Carapaceon</item>
@@ -200,9 +192,7 @@
                 <tr><td>5th</td><td>mislead, modify memory</td></tr>
             </table>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
+        <sheet display="false" />
         <spellcasting all="true" extend="true">
             <extend>ID_PHB_SPELL_MAGE_HAND</extend>
             <extend>ID_PHB_SPELL_MINOR_ILLUSION</extend>
@@ -246,9 +236,7 @@
                 <tr><td>5th</td><td>commune with nature, legend lore</td></tr>
             </table>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
+        <sheet display="false" />
         <spellcasting all="true" extend="true">
             <extend>ID_PHB_SPELL_DRUIDCRAFT</extend>
             <extend>ID_PHB_SPELL_LIGHT</extend>
@@ -281,5 +269,40 @@
         <sheet alt="Magic Gathering">
             <description>When you attempt to gather a resource, you can use the specified cantrip from the table below to automatically succeed on the gather check, but you do not gain the effects from materials that provide additional resources from gathering when you gather resources in this way. Mushrooms and plants can be gathered with the druidcraft cantrip. Insects can be gathered with the gust of wind cantrip. Bones and minerals can be gathered with the mold earth cantrip. Fish can be gathered with the shape water cantrip.</description>
         </sheet>
+    </element>
+
+    <element name="Vagari Ryoshi Spells" type="Background Feature" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_FACTION_FEATURE_VAGARI_RYOSHI_SPELLS">
+        <supports>2nd Background Feature</supports>
+        <description>
+            <p><i>Prerequisite: Spellcasting or Pact Magic class feature</i></p>
+            <p>For you, the spells on the Vagari Ryoshi Spells table are added to the spell list of your spellcasting class. (If you are a multiclass character with multiple spell lists, these spells are added to all of them.)</p>
+            <h5>Vagari Ryoshi Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>Cantrip</td><td>produce flame, message</td></tr>
+                <tr><td>1st</td><td>identify, comprehend languages</td></tr>
+                <tr><td>2nd</td><td>arcane lock, detect thoughts</td></tr>
+                <tr><td>3rd</td><td>clairvoyance, nondetection</td></tr>
+                <tr><td>4th</td><td>death ward, locate creature</td></tr>
+                <tr><td>5th</td><td>dream, teleportation circle</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <spellcasting all="true" extend="true">
+            <extend>ID_PHB_SPELL_PRODUCE_FLAME</extend>
+            <extend>ID_PHB_SPELL_MESSAGE</extend>
+            <extend>ID_PHB_SPELL_IDENTIFY</extend>
+            <extend>ID_PHB_SPELL_COMPREHEND_LANGUAGES</extend>
+            <extend>ID_PHB_SPELL_ARCANE_LOCK</extend>
+            <extend>ID_PHB_SPELL_DETECT_THOUGHTS</extend>
+            <extend>ID_PHB_SPELL_CLAIRVOYANCE</extend>
+            <extend>ID_PHB_SPELL_NONDETECTION</extend>
+            <extend>ID_PHB_SPELL_DEATH_WARD</extend>
+            <extend>ID_PHB_SPELL_LOCATE_CREATURE</extend>
+            <extend>ID_PHB_SPELL_DREAM</extend>
+            <extend>ID_PHB_SPELL_TELEPORTATION_CIRCLE</extend>
+        </spellcasting>
     </element>
 </elements>

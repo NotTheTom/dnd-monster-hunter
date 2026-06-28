@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Amellwind's Guide to Monster Hunting</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="amellwinds-guide-to-monster-hunting.index" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting.index" />
 		</update>
 	</info>
@@ -17,6 +17,7 @@
 		<file name="background-scrivener.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-scrivener.xml" />
 		<file name="background-wycademyresearcher.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-wycademyresearcher.xml" />
 		<file name="background-wycademystudent.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-wycademystudent.xml" />
+		<file name="background-frontierwayfarer.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-frontierwayfarer.xml" />
 		 
 		<file name="deities.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/deities.xml" />
 

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="background-frontierwayfarer.xml" url="https://raw.githubusercontent.com/NotTheTom/dnd-monster-hunter/main/amellwinds-guide-to-monster-hunting/background-frontierwayfarer.xml" />
+        </update>
+    </info>
+    <element name="Frontier Wayfarer" type="Background" source="Amellwind's Guide to Monster Hunting" id="ID_ALD_AGMH_BACKGROUND_FRONTIER_WAYFARER">
+        <description>
+            <p>You follow the open road as many legendary Vagari did before you. Answering to no guildmaster or distant authority, you are guided by your own code and conscience. You defend those the Hunter’s Guild has overlooked, pursue goals others would forbid, and uncover creatures and mysteries unknown to most.</p>
+            <ul class="unstyled">
+                <li><b>Skill Proficiencies:</b> Survival; Choose one from Insight, Persuasion, Stealth</li>
+                <li><b>Tool Proficiencies:</b> One type of artisan's tools, vehicles (land)</li>
+                <li><b>Languages:</b> One of your choice</li>
+                <li><b>Equipment:</b> A set of artisan's tools (one of your choice), traveler's clothes, a hunting knife, a worn regional map, a small trophy taken from a creature that threatened a village, and a pouch containing 10 gp</li>
+            </ul>
+<!--            <div element="ID_ALD_AGMH_BACKGROUND_FEATURE_" /> -->
+            <br />
+            <p><b><big>As a member of the Vagari Ryoshi you are granted additional features:</big></b></p>
+            <div element="ID_ALD_AGMH_FACTION_FEATURE_VAGARI_RYOSHI_SPELLS" />
+        </description>
+        <setters>
+            <set name="short">Surival, Insight/Persuasion/Stealth, 1 artisan tool, vehicles (land), 1 language</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <select type="Proficiency" name="Skill Proficiency (Frontier Wayfarer)" supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_STEALTH" />
+            <select type="Proficiency" name="Tool Proficiency (Frontier Wayfarer)" supports="Artisan tools" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+            <select type="Language" name="Language (Frontier Wayfarer)" supports="Standard||Exotic" />
+<!--            <grant type="Background Feature" id="ID_ALD_AGMH_BACKGROUND_FEATURE_" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" /> -->
+            <grant type="Background Feature" id="ID_ALD_AGMH_FACTION_FEATURE_VAGARI_RYOSHI_SPELLS" />
+            <select type="List" name="Personality Trait" number="2" optional="true">
+                <item id="1">I keep a record of every creature I kill and why it had to die.</item>
+                <item id="2">I treat every journey as though someone's life depends on it.</item>
+                <item id="3">I distrust anyone who needs a title before doing the right thing.</item>
+                <item id="4">I treat every hunt like a puzzle. Charging in before understanding the creature is how hunters become corpses.</item>
+                <item id="5">I tell exaggerated stories about my hunts, though the truth is usually dangerous enough.</item>
+                <item id="6">I leave warnings, trail marks, and occaisonally useful supplies behind for the next traveler.</item>
+                <item id="7">I always ask who benefits from a monster's death before accepting a hunt.</item>
+                <item id="8">I respect monsters that defend their territory more than hunters who invade it for gold.</item>
+            </select>
+            <select type="List" name="Ideal" optional="true">
+                <item id="1">Mercy. Rules exist to protect people, not prevent them from receiving hekp. (Good)</item>
+                <item id="2">Freedom. No faction or noble owns the road, the forest, or the right to survive. (Chaotic)</item>
+                <item id="3">Responsibility. Independence means accepting the consequnces of every choice. (Lawful)</item>
+                <item id="4">Exhilaration. The risks are real, but so is the thrill. There's no life I would rather lead. (Chaotic)</item>
+                <item id="5">Stewardship. A true hunter protects the land as well as the people living upon it. (Neutral)</item>
+                <item id="6">Justice. When law serves only the powerful, conscience must take its place. (Good)</item>
+            </select>
+            <select type="List" name="Bond" optional="true">
+                <item id="1">I owe my freedom to smugglers and villagers who hid me from the guild.</item>
+                <item id="2">I swore never to let another community be ignored simply because they cannot affored a proper hunting contract.</item>
+                <item id="3">I am searching for another Vagari who broke the code.</item>
+                <item id="4">The Hunter's Guild holds someone I care about responsible for my crimes. I must clear their name.</item>
+                <item id="5">I believe one monster protects the frontier from something far worse, and I will not allow anyone to hunt it.</item>
+                <item id="6">The Helix Commission is an abomination. I will destroy it.</item>
+            </select>
+            <select type="List" name="Flaw" optional="true">
+                <item id="1">I conceal information when I believe others will make the wrong decision with it.</item>
+                <item id="2">I cannot ignore a cry for help, even if I suspect its a trap.</item>
+                <item id="3">I keep trophies that could reveal what I am.</item>
+                <item id="4">I grow jealous of those who succeed where I failed.</item>
+                <item id="5">I consider myself responsible for every regoin I pass through and take on more problems than I can possibly solve.</item>
+                <item id="6">I secretly enjoy being feared almost as much as I enjoy being respected.</item>
+            </select>
+        </rules>
+    </element>
+    
+    
+</elements>
